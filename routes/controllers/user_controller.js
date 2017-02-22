@@ -28,8 +28,8 @@ exports.reg = function (req, res) {
 /**
  * 跳转到登录页面
  */
-exports.toLogin = function (req, res) {
-
+exports.toLogin = function (req, res, next) {
+    res.render('user/login', { title: 'Login' });
 };
 
 /**

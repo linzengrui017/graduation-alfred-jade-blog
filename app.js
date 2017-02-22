@@ -35,12 +35,16 @@ app.use(cookieParser());
 app.use(express.static(path.join(__dirname, '')));
 
 app.use('/', index);
-app.use('/users', users);
+// app.use('/users', users);
+/**
+ * 路径应该是默认路径
+ */
+app.use('/', users);
 
 /**
  * 使用指定的命名空间
  */
-app.use('/weibo', weibo);
+app.use('/', weibo);
 /**
  *
  */

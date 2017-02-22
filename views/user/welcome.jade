@@ -1,0 +1,35 @@
+extends ../commons/top
+
+block content
+    .index-top(style='margin: 0 150px;')
+        .bs-example
+            nav.navbar
+                .container-fluid
+                    .navbar-header
+                        a.navbar-brand(href='#' /*style='background:#ffffff;'*/) 微博
+                    #bs-example-navbar-collapse-9.collapse.navbar-collapse
+                        ul.nav.navbar-nav
+                            li
+                                a(href='/') 首页
+                            li
+                                a(href='/add') 写微博
+                            li
+                                a(href='/list') 列表
+                            li
+                                a(href='/user/<%= user._id%>')
+                            li
+                                a(href='/logout') 退出
+                            li
+                                a(href='/toLogin') 登录
+                            li
+                                a(href='/reg') 注册
+
+
+
+
+        .bs-example(data-example-id='simple-jumbotron')(style='margin: 0 20px;')
+            .jumbotron(style='padding: 50px 100px;padding-left:200px;')
+                h1 欢迎来到微博!
+                p
+                    | 随时随地发现新鲜事
+

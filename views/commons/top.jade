@@ -2,6 +2,9 @@ doctype html
 html
     head
         title= title
+
+
+
         // Bootstrap
         link(href= '/node_modules/gentelella/vendors/bootstrap/dist/css/bootstrap.min.css', rel='stylesheet')
         // Font Awesome
@@ -18,5 +21,33 @@ html
         link(href= '/node_modules/gentelella/vendors/pnotify/dist/pnotify.nonblock.css', rel='stylesheet')
         // Custom Theme Style
         link(href= '/node_modules/gentelella/build/css/custom.min.css', rel='stylesheet')
-    body
+        // Animate.css
+        link(href='/node_modules/gentelella/vendors/animate.css/animate.min.css', rel='stylesheet')
+
+
+
+
+
+    body(style='background:#FFFFFF;padding-top:0px;padding-bottom:70px;')
         block content
+
+
+
+        // jQuery
+        script(src='/node_modules/gentelella/vendors/jquery/dist/jquery.min.js')
+        // Bootstrap
+        script(src='/node_modules/gentelella/vendors/bootstrap/dist/js/bootstrap.min.js')
+        // FastClick
+        script(src='/node_modules/gentelella/vendors/fastclick/lib/fastclick.js')
+        // NProgress
+        script(src='/node_modules/gentelella/vendors/nprogress/nprogress.js')
+        // bootstrap-progressbar
+        script(src='/node_modules/gentelella/vendors/bootstrap-progressbar/bootstrap-progressbar.min.js')
+        // iCheck
+        script(src='/node_modules/gentelella/vendors/iCheck/icheck.min.js')
+        // PNotify
+        script(src='/node_modules/gentelella/vendors/pnotify/dist/pnotify.js')
+        script(src='/node_modules/gentelella/vendors/pnotify/dist/pnotify.buttons.js')
+        script(src='/node_modules/gentelella/vendors/pnotify/dist/pnotify.nonblock.js')
+        // Custom Theme Scripts
+        script(src='/node_modules/gentelella/build/js/custom.min.js')
