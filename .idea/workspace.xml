@@ -1,1019 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f8ee0978-48cb-4707-befb-e4ce0a99b44e" name="Default" comment="gentella-doc,porduct">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/echarts/asset/logo.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/iCheck/skins/flat/aero.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/iCheck/skins/flat/aero@2x.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/iCheck/skins/flat/blue.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/iCheck/skins/flat/blue@2x.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/iCheck/skins/flat/flat.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/iCheck/skins/flat/flat@2x.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/iCheck/skins/flat/green.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/iCheck/skins/flat/green@2x.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/iCheck/skins/flat/grey.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/iCheck/skins/flat/grey@2x.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/iCheck/skins/flat/orange.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/iCheck/skins/flat/orange@2x.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/iCheck/skins/flat/pink.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/iCheck/skins/flat/pink@2x.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/iCheck/skins/flat/purple.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/iCheck/skins/flat/purple@2x.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/iCheck/skins/flat/red.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/iCheck/skins/flat/red@2x.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/iCheck/skins/flat/yellow.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/iCheck/skins/flat/yellow@2x.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/iCheck/skins/futurico/futurico.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/iCheck/skins/futurico/futurico@2x.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/iCheck/skins/line/line.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/iCheck/skins/line/line@2x.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/iCheck/skins/minimal/aero.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/iCheck/skins/minimal/aero@2x.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/iCheck/skins/minimal/blue.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/iCheck/skins/minimal/blue@2x.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/iCheck/skins/minimal/green.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/iCheck/skins/minimal/green@2x.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/iCheck/skins/minimal/grey.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/iCheck/skins/minimal/grey@2x.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/iCheck/skins/minimal/minimal.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/iCheck/skins/minimal/minimal@2x.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/iCheck/skins/minimal/orange.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/iCheck/skins/minimal/orange@2x.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/iCheck/skins/minimal/pink.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/iCheck/skins/minimal/pink@2x.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/iCheck/skins/minimal/purple.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/iCheck/skins/minimal/purple@2x.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/iCheck/skins/minimal/red.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/iCheck/skins/minimal/red@2x.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/iCheck/skins/minimal/yellow.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/iCheck/skins/minimal/yellow@2x.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/iCheck/skins/polaris/polaris.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/iCheck/skins/polaris/polaris@2x.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/iCheck/skins/square/aero.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/iCheck/skins/square/aero@2x.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/iCheck/skins/square/blue.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/iCheck/skins/square/blue@2x.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/iCheck/skins/square/green.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/iCheck/skins/square/green@2x.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/iCheck/skins/square/grey.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/iCheck/skins/square/grey@2x.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/iCheck/skins/square/orange.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/iCheck/skins/square/orange@2x.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/iCheck/skins/square/pink.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/iCheck/skins/square/pink@2x.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/iCheck/skins/square/purple.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/iCheck/skins/square/purple@2x.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/iCheck/skins/square/red.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/iCheck/skins/square/red@2x.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/iCheck/skins/square/square.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/iCheck/skins/square/square@2x.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/iCheck/skins/square/yellow.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/iCheck/skins/square/yellow@2x.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/echarts/.bower.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/echarts/.editorconfig" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/echarts/.github/CONTRIBUTING.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/echarts/.github/ISSUE_TEMPLATE.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/echarts/.jshintignore" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/echarts/.jshintrc" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/echarts/.npmignore" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/echarts/LICENSE" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/echarts/README.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/echarts/dist/echarts.common.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/echarts/dist/echarts.common.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/echarts/dist/echarts.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/echarts/dist/echarts.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/echarts/dist/echarts.simple.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/echarts/dist/echarts.simple.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/echarts/dist/extension/bmap.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/echarts/dist/extension/bmap.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/echarts/dist/extension/dataTool.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/echarts/dist/extension/dataTool.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/echarts/extension/bmap/BMapCoordSys.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/echarts/extension/bmap/BMapModel.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/echarts/extension/bmap/BMapView.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/echarts/extension/bmap/bmap.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/echarts/extension/dataTool/gexf.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/echarts/extension/dataTool/index.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/echarts/extension/dataTool/prepareBoxplotData.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/echarts/extension/dataTool/quantile.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/echarts/extension/echarts.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/echarts/extension/webpack.config.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/echarts/index.common.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/echarts/index.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/echarts/index.simple.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/echarts/map/js/china-contour.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/echarts/map/js/china.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/echarts/map/js/province/anhui.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/echarts/map/js/province/aomen.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/echarts/map/js/province/beijing.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/echarts/map/js/province/chongqing.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/echarts/map/js/province/fujian.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/echarts/map/js/province/gansu.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/echarts/map/js/province/guangdong.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/echarts/map/js/province/guangxi.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/echarts/map/js/province/guizhou.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/echarts/map/js/province/hainan.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/echarts/map/js/province/hebei.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/echarts/map/js/province/heilongjiang.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/echarts/map/js/province/henan.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/echarts/map/js/province/hubei.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/echarts/map/js/province/hunan.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/echarts/map/js/province/jiangsu.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/echarts/map/js/province/jiangxi.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/echarts/map/js/province/jilin.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/echarts/map/js/province/liaoning.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/echarts/map/js/province/neimenggu.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/echarts/map/js/province/ningxia.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/echarts/map/js/province/qinghai.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/echarts/map/js/province/shandong.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/echarts/map/js/province/shanghai.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/echarts/map/js/province/shanxi.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/echarts/map/js/province/shanxi1.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/echarts/map/js/province/sichuan.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/echarts/map/js/province/tianjin.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/echarts/map/js/province/xianggang.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/echarts/map/js/province/xinjiang.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/echarts/map/js/province/xizang.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/echarts/map/js/province/yunnan.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/echarts/map/js/province/zhejiang.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/echarts/map/js/world.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/echarts/map/json/china-contour.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/echarts/map/json/china.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/echarts/map/json/province/anhui.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/echarts/map/json/province/aomen.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/echarts/map/json/province/beijing.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/echarts/map/json/province/chongqing.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/echarts/map/json/province/fujian.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/echarts/map/json/province/gansu.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/echarts/map/json/province/guangdong.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/echarts/map/json/province/guangxi.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/echarts/map/json/province/guizhou.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/echarts/map/json/province/hainan.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/echarts/map/json/province/hebei.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/echarts/map/json/province/heilongjiang.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/echarts/map/json/province/henan.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/echarts/map/json/province/hubei.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/echarts/map/json/province/hunan.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/echarts/map/json/province/jiangsu.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/echarts/map/json/province/jiangxi.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/echarts/map/json/province/jilin.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/echarts/map/json/province/liaoning.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/echarts/map/json/province/neimenggu.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/echarts/map/json/province/ningxia.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/echarts/map/json/province/qinghai.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/echarts/map/json/province/shandong.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/echarts/map/json/province/shanghai.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/echarts/map/json/province/shanxi.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/echarts/map/json/province/shanxi1.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/echarts/map/json/province/sichuan.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/echarts/map/json/province/tianjin.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/echarts/map/json/province/xianggang.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/echarts/map/json/province/xinjiang.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/echarts/map/json/province/xizang.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/echarts/map/json/province/yunnan.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/echarts/map/json/province/zhejiang.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/echarts/map/json/world.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/echarts/package.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/echarts/src/CoordinateSystem.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/echarts/src/ExtensionAPI.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/echarts/src/action/createDataSelectAction.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/echarts/src/action/geoRoam.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/echarts/src/action/roamHelper.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/echarts/src/chart/bar.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/echarts/src/chart/bar/BarSeries.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/echarts/src/chart/bar/BarView.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/echarts/src/chart/bar/barItemStyle.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/echarts/src/chart/boxplot.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/echarts/src/chart/boxplot/BoxplotSeries.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/echarts/src/chart/boxplot/BoxplotView.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/echarts/src/chart/boxplot/boxplotLayout.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/echarts/src/chart/boxplot/boxplotVisual.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/echarts/src/chart/candlestick.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/echarts/src/chart/candlestick/CandlestickSeries.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/echarts/src/chart/candlestick/CandlestickView.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/echarts/src/chart/candlestick/candlestickLayout.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/echarts/src/chart/candlestick/candlestickVisual.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/echarts/src/chart/candlestick/preprocessor.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/echarts/src/chart/chord.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/echarts/src/chart/chord/ChordSeries.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/echarts/src/chart/chord/ChordView.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/echarts/src/chart/chord/Ribbon.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/echarts/src/chart/chord/chordCircularLayout.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/echarts/src/chart/effectScatter.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/echarts/src/chart/effectScatter/EffectScatterSeries.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/echarts/src/chart/effectScatter/EffectScatterView.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/echarts/src/chart/funnel.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/echarts/src/chart/funnel/FunnelSeries.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/echarts/src/chart/funnel/FunnelView.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/echarts/src/chart/funnel/funnelLayout.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/echarts/src/chart/gauge.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/echarts/src/chart/gauge/GaugeSeries.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/echarts/src/chart/gauge/GaugeView.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/echarts/src/chart/gauge/PointerPath.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/echarts/src/chart/graph.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/echarts/src/chart/graph/GraphSeries.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/echarts/src/chart/graph/GraphView.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/echarts/src/chart/graph/backwardCompat.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/echarts/src/chart/graph/categoryFilter.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/echarts/src/chart/graph/categoryVisual.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/echarts/src/chart/graph/circularLayout.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/echarts/src/chart/graph/circularLayoutHelper.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/echarts/src/chart/graph/createView.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/echarts/src/chart/graph/forceHelper.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/echarts/src/chart/graph/forceLayout.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/echarts/src/chart/graph/roamAction.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/echarts/src/chart/graph/simpleLayout.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/echarts/src/chart/graph/simpleLayoutHelper.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/echarts/src/chart/heatmap.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/echarts/src/chart/heatmap/HeatmapLayer.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/echarts/src/chart/heatmap/HeatmapSeries.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/echarts/src/chart/heatmap/HeatmapView.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/echarts/src/chart/helper/EffectLine.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/echarts/src/chart/helper/EffectSymbol.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/echarts/src/chart/helper/LargeSymbolDraw.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/echarts/src/chart/helper/Line.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/echarts/src/chart/helper/LineDraw.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/echarts/src/chart/helper/LinePath.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/echarts/src/chart/helper/Symbol.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/echarts/src/chart/helper/SymbolDraw.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/echarts/src/chart/helper/WhiskerBoxDraw.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/echarts/src/chart/helper/createGraphFromNodeEdge.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/echarts/src/chart/helper/createGraphFromNodeMatrix.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/echarts/src/chart/helper/createListFromArray.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/echarts/src/chart/helper/dataSelectableMixin.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/echarts/src/chart/helper/whiskerBoxCommon.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/echarts/src/chart/line.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/echarts/src/chart/line/LineSeries.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/echarts/src/chart/line/LineView.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/echarts/src/chart/line/lineAnimationDiff.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/echarts/src/chart/line/poly.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/echarts/src/chart/lines.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/echarts/src/chart/lines/LinesSeries.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/echarts/src/chart/lines/LinesView.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/echarts/src/chart/lines/linesLayout.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/echarts/src/chart/map.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/echarts/src/chart/map/MapSeries.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/echarts/src/chart/map/MapView.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/echarts/src/chart/map/backwardCompat.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/echarts/src/chart/map/mapDataStatistic.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/echarts/src/chart/map/mapSymbolLayout.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/echarts/src/chart/map/mapVisual.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/echarts/src/chart/parallel.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/echarts/src/chart/parallel/ParallelSeries.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/echarts/src/chart/parallel/ParallelView.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/echarts/src/chart/parallel/parallelVisual.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/echarts/src/chart/pie.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/echarts/src/chart/pie/PieSeries.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/echarts/src/chart/pie/PieView.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/echarts/src/chart/pie/labelLayout.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/echarts/src/chart/pie/pieLayout.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/echarts/src/chart/radar.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/echarts/src/chart/radar/RadarSeries.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/echarts/src/chart/radar/RadarView.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/echarts/src/chart/radar/backwardCompat.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/echarts/src/chart/radar/radarLayout.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/echarts/src/chart/sankey.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/echarts/src/chart/sankey/SankeySeries.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/echarts/src/chart/sankey/SankeyView.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/echarts/src/chart/sankey/sankeyLayout.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/echarts/src/chart/sankey/sankeyVisual.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/echarts/src/chart/scatter.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/echarts/src/chart/scatter/ScatterSeries.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/echarts/src/chart/scatter/ScatterView.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/echarts/src/chart/themeRiver.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/echarts/src/chart/themeRiver/ThemeRiverSeries.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/echarts/src/chart/themeRiver/ThemeRiverView.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/echarts/src/chart/themeRiver/themeRiverLayout.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/echarts/src/chart/themeRiver/themeRiverVisual.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/echarts/src/chart/treemap.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/echarts/src/chart/treemap/Breadcrumb.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/echarts/src/chart/treemap/TreemapSeries.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/echarts/src/chart/treemap/TreemapView.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/echarts/src/chart/treemap/helper.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/echarts/src/chart/treemap/treemapAction.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/echarts/src/chart/treemap/treemapLayout.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/echarts/src/chart/treemap/treemapVisual.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/echarts/src/component/angleAxis.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/echarts/src/component/axis.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/echarts/src/component/axis/AngleAxisView.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/echarts/src/component/axis/AxisBuilder.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/echarts/src/component/axis/AxisView.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/echarts/src/component/axis/ParallelAxisView.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/echarts/src/component/axis/RadiusAxisView.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/echarts/src/component/axis/SingleAxisView.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/echarts/src/component/axis/parallelAxisAction.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/echarts/src/component/dataZoom.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/echarts/src/component/dataZoom/AxisProxy.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/echarts/src/component/dataZoom/DataZoomModel.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/echarts/src/component/dataZoom/DataZoomView.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/echarts/src/component/dataZoom/InsideZoomModel.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/echarts/src/component/dataZoom/InsideZoomView.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/echarts/src/component/dataZoom/SelectZoomModel.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/echarts/src/component/dataZoom/SelectZoomView.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/echarts/src/component/dataZoom/SliderZoomModel.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/echarts/src/component/dataZoom/SliderZoomView.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/echarts/src/component/dataZoom/dataZoomAction.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/echarts/src/component/dataZoom/dataZoomProcessor.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/echarts/src/component/dataZoom/history.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/echarts/src/component/dataZoom/roams.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/echarts/src/component/dataZoom/typeDefaulter.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/echarts/src/component/dataZoomInside.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/echarts/src/component/dataZoomSelect.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/echarts/src/component/geo.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/echarts/src/component/geo/GeoView.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/echarts/src/component/grid.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/echarts/src/component/helper/MapDraw.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/echarts/src/component/helper/RoamController.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/echarts/src/component/helper/SelectController.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/echarts/src/component/helper/interactionMutex.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/echarts/src/component/helper/listComponent.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/echarts/src/component/helper/sliderMove.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/echarts/src/component/legend.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/echarts/src/component/legend/LegendModel.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/echarts/src/component/legend/LegendView.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/echarts/src/component/legend/legendAction.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/echarts/src/component/legend/legendFilter.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/echarts/src/component/markLine.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/echarts/src/component/markPoint.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/echarts/src/component/marker/MarkLineModel.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/echarts/src/component/marker/MarkLineView.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/echarts/src/component/marker/MarkPointModel.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/echarts/src/component/marker/MarkPointView.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/echarts/src/component/marker/markerHelper.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/echarts/src/component/parallel.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/echarts/src/component/parallelAxis.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/echarts/src/component/polar.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/echarts/src/component/radar.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/echarts/src/component/radar/RadarView.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/echarts/src/component/radiusAxis.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/echarts/src/component/single.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/echarts/src/component/singleAxis.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/echarts/src/component/timeline.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/echarts/src/component/timeline/SliderTimelineModel.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/echarts/src/component/timeline/SliderTimelineView.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/echarts/src/component/timeline/TimelineAxis.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/echarts/src/component/timeline/TimelineModel.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/echarts/src/component/timeline/TimelineView.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/echarts/src/component/timeline/preprocessor.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/echarts/src/component/timeline/timelineAction.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/echarts/src/component/timeline/typeDefaulter.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/echarts/src/component/title.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/echarts/src/component/toolbox.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/echarts/src/component/toolbox/ToolboxModel.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/echarts/src/component/toolbox/ToolboxView.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/echarts/src/component/toolbox/feature/DataView.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/echarts/src/component/toolbox/feature/DataZoom.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/echarts/src/component/toolbox/feature/MagicType.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/echarts/src/component/toolbox/feature/Restore.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/echarts/src/component/toolbox/feature/SaveAsImage.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/echarts/src/component/toolbox/featureManager.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/echarts/src/component/tooltip.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/echarts/src/component/tooltip/TooltipContent.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/echarts/src/component/tooltip/TooltipModel.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/echarts/src/component/tooltip/TooltipView.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/echarts/src/component/visualMap.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/echarts/src/component/visualMap/ContinuousModel.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/echarts/src/component/visualMap/ContinuousView.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/echarts/src/component/visualMap/PiecewiseModel.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/echarts/src/component/visualMap/PiecewiseView.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/echarts/src/component/visualMap/VisualMapModel.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/echarts/src/component/visualMap/VisualMapView.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/echarts/src/component/visualMap/helper.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/echarts/src/component/visualMap/preprocessor.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/echarts/src/component/visualMap/typeDefaulter.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/echarts/src/component/visualMap/visualCoding.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/echarts/src/component/visualMap/visualMapAction.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/echarts/src/component/visualMapContinuous.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/echarts/src/component/visualMapPiecewise.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/echarts/src/coord/Axis.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/echarts/src/coord/View.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/echarts/src/coord/axisDefault.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/echarts/src/coord/axisHelper.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/echarts/src/coord/axisModelCommonMixin.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/echarts/src/coord/axisModelCreator.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/echarts/src/coord/cartesian/Axis2D.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/echarts/src/coord/cartesian/AxisModel.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/echarts/src/coord/cartesian/Cartesian.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/echarts/src/coord/cartesian/Cartesian2D.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/echarts/src/coord/cartesian/Grid.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/echarts/src/coord/cartesian/GridModel.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/echarts/src/coord/cartesian/axisLabelInterval.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/echarts/src/coord/geo/Geo.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/echarts/src/coord/geo/GeoModel.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/echarts/src/coord/geo/Region.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/echarts/src/coord/geo/fix/geoCoord.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/echarts/src/coord/geo/fix/nanhai.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/echarts/src/coord/geo/fix/textCoord.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/echarts/src/coord/geo/geoCreator.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/echarts/src/coord/geo/parseGeoJson.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/echarts/src/coord/parallel/AxisModel.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/echarts/src/coord/parallel/Parallel.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/echarts/src/coord/parallel/ParallelAxis.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/echarts/src/coord/parallel/ParallelModel.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/echarts/src/coord/parallel/parallelCreator.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/echarts/src/coord/parallel/parallelPreprocessor.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/echarts/src/coord/polar/AngleAxis.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/echarts/src/coord/polar/AxisModel.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/echarts/src/coord/polar/Polar.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/echarts/src/coord/polar/PolarModel.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/echarts/src/coord/polar/RadiusAxis.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/echarts/src/coord/polar/polarCreator.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/echarts/src/coord/radar/IndicatorAxis.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/echarts/src/coord/radar/Radar.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/echarts/src/coord/radar/RadarModel.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/echarts/src/coord/single/AxisModel.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/echarts/src/coord/single/Single.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/echarts/src/coord/single/SingleAxis.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/echarts/src/coord/single/singleCreator.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/echarts/src/data/DataDiffer.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/echarts/src/data/Graph.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/echarts/src/data/List.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/echarts/src/data/Tree.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/echarts/src/data/helper/completeDimensions.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/echarts/src/data/helper/linkList.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/echarts/src/echarts.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/echarts/src/layout/barGrid.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/echarts/src/layout/points.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/echarts/src/loading/default.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/echarts/src/model/Component.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/echarts/src/model/Global.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/echarts/src/model/Model.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/echarts/src/model/OptionManager.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/echarts/src/model/Series.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/echarts/src/model/globalDefault.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/echarts/src/model/mixin/areaStyle.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/echarts/src/model/mixin/boxLayout.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/echarts/src/model/mixin/itemStyle.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/echarts/src/model/mixin/lineStyle.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/echarts/src/model/mixin/makeStyleMapper.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/echarts/src/model/mixin/textStyle.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/echarts/src/preprocessor/backwardCompat.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/echarts/src/preprocessor/helper/compatStyle.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/echarts/src/processor/dataFilter.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/echarts/src/processor/dataSample.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/echarts/src/scale/Interval.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/echarts/src/scale/Log.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/echarts/src/scale/Ordinal.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/echarts/src/scale/Scale.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/echarts/src/scale/Time.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/echarts/src/util/KDTree.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/echarts/src/util/animation.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/echarts/src/util/array/nest.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/echarts/src/util/clazz.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/echarts/src/util/component.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/echarts/src/util/format.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/echarts/src/util/graphic.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/echarts/src/util/layout.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/echarts/src/util/model.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/echarts/src/util/number.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/echarts/src/util/quickSelect.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/echarts/src/util/symbol.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/echarts/src/util/throttle.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/echarts/src/view/Chart.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/echarts/src/view/Component.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/echarts/src/visual/VisualMapping.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/echarts/src/visual/dataColor.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/echarts/src/visual/seriesColor.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/echarts/src/visual/symbol.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/echarts/src/visual/visualDefault.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/echarts/theme/dark.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/echarts/theme/infographic.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/echarts/theme/macarons.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/echarts/theme/roma.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/echarts/theme/shine.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/echarts/theme/vintage.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/echarts/webpack.config.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/iCheck/.bower.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/iCheck/bower.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/iCheck/icheck.jquery.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/iCheck/icheck.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/iCheck/icheck.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/iCheck/skins/all.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/iCheck/skins/flat/_all.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/iCheck/skins/flat/aero.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/iCheck/skins/flat/blue.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/iCheck/skins/flat/flat.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/iCheck/skins/flat/green.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/iCheck/skins/flat/grey.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/iCheck/skins/flat/orange.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/iCheck/skins/flat/pink.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/iCheck/skins/flat/purple.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/iCheck/skins/flat/red.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/iCheck/skins/flat/yellow.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/iCheck/skins/futurico/futurico.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/iCheck/skins/line/_all.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/iCheck/skins/line/aero.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/iCheck/skins/line/blue.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/iCheck/skins/line/green.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/iCheck/skins/line/grey.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/iCheck/skins/line/line.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/iCheck/skins/line/orange.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/iCheck/skins/line/pink.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/iCheck/skins/line/purple.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/iCheck/skins/line/red.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/iCheck/skins/line/yellow.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/iCheck/skins/minimal/_all.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/iCheck/skins/minimal/aero.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/iCheck/skins/minimal/blue.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/iCheck/skins/minimal/green.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/iCheck/skins/minimal/grey.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/iCheck/skins/minimal/minimal.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/iCheck/skins/minimal/orange.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/iCheck/skins/minimal/pink.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/iCheck/skins/minimal/purple.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/iCheck/skins/minimal/red.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/iCheck/skins/minimal/yellow.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/iCheck/skins/polaris/polaris.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/iCheck/skins/square/_all.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/iCheck/skins/square/aero.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/iCheck/skins/square/blue.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/iCheck/skins/square/green.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/iCheck/skins/square/grey.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/iCheck/skins/square/orange.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/iCheck/skins/square/pink.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/iCheck/skins/square/purple.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/iCheck/skins/square/red.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/iCheck/skins/square/square.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/iCheck/skins/square/yellow.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/moment/.bower.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/moment/CHANGELOG.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/moment/LICENSE" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/moment/README.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/moment/bower.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/moment/locale/af.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/moment/locale/ar-ma.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/moment/locale/ar-sa.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/moment/locale/ar-tn.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/moment/locale/ar.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/moment/locale/az.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/moment/locale/be.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/moment/locale/bg.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/moment/locale/bn.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/moment/locale/bo.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/moment/locale/br.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/moment/locale/bs.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/moment/locale/ca.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/moment/locale/cs.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/moment/locale/cv.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/moment/locale/cy.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/moment/locale/da.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/moment/locale/de-at.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/moment/locale/de.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/moment/locale/dv.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/moment/locale/el.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/moment/locale/en-au.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/moment/locale/en-ca.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/moment/locale/en-gb.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/moment/locale/en-ie.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/moment/locale/en-nz.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/moment/locale/eo.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/moment/locale/es.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/moment/locale/et.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/moment/locale/eu.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/moment/locale/fa.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/moment/locale/fi.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/moment/locale/fo.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/moment/locale/fr-ca.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/moment/locale/fr-ch.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/moment/locale/fr.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/moment/locale/fy.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/moment/locale/gd.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/moment/locale/gl.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/moment/locale/he.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/moment/locale/hi.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/moment/locale/hr.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/moment/locale/hu.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/moment/locale/hy-am.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/moment/locale/id.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/moment/locale/is.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/moment/locale/it.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/moment/locale/ja.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/moment/locale/jv.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/moment/locale/ka.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/moment/locale/kk.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/moment/locale/km.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/moment/locale/ko.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/moment/locale/ky.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/moment/locale/lb.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/moment/locale/lo.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/moment/locale/lt.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/moment/locale/lv.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/moment/locale/me.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/moment/locale/mk.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/moment/locale/ml.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/moment/locale/mr.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/moment/locale/ms-my.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/moment/locale/ms.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/moment/locale/my.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/moment/locale/nb.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/moment/locale/ne.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/moment/locale/nl.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/moment/locale/nn.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/moment/locale/pa-in.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/moment/locale/pl.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/moment/locale/pt-br.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/moment/locale/pt.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/moment/locale/ro.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/moment/locale/ru.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/moment/locale/se.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/moment/locale/si.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/moment/locale/sk.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/moment/locale/sl.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/moment/locale/sq.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/moment/locale/sr-cyrl.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/moment/locale/sr.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/moment/locale/ss.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/moment/locale/sv.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/moment/locale/sw.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/moment/locale/ta.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/moment/locale/te.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/moment/locale/th.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/moment/locale/tl-ph.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/moment/locale/tlh.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/moment/locale/tr.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/moment/locale/tzl.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/moment/locale/tzm-latn.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/moment/locale/tzm.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/moment/locale/uk.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/moment/locale/uz.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/moment/locale/vi.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/moment/locale/x-pseudo.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/moment/locale/zh-cn.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/moment/locale/zh-tw.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/moment/min/locales.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/moment/min/locales.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/moment/min/moment-with-locales.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/moment/min/moment-with-locales.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/moment/min/moment.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/moment/min/tests.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/moment/moment.d.ts" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/moment/moment.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/moment/src/lib/create/check-overflow.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/moment/src/lib/create/date-from-array.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/moment/src/lib/create/from-anything.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/moment/src/lib/create/from-array.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/moment/src/lib/create/from-object.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/moment/src/lib/create/from-string-and-array.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/moment/src/lib/create/from-string-and-format.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/moment/src/lib/create/from-string.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/moment/src/lib/create/local.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/moment/src/lib/create/parsing-flags.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/moment/src/lib/create/utc.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/moment/src/lib/create/valid.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/moment/src/lib/duration/abs.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/moment/src/lib/duration/add-subtract.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/moment/src/lib/duration/as.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/moment/src/lib/duration/bubble.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/moment/src/lib/duration/constructor.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/moment/src/lib/duration/create.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/moment/src/lib/duration/duration.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/moment/src/lib/duration/get.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/moment/src/lib/duration/humanize.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/moment/src/lib/duration/iso-string.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/moment/src/lib/duration/prototype.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/moment/src/lib/format/format.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/moment/src/lib/locale/calendar.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/moment/src/lib/locale/constructor.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/moment/src/lib/locale/en.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/moment/src/lib/locale/formats.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/moment/src/lib/locale/invalid.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/moment/src/lib/locale/lists.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/moment/src/lib/locale/locale.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/moment/src/lib/locale/locales.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/moment/src/lib/locale/ordinal.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/moment/src/lib/locale/pre-post-format.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/moment/src/lib/locale/prototype.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/moment/src/lib/locale/relative.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/moment/src/lib/locale/set.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/moment/src/lib/moment/add-subtract.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/moment/src/lib/moment/calendar.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/moment/src/lib/moment/clone.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/moment/src/lib/moment/compare.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/moment/src/lib/moment/constructor.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/moment/src/lib/moment/creation-data.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/moment/src/lib/moment/diff.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/moment/src/lib/moment/format.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/moment/src/lib/moment/from.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/moment/src/lib/moment/get-set.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/moment/src/lib/moment/locale.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/moment/src/lib/moment/min-max.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/moment/src/lib/moment/moment.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/moment/src/lib/moment/now.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/moment/src/lib/moment/prototype.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/moment/src/lib/moment/start-end-of.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/moment/src/lib/moment/to-type.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/moment/src/lib/moment/to.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/moment/src/lib/moment/valid.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/moment/src/lib/parse/regex.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/moment/src/lib/parse/token.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/moment/src/lib/units/aliases.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/moment/src/lib/units/constants.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/moment/src/lib/units/day-of-month.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/moment/src/lib/units/day-of-week.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/moment/src/lib/units/day-of-year.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/moment/src/lib/units/hour.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/moment/src/lib/units/millisecond.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/moment/src/lib/units/minute.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/moment/src/lib/units/month.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/moment/src/lib/units/offset.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/moment/src/lib/units/quarter.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/moment/src/lib/units/second.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/moment/src/lib/units/timestamp.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/moment/src/lib/units/timezone.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/moment/src/lib/units/units.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/moment/src/lib/units/week-calendar-utils.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/moment/src/lib/units/week-year.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/moment/src/lib/units/week.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/moment/src/lib/units/year.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/moment/src/lib/utils/abs-ceil.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/moment/src/lib/utils/abs-floor.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/moment/src/lib/utils/abs-round.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/moment/src/lib/utils/compare-arrays.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/moment/src/lib/utils/defaults.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/moment/src/lib/utils/deprecate.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/moment/src/lib/utils/extend.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/moment/src/lib/utils/has-own-prop.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/moment/src/lib/utils/hooks.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/moment/src/lib/utils/index-of.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/moment/src/lib/utils/is-array.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/moment/src/lib/utils/is-date.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/moment/src/lib/utils/is-function.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/moment/src/lib/utils/is-object.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/moment/src/lib/utils/is-undefined.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/moment/src/lib/utils/keys.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/moment/src/lib/utils/map.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/moment/src/lib/utils/some.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/moment/src/lib/utils/to-int.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/moment/src/lib/utils/zero-fill.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/moment/src/locale/af.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/moment/src/locale/ar-ma.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/moment/src/locale/ar-sa.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/moment/src/locale/ar-tn.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/moment/src/locale/ar.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/moment/src/locale/az.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/moment/src/locale/be.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/moment/src/locale/bg.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/moment/src/locale/bn.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/moment/src/locale/bo.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/moment/src/locale/br.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/moment/src/locale/bs.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/moment/src/locale/ca.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/moment/src/locale/cs.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/moment/src/locale/cv.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/moment/src/locale/cy.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/moment/src/locale/da.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/moment/src/locale/de-at.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/moment/src/locale/de.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/moment/src/locale/dv.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/moment/src/locale/el.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/moment/src/locale/en-au.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/moment/src/locale/en-ca.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/moment/src/locale/en-gb.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/moment/src/locale/en-ie.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/moment/src/locale/en-nz.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/moment/src/locale/eo.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/moment/src/locale/es.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/moment/src/locale/et.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/moment/src/locale/eu.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/moment/src/locale/fa.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/moment/src/locale/fi.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/moment/src/locale/fo.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/moment/src/locale/fr-ca.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/moment/src/locale/fr-ch.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/moment/src/locale/fr.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/moment/src/locale/fy.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/moment/src/locale/gd.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/moment/src/locale/gl.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/moment/src/locale/he.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/moment/src/locale/hi.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/moment/src/locale/hr.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/moment/src/locale/hu.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/moment/src/locale/hy-am.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/moment/src/locale/id.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/moment/src/locale/is.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/moment/src/locale/it.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/moment/src/locale/ja.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/moment/src/locale/jv.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/moment/src/locale/ka.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/moment/src/locale/kk.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/moment/src/locale/km.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/moment/src/locale/ko.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/moment/src/locale/ky.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/moment/src/locale/lb.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/moment/src/locale/lo.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/moment/src/locale/lt.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/moment/src/locale/lv.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/moment/src/locale/me.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/moment/src/locale/mk.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/moment/src/locale/ml.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/moment/src/locale/mr.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/moment/src/locale/ms-my.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/moment/src/locale/ms.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/moment/src/locale/my.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/moment/src/locale/nb.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/moment/src/locale/ne.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/moment/src/locale/nl.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/moment/src/locale/nn.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/moment/src/locale/pa-in.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/moment/src/locale/pl.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/moment/src/locale/pt-br.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/moment/src/locale/pt.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/moment/src/locale/ro.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/moment/src/locale/ru.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/moment/src/locale/se.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/moment/src/locale/si.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/moment/src/locale/sk.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/moment/src/locale/sl.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/moment/src/locale/sq.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/moment/src/locale/sr-cyrl.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/moment/src/locale/sr.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/moment/src/locale/ss.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/moment/src/locale/sv.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/moment/src/locale/sw.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/moment/src/locale/ta.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/moment/src/locale/te.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/moment/src/locale/th.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/moment/src/locale/tl-ph.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/moment/src/locale/tlh.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/moment/src/locale/tr.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/moment/src/locale/tzl.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/moment/src/locale/tzm-latn.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/moment/src/locale/tzm.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/moment/src/locale/uk.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/moment/src/locale/uz.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/moment/src/locale/vi.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/moment/src/locale/x-pseudo.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/moment/src/locale/zh-cn.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/moment/src/locale/zh-tw.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/moment/src/moment.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/moment/templates/amd-named.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/moment/templates/amd.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/moment/templates/default.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/moment/templates/globals.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/moment/templates/locale-header.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/moment/templates/test-header.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/select2/LICENSE.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/select2/README.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/select2/dist/css/select2.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/select2/dist/css/select2.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/select2/dist/js/i18n/ar.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/select2/dist/js/i18n/az.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/select2/dist/js/i18n/bg.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/select2/dist/js/i18n/ca.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/select2/dist/js/i18n/cs.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/select2/dist/js/i18n/da.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/select2/dist/js/i18n/de.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/select2/dist/js/i18n/en.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/select2/dist/js/i18n/es.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/select2/dist/js/i18n/et.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/select2/dist/js/i18n/eu.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/select2/dist/js/i18n/fa.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/select2/dist/js/i18n/fi.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/select2/dist/js/i18n/fr.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/select2/dist/js/i18n/gl.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/select2/dist/js/i18n/he.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/select2/dist/js/i18n/hi.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/select2/dist/js/i18n/hr.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/select2/dist/js/i18n/hu.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/select2/dist/js/i18n/id.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/select2/dist/js/i18n/is.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/select2/dist/js/i18n/it.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/select2/dist/js/i18n/ja.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/select2/dist/js/i18n/ko.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/select2/dist/js/i18n/lt.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/select2/dist/js/i18n/lv.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/select2/dist/js/i18n/mk.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/select2/dist/js/i18n/ms.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/select2/dist/js/i18n/nb.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/select2/dist/js/i18n/nl.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/select2/dist/js/i18n/pl.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/select2/dist/js/i18n/pt-BR.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/select2/dist/js/i18n/pt.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/select2/dist/js/i18n/ro.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/select2/dist/js/i18n/ru.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/select2/dist/js/i18n/sk.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/select2/dist/js/i18n/sr-Cyrl.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/select2/dist/js/i18n/sr.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/select2/dist/js/i18n/sv.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/select2/dist/js/i18n/th.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/select2/dist/js/i18n/tr.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/select2/dist/js/i18n/uk.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/select2/dist/js/i18n/vi.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/select2/dist/js/i18n/zh-CN.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/select2/dist/js/i18n/zh-TW.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/select2/dist/js/select2.full.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/select2/dist/js/select2.full.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/select2/dist/js/select2.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/select2/dist/js/select2.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/select2/package.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/select2/src/js/banner.end.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/select2/src/js/banner.start.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/select2/src/js/jquery.mousewheel.shim.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/select2/src/js/jquery.select2.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/select2/src/js/jquery.shim.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/select2/src/js/select2/compat/containerCss.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/select2/src/js/select2/compat/dropdownCss.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/select2/src/js/select2/compat/initSelection.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/select2/src/js/select2/compat/inputData.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/select2/src/js/select2/compat/matcher.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/select2/src/js/select2/compat/query.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/select2/src/js/select2/compat/utils.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/select2/src/js/select2/core.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/select2/src/js/select2/data/ajax.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/select2/src/js/select2/data/array.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/select2/src/js/select2/data/base.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/select2/src/js/select2/data/maximumInputLength.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/select2/src/js/select2/data/maximumSelectionLength.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/select2/src/js/select2/data/minimumInputLength.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/select2/src/js/select2/data/select.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/select2/src/js/select2/data/tags.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/select2/src/js/select2/data/tokenizer.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/select2/src/js/select2/defaults.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/select2/src/js/select2/diacritics.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/select2/src/js/select2/dropdown.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/select2/src/js/select2/dropdown/attachBody.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/select2/src/js/select2/dropdown/attachContainer.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/select2/src/js/select2/dropdown/closeOnSelect.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/select2/src/js/select2/dropdown/hidePlaceholder.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/select2/src/js/select2/dropdown/infiniteScroll.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/select2/src/js/select2/dropdown/minimumResultsForSearch.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/select2/src/js/select2/dropdown/search.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/select2/src/js/select2/dropdown/selectOnClose.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/select2/src/js/select2/dropdown/stopPropagation.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/select2/src/js/select2/i18n/ar.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/select2/src/js/select2/i18n/az.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/select2/src/js/select2/i18n/bg.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/select2/src/js/select2/i18n/ca.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/select2/src/js/select2/i18n/cs.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/select2/src/js/select2/i18n/da.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/select2/src/js/select2/i18n/de.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/select2/src/js/select2/i18n/en.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/select2/src/js/select2/i18n/es.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/select2/src/js/select2/i18n/et.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/select2/src/js/select2/i18n/eu.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/select2/src/js/select2/i18n/fa.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/select2/src/js/select2/i18n/fi.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/select2/src/js/select2/i18n/fr.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/select2/src/js/select2/i18n/gl.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/select2/src/js/select2/i18n/he.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/select2/src/js/select2/i18n/hi.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/select2/src/js/select2/i18n/hr.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/select2/src/js/select2/i18n/hu.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/select2/src/js/select2/i18n/id.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/select2/src/js/select2/i18n/is.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/select2/src/js/select2/i18n/it.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/select2/src/js/select2/i18n/ja.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/select2/src/js/select2/i18n/ko.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/select2/src/js/select2/i18n/lt.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/select2/src/js/select2/i18n/lv.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/select2/src/js/select2/i18n/mk.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/select2/src/js/select2/i18n/ms.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/select2/src/js/select2/i18n/nb.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/select2/src/js/select2/i18n/nl.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/select2/src/js/select2/i18n/pl.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/select2/src/js/select2/i18n/pt-BR.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/select2/src/js/select2/i18n/pt.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/select2/src/js/select2/i18n/ro.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/select2/src/js/select2/i18n/ru.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/select2/src/js/select2/i18n/sk.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/select2/src/js/select2/i18n/sr-Cyrl.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/select2/src/js/select2/i18n/sr.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/select2/src/js/select2/i18n/sv.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/select2/src/js/select2/i18n/th.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/select2/src/js/select2/i18n/tr.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/select2/src/js/select2/i18n/uk.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/select2/src/js/select2/i18n/vi.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/select2/src/js/select2/i18n/zh-CN.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/select2/src/js/select2/i18n/zh-TW.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/select2/src/js/select2/keys.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/select2/src/js/select2/options.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/select2/src/js/select2/results.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/select2/src/js/select2/selection/allowClear.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/select2/src/js/select2/selection/base.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/select2/src/js/select2/selection/clickMask.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/select2/src/js/select2/selection/eventRelay.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/select2/src/js/select2/selection/multiple.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/select2/src/js/select2/selection/placeholder.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/select2/src/js/select2/selection/search.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/select2/src/js/select2/selection/single.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/select2/src/js/select2/selection/stopPropagation.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/select2/src/js/select2/translation.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/select2/src/js/select2/utils.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/select2/src/js/wrapper.end.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/select2/src/js/wrapper.start.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/select2/src/scss/_dropdown.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/select2/src/scss/_multiple.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/select2/src/scss/_single.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/select2/src/scss/core.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/select2/src/scss/mixins/_gradients.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/select2/src/scss/theme/classic/_defaults.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/select2/src/scss/theme/classic/_multiple.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/select2/src/scss/theme/classic/_single.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/select2/src/scss/theme/classic/layout.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/select2/src/scss/theme/default/_multiple.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/select2/src/scss/theme/default/_single.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/select2/src/scss/theme/default/layout.scss" />
+    <list default="true" id="f8ee0978-48cb-4707-befb-e4ce0a99b44e" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/views/commons/top.jade" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/views/welcome.jade" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/views/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/views/user/login.html" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app.js" afterPath="$PROJECT_DIR$/app.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/routes/index.js" afterPath="$PROJECT_DIR$/routes/index.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/index.jade" afterPath="$PROJECT_DIR$/views/index.jade" />
     </list>
     <ignored path="graduation-alfred-jade-blog.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -1036,11 +32,21 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="app.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="app.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="640">
-              <caret line="32" column="17" selection-start-line="32" selection-start-column="17" selection-end-line="32" selection-end-column="17" />
+            <state relative-caret-position="218">
+              <caret line="32" column="14" selection-start-line="32" selection-start-column="14" selection-end-line="32" selection-end-column="14" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="welcome.jade" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/views/welcome.jade">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="40">
+              <caret line="2" column="12" selection-start-line="2" selection-start-column="12" selection-end-line="2" selection-end-column="12" />
               <folding />
             </state>
           </provider>
@@ -1056,47 +62,24 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="weibo.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/routes/weibo.js">
+      <file leaf-file-name="top.jade" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/views/commons/top.jade">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="140">
-              <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="users.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/routes/users.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="880">
-              <caret line="44" column="0" selection-start-line="44" selection-start-column="0" selection-end-line="44" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.jade" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/views/index.jade">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="layout.jade" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/views/layout.jade">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="140">
-              <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+            <state relative-caret-position="60">
+              <caret line="3" column="20" selection-start-line="3" selection-start-column="20" selection-end-line="3" selection-end-column="20" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
     </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Jade File" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="PREVIOUS_COMMIT_AUTHORS">
@@ -1110,10 +93,14 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/app.js" />
-        <option value="$PROJECT_DIR$/views/layout.jade" />
         <option value="$PROJECT_DIR$/routes/users.js" />
+        <option value="$PROJECT_DIR$/views/commons/top.html" />
+        <option value="$PROJECT_DIR$/views/index.jade" />
+        <option value="$PROJECT_DIR$/views/layout.jade" />
         <option value="$PROJECT_DIR$/routes/index.js" />
+        <option value="$PROJECT_DIR$/views/welcome.jade" />
+        <option value="$PROJECT_DIR$/views/commons/top.jade" />
+        <option value="$PROJECT_DIR$/app.js" />
       </list>
     </option>
   </component>
@@ -1131,7 +118,7 @@
   <component name="ProjectFrameBounds">
     <option name="x" value="-8" />
     <option name="y" value="-8" />
-    <option name="width" value="1370" />
+    <option name="width" value="1382" />
     <option name="height" value="744" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
@@ -1141,7 +128,7 @@
     <OptionsSetting value="true" id="Update" />
     <OptionsSetting value="true" id="Status" />
     <OptionsSetting value="true" id="Edit" />
-    <ConfirmationsSetting value="0" id="Add" />
+    <ConfirmationsSetting value="2" id="Add" />
     <ConfirmationsSetting value="0" id="Remove" />
   </component>
   <component name="ProjectView">
@@ -1201,6 +188,42 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="user" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="graduation-alfred-jade-blog" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="graduation-alfred-jade-blog" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="commons" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="graduation-alfred-jade-blog" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="graduation-alfred-jade-blog" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="routes" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -1237,6 +260,60 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="graduation-alfred-jade-blog" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="graduation-alfred-jade-blog" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="node_modules" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="graduation-alfred-jade-blog" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="graduation-alfred-jade-blog" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="node_modules" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="gentelella" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="graduation-alfred-jade-blog" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="graduation-alfred-jade-blog" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="node_modules" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="gentelella" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="vendors" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
       <pane id="Scope" />
@@ -1255,10 +332,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="H:\ws\node_instance\graduation-alfred-jade-blog\views" />
+      <recent name="H:\ws\node_instance\graduation-alfred-jade-blog\views\commons" />
       <recent name="H:\ws\node_instance\graduation-alfred-jade-blog\routes" />
       <recent name="H:\ws\node_instance\graduation-alfred-jade-blog\public\stylesheets" />
       <recent name="H:\ws\node_instance\graduation-alfred-jade-blog\public\javascripts" />
-      <recent name="H:\ws\node_instance\graduation-alfred-jade-blog\public\images" />
     </key>
   </component>
   <component name="RunManager" selected="Node.js.bin\www">
@@ -1332,7 +410,7 @@
       <workItem from="1487667414934" duration="412000" />
       <workItem from="1487667931173" duration="2165000" />
       <workItem from="1487742643174" duration="5968000" />
-      <workItem from="1487753142687" duration="1751000" />
+      <workItem from="1487753142687" duration="9326000" />
     </task>
     <task id="LOCAL-00001" summary="At version 1.0.1, make below changes:&#10;1.install package by npm:&#10;npm install gentelella --save&#10;npm install -g gulp&#10;2.change pug.cmd to jade.cmd&#10;3.design view&#10;">
       <created>1487753433561</created>
@@ -1362,35 +440,51 @@
       <option name="project" value="LOCAL" />
       <updated>1487754777821</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="gentella-vendors-3">
+      <created>1487755357719</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1487755357719</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="10296000" />
+    <option name="totallyTimeSpent" value="17871000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1370" height="744" extended-state="0" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24961832" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295082" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295082" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289689" sideWeight="0.5030349" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.41639343" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.39836067" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32786885" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Mongo Explorer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289689" sideWeight="0.4969651" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32786885" sideWeight="0.4969651" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2473525" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39836067" sideWeight="0.4969651" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3289689" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39934534" sideWeight="0.4969651" order="3" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -1427,7 +521,8 @@
     <MESSAGE value="gentella-doc,porduct" />
     <MESSAGE value="gentella-vendors-1" />
     <MESSAGE value="gentella-vendors-2" />
-    <option name="LAST_COMMIT_MESSAGE" value="gentella-vendors-2" />
+    <MESSAGE value="gentella-vendors-3" />
+    <option name="LAST_COMMIT_MESSAGE" value="gentella-vendors-3" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -1574,33 +669,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/views/error.jade">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="80">
-          <caret line="4" column="18" selection-start-line="4" selection-start-column="18" selection-end-line="4" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/layout.jade">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="140">
-          <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="640">
-          <caret line="32" column="17" selection-start-line="32" selection-start-column="17" selection-end-line="32" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/routes/users.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="880">
-          <caret line="44" column="0" selection-start-line="44" selection-start-column="0" selection-end-line="44" selection-end-column="0" />
+        <state relative-caret-position="100">
+          <caret line="5" column="3" selection-start-line="5" selection-start-column="3" selection-end-line="5" selection-end-column="3" />
           <folding />
         </state>
       </provider>
@@ -1613,10 +685,42 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/routes/index.js">
+    <entry file="file://$PROJECT_DIR$/views/commons/top.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+        <state relative-caret-position="220">
+          <caret line="11" column="36" selection-start-line="11" selection-start-column="35" selection-end-line="11" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="140">
+          <caret line="10" column="7" selection-start-line="10" selection-start-column="7" selection-end-line="10" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/jade/lib/parser.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1027">
+          <caret line="253" column="14" selection-start-line="253" selection-start-column="14" selection-end-line="253" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/commons/top_copy.jade">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="40">
+          <caret line="2" column="22" selection-start-line="2" selection-start-column="22" selection-end-line="2" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/error.jade">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="80">
+          <caret line="4" column="15" selection-start-line="4" selection-start-column="15" selection-end-line="4" selection-end-column="15" />
           <folding />
         </state>
       </provider>
@@ -1625,6 +729,46 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
           <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/layout.jade">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="80">
+          <caret line="4" column="45" selection-start-line="4" selection-start-column="45" selection-end-line="4" selection-end-column="45" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/commons/top.jade">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="3" column="20" selection-start-line="3" selection-start-column="20" selection-end-line="3" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/routes/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/welcome.jade">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="40">
+          <caret line="2" column="12" selection-start-line="2" selection-start-column="12" selection-end-line="2" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="218">
+          <caret line="32" column="14" selection-start-line="32" selection-start-column="14" selection-end-line="32" selection-end-column="14" />
           <folding />
         </state>
       </provider>
