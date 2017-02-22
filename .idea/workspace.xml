@@ -2,54 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f8ee0978-48cb-4707-befb-e4ce0a99b44e" name="Default" comment="gentella-doc,porduct">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/documentation/fonts/fonts/FontAwesome.otf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/documentation/fonts/fonts/fontawesome-webfont.eot" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/documentation/fonts/fonts/fontawesome-webfont.ttf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/documentation/fonts/fonts/fontawesome-webfont.woff" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/documentation/fonts/glyphicons-halflings-regular.eot" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/documentation/fonts/glyphicons-halflings-regular.ttf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/documentation/fonts/glyphicons-halflings-regular.woff" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/documentation/fonts/glyphicons-halflings-regular.woff2" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/documentation/images/layout.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/documentation/images/min_menu.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/documentation/images/min_menu.tiff" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/documentation/images/welcome.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/documentation/images/welcome.tiff" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/production/images/1.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/production/images/4.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/production/images/american-express.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/production/images/back_disabled.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/production/images/back_enabled.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/production/images/back_enabled_hover.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/production/images/bootstrap-colorpicker/alpha-horizontal.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/production/images/bootstrap-colorpicker/alpha.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/production/images/bootstrap-colorpicker/hue-horizontal.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/production/images/bootstrap-colorpicker/hue.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/production/images/bootstrap-colorpicker/saturation.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/production/images/data.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/production/images/favicon.ico" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/production/images/forward_disabled.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/production/images/forward_enabled.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/production/images/forward_enabled_hover.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/production/images/icons.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/production/images/img.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/production/images/loading.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/production/images/mastercard.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/production/images/paypal2.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/production/images/picture-2.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/production/images/picture.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/production/images/picture2.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/production/images/prod1.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/production/images/prod2.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/production/images/prod3.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/production/images/prod4.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/production/images/prod5.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/production/images/sprite-skin-flat.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/production/images/sprite-skin-modern.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/production/images/sprite-skin-nice.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/production/images/sprite-skin-simple.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/production/images/user.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/production/images/visa.png" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/Flot/examples/background.png" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/Flot/examples/image/hs-2004-27-a-large-web.jpg" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/Flot/examples/navigate/arrow-down.gif" />
@@ -187,100 +139,6 @@
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/parsleyjs/bower_components/bootstrap/dist/fonts/glyphicons-halflings-regular.eot" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/parsleyjs/bower_components/bootstrap/dist/fonts/glyphicons-halflings-regular.ttf" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/parsleyjs/bower_components/bootstrap/dist/fonts/glyphicons-halflings-regular.woff" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/documentation/css/animate.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/documentation/css/bootstrap.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/documentation/css/docs.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/documentation/css/shCoreDefault.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/documentation/fonts/css/font-awesome.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/documentation/fonts/css/font-awesome.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/documentation/fonts/fonts/fontawesome-webfont.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/documentation/fonts/glyphicons-halflings-regular.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/documentation/fonts/less/bordered-pulled.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/documentation/fonts/less/core.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/documentation/fonts/less/fixed-width.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/documentation/fonts/less/font-awesome.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/documentation/fonts/less/icons.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/documentation/fonts/less/larger.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/documentation/fonts/less/list.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/documentation/fonts/less/mixins.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/documentation/fonts/less/path.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/documentation/fonts/less/rotated-flipped.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/documentation/fonts/less/spinning.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/documentation/fonts/less/stacked.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/documentation/fonts/less/variables.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/documentation/fonts/scss/_bordered-pulled.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/documentation/fonts/scss/_core.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/documentation/fonts/scss/_fixed-width.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/documentation/fonts/scss/_icons.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/documentation/fonts/scss/_larger.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/documentation/fonts/scss/_list.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/documentation/fonts/scss/_mixins.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/documentation/fonts/scss/_path.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/documentation/fonts/scss/_rotated-flipped.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/documentation/fonts/scss/_spinning.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/documentation/fonts/scss/_stacked.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/documentation/fonts/scss/_variables.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/documentation/fonts/scss/font-awesome.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/documentation/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/documentation/index_cn.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/documentation/js/bootstrap.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/documentation/js/jquery.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/documentation/js/shBrushXml.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/documentation/js/shCore.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/production/calendar.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/production/chartjs.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/production/chartjs2.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/production/contacts.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/production/css/maps/jquery-jvectormap-2.0.3.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/production/e_commerce.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/production/echarts.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/production/fixed_footer.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/production/fixed_sidebar.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/production/form.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/production/form_advanced.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/production/form_buttons.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/production/form_upload.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/production/form_validation.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/production/form_wizards.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/production/general_elements.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/production/glyphicons.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/production/icons.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/production/inbox.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/production/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/production/index2.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/production/index3.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/production/invoice.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/production/js/datepicker/daterangepicker.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/production/js/flot/curvedLines.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/production/js/flot/date.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/production/js/flot/jquery.flot.orderBars.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/production/js/flot/jquery.flot.spline.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/production/js/maps/gdp-data.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/production/js/maps/jquery-jvectormap-2.0.3.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/production/js/maps/jquery-jvectormap-us-aea-en.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/production/js/maps/jquery-jvectormap-world-mill-en.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/production/js/maps/us-unemployment.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/production/js/moment/moment.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/production/less/custom.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/production/level2.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/production/login.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/production/map.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/production/media_gallery.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/production/morisjs.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/production/other_charts.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/production/page_403.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/production/page_404.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/production/page_500.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/production/plain_page.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/production/pricing_tables.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/production/profile.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/production/project_detail.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/production/projects.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/production/tables.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/production/tables_dynamic.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/production/typography.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/production/widgets.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/production/xx.html" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/Chart.js/.bower.json" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/Chart.js/.codeclimate.yml" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/gentelella/vendors/Chart.js/.eslintignore" />
@@ -3358,7 +3216,7 @@
       <workItem from="1487667414934" duration="412000" />
       <workItem from="1487667931173" duration="2165000" />
       <workItem from="1487742643174" duration="5968000" />
-      <workItem from="1487753142687" duration="769000" />
+      <workItem from="1487753142687" duration="899000" />
     </task>
     <task id="LOCAL-00001" summary="At version 1.0.1, make below changes:&#10;1.install package by npm:&#10;npm install gentelella --save&#10;npm install -g gulp&#10;2.change pug.cmd to jade.cmd&#10;3.design view&#10;">
       <created>1487753433561</created>
@@ -3367,11 +3225,18 @@
       <option name="project" value="LOCAL" />
       <updated>1487753433561</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="gentella-doc,porduct">
+      <created>1487754033241</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1487754033241</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="9314000" />
+    <option name="totallyTimeSpent" value="9444000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1370" height="744" extended-state="0" />
@@ -3379,10 +3244,10 @@
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24961832" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3295082" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295082" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289689" sideWeight="0.5030349" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295082" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3295082" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Mongo Explorer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289689" sideWeight="0.4969651" order="7" side_tool="false" content_ui="tabs" />
