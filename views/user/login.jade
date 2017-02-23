@@ -6,9 +6,9 @@ extends ../commons/layout
 block content
 
     //alertPopover弹出框
-    #alertPopover.bs-example-popovers
+    #alertPopover.bs-example-popovers(style='display:none;')
         .alert.alert-danger.alert-dismissible.fade.in(role='alert')
-            button.close(type='button', data-dismiss='alert', aria-label='Close')
+            button.close(type='button', aria-label='Close', id='btn_alert')
                 span(aria-hidden='true') ×
             center(id='message')
 

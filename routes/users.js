@@ -17,6 +17,7 @@ var user = require('./controllers/user_controller');
 router.get('/u/:user', user.user);
 /**
  * 跳转到注册页面
+ * 暂时不用
  */
 router.get('/toReg', user.toReg);
 /**

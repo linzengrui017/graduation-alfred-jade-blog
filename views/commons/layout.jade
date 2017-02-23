@@ -6,6 +6,32 @@ html
         title= title
         include top
 
-        body(style='background:#FFFFFF;padding-top:0px;padding-bottom:70px;')
+    body(style='background:#FFFFFF;padding-top:0px;padding-bottom:70px;margin: 0 150px;')
 
-            block content
+        .index-top
+            .bs-example
+                nav.navbar(style='/*background:#34495E;*/')
+                    .container-fluid
+                        .navbar-header
+                            a.navbar-brand(href='#' )
+                                i.fa.fa-weibo
+                                    |  微博
+                        #bs-example-navbar-collapse-9.collapse.navbar-collapse
+                            ul.nav.navbar-nav
+                                li
+                                    a(href='/') 首页
+                                li
+                                    a(href='/add') 写微博
+                                li
+                                    a(href='/list') 列表
+                                li
+                                    a(href='/user/<%= user._id%>')
+                                li
+                                    a(href='/logout') 退出
+                                li
+                                    a(href='/toLogin') 登录
+                                li
+                                    a(href='/toLogin#signup') 注册
+
+
+        block content

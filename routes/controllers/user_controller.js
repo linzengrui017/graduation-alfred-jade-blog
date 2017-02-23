@@ -15,7 +15,7 @@ exports.user = function (req, res) {
  * 跳转到注册页面
  */
 exports.toReg = function (req, res) {
-
+    res.render('user/register', { title: 'Reg' });
 };
 
 /**
