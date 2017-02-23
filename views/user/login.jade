@@ -1,61 +1,81 @@
 //
    Created by lzr on 2017/2/22.
 
-extends ../commons/top
+extends ../commons/layout
 
 block content
 
-    .login
-      a#signup.hiddenanchor
-      a#signin.hiddenanchor
-      .login_wrapper
-        .animate.form.login_form
-          section.login_content
-            form
-              h1 Login Form
-              div
-                input.form-control(type='text', placeholder='Username', required='')
-              div
-                input.form-control(type='password', placeholder='Password', required='')
-              div
-                a.btn.btn-default.submit(href='index.html') Log in
-                a.reset_pass(href='#') Lost your password?
-              .clearfix
-              .separator
-                p.change_link
-                  | New to site?
-                  a.to_register(href='#signup')  Create Account
-                .clearfix
-                br
-                div
-                  h1
-                    i.fa.fa-paw
-                    |  Gentelella Alela!
-                  p
-                    | ©2016 All Rights Reserved. Gentelella Alela! is a Bootstrap 3 template. Privacy and Terms
-        #register.animate.form.registration_form
-          section.login_content
-            form
-              h1 Create Account
-              div
-                input.form-control(type='text', placeholder='Username', required='')
-              div
-                input.form-control(type='email', placeholder='Email', required='')
-              div
-                input.form-control(type='password', placeholder='Password', required='')
-              div
-                a.btn.btn-default.submit(href='index.html') Submit
-              .clearfix
-              .separator
-                p.change_link
-                  | Already a member ?
-                  a.to_register(href='#signin')  Log in
-                .clearfix
-                br
-                div
-                  h1
-                    i.fa.fa-paw
-                    |  Gentelella Alela!
-                  p
-                    | ©2016 All Rights Reserved. Gentelella Alela! is a Bootstrap 3 template. Privacy and Terms
+    //alertPopover弹出框
+    #alertPopover.bs-example-popovers
+        .alert.alert-danger.alert-dismissible.fade.in(role='alert')
+            button.close(type='button', data-dismiss='alert', aria-label='Close')
+                span(aria-hidden='true') ×
+            center(id='message')
 
+
+
+    //login form
+
+    .login
+        a#signup.hiddenanchor
+        a#signin.hiddenanchor
+        .login_wrapper
+            .animate.form.login_form(id='login_form')
+                section.login_content
+                    form
+                        h1 用户登录
+                        div
+                            input.form-control(type='text', id='login_username', name='username', placeholder='账号', required='required')
+                        div
+                            input.form-control(type='password', id='login_password', name='password', placeholder='密码', required='required')
+                        div
+                            a.btn.btn-default.submit(id='btn_login', href='/login') 登录
+                            a.reset_pass(href='#') 忘记密码?
+                        .clearfix
+                        .separator
+                            p.change_link
+                                | 没有账号?
+                                a.to_register(href='#signup')  注册
+                            .clearfix
+                            br
+                            div
+
+                                p
+                                    | ©2017 All Rights Reserved.
+                                br
+                                p
+                                    | design by linzengrui
+
+            #register.animate.form.registration_form
+                section.login_content
+                    form
+                        h1 用户注册
+                        div
+                            input.form-control(type='text', id='reg_username', name='username', placeholder='账号', required='required')
+
+                        div
+                            input.form-control(type='password', id='reg_pwd1', name='password', placeholder='密码', required='required')
+                        div
+                            input.form-control(type='password', id='reg_pwd2', name='password2', placeholder='再输入一次密码', required='required')
+                        div
+                            a.btn.btn-default.submit(id='btn_reg', href='/reg') 注册
+                        .clearfix
+                        .separator
+                            p.change_link
+                                | 已经有账号 ?
+                                a.to_register(href='#signin')  登录
+                            .clearfix
+                            br
+                            div
+                                p
+                                    | ©2017 All Rights Reserved.
+                                br
+                                p
+                                    | design by linzengrui
+
+
+
+    include ../commons/bottom
+
+    // Login And Register Validate Scripts
+    script(src='/public/javascripts/user/login.js')
