@@ -8,7 +8,7 @@
  * 跳转到用户的个人主页
  */
 exports.user = function (req, res) {
-
+    res.render('user/profile', { title: 'Profile' });
 };
 
 /**
