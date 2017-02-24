@@ -1,0 +1,28 @@
+//
+   Created by lzr on 2017/2/22.
+doctype html
+html
+    head
+        title= title
+        include top
+
+    body(style='background:#FFFFFF;padding-top:0px;padding-bottom:70px;margin: 0 150px;')
+
+        .index-top
+            .bs-example
+                nav.navbar(style='/*background:#34495E;*/')
+                    .container-fluid
+                        .navbar-header
+                            a.navbar-brand(href='#' )
+                                i.fa.fa-weibo
+                                    |  微博
+                        #bs-example-navbar-collapse-9.collapse.navbar-collapse
+                            ul.nav.navbar-nav
+                                li
+                                    a(href='/') 首页
+                                li
+                                    a(href='/admin_toLogin') 登录
+
+
+
+        block content

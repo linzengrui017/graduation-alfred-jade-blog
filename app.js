@@ -12,6 +12,7 @@ var users = require('./routes/users');
  * 声明命名空间
  */
 var weibo = require('./routes/weibo');
+var admin = require('./backend/routes/admin');
 /**
  *
  */
@@ -45,6 +46,7 @@ app.use('/', users);
  * 使用指定的命名空间
  */
 app.use('/', weibo);
+app.use('/', admin);
 /**
  *
  */

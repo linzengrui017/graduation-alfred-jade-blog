@@ -1,0 +1,40 @@
+//
+   Created by lzr on 2017/2/22.
+
+extends ../commons/layout
+
+block content
+
+    .x_panel
+        .x_title
+            h2
+                | 管理员登录
+            .clearfix
+        .x_content
+            br
+            form#demo-form2.form-horizontal.form-label-left(data-parsley-validate='', novalidate='')
+                .form-group
+                    label.control-label.col-md-3.col-sm-3.col-xs-12(for='username')
+                        | 账号
+                        span.required *
+                    .col-md-6.col-sm-6.col-xs-12
+                        input#username.form-control.col-md-7.col-xs-12(type='text', name='username',required)
+                .form-group
+                    label.control-label.col-md-3.col-sm-3.col-xs-12(for='password')
+                        | 密码
+                        span.required *
+                    .col-md-6.col-sm-6.col-xs-12
+                        input#password.form-control.col-md-7.col-xs-12(type='password', name='password', required)
+
+                //.ln_solid
+                .form-group
+                    .col-md-6.col-sm-6.col-xs-12.col-md-offset-3
+                        //button.btn.btn-primary(type='button') Cancel
+                        button.btn.btn-primary(type='reset') 重置
+                        button.btn.btn-success(type='submit') 提交
+
+
+
+
+    include ../commons/bottom
+

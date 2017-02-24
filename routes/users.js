@@ -35,7 +35,7 @@ router.post('/login', user.login);
 /**
  * 注销功能
  */
-router.post('/logout', user.logout);
+router.get('/logout', user.logout);
 /**
  * 加关注功能
  */

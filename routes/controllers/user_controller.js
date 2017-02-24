@@ -43,7 +43,7 @@ exports.login = function (req, res) {
  * 注销功能
  */
 exports.logout = function (req, res) {
-
+    res.render('index/welcome', { title: 'Blog' });
 };
 
 /**
