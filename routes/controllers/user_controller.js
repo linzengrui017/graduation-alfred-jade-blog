@@ -46,3 +46,16 @@ exports.logout = function (req, res) {
 
 };
 
+/**
+ * 加关注功能
+ */
+exports.follow = function (req, res) {
+
+};
+
+/**
+ * 解除关注功能
+ */
+exports.unfollow = function (req, res) {
+
+};

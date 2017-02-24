@@ -1,0 +1,63 @@
+//
+   Created by lzr on 2017/2/24.
+
+extends ../commons/layout
+
+block content
+
+    //评论
+
+    div
+        h4 Recent Activity
+        // end of user messages
+        ul.messages
+            li
+                img.avatar(src='/node_modules/gentelella/production/images/img.jpg', alt='Avatar')
+                .message_date
+                    h3.date.text-info 24
+                    p.month May
+                .message_wrapper
+                    h4.heading Desmond Davison
+                    blockquote.message
+                        | Raw denim you probably haven't heard of them jean shorts Austin. Nesciunt tofu stumptown aliqua butcher retro keffiyeh dreamcatcher synth.
+                    br
+                    p.url
+                        span.fs1.text-info(aria-hidden='true', data-icon='')
+                        a(href='#')
+                            i.fa.fa-paperclip
+                            |  User Acceptance Test.doc
+            li
+                img.avatar(src='/node_modules/gentelella/production/images/img.jpg', alt='Avatar')
+                .message_date
+                    h3.date.text-error 21
+                    p.month May
+                .message_wrapper
+                    h4.heading Brian Michaels
+                    blockquote.message
+                        | Raw denim you probably haven't heard of them jean shorts Austin. Nesciunt tofu stumptown aliqua butcher retro keffiyeh dreamcatcher synth.
+                    br
+                    p.url
+                        span.fs1(aria-hidden='true', data-icon='')
+                        a(href='#', data-original-title='') Download
+            li
+                img.avatar(src='/node_modules/gentelella/production/images/img.jpg', alt='Avatar')
+                .message_date
+                    h3.date.text-info 24
+                    p.month May
+                .message_wrapper
+                    h4.heading Desmond Davison
+                    blockquote.message
+                        | Raw denim you probably haven't heard of them jean shorts Austin. Nesciunt tofu stumptown aliqua butcher retro keffiyeh dreamcatcher synth.
+                    br
+                    p.url
+                        span.fs1.text-info(aria-hidden='true', data-icon='')
+                        a(href='#')
+                            i.fa.fa-paperclip
+                            |  User Acceptance Test.doc
+        // end of user messages
+
+
+
+
+
+    include ../commons/bottom

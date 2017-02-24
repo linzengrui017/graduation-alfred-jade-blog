@@ -36,7 +36,14 @@ router.post('/login', user.login);
  * 注销功能
  */
 router.post('/logout', user.logout);
-
+/**
+ * 加关注功能
+ */
+router.post('/follow', user.follow);
+/**
+ * 解除关注功能
+ */
+router.post('/unfollow', user.unfollow);
 
 
 
