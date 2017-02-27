@@ -8,7 +8,7 @@
  * 跳转到写微博页面
  */
 exports.toAddPage = function (req, res) {
-    res.render('weibo/write', { title: 'Write' });
+    res.render('weibo/pubBlog', { title: 'pubBlog' });
 };
 
 /**
@@ -50,7 +50,7 @@ exports.showDetailBlog = function (req, res) {
  * 跳转到评论微博页面
  */
 exports.toCommentBlogPage = function (req, res) {
-    res.render('weibo/comment', { title: 'Write' });
+    res.render('weibo/comment', { title: 'comment' });
 };
 
 /**

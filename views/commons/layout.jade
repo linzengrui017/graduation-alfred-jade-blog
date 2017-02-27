@@ -6,6 +6,8 @@ html
         title= title
         include top
 
+        block head
+
     body(style='background:#FFFFFF;padding-top:0px;padding-bottom:70px;margin: 0 150px;')
 
         .index-top
@@ -27,7 +29,7 @@ html
                                 li
                                     a(href='/list') 列表
                                 li
-                                    a(href='/u/:user') 个人中心
+                                    a(href='/profile') 个人中心
                                 li
                                     a(href='/logout') 退出
                                 li
@@ -37,3 +39,7 @@ html
 
 
         block content
+
+        include bottom
+
+        block scripts

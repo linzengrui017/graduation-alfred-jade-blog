@@ -14,7 +14,7 @@ var user = require('./controllers/user_controller');
 /**
  * 跳转到用户的个人主页
  */
-router.get('/u/:user', user.user);
+router.get('/profile', user.user);
 /**
  * 跳转到注册页面
  * 暂时不用

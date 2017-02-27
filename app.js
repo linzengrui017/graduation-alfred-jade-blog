@@ -69,33 +69,5 @@ app.use(function(err, req, res, next) {
   res.render('error');
 });
 
-/**
- * 路由规划
- *
- *
- * var index = require('./routes/index');
- * var users = require('./routes/users');
- *
- * app.use('/', index);
- * app.use('/users', users);
- * 默认已经有两个路由：/ 和 /user
- */
-
-/**
- * user
- * 用户操作
- * app.use('/users', users);
- */
-
-
-/**
- * weibo
- * 微博操作
- * app.use('/weibo', weibo);
- */
-
-/**
- *
- */
 
 module.exports = app;

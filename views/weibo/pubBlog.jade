@@ -1,10 +1,33 @@
+//
+   Created by lzr on 2017/2/27.
 
 extends ../commons/layout
+
+block head
 
 block content
 
     .x_panel
-        .clearfix
+        .x_title
+            h2
+                | Text areas
+                small Sessions
+            ul.nav.navbar-right.panel_toolbox
+                li
+                    a.collapse-link
+                        i.fa.fa-chevron-up
+                li.dropdown
+                    a.dropdown-toggle(href='#', data-toggle='dropdown', role='button', aria-expanded='false')
+                        i.fa.fa-wrench
+                    ul.dropdown-menu(role='menu')
+                        li
+                            a(href='#') Settings 1
+                        li
+                            a(href='#') Settings 2
+                li
+                    a.close-link
+                        i.fa.fa-close
+            .clearfix
         .x_content
             #alerts
             .btn-toolbar.editor(data-role='editor-toolbar', data-target='#editor-one')
@@ -73,6 +96,12 @@ block content
                         i.fa.fa-repeat
             #editor-one.editor-wrapper.placeholderText(contenteditable='true')
             textarea#descr(name='descr', style='display:none;')
+            br
+            .ln_solid
+            .form-group
+                label.control-label.col-md-3.col-sm-3.col-xs-12 Resizable Text area
+                .col-md-9.col-sm-9.col-xs-12
+                    textarea.resizable_textarea.form-control(placeholder='This text area automatically resizes its height as you fill in more text courtesy of autosize-master it out...')
 
 
-    include ../commons/bottom
+block scripts
