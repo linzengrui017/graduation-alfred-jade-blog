@@ -3,26 +3,119 @@
 doctype html
 html
     head
+        meta(http-equiv='Content-Type', content='text/html; charset=UTF-8')
+        // Meta, title, CSS, favicons, etc.
+        meta(charset='utf-8')
+        meta(http-equiv='X-UA-Compatible', content='IE=edge')
+        meta(name='viewport', content='width=device-width, initial-scale=1')
+
         title= title
+
         include top
 
-    body(style='background:#FFFFFF;padding-top:0px;padding-bottom:70px;margin: 0 150px;')
+        block head
 
-        .index-top
-            .bs-example
-                nav.navbar(style='/*background:#34495E;*/')
-                    .container-fluid
-                        .navbar-header
-                            a.navbar-brand(href='#' )
+    body.nav-md
+        .container.body
+            .main_container
+                .col-md-3.left_col
+                    .left_col.scroll-view
+                        .navbar.nav_title(style='border: 0;')
+                            a.site_title(href='index.html')
                                 i.fa.fa-weibo
-                                    |  微博
-                        #bs-example-navbar-collapse-9.collapse.navbar-collapse
-                            ul.nav.navbar-nav
+                                span 微博后台管理系统
+                        .clearfix
+                        // menu profile quick info
+                        .profile.clearfix
+                            .profile_pic
+                                img.img-circle.profile_img(src='images/img.jpg', alt='...')
+                            .profile_info
+                                span 欢迎你,
+                                h2 John Doe
+                        // /menu profile quick info
+                        br
+                        // sidebar menu
+                        #sidebar-menu.main_menu_side.hidden-print.main_menu
+                            .menu_section
+                                ul.nav.side-menu
+                                    li
+                                        a
+                                            i.fa.fa-home
+                                            |  主页
+                                            span.fa.fa-chevron-down
+                                        ul.nav.child_menu
+                                            li
+                                                a(href='index.html') Dashboard
+                                    li
+                                        a
+                                            i.fa.fa-users
+                                            |  用户管理
+                                            span.fa.fa-chevron-down
+                                        ul.nav.child_menu
+                                            li
+                                                a(href='form.html') 用户列表
+                                            li
+                                                a(href='form.html') 用户权限
+
+                                    li
+                                        a
+                                            i.fa.fa-comments
+                                            |  微博管理
+                                            span.fa.fa-chevron-down
+                                        ul.nav.child_menu
+                                            li
+                                                a(href='general_elements.html') 微博列表
+                                            li
+                                                a(href='media_gallery.html') 非法微博
+
+                                    li
+                                        a
+                                            i.fa.fa-bar-chart-o
+                                            |  数据统计
+                                            span.fa.fa-chevron-down
+                                        ul.nav.child_menu
+                                            li
+                                                a(href='chartjs.html') 用户活跃度
+                                            li
+                                                a(href='chartjs.html') 热门微博
+
+                        // /sidebar menu
+                // top navigation
+                .top_nav
+                    .nav_menu
+                        nav
+                            .nav.toggle
+                                a#menu_toggle
+                                    i.fa.fa-bars
+                            ul.nav.navbar-nav.navbar-right
                                 li
-                                    a(href='/') 首页
-                                li
-                                    a(href='/admin_toLogin') 登录
+                                    a.user-profile.dropdown-toggle(href='javascript:;', data-toggle='dropdown', aria-expanded='false')
+                                        img(src='images/img.jpg', alt='')
+                                        | John Doe
+                                        span.fa.fa-angle-down
+                                    ul.dropdown-menu.dropdown-usermenu.pull-right
+                                        li
+                                            a(href='javascript:;')  个人中心
+                                        li
+                                            a(href='login.html') 退出
+
+                // /top navigation
+                // page content
+                .right_col(role='main')
+                    div
+
+                        block content
+
+
+                // /page content
 
 
 
-        block content
+
+
+
+
+
+        include bottom
+
+        block scripts
