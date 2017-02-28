@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f8ee0978-48cb-4707-befb-e4ce0a99b44e" name="Default" comment="" />
+    <list default="true" id="f8ee0978-48cb-4707-befb-e4ce0a99b44e" name="Default" comment="use static files in &quot;public&quot; directory" />
     <list id="15ecb96e-25c8-481c-9025-041267ad8138" name="unversion" comment="">
       <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/gentelella/.bowerrc" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/gentelella/.npmignore" afterPath="" />
@@ -3092,8 +3092,8 @@
       <file leaf-file-name="top.jade" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/views/commons/top.jade">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="280">
-              <caret line="17" column="22" selection-start-line="17" selection-start-column="22" selection-end-line="17" selection-end-column="22" />
+            <state relative-caret-position="360">
+              <caret line="21" column="10" selection-start-line="21" selection-start-column="10" selection-end-line="21" selection-end-column="10" />
               <folding />
             </state>
           </provider>
@@ -3544,7 +3544,7 @@
       <workItem from="1488161859029" duration="4787000" />
       <workItem from="1488178737819" duration="10076000" />
       <workItem from="1488246485350" duration="5728000" />
-      <workItem from="1488266953988" duration="4556000" />
+      <workItem from="1488266953988" duration="4649000" />
     </task>
     <task id="LOCAL-00001" summary="At version 1.0.1, make below changes:&#10;1.install package by npm:&#10;npm install gentelella --save&#10;npm install -g gulp&#10;2.change pug.cmd to jade.cmd&#10;3.design view&#10;">
       <created>1487753433561</created>
@@ -3658,11 +3658,18 @@
       <option name="project" value="LOCAL" />
       <updated>1488272119256</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="npm uninstall gentelella">
+      <created>1488272229524</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1488272229524</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="128577000" />
+    <option name="totallyTimeSpent" value="128670000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -3744,7 +3751,8 @@
     <MESSAGE value="font: layout" />
     <MESSAGE value="refresh gentelella" />
     <MESSAGE value="use static files in &quot;public&quot; directory" />
-    <option name="LAST_COMMIT_MESSAGE" value="use static files in &quot;public&quot; directory" />
+    <MESSAGE value="npm uninstall gentelella" />
+    <option name="LAST_COMMIT_MESSAGE" value="npm uninstall gentelella" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -4019,8 +4027,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/views/commons/top.jade">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="280">
-          <caret line="17" column="22" selection-start-line="17" selection-start-column="22" selection-end-line="17" selection-end-column="22" />
+        <state relative-caret-position="360">
+          <caret line="21" column="10" selection-start-line="21" selection-start-column="10" selection-end-line="21" selection-end-column="10" />
           <folding />
         </state>
       </provider>
