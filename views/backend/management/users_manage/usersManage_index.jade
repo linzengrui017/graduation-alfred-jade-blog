@@ -1,0 +1,153 @@
+extends ../../commons/layout
+
+block head
+    // Datatables
+    link(href='stylesheets/dataTables/dataTables.bootstrap.min.css', rel='stylesheet')
+    //link(href='stylesheets/dataTables/buttons.bootstrap.min.css', rel='stylesheet')
+    //link(href='stylesheets/dataTables/fixedHeader.bootstrap.min.css', rel='stylesheet')
+    //link(href='stylesheets/dataTables/responsive.bootstrap.min.css', rel='stylesheet')
+    //link(href='stylesheets/dataTables/scroller.bootstrap.min.css', rel='stylesheet')
+
+
+block content
+
+    .row
+        .col-md-12.col-sm-12.col-xs-12
+            .x_panel
+                .x_title
+                    h2
+                        | 用户列表
+                    .clearfix
+                .x_content
+                    #datatable_wrapper.dataTables_wrapper.form-inline.dt-bootstrap.no-footer
+
+                        .row
+                            .col-sm-12
+                                table#datatable.table.table-striped.table-bordered.dataTable.no-footer(role='grid', aria-describedby='datatable_info')
+                                    thead
+                                        tr(role='row')
+                                            th.sorting(tabindex='0', aria-controls='datatable', rowspan='1', colspan='1', aria-label='Name: activate to sort column ascending', style='width: 160px;') Name
+                                            th.sorting(tabindex='0', aria-controls='datatable', rowspan='1', colspan='1', aria-label='Position: activate to sort column ascending', style='width: 261px;') Position
+                                            th.sorting_desc(tabindex='0', aria-controls='datatable', rowspan='1', colspan='1', aria-label='Office: activate to sort column ascending', aria-sort='descending', style='width: 118px;') Office
+                                            th.sorting(tabindex='0', aria-controls='datatable', rowspan='1', colspan='1', aria-label='Age: activate to sort column ascending', style='width: 59px;') Age
+                                            th.sorting(tabindex='0', aria-controls='datatable', rowspan='1', colspan='1', aria-label='Start date: activate to sort column ascending', style='width: 113px;') Start date
+                                            th.sorting(tabindex='0', aria-controls='datatable', rowspan='1', colspan='1', aria-label='Salary: activate to sort column ascending', style='width: 87px;') Salary
+                                    tbody
+                                        tr.odd(role='row')
+                                            td Sakura Yamamoto
+                                            td Support Engineer
+                                            td.sorting_1 Tokyo
+                                            td 37
+                                            td 2009/08/19
+                                            td $139,575
+                                        tr.even(role='row')
+                                            td Shou Itou
+                                            td Regional Marketing
+                                            td.sorting_1 Tokyo
+                                            td 20
+                                            td 2011/08/14
+                                            td $163,000
+                                        tr.odd(role='row')
+                                            td Rhona Davidson
+                                            td Integration Specialist
+                                            td.sorting_1 Tokyo
+                                            td 55
+                                            td 2010/10/14
+                                            td $327,900
+                                        tr.even(role='row')
+                                            td Airi Satou
+                                            td Accountant
+                                            td.sorting_1 Tokyo
+                                            td 33
+                                            td 2008/11/28
+                                            td $162,700
+                                        tr.odd(role='row')
+                                            td Garrett Winters
+                                            td Accountant
+                                            td.sorting_1 Tokyo
+                                            td 63
+                                            td 2011/07/25
+                                            td $170,750
+                                        tr.even(role='row')
+                                            td Olivia Liang
+                                            td Support Engineer
+                                            td.sorting_1 Singapore
+                                            td 64
+                                            td 2011/02/03
+                                            td $234,500
+
+                                        tr.odd(role='row')
+                                            td Sakura Yamamoto
+                                            td Support Engineer
+                                            td.sorting_1 Tokyo
+                                            td 37
+                                            td 2009/08/19
+                                            td $139,575
+                                        tr.even(role='row')
+                                            td Shou Itou
+                                            td Regional Marketing
+                                            td.sorting_1 Tokyo
+                                            td 20
+                                            td 2011/08/14
+                                            td $163,000
+                                        tr.odd(role='row')
+                                            td Rhona Davidson
+                                            td Integration Specialist
+                                            td.sorting_1 Tokyo
+                                            td 55
+                                            td 2010/10/14
+                                            td $327,900
+                                        tr.even(role='row')
+                                            td Airi Satou
+                                            td Accountant
+                                            td.sorting_1 Tokyo
+                                            td 33
+                                            td 2008/11/28
+                                            td $162,700
+                                        tr.odd(role='row')
+                                            td Garrett Winters
+                                            td Accountant
+                                            td.sorting_1 Tokyo
+                                            td 63
+                                            td 2011/07/25
+                                            td $170,750
+                                        tr.even(role='row')
+                                            td Olivia Liang
+                                            td Support Engineer
+                                            td.sorting_1 Singapore
+                                            td 64
+                                            td 2011/02/03
+                                            td $234,500
+
+
+
+
+
+block scripts
+    // FastClick
+    script(src='javascripts/commons/fastclick.js')
+    // NProgress
+    script(src='javascripts/commons/nprogress.js')
+    // iCheck
+    script(src='javascripts/commons/icheck.min.js')
+    // Datatables
+    script(src='javascripts/dataTables/jquery.dataTables.min.js')
+    script(src='javascripts/dataTables/dataTables.bootstrap.min.js')
+
+    //script(src='javascripts/dataTables/dataTables.buttons.min.js')
+    //script(src='javascripts/dataTables/buttons.bootstrap.min.js')
+    //script(src='javascripts/dataTables/buttons.flash.min.js')
+    //script(src='javascripts/dataTables/buttons.html5.min.js')
+    //script(src='javascripts/dataTables/buttons.print.min.js')
+    //script(src='javascripts/dataTables/dataTables.fixedHeader.min.js')
+    //script(src='javascripts/dataTables/dataTables.keyTable.min.js')
+    //script(src='javascripts/dataTables/dataTables.responsive.min.js')
+    //script(src='javascripts/dataTables/responsive.bootstrap.js')
+
+    //script(src='javascripts/dataTables/dataTables.scroller.min.js')
+
+    //script(src='javascripts/dataTables/jszip.min.js')
+    //script(src='javascripts/dataTables/pdfmake.min.js')
+    //script(src='javascripts/dataTables/vfs_fonts.js')
+
+

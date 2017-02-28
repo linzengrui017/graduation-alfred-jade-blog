@@ -13,6 +13,8 @@ var users = require('./routes/users');
  */
 var weibo = require('./routes/weibo');
 var admin = require('./backend/routes/admin');
+var dashboard = require('./backend/routes/dashboard');
+var usersManage = require('./backend/routes/usersManage');
 /**
  *
  */
@@ -47,6 +49,8 @@ app.use('/', users);
  */
 app.use('/', weibo);
 app.use('/', admin);
+app.use('/', dashboard);
+app.use('/', usersManage);
 /**
  *
  */
