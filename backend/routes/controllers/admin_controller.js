@@ -12,6 +12,22 @@ exports.admin_profile = function (req, res) {
 };
 
 /**
+ * 个人中心-修改个人密码
+ */
+exports.admin_updatePassword = function (req, res) {
+    /**
+     * 修改密码的逻辑操作
+     */
+
+
+
+    /**
+     * 跳页面
+     */
+    res.render('backend/index/backend_index', { title: 'backend' });
+};
+
+/**
  * 跳转到登录页面
  */
 exports.admin_toLogin = function (req, res, next) {
@@ -22,13 +38,22 @@ exports.admin_toLogin = function (req, res, next) {
  * 登录功能
  */
 exports.admin_login = function (req, res) {
+    /**
+     * 登录功能的逻辑操作
+     */
 
+
+
+    /**
+     * 跳页面
+     */
+    res.render('backend/index/backend_index', { title: 'backend' });
 };
 
 /**
  * 注销功能
  */
 exports.admin_logout = function (req, res) {
-    res.render('backend/index/backend_index', { title: 'backend' });
+    res.render('backend/admin/login', { title: 'backend' });
 };
 

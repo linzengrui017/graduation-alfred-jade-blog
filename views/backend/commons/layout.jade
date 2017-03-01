@@ -21,7 +21,7 @@ html
                 .col-md-3.left_col
                     .left_col.scroll-view
                         .navbar.nav_title(style='border: 0;')
-                            a.site_title(href='index.html')
+                            a.site_title(href='#')
                                 i.fa.fa-weibo
                                 span 微博后台管理系统
                         .clearfix
@@ -46,6 +46,8 @@ html
                                         ul.nav.child_menu
                                             li
                                                 a(href='/backend_dashboard') 首页
+                                            //li
+                                            //    a(href='/admin_profile') 个人中心
                                     li
                                         a
                                             i.fa.fa-users
@@ -95,9 +97,9 @@ html
                                         span.fa.fa-angle-down
                                     ul.dropdown-menu.dropdown-usermenu.pull-right
                                         li
-                                            a(href='javascript:;')  个人中心
+                                            a(href='/admin_profile')  个人中心
                                         li
-                                            a(href='#') 退出
+                                            a(href='/admin_logout') 退出
 
                 // /top navigation
                 // page content

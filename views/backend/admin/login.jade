@@ -1,40 +1,74 @@
-//
-   Created by lzr on 2017/2/22.
+html
+    head
+        meta(http-equiv='Content-Type', content='text/html; charset=UTF-8')
+        // Meta, title, CSS, favicons, etc.
+        meta(charset='utf-8')
+        meta(http-equiv='X-UA-Compatible', content='IE=edge')
+        meta(name='viewport', content='width=device-width, initial-scale=1')
 
-extends ../commons/layout
+        title= title
 
-block content
+        // Bootstrap
+        link(href= 'stylesheets/commons/bootstrap.min.css', rel='stylesheet')
+        // Font Awesome
+        link(href= 'stylesheets/commons/font-awesome.min.css', rel='stylesheet')
+        // Custom Theme Style
+        link(href= 'stylesheets/commons/custom.min.css', rel='stylesheet')
 
-    .x_panel
-        .x_title
-            h2
-                | 管理员登录
+
+
+    body
+        .row
+            .navbar.nav_title
+                a.site_title(href='#')
+                    i.fa.fa-weibo
+                    span 微博后台管理系统
             .clearfix
-        .x_content
-            br
-            form#demo-form2.form-horizontal.form-label-left(data-parsley-validate='', novalidate='')
-                .form-group
-                    label.control-label.col-md-3.col-sm-3.col-xs-12(for='username')
-                        | 账号
-                        span.required *
-                    .col-md-6.col-sm-6.col-xs-12
-                        input#username.form-control.col-md-7.col-xs-12(type='text', name='username',required)
-                .form-group
-                    label.control-label.col-md-3.col-sm-3.col-xs-12(for='password')
-                        | 密码
-                        span.required *
-                    .col-md-6.col-sm-6.col-xs-12
-                        input#password.form-control.col-md-7.col-xs-12(type='password', name='password', required)
+        .row(style='margin:40px 0px;')
+            .x_panel
+                .col-md-3.col-sm-3.col-xs-12
+                .col-md-6.col-sm-6.col-xs-12(style='padding: 30px 0px;')
+                    .x_title
+                        h2
+                            | 管理员登录
+                        .clearfix
+                    .x_content(style='padding: 30px 0px;')
+                        form#demo-form2.form-horizontal.form-label-left(data-parsley-validate='', novalidate='', method='post', action='/admin_login')
+                            .form-group
+                                label.control-label.col-md-3.col-sm-3.col-xs-12(for='username')
+                                    | 账号
+                                    span.required *
+                                .col-md-6.col-sm-6.col-xs-12
+                                    input#username.form-control.col-md-7.col-xs-12(type='text', name='username',required)
+                            .form-group
+                                label.control-label.col-md-3.col-sm-3.col-xs-12(for='password')
+                                    | 密码
+                                    span.required *
+                                .col-md-6.col-sm-6.col-xs-12
+                                    input#password.form-control.col-md-7.col-xs-12(type='password', name='password', required)
 
-                //.ln_solid
-                .form-group
-                    .col-md-6.col-sm-6.col-xs-12.col-md-offset-3
-                        //button.btn.btn-primary(type='button') Cancel
-                        button.btn.btn-primary(type='reset') 重置
-                        button.btn.btn-success(type='submit') 提交
+                            //.ln_solid
+                            .form-group
+                                .col-md-6.col-sm-6.col-xs-12.col-md-offset-6
+                                    //button.btn.btn-primary(type='button') Cancel
+                                    button.btn.btn-primary(type='reset') 重置
+                                    button.btn.btn-success(type='submit',id='btn_admin_login') 提交
+                .col-md-3.col-sm-3.col-xs-12
 
 
+        // Angular
+        script(src='javascripts/commons/angular.min.js')
+        // jQuery
+        script(src='javascripts/commons/jquery.min.js')
+        // Bootstrap
+        script(src='javascripts/commons/bootstrap.min.js')
+        // Parsley
+        script(src='javascripts/commons/parsley.min.js')
+        // Custom Theme Scripts
+        script(src='javascripts/commons/custom.min.js')
 
+block scripts
+        //login validation
+        script(src='javascripts/backend/admin/admin_login.js')
 
-    include ../commons/bottom
 

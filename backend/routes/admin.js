@@ -10,7 +10,15 @@ var admin = require('./controllers/admin_controller');
 /**
  * 跳转到个人主页
  */
-router.get('/u/:admin', admin.admin_profile);
+router.get('/admin_profile', admin.admin_profile);
+
+/**
+ * 个人中心-修改个人密码
+ */
+router.post('/admin_updatePassword', admin.admin_updatePassword);
+
+//取消按钮
+router.get('/admin_updatePassword', admin.admin_updatePassword);
 
 /**
  * 跳转到登录页面

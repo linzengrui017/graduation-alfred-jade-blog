@@ -11,6 +11,20 @@ var weiboManage = require('./controllers/weiboManage_controller');
  */
 router.get('/toWeiboManagePage', weiboManage.toWeiboManagePage);
 
+/**
+ * 查询微博
+ */
+router.get('/queryWeibo', weiboManage.queryWeibo);
+
+/**
+ * 查询非法微博
+ */
+router.get('/queryIllegalWeibo', weiboManage.queryIllegalWeibo);
+
+/**
+ * 删除非法微博
+ */
+router.get('/delIllegalWeibo', weiboManage.delIllegalWeibo);
 
 
 
