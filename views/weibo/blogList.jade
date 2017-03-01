@@ -7,32 +7,6 @@ block head
 
 block content
 
-    //写微博
-    .row
-        .col-md-2.col-sm-2.col-xs-12
-        .col-md-8.col-sm-8.col-xs-12
-            .x_panel
-                .x_content
-                    #alerts
-                    .btn-toolbar.editor(data-role='editor-toolbar', data-target='#editor-one')
-                        //.btn-group
-                        //    a.btn.dropdown-toggle(data-toggle='dropdown', title='Hyperlink')
-                        //        i.fa.fa-link
-                        //    .dropdown-menu.input-append
-                        //        input.span2(placeholder='URL', type='text', data-edit='createLink')
-                        //        button.btn(type='button') Add
-                        //    a.btn(data-edit='unlink', title='Remove Hyperlink')
-                        //        i.fa.fa-cut
-                        .btn-group
-                            a#pictureBtn.btn(title='Insert picture (or just drag & drop)')
-                                i.fa.fa-picture-o
-                            input(type='file', data-role='magic-overlay', data-target='#pictureBtn', data-edit='insertImage')
-                    #editor-one.editor-wrapper.placeholderText(contenteditable='true')
-                    textarea#descr(name='descr', style='display:none;')
-
-        .col-md-2.col-sm-2.col-xs-12
-
-    //微博列表
     .row
         .col-md-2.col-sm-2.col-xs-12
         .col-md-8.col-sm-8.col-xs-12
@@ -106,5 +80,8 @@ block content
                                                 br
 
         .col-md-2.col-sm-2.col-xs-12
+
+
+
 
 block scripts

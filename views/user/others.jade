@@ -1,0 +1,78 @@
+
+
+extends ../commons/layout
+
+block head
+
+block content
+
+    .row
+        .col-md-12.col-sm-12.col-xs-12
+            .x_panel
+                .x_title
+                    h2
+                        | 他人主页
+                    .clearfix
+                .x_content
+                    .col-md-3.col-sm-3.col-xs-12.profile_left
+                        .profile_img
+                            #crop-avatar
+                                // Current avatar
+                                img.img-responsive.avatar-view(src='images/picture.jpg', alt='Avatar', title='Change the avatar')
+                        h3 博主
+                        ul.list-unstyled.user_data
+                            li
+                                i.fa.fa-map-marker.user-profile-icon
+                                |  广东省, 珠海市, 香洲区
+                            //li
+                            //    i.fa.fa-briefcase.user-profile-icon
+                            //    |  在校大学生
+                            //li.m-top-xs
+                            //    i.fa.fa-external-link.user-profile-icon
+                            //    a(href='http://www.kimlabs.com/profile/', target='_blank') www.kimlabs.com
+                        a.btn.btn-success
+                            i.fa.fa-plus.m-right-xs
+                            | 加关注
+                        a.btn.btn-danger
+                            i.fa.fa-minus.m-right-xs
+                            | 取消关注
+                        br
+
+                    .col-md-9.col-sm-9.col-xs-12
+                        div(role='tabpanel', data-example-id='togglable-tabs')
+                            ul#myTab.nav.nav-tabs.bar_tabs(role='tablist')
+                                li.active(role='presentation')
+                                    a#home-tab(href='#tab_content1', role='tab', data-toggle='tab', aria-expanded='true') 全部微博
+                                li(role='presentation')
+                                    a#profile-tab(href='#tab_content2', role='tab', data-toggle='tab', aria-expanded='false') 相册
+                                li(role='presentation')
+                                    a#profile-tab2(href='#tab_content3', role='tab', data-toggle='tab', aria-expanded='false') 更多
+                            #myTabContent.tab-content
+                                #tab_content1.tab-pane.fade.active.in(role='tabpanel', aria-labelledby='home-tab')
+
+                                    ul.messages
+                                        li
+                                            img.avatar(src='images/img.jpg', alt='Avatar')
+                                            .message_date
+                                                h3.date.text-info 24
+                                                p.month May
+                                            .message_wrapper
+                                                h4.heading Desmond Davison
+                                                blockquote.message
+                                                    | Raw denim you probably haven't heard of them jean shorts Austin. Nesciunt tofu stumptown aliqua butcher retro keffiyeh dreamcatcher synth.
+                                                br
+
+
+
+
+                                #tab_content2.tab-pane.fade(role='tabpanel', aria-labelledby='profile-tab')
+
+                                #tab_content3.tab-pane.fade(role='tabpanel', aria-labelledby='profile-tab')
+
+
+
+
+
+
+block scripts
+

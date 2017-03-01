@@ -22,7 +22,7 @@ exports.add = function (req, res) {
  * 跳转到微博列表页面
  */
 exports.toBlogListPage = function (req, res) {
-
+    res.render('weibo/blogList', { title: 'blogList' });
 };
 
 /**
