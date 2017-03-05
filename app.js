@@ -5,17 +5,14 @@ var logger = require('morgan');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 
-var index = require('./routes/index');
-var users = require('./routes/users');
-
 /**
- * 声明命名空间
+ * 导入模块
  */
-var weibo = require('./routes/weibo');
-var admin = require('./backend/routes/admin');
-var dashboard = require('./backend/routes/dashboard');
-var usersManage = require('./backend/routes/usersManage');
-var weiboManage = require('./backend/routes/weiboManage');
+var mongoose = require('mongoose');
+var session = require('express-session');
+var MongoStore = require('connect-mongo')(session);
+
+
 /**
  *
  */
@@ -33,11 +30,51 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
-/**
- * 修改默认的静态文件路径
- */
-// app.use(express.static(path.join(__dirname, '')));
 
+/**
+ * 使用mongoose连接数据库
+ */
+mongoose.connect('mongodb://localhost/weibo');
+
+/**
+ * 使用session
+ */
+app.use(session({
+    resave: true,
+    saveUninitialized: true,
+    secret:"45454",
+    store: new MongoStore({
+        cookieSecret: 'lzr',
+        db: 'weibo',
+        host: 'localhost',
+        mongooseConnection: mongoose.connection
+    })
+}));
+
+/**
+ * 登录控制
+ */
+
+app.use(function(req, res, next) {
+    res.locals.user = req.session.user || null;
+    next();
+});
+
+/**
+ * 路由控制
+ * 声明命名空间
+ */
+var index = require('./routes/index');
+var users = require('./routes/users');
+
+var weibo = require('./routes/weibo');
+var admin = require('./backend/routes/admin');
+var dashboard = require('./backend/routes/dashboard');
+var usersManage = require('./backend/routes/usersManage');
+var weiboManage = require('./backend/routes/weiboManage');
+/**
+ *
+ */
 app.use('/', index);
 // app.use('/users', users);
 /**
@@ -53,6 +90,15 @@ app.use('/', admin);
 app.use('/', dashboard);
 app.use('/', usersManage);
 app.use('/', weiboManage);
+
+/**
+ * express 4.x已经移除了config方法
+ */
+
+
+
+
+
 /**
  *
  */
