@@ -22,27 +22,27 @@ html
                 nav.navbar(style='/*background:#34495E;*/')
                     .container-fluid
                         .navbar-header
-                            a.navbar-brand(href='#' )
+                            a.navbar-brand(href='/' )
                                 i.fa.fa-weibo
                                     |  微博
                         #bs-example-navbar-collapse-9.collapse.navbar-collapse
-                            ul.nav.navbar-nav
-                                li
-                                    a(href='/') 首页
+                            ul.nav.navbar-nav.navbar-right
+                                //li
+                                //    a(href='/') 首页
 
                                 //li
                                 //    a(href='/toCommentBlogPage') 评论
 
                                 -if(user)
                                     li
-                                        a(href='/toAddPage') 登录后的写微博+列表
+                                        a(href='/toAddPage') 列表
                                     li
                                         a(href='/profile') 个人中心
                                     li
                                         a(href='/logout') 退出
                                 -else
                                     li
-                                        a(href='/toBlogListPage') 未登录前的列表
+                                        a(href='/toBlogListPage') 列表
                                     li
                                         a(href='/toLogin') 登录
                                     li
