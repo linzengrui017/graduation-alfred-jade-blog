@@ -92,3 +92,13 @@ $('#btn_reg').click(function () {
     }
 
 });
+
+/**
+ * 服务器端返回数据
+ */
+
+
+/**
+ * 手动打开 id = alert_modal 的模态框
+ */
+$('#alert_modal').modal('show');

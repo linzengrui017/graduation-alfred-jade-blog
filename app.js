@@ -61,6 +61,30 @@ app.use(function(req, res, next) {
 });
 
 /**
+ * 使用中间件来返回成功和失败信息
+ */
+app.use(function (req, res, next) {
+    var err = req.session.error;
+    var msg = req.session.success;
+
+    delete req.session.error;
+    delete req.session.success;
+
+    res.locals.message = '';
+
+    if(err){
+        res.locals.message = err;
+    }
+
+    if(msg){
+        res.locals.message = msg;
+    }
+
+    next();
+
+});
+
+/**
  * 路由控制
  * 声明命名空间
  */
