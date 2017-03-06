@@ -13,22 +13,31 @@ block content
         .col-md-8.col-sm-8.col-xs-12
             .x_panel
                 .x_content
-                    #alerts
-                    .btn-toolbar.editor(data-role='editor-toolbar', data-target='#editor-one')
-                        //.btn-group
-                        //    a.btn.dropdown-toggle(data-toggle='dropdown', title='Hyperlink')
-                        //        i.fa.fa-link
-                        //    .dropdown-menu.input-append
-                        //        input.span2(placeholder='URL', type='text', data-edit='createLink')
-                        //        button.btn(type='button') Add
-                        //    a.btn(data-edit='unlink', title='Remove Hyperlink')
-                        //        i.fa.fa-cut
-                        .btn-group
-                            a#pictureBtn.btn(title='Insert picture (or just drag & drop)')
-                                i.fa.fa-picture-o
-                            input(type='file', data-role='magic-overlay', data-target='#pictureBtn', data-edit='insertImage')
-                    #editor-one.editor-wrapper.placeholderText(contenteditable='true')
-                    textarea#descr(name='descr', style='display:none;')
+                    div(ng-app='')
+                        form#demo-form2.form-horizontal.form-label-left(data-parsley-validate='', novalidate='', method='post', action='')
+                            .form-group
+                                label.control-label.col-md-1.col-sm-1.col-xs-12(for='title')
+                                    | 标题
+                                    span.required *
+                                .col-md-9.col-sm-9.col-xs-12
+                                    input#title.form-control.col-md-7.col-xs-12(type='text', name='title', required)
+                                .col-md-2.col-sm-2.col-xs-12
+                            .form-group
+                                label.control-label.col-md-1.col-sm-1.col-xs-12(for='description')
+                                    | 内容
+                                    span.required *
+                                .col-md-9.col-sm-9.col-xs-12
+                                    textarea#description(name='description', ng-model='description', style='width:100%;height:100px;', required=)
+                                    .row
+                                        .col-md-10.col-sm-10.col-xs-12
+                                            h4 已输入 {{description.length}} 个字
+                                        .col-md-2.col-sm-2.col-xs-12
+                                            button.btn.btn-primary(type='submit', id='btn_pubBlog', style='margin-top:10px;')
+                                                | 发布
+
+
+
+
 
         .col-md-2.col-sm-2.col-xs-12
 
@@ -108,3 +117,5 @@ block content
         .col-md-2.col-sm-2.col-xs-12
 
 block scripts
+    // Parsley
+    script(src='javascripts/commons/parsley.min.js')
