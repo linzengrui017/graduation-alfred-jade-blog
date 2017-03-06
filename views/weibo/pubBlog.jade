@@ -27,7 +27,7 @@ block content
                                     | 内容
                                     span.required *
                                 .col-md-9.col-sm-9.col-xs-12
-                                    textarea#description(name='description', ng-model='description', style='width:100%;height:100px;', required=)
+                                    textarea#description(name='description', ng-model='description', style='width:100%;height:100px;', required)
                                     .row
                                         .col-md-10.col-sm-10.col-xs-12
                                             h4 已输入 {{description.length}} 个字
@@ -71,20 +71,21 @@ block content
                                         .modal-header
                                             button.close(type='button', data-dismiss='modal')
                                                 span(aria-hidden='true') ×
-                                            h4#myModalLabel.modal-title Modal title
+                                            h4#myModalLabel.modal-title 转发微博
                                         .modal-body
-                                            h4 Text in a modal
+                                            textarea#reason(name='reason', style='width:100%;height:100px;',placeholder='请输入转发理由')
                                         .modal-footer
-                                            button.btn.btn-default(type='button', data-dismiss='modal') Close
-                                            button.btn.btn-primary(type='button') Save changes
+                                            button.btn.btn-default(type='button', data-dismiss='modal') 取消
+                                            button.btn.btn-primary(type='button') 转发
 
                         .col-md-3.col-sm-3.col-xs-3
                             a#headingOne.btn.panel-heading.collapsed(role='tab', data-toggle='collapse', data-parent='#accordion', href='#collapseOne', aria-expanded='false', aria-controls='collapseOne')
                                 i.fa.fa-comment-o
                                 | 456
                         .col-md-3.col-sm-3.col-xs-3
-                            a.btn
-                                i.fa.fa-thumbs-o-up
+                            a.btn(name='btn_thumbs')
+                                i.fa.fa-thumbs-o-up(name='btn_thumbs_1')
+                                i.fa.fa-thumbs-up(name='btn_thumbs_2', style='display:none;')
                                 | 789
                         .col-md-1.col-sm-1.col-xs-1
                     .row
