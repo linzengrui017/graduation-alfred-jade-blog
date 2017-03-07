@@ -6,7 +6,12 @@
 
 var modelUser = require('../../models/user');
 
+//使用md5加密
 var crypto=require("crypto");
+
+//获取当前系统时间
+var sd = require('silly-datetime');
+
 
 /**
  * 跳转到用户的个人主页
@@ -69,12 +74,15 @@ exports.reg = function (req, res, next) {
                 var md5 = crypto.createHash('md5');
                 var pwd = md5.update(password).digest("base64");
 
+                var time = sd.format(new Date(), 'YYYY-MM-DD HH:mm:ss');
+
                 /**
                  * 注册
                  */
                 var user= new modelUser({
                     username: username,
-                    password: pwd
+                    password: pwd,
+                    createTime: time
                 });
                 user.save(function(err, data){
 

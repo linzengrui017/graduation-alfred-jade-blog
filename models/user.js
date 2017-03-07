@@ -5,7 +5,16 @@ var userSchema = new mongoose.Schema({
         type: String,
         unique: true
     },
-    password: String
+    password: String,
+    createTime: Date,
+    modifyTime: {
+        type: Date,
+        default: Date.now()
+    },
+    delTag: {
+        type: Boolean,
+        default: false
+    }
 });
 
 var modelUser = mongoose.model('user', userSchema);
