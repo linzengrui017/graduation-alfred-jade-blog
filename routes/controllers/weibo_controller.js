@@ -11,7 +11,8 @@ var sd = require('silly-datetime');
  * 跳转到写微博页面
  */
 exports.toAddPage = function (req, res) {
-    res.render('weibo/pubBlog', { title: 'pubBlog' });
+    var customer = req.session.user.username;
+    res.render('weibo/pubBlog', { title: 'pubBlog', customer: customer });
 };
 
 /**
@@ -116,8 +117,8 @@ exports.showBlogList = function (req, res) {
 exports.toDetailBlogPage = function (req, res) {
     var author = req.query.author;
     var title = req.query.title;
-
-    res.render('weibo/detailBlog', { title: 'detailBlog', author: author, title: title });
+    var customer = req.session.user.username;
+    res.render('weibo/detailBlog', { title: 'detailBlog', author: author, title: title, customer: customer });
 };
 
 /**
