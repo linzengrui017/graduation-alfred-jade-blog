@@ -52,9 +52,42 @@ $(function () {
                 if(author == customer){
                     $('#main_panel').append(
                         '<ul class="nav navbar-right panel_toolbox">'+
-                        '<li><a style="color:red;" class="close-link"><i class="fa fa-trash"></i></a></li>'+
+                        '<li><button type="button" class="btn btn-danger" id="btn_delete"><i class="fa fa-trash"></i></button></li>'+
                         '</ul>'
                     );
+
+                    /**
+                     * 删除按钮
+                     * 点击事件
+                     */
+                    $("#btn_delete").click(function () {
+                        /**
+                         * 获取数据
+                         */
+                        // var dom_panel = $(this).parent().parent().parent();
+                        // var dom_ul_message = dom_panel.children().eq(1);
+                        // var title = dom_ul_message.find('li').eq(0).find('a').text();
+                        /**
+                         * 发起请求
+                         */
+                        var url = '/delBlog?author='+author+'&title='+title;
+                        $.ajax({
+                            url: url,
+                            type: "get",
+                            success:function(result){
+                                alert("成功删除微博");
+                                window.location.href='/toAddPage';
+                            },
+                            error: function (XMLHttpRequest, textStatus, errorThrown) {
+                                var s1=XMLHttpRequest;
+                                var s2=textStatus;
+                                var s3=errorThrown;
+                                alert("error message : "+ errorThrown.toString());
+                            }
+                        });
+
+                    });
+
                 }
 
                 /**
@@ -68,7 +101,7 @@ $(function () {
                     '<small>'+ createTime +'</small>' +
                     '<br />' +
                     '<br />' +
-                    '<a href="#"><h4>'+
+                    '<a href="#" name="title"><h4>'+
                     title +
                     '</h4></a>'+
                     '<blockquote class="message">' +

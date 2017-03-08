@@ -181,6 +181,40 @@ exports.delComment = function (req, res) {
  * 删除单条微博
  */
 exports.delBlog = function (req, res) {
+    var author = req.query.author;
+    var title = req.query.title;
+
+    if(author == null || author == ''){
+        console.log('作者不能为空');
+        req.session.error = "作者不能为空";
+        res.redirect("/");
+        return;
+    }
+    if(title == null || title == ''){
+        console.log('标题不能为空');
+        req.session.error = "标题不能为空";
+        res.redirect("/");
+        return;
+    }
+    var query = {
+        author: author,
+        title: title
+    };
+    modelBlog.remove(query, function (err, data) {
+        if(err){
+            console.log("删除微博失败:"+err);
+            res.redirect("/");
+        }
+
+        /**
+         * 删除成功
+         * 返回视图
+         */
+        console.log("删除微博成功");
+        // res.redirect("/toAddPage");
+        res.end();
+
+    });
 
 };
 

@@ -1,13 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f8ee0978-48cb-4707-befb-e4ce0a99b44e" name="Default" comment="转发按钮对应的模态框">
+    <list default="true" id="f8ee0978-48cb-4707-befb-e4ce0a99b44e" name="Default" comment="在微博详情页面，实现删除功能">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/javascripts/blog/detailBlog.js" afterPath="$PROJECT_DIR$/public/javascripts/blog/detailBlog.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/javascripts/blog/pubBlog.js" afterPath="$PROJECT_DIR$/public/javascripts/blog/pubBlog.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/routes/controllers/weibo_controller.js" afterPath="$PROJECT_DIR$/routes/controllers/weibo_controller.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/weibo/detailBlog.jade" afterPath="$PROJECT_DIR$/views/weibo/detailBlog.jade" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/weibo/pubBlog.jade" afterPath="$PROJECT_DIR$/views/weibo/pubBlog.jade" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/routes/weibo.js" afterPath="$PROJECT_DIR$/routes/weibo.js" />
     </list>
     <ignored path="graduation-alfred-jade-blog.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -31,11 +29,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="pubBlog.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="pubBlog.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public/javascripts/blog/pubBlog.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="267">
-              <caret line="131" column="9" lean-forward="true" selection-start-line="131" selection-start-column="9" selection-end-line="131" selection-end-column="9" />
+            <state relative-caret-position="-820">
+              <caret line="9" column="17" lean-forward="false" selection-start-line="9" selection-start-column="17" selection-end-line="9" selection-end-column="17" />
               <folding>
                 <marker date="1488978481489" expanded="true" signature="869:883" ph="..." />
                 <marker date="1488978481489" expanded="true" signature="1435:1459" ph="..." />
@@ -54,41 +52,20 @@
       <file leaf-file-name="detailBlog.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public/javascripts/blog/detailBlog.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="246">
-              <caret line="61" column="19" lean-forward="true" selection-start-line="46" selection-start-column="16" selection-end-line="61" selection-end-column="19" />
+            <state relative-caret-position="307">
+              <caret line="78" column="32" lean-forward="false" selection-start-line="78" selection-start-column="32" selection-end-line="78" selection-end-column="66" />
               <folding>
-                <element signature="e#5993#6185#0" expanded="false" />
-                <marker date="1488977458266" expanded="true" signature="1520:1530" ph="..." />
+                <element signature="e#7416#7608#0" expanded="false" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="weibo.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="weibo.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/routes/weibo.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="202">
-              <caret line="45" column="3" lean-forward="true" selection-start-line="45" selection-start-column="3" selection-end-line="45" selection-end-column="3" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="detailBlog.jade" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/views/weibo/detailBlog.jade">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="220">
-              <caret line="11" column="49" lean-forward="true" selection-start-line="11" selection-start-column="4" selection-end-line="11" selection-end-column="49" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="pubBlog.jade" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/views/weibo/pubBlog.jade">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="252">
-              <caret line="56" column="40" lean-forward="false" selection-start-line="56" selection-start-column="33" selection-end-line="56" selection-end-column="40" />
+            <state relative-caret-position="106">
+              <caret line="43" column="3" lean-forward="true" selection-start-line="43" selection-start-column="3" selection-end-line="43" selection-end-column="3" />
               <folding />
             </state>
           </provider>
@@ -97,11 +74,12 @@
       <file leaf-file-name="weibo_controller.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/routes/controllers/weibo_controller.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="200">
-              <caret line="14" column="29" lean-forward="false" selection-start-line="14" selection-start-column="22" selection-end-line="14" selection-end-column="29" />
+            <state relative-caret-position="81">
+              <caret line="208" column="11" lean-forward="true" selection-start-line="208" selection-start-column="11" selection-end-line="208" selection-end-column="11" />
               <folding>
                 <element signature="e#0#39#0" expanded="false" />
                 <element signature="e#136#155#0" expanded="false" />
+                <element signature="e#196#320#0" expanded="false" />
                 <element signature="e#323#337#0" expanded="false" />
                 <element signature="e#372#1733#0" expanded="false" />
                 <element signature="e#379#402#0" expanded="false" />
@@ -117,6 +95,7 @@
                 <element signature="e#1460#1564#0" expanded="false" />
                 <element signature="e#1577#1636#0" expanded="false" />
                 <element signature="e#1736#1756#0" expanded="false" />
+                <element signature="e#1802#1862#0" expanded="false" />
                 <element signature="e#1865#1882#0" expanded="false" />
                 <element signature="e#1926#2234#0" expanded="false" />
                 <element signature="e#1933#1957#0" expanded="false" />
@@ -124,8 +103,15 @@
                 <element signature="e#2019#2101#0" expanded="false" />
                 <element signature="e#2111#2142#0" expanded="false" />
                 <element signature="e#2237#2257#0" expanded="false" />
+                <element signature="e#2305#2533#0" expanded="false" />
                 <element signature="e#2536#2553#0" expanded="false" />
+                <element signature="e#2599#3055#0" expanded="false" />
+                <element signature="e#2606#2631#0" expanded="false" />
+                <element signature="e#2717#2771#0" expanded="false" />
                 <element signature="e#2779#2803#0" expanded="false" />
+                <element signature="e#2851#3051#0" expanded="false" />
+                <element signature="e#2868#2950#0" expanded="false" />
+                <element signature="e#2960#2991#0" expanded="false" />
                 <element signature="e#3058#3078#0" expanded="false" />
                 <element signature="e#3127#3185#0" expanded="false" />
                 <element signature="e#3188#3203#0" expanded="false" />
@@ -133,11 +119,10 @@
                 <element signature="e#3253#3270#0" expanded="false" />
                 <element signature="e#3312#3316#0" expanded="false" />
                 <element signature="e#3319#3336#0" expanded="false" />
-                <element signature="e#3375#3379#0" expanded="false" />
-                <element signature="e#3382#3402#0" expanded="false" />
-                <element signature="e#3451#3455#0" expanded="false" />
-                <element signature="e#3458#3473#0" expanded="false" />
-                <element signature="e#3516#3520#0" expanded="false" />
+                <element signature="e#4139#4159#0" expanded="false" />
+                <element signature="e#4208#4212#0" expanded="false" />
+                <element signature="e#4215#4230#0" expanded="false" />
+                <element signature="e#4273#4277#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -177,6 +162,7 @@
       <find>sd</find>
       <find>href</find>
       <find>main_panel</find>
+      <find>btn_delete</find>
     </findStrings>
     <replaceStrings>
       <replace>node_modules/gentelella/vendo</replace>
@@ -238,13 +224,13 @@
         <option value="$PROJECT_DIR$/models/user.js" />
         <option value="$PROJECT_DIR$/models/blog.js" />
         <option value="$PROJECT_DIR$/routes/controllers/user_controller.js" />
-        <option value="$PROJECT_DIR$/routes/weibo.js" />
-        <option value="$PROJECT_DIR$/public/javascripts/blog/detailBlog.js" />
         <option value="$PROJECT_DIR$/views/weibo/detailBlog.jade" />
         <option value="$PROJECT_DIR$/views/weibo/blogList.jade" />
-        <option value="$PROJECT_DIR$/routes/controllers/weibo_controller.js" />
         <option value="$PROJECT_DIR$/views/weibo/pubBlog.jade" />
         <option value="$PROJECT_DIR$/public/javascripts/blog/pubBlog.js" />
+        <option value="$PROJECT_DIR$/routes/weibo.js" />
+        <option value="$PROJECT_DIR$/public/javascripts/blog/detailBlog.js" />
+        <option value="$PROJECT_DIR$/routes/controllers/weibo_controller.js" />
       </list>
     </option>
   </component>
@@ -661,7 +647,7 @@
       <workItem from="1488716918121" duration="7474000" />
       <workItem from="1488760789674" duration="7688000" />
       <workItem from="1488875336514" duration="12464000" />
-      <workItem from="1488938654301" duration="23232000" />
+      <workItem from="1488938654301" duration="28236000" />
     </task>
     <task id="LOCAL-00001" summary="At version 1.0.1, make below changes:&#10;1.install package by npm:&#10;npm install gentelella --save&#10;npm install -g gulp&#10;2.change pug.cmd to jade.cmd&#10;3.design view&#10;">
       <created>1487753433561</created>
@@ -922,11 +908,18 @@
       <option name="project" value="LOCAL" />
       <updated>1488975326434</updated>
     </task>
-    <option name="localTasksCounter" value="38" />
+    <task id="LOCAL-00038" summary="根据用户名与微博作者是否一致，控制删除按钮的显示">
+      <created>1488978667813</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1488978667813</updated>
+    </task>
+    <option name="localTasksCounter" value="39" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="296041000" />
+    <option name="totallyTimeSpent" value="301045000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -947,7 +940,7 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.31967214" sideWeight="0.48260212" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32786885" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Mongo Explorer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32776934" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Mongo Explorer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32753405" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295082" sideWeight="0.4969651" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21860817" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295082" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -1016,7 +1009,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="backend: login" />
     <MESSAGE value="font: layout" />
     <MESSAGE value="refresh gentelella" />
     <MESSAGE value="use static files in &quot;public&quot; directory" />
@@ -1041,11 +1033,15 @@
     <MESSAGE value="导入时间格式转换模块：npm install moment" />
     <MESSAGE value="查看微博详情" />
     <MESSAGE value="转发按钮对应的模态框" />
-    <option name="LAST_COMMIT_MESSAGE" value="转发按钮对应的模态框" />
+    <MESSAGE value="根据用户名与微博作者是否一致，控制删除按钮的显示" />
+    <option name="LAST_COMMIT_MESSAGE" value="根据用户名与微博作者是否一致，控制删除按钮的显示" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="65" />
+      <breakpoints-dialog>
+        <breakpoints-dialog />
+      </breakpoints-dialog>
+      <option name="time" value="71" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -1392,13 +1388,58 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/views/weibo/detailBlog.jade">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="11" column="49" lean-forward="true" selection-start-line="11" selection-start-column="49" selection-end-line="11" selection-end-column="49" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/weibo/pubBlog.jade">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="56" column="40" lean-forward="false" selection-start-line="56" selection-start-column="33" selection-end-line="56" selection-end-column="40" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/javascripts/blog/pubBlog.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-820">
+          <caret line="9" column="17" lean-forward="false" selection-start-line="9" selection-start-column="17" selection-end-line="9" selection-end-column="17" />
+          <folding>
+            <marker date="1488978481489" expanded="true" signature="869:883" ph="..." />
+            <marker date="1488978481489" expanded="true" signature="1435:1459" ph="..." />
+            <marker date="1488978481489" expanded="true" signature="2373:2383" ph="..." />
+            <marker date="1488978481489" expanded="true" signature="4117:4130" ph="..." />
+            <marker date="1488978481489" expanded="true" signature="4407:4419" ph="..." />
+            <marker date="1488978481489" expanded="true" signature="4705:4719" ph="..." />
+            <marker date="1488978481489" expanded="true" signature="4778:4792" ph="..." />
+            <marker date="1488978481489" expanded="true" signature="5123:5137" ph="..." />
+            <marker date="1488978481489" expanded="true" signature="5196:5210" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/javascripts/blog/detailBlog.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="307">
+          <caret line="78" column="32" lean-forward="false" selection-start-line="78" selection-start-column="32" selection-end-line="78" selection-end-column="66" />
+          <folding>
+            <element signature="e#7416#7608#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/routes/controllers/weibo_controller.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
-          <caret line="14" column="29" lean-forward="false" selection-start-line="14" selection-start-column="22" selection-end-line="14" selection-end-column="29" />
+        <state relative-caret-position="81">
+          <caret line="208" column="11" lean-forward="true" selection-start-line="208" selection-start-column="11" selection-end-line="208" selection-end-column="11" />
           <folding>
             <element signature="e#0#39#0" expanded="false" />
             <element signature="e#136#155#0" expanded="false" />
+            <element signature="e#196#320#0" expanded="false" />
             <element signature="e#323#337#0" expanded="false" />
             <element signature="e#372#1733#0" expanded="false" />
             <element signature="e#379#402#0" expanded="false" />
@@ -1414,6 +1455,7 @@
             <element signature="e#1460#1564#0" expanded="false" />
             <element signature="e#1577#1636#0" expanded="false" />
             <element signature="e#1736#1756#0" expanded="false" />
+            <element signature="e#1802#1862#0" expanded="false" />
             <element signature="e#1865#1882#0" expanded="false" />
             <element signature="e#1926#2234#0" expanded="false" />
             <element signature="e#1933#1957#0" expanded="false" />
@@ -1421,8 +1463,15 @@
             <element signature="e#2019#2101#0" expanded="false" />
             <element signature="e#2111#2142#0" expanded="false" />
             <element signature="e#2237#2257#0" expanded="false" />
+            <element signature="e#2305#2533#0" expanded="false" />
             <element signature="e#2536#2553#0" expanded="false" />
+            <element signature="e#2599#3055#0" expanded="false" />
+            <element signature="e#2606#2631#0" expanded="false" />
+            <element signature="e#2717#2771#0" expanded="false" />
             <element signature="e#2779#2803#0" expanded="false" />
+            <element signature="e#2851#3051#0" expanded="false" />
+            <element signature="e#2868#2950#0" expanded="false" />
+            <element signature="e#2960#2991#0" expanded="false" />
             <element signature="e#3058#3078#0" expanded="false" />
             <element signature="e#3127#3185#0" expanded="false" />
             <element signature="e#3188#3203#0" expanded="false" />
@@ -1430,65 +1479,19 @@
             <element signature="e#3253#3270#0" expanded="false" />
             <element signature="e#3312#3316#0" expanded="false" />
             <element signature="e#3319#3336#0" expanded="false" />
-            <element signature="e#3375#3379#0" expanded="false" />
-            <element signature="e#3382#3402#0" expanded="false" />
-            <element signature="e#3451#3455#0" expanded="false" />
-            <element signature="e#3458#3473#0" expanded="false" />
-            <element signature="e#3516#3520#0" expanded="false" />
+            <element signature="e#4139#4159#0" expanded="false" />
+            <element signature="e#4208#4212#0" expanded="false" />
+            <element signature="e#4215#4230#0" expanded="false" />
+            <element signature="e#4273#4277#0" expanded="false" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/weibo/detailBlog.jade">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="11" column="49" lean-forward="true" selection-start-line="11" selection-start-column="4" selection-end-line="11" selection-end-column="49" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/weibo/pubBlog.jade">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="56" column="40" lean-forward="false" selection-start-line="56" selection-start-column="33" selection-end-line="56" selection-end-column="40" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/routes/weibo.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="202">
-          <caret line="45" column="3" lean-forward="true" selection-start-line="45" selection-start-column="3" selection-end-line="45" selection-end-column="3" />
+        <state relative-caret-position="106">
+          <caret line="43" column="3" lean-forward="true" selection-start-line="43" selection-start-column="3" selection-end-line="43" selection-end-column="3" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/javascripts/blog/detailBlog.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="246">
-          <caret line="61" column="19" lean-forward="true" selection-start-line="46" selection-start-column="16" selection-end-line="61" selection-end-column="19" />
-          <folding>
-            <element signature="e#5993#6185#0" expanded="false" />
-            <marker date="1488977458266" expanded="true" signature="1520:1530" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/javascripts/blog/pubBlog.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="267">
-          <caret line="131" column="9" lean-forward="true" selection-start-line="131" selection-start-column="9" selection-end-line="131" selection-end-column="9" />
-          <folding>
-            <marker date="1488978481489" expanded="true" signature="869:883" ph="..." />
-            <marker date="1488978481489" expanded="true" signature="1435:1459" ph="..." />
-            <marker date="1488978481489" expanded="true" signature="2373:2383" ph="..." />
-            <marker date="1488978481489" expanded="true" signature="4117:4130" ph="..." />
-            <marker date="1488978481489" expanded="true" signature="4407:4419" ph="..." />
-            <marker date="1488978481489" expanded="true" signature="4705:4719" ph="..." />
-            <marker date="1488978481489" expanded="true" signature="4778:4792" ph="..." />
-            <marker date="1488978481489" expanded="true" signature="5123:5137" ph="..." />
-            <marker date="1488978481489" expanded="true" signature="5196:5210" ph="..." />
-          </folding>
         </state>
       </provider>
     </entry>

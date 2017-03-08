@@ -59,7 +59,7 @@ router.post('/delComment', weibo.delComment);
 /**
  * 删除单条微博
  */
-router.post('/delBlog', weibo.delBlog);
+router.get('/delBlog', weibo.delBlog);
 
 /**
  * 跳转到转发微博页面
