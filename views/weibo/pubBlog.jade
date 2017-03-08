@@ -14,7 +14,7 @@ block content
             .x_panel
                 .x_content
                     div(ng-app='')
-                        form#demo-form2.form-horizontal.form-label-left(data-parsley-validate='', novalidate='', method='post', action='')
+                        form#demo-form2.form-horizontal.form-label-left(data-parsley-validate='', novalidate='', method='post', action='/add')
                             .form-group
                                 label.control-label.col-md-1.col-sm-1.col-xs-12(for='title')
                                     | 标题
@@ -44,7 +44,7 @@ block content
     //微博列表
     .row
         .col-md-2.col-sm-2.col-xs-12
-        .col-md-8.col-sm-8.col-xs-12
+        #blogList.col-md-8.col-sm-8.col-xs-12
             .x_panel
                 .x_content
                     ul.messages
@@ -120,3 +120,7 @@ block content
 block scripts
     // Parsley
     script(src='javascripts/commons/parsley.min.js')
+    //trasfer Date
+    script(src='javascripts/commons/moment.min.js')
+    // Asynchronously load data from blogs
+    script(src='javascripts/blog/pubBlog.js')

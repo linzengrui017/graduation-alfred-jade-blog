@@ -2,7 +2,10 @@
  * Created by lzr on 2017/2/21.
  */
 
+var modelBlog = require('../../models/blog');
 
+//获取当前系统时间
+var sd = require('silly-datetime');
 
 /**
  * 跳转到写微博页面
@@ -15,6 +18,60 @@ exports.toAddPage = function (req, res) {
  * 写微博
  */
 exports.add = function (req, res) {
+
+    /**
+     * 获取数据
+     */
+    var title = req.body.title;
+    var description = req.body.description;
+    var author = req.session.user.username;
+    /**
+     * 服务器端表单校验
+     */
+    if(title == null || title == undefined){
+        console.log('标题不能为空');
+        req.session.error = "标题不能为空";
+        res.redirect("/toAddPage");
+    }else if(description == null || description == undefined){
+        console.log('内容不能为空');
+        req.session.error = "内容不能为空";
+        res.redirect("/toAddPage");
+    }else if (author == null || author == undefined){
+        console.log('作者不能为空');
+        req.session.error = "作者不能为空";
+        res.redirect("/toAddPage");
+    }else {
+        /**
+         * 插入微博
+         */
+
+        var time = sd.format(new Date(), 'YYYY-MM-DD HH:mm:ss');
+
+        var blog = new modelBlog({
+            author: author,
+            title: title,
+            content: description,
+            createTime: time,
+            modifyTime: time
+        });
+
+        blog.save(function (err, data) {
+            /**
+             * 新增操作异常
+             */
+            if(err){
+                console.log("发微博操作异常:"+err);
+                res.redirect("/toAddPage");
+            }
+            /**
+             * 新增成功
+             * 返回视图
+             */
+            console.log("成功发布微博");
+
+            res.redirect('/toAddPage');
+        });
+    }
 
 };
 
@@ -29,6 +86,27 @@ exports.toBlogListPage = function (req, res) {
  * 显示微博列表
  */
 exports.showBlogList = function (req, res) {
+
+    /**
+     * 查询数据库
+     */
+    modelBlog.find({}, function (err, data) {
+        if(err){
+            console.log("查询微博失败:"+err);
+            res.redirect("/");
+        }
+
+        /**
+         * 返回数据
+         */
+        res.json({data: data});
+        return data;
+
+    }).sort({createTime: -1});
+
+
+
+
 
 };
 
