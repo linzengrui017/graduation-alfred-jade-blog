@@ -1,0 +1,27 @@
+//
+   Created by lzr on 2017/2/27.
+
+extends ../commons/layout
+
+block head
+
+block content
+
+    input#author(type='hidden', value=author)
+    input#title(type='hidden', value=title)
+
+    //微博列表
+    .row
+        .col-md-2.col-sm-2.col-xs-12
+        #blogDetail.col-md-8.col-sm-8.col-xs-12
+
+
+        .col-md-2.col-sm-2.col-xs-12
+
+block scripts
+    // Parsley
+    script(src='javascripts/commons/parsley.min.js')
+    //trasfer Date
+    script(src='javascripts/commons/moment.min.js')
+    // Asynchronously load data from blogs
+    script(src='javascripts/blog/detailBlog.js')

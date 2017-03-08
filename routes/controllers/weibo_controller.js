@@ -114,7 +114,10 @@ exports.showBlogList = function (req, res) {
  * 跳转到微博详情页面
  */
 exports.toDetailBlogPage = function (req, res) {
+    var author = req.query.author;
+    var title = req.query.title;
 
+    res.render('weibo/detailBlog', { title: 'detailBlog', author: author, title: title });
 };
 
 /**
@@ -122,6 +125,34 @@ exports.toDetailBlogPage = function (req, res) {
  */
 exports.showDetailBlog = function (req, res) {
 
+    /**
+     * 获取查询条件
+     */
+    var author = req.query.author;
+    var title = req.query.title;
+
+    var query = {
+        author : author,
+        title : title
+    };
+
+
+    /**
+     * 查询数据库
+     */
+    modelBlog.find(query, function (err, data) {
+        if(err){
+            console.log("查询微博失败:"+err);
+            res.redirect("/");
+        }
+
+        /**
+         * 返回数据
+         */
+        res.json({data: data});
+        return data;
+
+    });
 };
 
 /**

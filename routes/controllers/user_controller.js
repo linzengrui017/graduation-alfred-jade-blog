@@ -198,7 +198,7 @@ exports.login = function (req, res) {
                         /**
                          * 返回视图
                          */
-                        res.redirect('/');
+                        res.redirect('/toAddPage');
                     }
 
 

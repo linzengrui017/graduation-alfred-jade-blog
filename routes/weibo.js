@@ -39,7 +39,7 @@ router.get('/toDetailBlogPage', weibo.toDetailBlogPage);
 /**
  * 显示微博详情
  */
-router.post('/showDetailBlog', weibo.showDetailBlog);
+router.get('/showDetailBlog', weibo.showDetailBlog);
 
 /**
  * 跳转到评论微博页面
