@@ -178,6 +178,24 @@ $(function () {
                     var content = $('#write_comment').val();
                     window.location.href = '/commentBlog?comment_content='
                         + content + '&author=' + author + '&title=' + title;
+
+                    // var link = '/commentBlog?comment_content='
+                    //     + content + '&author=' + author + '&title=' + title;
+                    //
+                    //     $.ajax({
+                    //         url: link,
+                    //         type: "get",
+                    //         success: function (result) {
+                    //
+                    //
+                    //         },
+                    //         error: function (XMLHttpRequest, textStatus, errorThrown) {
+                    //             var s1=XMLHttpRequest;
+                    //             var s2=textStatus;
+                    //             var s3=errorThrown;
+                    //             alert("查询评论信息失败 : "+ errorThrown.toString());
+                    //         }
+                    //     });
                 });
 
                 /**

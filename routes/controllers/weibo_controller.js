@@ -222,15 +222,16 @@ exports.commentBlog = function (req, res) {
         }
 
         console.log('添加成功');
-        res.end();
+        // res.end();
 
     });
 
     /**
      * 返回视图
      */
-    res.redirect('/toAddPage');
-    res.end();
+    // res.redirect('/toAddPage');
+    res.redirect('/toDetailBlogPage?author='+author+'&title='+title);
+    // res.end();
 
 };
 
