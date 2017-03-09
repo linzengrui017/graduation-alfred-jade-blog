@@ -167,6 +167,70 @@ exports.toCommentBlogPage = function (req, res) {
  * 评论微博
  */
 exports.commentBlog = function (req, res) {
+    /**
+     * 获取数据
+     */
+    var customer = req.session.user.username;
+    var author = req.query.author;
+    var title = req.query.title;
+
+    var comment_author = customer;
+    var comment_content = req.query.comment_content;
+    var comment_createTime = sd.format(new Date(), 'YYYY-MM-DD HH:mm:ss');
+
+    /**
+     * 服务器端校验
+     */
+    if( null == author || '' == author
+        || null == title || '' == title
+        || null == comment_content || '' == comment_content){
+
+        console.log('必传参数不能为空');
+        req.session.error = "必传参数不能为空";
+        return;
+    }
+
+    /**
+     * 准备数据
+     * @type {{author: (*), title}}
+     */
+    var query = {
+        author : author,
+        title : title
+    };
+
+    var comment = {
+        author : comment_author,
+        content : comment_content,
+        createTime : comment_createTime
+    };
+
+    var operator = {
+        // $unset : { comments : comment }
+        // $set : { comments : comment }
+        "$push" : { comments : comment }
+    };
+
+    /**
+     * 往该微博里添加评论数据
+     * 执行修改追加操作
+     */
+    modelBlog.update(query, operator, function (err, data) {
+        if(err){
+            console.log('添加评论失败：'+ err);
+            return;
+        }
+
+        console.log('添加成功');
+        res.end();
+
+    });
+
+    /**
+     * 返回视图
+     */
+    res.redirect('/toAddPage');
+    res.end();
 
 };
 

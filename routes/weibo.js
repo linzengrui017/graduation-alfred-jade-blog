@@ -49,7 +49,7 @@ router.get('/toCommentBlogPage', weibo.toCommentBlogPage);
 /**
  * 评论微博
  */
-router.post('/commentBlog', weibo.commentBlog);
+router.get('/commentBlog', weibo.commentBlog);
 
 /**
  * 删除单条评论

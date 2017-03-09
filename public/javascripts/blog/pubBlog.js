@@ -24,10 +24,9 @@ $.ajax({
             var title = data[i].title;
             var content = data[i].content;
             var createTime = moment(data[i].createTime).format('YYYY-MM-DD HH:mm:ss');
-            var delTag = data[i].delTag;
-            var modifyTime = data[i].modifyTime;
-            var relayTag = data[i].relayTag;
-
+            /**
+             * 只添加一个模态框
+             */
             if(i == 0){
                 $('#blogList').append(
                     '<div tabindex="-1" role="dialog" aria-hidden="true" style="display: none;" class="modal fade bs-example-modal-lg">' +
@@ -73,9 +72,12 @@ $.ajax({
             }
 
             /**
-             * 主体内容
+             * 显示微博内容
              */
             $('#main_panel').append(
+                /**
+                 * 微博标题、内容等
+                 */
                 '<ul class="messages">' +
                 '<li><img src="images/img.jpg" alt="Avatar" class="avatar" />' +
                 '<div class="message_wrapper">' +
@@ -92,6 +94,9 @@ $.ajax({
                 '<br />' +
                 '</div></li>' +
                 '</ul>' +
+                /**
+                 * 按钮组：转发、评论、点赞
+                 */
                 '<div class="row">' +
                 '<div class="col-md-2 col-sm-2 col-xs-2"></div>' +
                 '<div class="col-md-3 col-sm-3 col-xs-3">' +
@@ -105,6 +110,9 @@ $.ajax({
                 '</div>' +
                 '<div class="col-md-1 col-sm-1 col-xs-1"></div>' +
                 '</div>' +
+                /**
+                 * 评论显示的评论信息
+                 */
                 '<div id="collapse'+i+'" role="tabpanel" aria-labelledby="headingOne" aria-expanded="false" style="height: 0px;" class="panel-collapse collapse">' +
                 '<div class="panel-body">' +
                 '<ul class="messages">' +
