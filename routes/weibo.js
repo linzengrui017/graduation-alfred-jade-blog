@@ -54,7 +54,7 @@ router.get('/commentBlog', weibo.commentBlog);
 /**
  * 删除单条评论
  */
-router.post('/delComment', weibo.delComment);
+router.get('/delComment', weibo.delComment);
 
 /**
  * 删除单条微博

@@ -221,7 +221,7 @@ exports.commentBlog = function (req, res) {
             return;
         }
 
-        console.log('添加成功');
+        console.log('添加评论成功');
         // res.end();
 
     });
@@ -239,7 +239,63 @@ exports.commentBlog = function (req, res) {
  * 删除单条评论
  */
 exports.delComment = function (req, res) {
+    /**
+     * 获取数据
+     */
+    var customer = req.session.user.username;
+    var author = req.query.author;
+    var title = req.query.title;
+    var comment_author = customer;
+    var comment_content = req.query.comment_content;
+    var comment_createTime = req.query.comment_createTime;
+    comment_createTime = sd.format(comment_createTime, 'YYYY-MM-DD HH:mm:ss');
 
+    /**
+     * 服务器端校验
+     */
+    if( null == comment_createTime || '' == comment_createTime
+        || null == comment_content || '' == comment_content){
+        console.log('必传参数不能为空');
+        req.session.error = "必传参数不能为空";
+        res.end();
+        return;
+    }
+
+    /**
+     * 准备数据
+     * @type {{author: (*), title}}
+     */
+    var query = {
+        author : author,
+        title : title
+    };
+
+    var comment = {
+        author : comment_author,
+        content : comment_content,
+        createTime : comment_createTime
+    };
+
+    var operator = {
+        $pull : { comments : comment }
+    };
+
+    /**
+     * 往该微博里删除评论数据
+     * 执行修改移除操作
+     */
+    modelBlog.update(query, operator, function (err, data) {
+        if(err){
+            console.log('删除评论失败：'+ err);
+            return;
+        }
+        console.log('删除评论成功');
+    });
+
+    /**
+     * 返回视图
+     */
+    res.redirect('/toDetailBlogPage?author='+author+'&title='+title);
 };
 
 /**

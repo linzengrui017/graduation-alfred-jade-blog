@@ -5,6 +5,7 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/javascripts/blog/detailBlog.js" afterPath="$PROJECT_DIR$/public/javascripts/blog/detailBlog.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/routes/controllers/weibo_controller.js" afterPath="$PROJECT_DIR$/routes/controllers/weibo_controller.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/routes/weibo.js" afterPath="$PROJECT_DIR$/routes/weibo.js" />
     </list>
     <ignored path="graduation-alfred-jade-blog.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -28,51 +29,39 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="pubBlog.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/javascripts/blog/pubBlog.js">
+      <file leaf-file-name="detailBlog.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/javascripts/blog/detailBlog.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="200">
-              <caret line="25" column="85" lean-forward="false" selection-start-line="25" selection-start-column="29" selection-end-line="25" selection-end-column="85" />
+            <state relative-caret-position="129">
+              <caret line="246" column="27" lean-forward="true" selection-start-line="246" selection-start-column="27" selection-end-line="246" selection-end-column="27" />
               <folding>
-                <marker date="1489060634957" expanded="true" signature="789:803" ph="..." />
-                <marker date="1489060634957" expanded="true" signature="1355:1379" ph="..." />
-                <marker date="1489060634957" expanded="true" signature="2293:2303" ph="..." />
-                <marker date="1489060634957" expanded="true" signature="4179:4192" ph="..." />
-                <marker date="1489060634957" expanded="true" signature="4538:4550" ph="..." />
-                <marker date="1489060634957" expanded="true" signature="4836:4850" ph="..." />
-                <marker date="1489060634957" expanded="true" signature="4909:4923" ph="..." />
-                <marker date="1489060634957" expanded="true" signature="5254:5268" ph="..." />
-                <marker date="1489060634957" expanded="true" signature="5327:5341" ph="..." />
+                <element signature="e#1544#1627#0" expanded="false" />
+                <element signature="e#1709#1772#0" expanded="false" />
+                <element signature="e#2041#2104#0" expanded="false" />
+                <element signature="e#2213#2879#0" expanded="false" />
+                <element signature="e#2346#2493#0" expanded="false" />
+                <element signature="e#2581#2853#0" expanded="false" />
+                <element signature="e#11541#11730#0" expanded="false" />
+                <marker date="1489064514028" expanded="true" signature="4537:4551" ph="..." />
+                <marker date="1489064514028" expanded="true" signature="5231:5255" ph="..." />
+                <marker date="1489064514028" expanded="true" signature="6372:6385" ph="..." />
+                <marker date="1489064514028" expanded="true" signature="6769:6781" ph="..." />
+                <marker date="1489064514028" expanded="true" signature="9528:9542" ph="..." />
+                <marker date="1489064514028" expanded="true" signature="9616:9630" ph="..." />
+                <marker date="1489064514028" expanded="true" signature="9834:9840" ph=" " />
+                <marker date="1489064514028" expanded="true" signature="9840:9846" ph=" " />
+                <marker date="1489064514028" expanded="true" signature="9846:9852" ph=" " />
+                <marker date="1489064514028" expanded="true" signature="9852:9858" ph=" " />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="blog.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/models/blog.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="320">
-              <caret line="16" column="12" lean-forward="false" selection-start-line="16" selection-start-column="4" selection-end-line="16" selection-end-column="12" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="weibo.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/routes/weibo.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="69">
-              <caret line="16" column="22" lean-forward="false" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="22" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="weibo_controller.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="weibo_controller.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/routes/controllers/weibo_controller.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="98">
-              <caret line="232" column="3" lean-forward="false" selection-start-line="232" selection-start-column="3" selection-end-line="232" selection-end-column="3" />
+            <state relative-caret-position="180">
+              <caret line="16" column="0" lean-forward="true" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
               <folding>
                 <element signature="e#0#39#0" expanded="false" />
                 <element signature="e#136#155#0" expanded="false" />
@@ -100,6 +89,7 @@
                 <element signature="e#2019#2101#0" expanded="false" />
                 <element signature="e#2111#2142#0" expanded="false" />
                 <element signature="e#2237#2257#0" expanded="false" />
+                <element signature="e#2305#2533#0" expanded="false" />
                 <element signature="e#2536#2553#0" expanded="false" />
                 <element signature="e#2599#3055#0" expanded="false" />
                 <element signature="e#2606#2631#0" expanded="false" />
@@ -111,48 +101,31 @@
                 <element signature="e#3058#3078#0" expanded="false" />
                 <element signature="e#3127#3185#0" expanded="false" />
                 <element signature="e#3188#3203#0" expanded="false" />
-                <element signature="e#4668#4685#0" expanded="false" />
-                <element signature="e#4727#4731#0" expanded="false" />
-                <element signature="e#4734#4751#0" expanded="false" />
-                <element signature="e#4790#5551#0" expanded="false" />
-                <element signature="e#4899#5018#0" expanded="false" />
-                <element signature="e#5055#5174#0" expanded="false" />
-                <element signature="e#5191#5243#0" expanded="false" />
-                <element signature="e#5294#5546#0" expanded="false" />
-                <element signature="e#5311#5393#0" expanded="false" />
-                <element signature="e#5403#5450#0" expanded="false" />
-                <element signature="e#5554#5574#0" expanded="false" />
-                <element signature="e#5623#5627#0" expanded="false" />
-                <element signature="e#5630#5645#0" expanded="false" />
-                <element signature="e#5688#5692#0" expanded="false" />
+                <element signature="e#3246#4667#0" expanded="false" />
+                <element signature="e#4670#4687#0" expanded="false" />
+                <element signature="e#6053#6070#0" expanded="false" />
+                <element signature="e#6109#6870#0" expanded="false" />
+                <element signature="e#6218#6337#0" expanded="false" />
+                <element signature="e#6374#6493#0" expanded="false" />
+                <element signature="e#6510#6562#0" expanded="false" />
+                <element signature="e#6613#6865#0" expanded="false" />
+                <element signature="e#6630#6712#0" expanded="false" />
+                <element signature="e#6722#6769#0" expanded="false" />
+                <element signature="e#6873#6893#0" expanded="false" />
+                <element signature="e#6942#6946#0" expanded="false" />
+                <element signature="e#6949#6964#0" expanded="false" />
+                <element signature="e#7007#7011#0" expanded="false" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="detailBlog.js" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/public/javascripts/blog/detailBlog.js">
+      <file leaf-file-name="blog.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/models/blog.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="280">
-              <caret line="153" column="29" lean-forward="false" selection-start-line="153" selection-start-column="29" selection-end-line="153" selection-end-column="29" />
-              <folding>
-                <element signature="e#1216#2925#0" expanded="false" />
-                <element signature="e#1544#1627#0" expanded="false" />
-                <element signature="e#1683#2904#0" expanded="false" />
-                <element signature="e#1709#1772#0" expanded="false" />
-                <element signature="e#1797#1851#0" expanded="false" />
-                <element signature="e#2041#2104#0" expanded="false" />
-                <element signature="e#2213#2879#0" expanded="false" />
-                <element signature="e#2346#2493#0" expanded="false" />
-                <element signature="e#2581#2853#0" expanded="false" />
-                <element signature="e#10015#10204#0" expanded="false" />
-                <marker date="1489062236091" expanded="true" signature="4537:4551" ph="..." />
-                <marker date="1489062236091" expanded="true" signature="5231:5255" ph="..." />
-                <marker date="1489062236091" expanded="true" signature="6372:6385" ph="..." />
-                <marker date="1489062236091" expanded="true" signature="6769:6781" ph="..." />
-                <marker date="1489062236091" expanded="true" signature="9528:9542" ph="..." />
-                <marker date="1489062236091" expanded="true" signature="9616:9630" ph="..." />
-              </folding>
+            <state relative-caret-position="89">
+              <caret line="5" column="8" lean-forward="true" selection-start-line="5" selection-start-column="8" selection-end-line="5" selection-end-column="8" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -194,6 +167,7 @@
       <find>update</find>
       <find>comments`</find>
       <find>sd</find>
+      <find>find</find>
     </findStrings>
     <replaceStrings>
       <replace>node_modules/gentelella/vendo</replace>
@@ -258,10 +232,10 @@
         <option value="$PROJECT_DIR$/views/weibo/pubBlog.jade" />
         <option value="$PROJECT_DIR$/models/comment.js" />
         <option value="$PROJECT_DIR$/models/blog.js" />
-        <option value="$PROJECT_DIR$/routes/weibo.js" />
         <option value="$PROJECT_DIR$/public/javascripts/blog/pubBlog.js" />
-        <option value="$PROJECT_DIR$/routes/controllers/weibo_controller.js" />
+        <option value="$PROJECT_DIR$/routes/weibo.js" />
         <option value="$PROJECT_DIR$/public/javascripts/blog/detailBlog.js" />
+        <option value="$PROJECT_DIR$/routes/controllers/weibo_controller.js" />
       </list>
     </option>
   </component>
@@ -666,7 +640,7 @@
       <workItem from="1488875336514" duration="12464000" />
       <workItem from="1488938654301" duration="28565000" />
       <workItem from="1488984004868" duration="149000" />
-      <workItem from="1489022847803" duration="16970000" />
+      <workItem from="1489022847803" duration="20357000" />
     </task>
     <task id="LOCAL-00001" summary="At version 1.0.1, make below changes:&#10;1.install package by npm:&#10;npm install gentelella --save&#10;npm install -g gulp&#10;2.change pug.cmd to jade.cmd&#10;3.design view&#10;">
       <created>1487753433561</created>
@@ -955,11 +929,18 @@
       <option name="project" value="LOCAL" />
       <updated>1489060807018</updated>
     </task>
-    <option name="localTasksCounter" value="42" />
+    <task id="LOCAL-00042" summary="添加评论后返回当前页面">
+      <created>1489062346893</created>
+      <option name="number" value="00042" />
+      <option name="presentableId" value="LOCAL-00042" />
+      <option name="project" value="LOCAL" />
+      <updated>1489062346893</updated>
+    </task>
+    <option name="localTasksCounter" value="43" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="318493000" />
+    <option name="totallyTimeSpent" value="321880000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -978,7 +959,7 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295082" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.52118003" order="10" side_tool="true" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295082" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.37213114" sideWeight="0.48260212" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.5590164" sideWeight="0.48260212" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32786885" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -1049,7 +1030,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="npm uninstall gentelella" />
     <MESSAGE value="remove vendors in node_modules" />
     <MESSAGE value="remove gentelella modules" />
     <MESSAGE value="backend: user view" />
@@ -1074,14 +1054,15 @@
     <MESSAGE value="在微博详情页面，实现删除功能" />
     <MESSAGE value="评论微博" />
     <MESSAGE value="显示评论信息" />
-    <option name="LAST_COMMIT_MESSAGE" value="显示评论信息" />
+    <MESSAGE value="添加评论后返回当前页面" />
+    <option name="LAST_COMMIT_MESSAGE" value="添加评论后返回当前页面" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints-dialog>
         <breakpoints-dialog />
       </breakpoints-dialog>
-      <option name="time" value="77" />
+      <option name="time" value="83" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -1399,26 +1380,52 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/models/blog.js">
+    <entry file="file://$PROJECT_DIR$/routes/weibo.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="320">
-          <caret line="16" column="12" lean-forward="false" selection-start-line="16" selection-start-column="4" selection-end-line="16" selection-end-column="12" />
+        <state relative-caret-position="301">
+          <caret line="58" column="3" lean-forward="true" selection-start-line="58" selection-start-column="3" selection-end-line="58" selection-end-column="3" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/routes/weibo.js">
+    <entry file="file://$PROJECT_DIR$/models/blog.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="69">
-          <caret line="16" column="22" lean-forward="false" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="22" />
+        <state relative-caret-position="89">
+          <caret line="5" column="8" lean-forward="true" selection-start-line="5" selection-start-column="8" selection-end-line="5" selection-end-column="8" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/javascripts/blog/detailBlog.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="129">
+          <caret line="246" column="27" lean-forward="true" selection-start-line="246" selection-start-column="27" selection-end-line="246" selection-end-column="27" />
+          <folding>
+            <element signature="e#1544#1627#0" expanded="false" />
+            <element signature="e#1709#1772#0" expanded="false" />
+            <element signature="e#2041#2104#0" expanded="false" />
+            <element signature="e#2213#2879#0" expanded="false" />
+            <element signature="e#2346#2493#0" expanded="false" />
+            <element signature="e#2581#2853#0" expanded="false" />
+            <element signature="e#11541#11730#0" expanded="false" />
+            <marker date="1489064514028" expanded="true" signature="4537:4551" ph="..." />
+            <marker date="1489064514028" expanded="true" signature="5231:5255" ph="..." />
+            <marker date="1489064514028" expanded="true" signature="6372:6385" ph="..." />
+            <marker date="1489064514028" expanded="true" signature="6769:6781" ph="..." />
+            <marker date="1489064514028" expanded="true" signature="9528:9542" ph="..." />
+            <marker date="1489064514028" expanded="true" signature="9616:9630" ph="..." />
+            <marker date="1489064514028" expanded="true" signature="9834:9840" ph=" " />
+            <marker date="1489064514028" expanded="true" signature="9840:9846" ph=" " />
+            <marker date="1489064514028" expanded="true" signature="9846:9852" ph=" " />
+            <marker date="1489064514028" expanded="true" signature="9852:9858" ph=" " />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/routes/controllers/weibo_controller.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="98">
-          <caret line="232" column="3" lean-forward="false" selection-start-line="232" selection-start-column="3" selection-end-line="232" selection-end-column="3" />
+        <state relative-caret-position="180">
+          <caret line="16" column="0" lean-forward="true" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
           <folding>
             <element signature="e#0#39#0" expanded="false" />
             <element signature="e#136#155#0" expanded="false" />
@@ -1446,6 +1453,7 @@
             <element signature="e#2019#2101#0" expanded="false" />
             <element signature="e#2111#2142#0" expanded="false" />
             <element signature="e#2237#2257#0" expanded="false" />
+            <element signature="e#2305#2533#0" expanded="false" />
             <element signature="e#2536#2553#0" expanded="false" />
             <element signature="e#2599#3055#0" expanded="false" />
             <element signature="e#2606#2631#0" expanded="false" />
@@ -1457,45 +1465,20 @@
             <element signature="e#3058#3078#0" expanded="false" />
             <element signature="e#3127#3185#0" expanded="false" />
             <element signature="e#3188#3203#0" expanded="false" />
-            <element signature="e#4668#4685#0" expanded="false" />
-            <element signature="e#4727#4731#0" expanded="false" />
-            <element signature="e#4734#4751#0" expanded="false" />
-            <element signature="e#4790#5551#0" expanded="false" />
-            <element signature="e#4899#5018#0" expanded="false" />
-            <element signature="e#5055#5174#0" expanded="false" />
-            <element signature="e#5191#5243#0" expanded="false" />
-            <element signature="e#5294#5546#0" expanded="false" />
-            <element signature="e#5311#5393#0" expanded="false" />
-            <element signature="e#5403#5450#0" expanded="false" />
-            <element signature="e#5554#5574#0" expanded="false" />
-            <element signature="e#5623#5627#0" expanded="false" />
-            <element signature="e#5630#5645#0" expanded="false" />
-            <element signature="e#5688#5692#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/javascripts/blog/detailBlog.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="280">
-          <caret line="153" column="29" lean-forward="false" selection-start-line="153" selection-start-column="29" selection-end-line="153" selection-end-column="29" />
-          <folding>
-            <element signature="e#1216#2925#0" expanded="false" />
-            <element signature="e#1544#1627#0" expanded="false" />
-            <element signature="e#1683#2904#0" expanded="false" />
-            <element signature="e#1709#1772#0" expanded="false" />
-            <element signature="e#1797#1851#0" expanded="false" />
-            <element signature="e#2041#2104#0" expanded="false" />
-            <element signature="e#2213#2879#0" expanded="false" />
-            <element signature="e#2346#2493#0" expanded="false" />
-            <element signature="e#2581#2853#0" expanded="false" />
-            <element signature="e#10015#10204#0" expanded="false" />
-            <marker date="1489062236091" expanded="true" signature="4537:4551" ph="..." />
-            <marker date="1489062236091" expanded="true" signature="5231:5255" ph="..." />
-            <marker date="1489062236091" expanded="true" signature="6372:6385" ph="..." />
-            <marker date="1489062236091" expanded="true" signature="6769:6781" ph="..." />
-            <marker date="1489062236091" expanded="true" signature="9528:9542" ph="..." />
-            <marker date="1489062236091" expanded="true" signature="9616:9630" ph="..." />
+            <element signature="e#3246#4667#0" expanded="false" />
+            <element signature="e#4670#4687#0" expanded="false" />
+            <element signature="e#6053#6070#0" expanded="false" />
+            <element signature="e#6109#6870#0" expanded="false" />
+            <element signature="e#6218#6337#0" expanded="false" />
+            <element signature="e#6374#6493#0" expanded="false" />
+            <element signature="e#6510#6562#0" expanded="false" />
+            <element signature="e#6613#6865#0" expanded="false" />
+            <element signature="e#6630#6712#0" expanded="false" />
+            <element signature="e#6722#6769#0" expanded="false" />
+            <element signature="e#6873#6893#0" expanded="false" />
+            <element signature="e#6942#6946#0" expanded="false" />
+            <element signature="e#6949#6964#0" expanded="false" />
+            <element signature="e#7007#7011#0" expanded="false" />
           </folding>
         </state>
       </provider>

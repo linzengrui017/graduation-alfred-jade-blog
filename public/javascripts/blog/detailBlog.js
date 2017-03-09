@@ -214,18 +214,44 @@ $(function () {
                     $('#comments_message').append(
                         '<li><img src="images/img.jpg" alt="Avatar" class="avatar" />' +
                         '<div class="message_wrapper">' +
-                        '<font style="color:#CD5C5C;">'+comments[k].author+':</font>' +
+                        '<font style="color:#CD5C5C;">'+comments[k].author+'</font>:' +
                         '<font style="color:#696969;">'+comments[k].content+'</font>' +
                         '<br />' +
                         '<small>'+moment(comments[k].createTime).format('YYYY-MM-DD HH:mm:ss')+'</small>' +
+                        '&nbsp;&nbsp;&nbsp;&nbsp;<a href="#" name="btn_delComment">删除</a>' +
                         '<br />' +
                         '</div></li>'
                     );
 
-
                 }
 
+                $('a[name="btn_delComment"]').click(function () {
+                    var dom_div = $(this).parent();
+                    var comment_author = dom_div.find('font').eq(0).text();
+                    var comment_content = dom_div.find('font').eq(1).text();
+                    var comment_createTime = dom_div.find('small').text();
+                    // alert(
+                    //     'author='+author+'\n'+
+                    //     'title='+title+'\n'+
+                    //     'comment_author='+comment_author+'\n'+
+                    //     'comment_content='+comment_content+'\n'+
+                    //     'comment_createTime='+comment_createTime+'\n'
+                    // );
+                    if( null == author || '' == author || null == title || '' == title ||
+                            null == comment_author || '' == comment_author ||
+                            null == comment_content || '' == comment_content ||
+                            null == comment_createTime || '' == comment_createTime ){
 
+                        alert('参数不能为空');
+
+                    }else {
+                        window.location.href = '/delComment?author=' + author
+                            + '&title=' + title + '&comment_author=' + comment_author
+                            + '&comment_content=' + comment_content + '&comment_createTime=' + comment_createTime;
+                    }
+
+
+                });
 
 
 
