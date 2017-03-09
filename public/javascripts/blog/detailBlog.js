@@ -191,16 +191,21 @@ $(function () {
                  * 得到每个author content createTime
                  * 返回数据
                  */
-                // $('#comments_message').append(
-                //     '<li><img src="images/img.jpg" alt="Avatar" class="avatar" />' +
-                //         '<div class="message_wrapper">' +
-                //         '<font style="color:#CD5C5C;">author:</font>' +
-                //         '<font style="color:#696969;">content</font>' +
-                //         '<br />' +
-                //         '<small>createTime</small>' +
-                //         '<br />' +
-                //     '</div></li>'
-                // );
+                for(var k = comments.length - 1; k >= 0; k--){
+
+                    $('#comments_message').append(
+                        '<li><img src="images/img.jpg" alt="Avatar" class="avatar" />' +
+                        '<div class="message_wrapper">' +
+                        '<font style="color:#CD5C5C;">'+comments[k].author+':</font>' +
+                        '<font style="color:#696969;">'+comments[k].content+'</font>' +
+                        '<br />' +
+                        '<small>'+moment(comments[k].createTime).format('YYYY-MM-DD HH:mm:ss')+'</small>' +
+                        '<br />' +
+                        '</div></li>'
+                    );
+
+
+                }
 
 
 
