@@ -52,8 +52,7 @@ exports.add = function (req, res) {
             author: author,
             title: title,
             content: description,
-            createTime: time,
-            modifyTime: time
+            createTime: time
         });
 
         blog.save(function (err, data) {
@@ -350,5 +349,83 @@ exports.toForwardBlogPage = function (req, res) {
  * 转发微博
  */
 exports.forwardBlog = function (req, res) {
+    /**
+     * 逻辑：
+     * 将原来的微博作为子文档，
+     * 新建一条作者是当前用户、没有标题、内容是转发理由、包含子文档的新微博
+     */
+
+    /**
+     * 获取数据
+     */
+    var customer = req.session.user.username;
+
+    //父文档内容
+    var author = customer;
+    var title = '转发微博';
+    var content = req.query.blog_content;
+    var createTime = sd.format(new Date(), 'YYYY-MM-DD HH:mm:ss');
+    var relayTag = true;
+
+    //子文档内容
+    var relay_author = req.query.relay_author;
+    var relay_title = req.query.relay_title;
+    var relay_content = req.query.relay_content;
+
+    /**
+     * 服务器端校验
+     */
+    if(null == author || '' == author || null == content || '' == content ||
+        null == createTime || '' == createTime || null == relay_author || '' == relay_author ||
+        null == relay_title || '' == relay_title || null == relay_content || '' == relay_content){
+
+        console.log("必传参数为空");
+        res.redirect("/toAddPage");
+        return;
+    }
+
+
+    /**
+     * 得到子文档
+     */
+    var relayBlog = {
+        author: relay_author,
+        title: relay_title,
+        content: relay_content
+    };
+
+    /**
+     * 父文档其他参数
+     */
+    var blog = new modelBlog({
+        author: author,
+        title : title,
+        content: content,
+        relayContent: relayBlog,
+        relayTag : relayTag,
+        createTime : createTime
+    });
+
+    /**
+     * 新建文档
+     */
+    blog.save(function (err, data) {
+        /**
+         * 新增操作异常
+         */
+        if(err){
+            console.log("转发微博操作异常:"+err);
+            res.redirect("/toAddPage");
+        }
+        /**
+         * 新增成功
+         * 返回视图
+         */
+        console.log("成功转发微博");
+
+        res.redirect('/toAddPage');
+    });
+
+
 
 };

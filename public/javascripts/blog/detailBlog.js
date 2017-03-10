@@ -31,6 +31,7 @@ $(function () {
                 var title = data[i].title;
                 var content = data[i].content;
                 var createTime = moment(data[i].createTime).format('YYYY-MM-DD HH:mm:ss');
+                var relayTag = data[i].relayTag;
 
                 /**
                  * 映射到视图
@@ -107,6 +108,7 @@ $(function () {
                                 '<blockquote class="message">' +
                                     content +
                                 '</blockquote>' +
+                                '<div id="div_relay"></div>' +
                                 '<br />' +
                         '</div></li>' +
                     '</ul>' +
@@ -132,7 +134,7 @@ $(function () {
                                     '</div>' +
                                     '<div class="modal-footer">' +
                                         '<button type="button" data-dismiss="modal" class="btn btn-default">取消</button>' +
-                                        '<button type="button" class="btn btn-primary">转发</button>' +
+                                        '<button type="button" class="btn btn-primary" id="btn_relay">转发</button>' +
                                     '</div>' +
                                 '</div>' +
                             '</div>' +
@@ -157,6 +159,72 @@ $(function () {
                         '</div>' +
                     '</div>'
                 );
+
+                /**
+                 * 转发按钮事件
+                 */
+                $('#btn_relay').click(function () {
+                    /**
+                     * 获取数据
+                     */
+                    var blog_content = $('#reason').val();
+                    var relay_author = author;
+                    var relay_title = title;
+                    var relay_content = content;
+
+                    if(null == blog_content || '' == blog_content ||
+                        null == relay_author || '' == relay_author ||
+                        null == relay_title || '' == relay_title ||
+                        null == relay_content || '' == relay_content){
+
+                        alert('参数不能为空');
+
+                    }else {
+                        /**
+                         * 发起请求
+                         */
+                        window.location.href = "/forwardBlog?blog_content="+blog_content+
+                            "&relay_author="+relay_author+"&relay_title="+relay_title+
+                            "&relay_content="+relay_content;
+                    }
+
+                });
+
+
+                /**
+                 * 添加转发图层
+                 */
+                if(relayTag){
+                    /**
+                     * 获取数据
+                     */
+                    var relayContent = data[i].relayContent;
+
+                    var relay_author = relayContent.author;
+                    var relay_title = relayContent.title;
+                    var relay_content = relayContent.content;
+
+                    /**
+                     * 添加视图
+                     */
+                    $('#div_relay').append(
+                        '<ul class="messages">' +
+                            '<li><img src="images/img.jpg" alt="Avatar" class="avatar" />' +
+                                '<div class="message_wrapper">' +
+                                    '<h4 class="heading">'+ relay_author +'</h4>' +
+                                    '<br />' +
+                                    '<br />' +
+                                    '<a href="#" name="title"><h4>'+
+                                        relay_title +
+                                    '</h4></a>'+
+                                    '<blockquote class="message">' +
+                                        relay_content +
+                                    '</blockquote>' +
+                                    '<br />' +
+                            '</div></li>' +
+                        '</ul>'
+                    );
+                }
 
                 /**
                  * 显示写评论文本框

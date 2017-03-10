@@ -69,7 +69,7 @@ router.get('/toForwardBlogPage', weibo.toForwardBlogPage);
 /**
  * 转发微博
  */
-router.post('/forwardBlog', weibo.forwardBlog);
+router.get('/forwardBlog', weibo.forwardBlog);
 
 
 module.exports = router;
