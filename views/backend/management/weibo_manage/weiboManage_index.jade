@@ -71,18 +71,18 @@ block content
 
                         .row
                             .col-sm-12
-                                table#datatable.table.table-striped.table-bordered.dataTable.no-footer(role='grid', aria-describedby='datatable_info')
+                                div#data(style='display:none;')= data
+                                table#datatable.table.table-striped.table-bordered.dataTable
                                     thead
                                         tr(role='row')
-                                            th.sorting(tabindex='0', aria-controls='datatable', rowspan='1', colspan='1', style='') 唯一标识
-                                            th.sorting(tabindex='0', aria-controls='datatable', rowspan='1', colspan='1', style='') 作者
-                                            th.sorting_desc(tabindex='0', aria-controls='datatable', rowspan='1', colspan='1',  style='') 标题
-                                            th.sorting(tabindex='0', aria-controls='datatable', rowspan='1', colspan='1', style='') 内容
-                                            //th.sorting(tabindex='0', aria-controls='datatable', rowspan='1', colspan='1', style='') 评论内容
-                                            //th.sorting(tabindex='0', aria-controls='datatable', rowspan='1', colspan='1',style='') 转发的微博
-                                            th(tabindex='0', aria-controls='datatable', rowspan='1', colspan='1',style='') 操作
-                                    tbody(id='body')
-
+                                            th 唯一标识
+                                            th 作者
+                                            th 标题
+                                            th 内容
+                                            //th 评论
+                                            //th 转发
+                                            //th 创建时间
+                                            th 操作
 
 
 
@@ -100,22 +100,5 @@ block scripts
     script(src='javascripts/dataTables/jquery.dataTables.min.js')
     script(src='javascripts/dataTables/dataTables.bootstrap.min.js')
 
-    //script(src='javascripts/dataTables/dataTables.buttons.min.js')
-    //script(src='javascripts/dataTables/buttons.bootstrap.min.js')
-    //script(src='javascripts/dataTables/buttons.flash.min.js')
-    //script(src='javascripts/dataTables/buttons.html5.min.js')
-    //script(src='javascripts/dataTables/buttons.print.min.js')
-    //script(src='javascripts/dataTables/dataTables.fixedHeader.min.js')
-    //script(src='javascripts/dataTables/dataTables.keyTable.min.js')
-    //script(src='javascripts/dataTables/dataTables.responsive.min.js')
-    //script(src='javascripts/dataTables/responsive.bootstrap.js')
-
-    //script(src='javascripts/dataTables/dataTables.scroller.min.js')
-
-    //script(src='javascripts/dataTables/jszip.min.js')
-    //script(src='javascripts/dataTables/pdfmake.min.js')
-    //script(src='javascripts/dataTables/vfs_fonts.js')
-
     //load data
     script(src='javascripts/backend/blog/blogManage.js')
-
