@@ -27,9 +27,9 @@ block content
                                     .modal-header
                                         button.close(type='button', data-dismiss='modal')
                                             span(aria-hidden='true') ×
-                                        h4#myModalLabel.modal-title Modal title
+                                        h4#myModalLabel.modal-title 微博详情
                                     .modal-body
-                                        h4 Text in a modal
+                                        h4 微博标题 内容 评论
                                         p
                                             | 1111
                                     .modal-footer
@@ -78,8 +78,10 @@ block content
                                             th 唯一标识
                                             th 作者
                                             th 标题
-                                            th 内容
-                                            th 评论
+
+                                            //th 内容
+                                            //th 评论
+
                                             //th 转发的原微博
                                             th 创建时间
                                             th 操作
@@ -100,5 +102,7 @@ block scripts
     script(src='javascripts/dataTables/jquery.dataTables.min.js')
     script(src='javascripts/dataTables/dataTables.bootstrap.min.js')
 
+    //trasfer Date
+    script(src='javascripts/commons/moment.min.js')
     //load data
     script(src='javascripts/backend/blog/blogManage.js')

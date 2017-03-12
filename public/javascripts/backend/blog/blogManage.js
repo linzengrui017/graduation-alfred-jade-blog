@@ -29,20 +29,31 @@ $('#datatable').dataTable({
         {"data" : '_id'},
         {"data" : 'author'},
         {"data": 'title'},
-        {"data": 'content'},
-        {"data": 'comments'},
-        // {"data": 'relayContent'},
+
+        // {"data": 'content'},
+        // {"data": 'comments'},
+        // {"data": 'relayContent'}, //无法加载
         {"data": 'createTime'},
         {data : null}
     ],
-    columnDefs: [{    //设置定义列的初始属性
-        targets: -1,//编辑
-        data: null,
-        defaultContent:
-            '<button type="button" data-toggle="modal" data-target=".bs-example-modal-lg" class="btn btn-primary btn-xs"><i class="fa fa-folder"> 查看评论</i></button>'+
-            // '<button type="button" data-toggle="modal" data-target=".bs-example-modal-sm" class="btn btn-info btn-xs"><i class="fa fa-pencil"> 修改</i></button>'+
-            '<button type="button" data-toggle="modal" data-target=".bs-example-modal" class="btn btn-danger btn-xs"><i class="fa fa-trash-o"></i> 删除</button>'
-    }],
+    columnDefs: [   //设置定义列的初始属性
+        {
+            targets: -1,//编辑
+            data: null,
+            defaultContent:
+                '<button type="button" data-toggle="modal" data-target=".bs-example-modal-lg" class="btn btn-primary btn-xs"><i class="fa fa-folder"> 查看详情</i></button>'+
+                // '<button type="button" data-toggle="modal" data-target=".bs-example-modal-sm" class="btn btn-info btn-xs"><i class="fa fa-pencil"> 修改</i></button>'+
+                '<button type="button" data-toggle="modal" data-target=".bs-example-modal" class="btn btn-danger btn-xs"><i class="fa fa-trash-o"></i> 删除</button>'
+        },
+        {
+            targets: [3],   //第四列
+            data: 'createTime',
+            render: function (data, type, full) {
+                var createTime = moment(data).format('YYYY-MM-DD HH:mm:ss');
+                return '<span>'+ createTime +'</span>';
+            }
+        }
+    ],
     oLanguage: { //国际化配置
         sProcessing : "正在获取数据，请稍后...",
         sLengthMenu : "显示 _MENU_ 条",
