@@ -23,29 +23,37 @@ $.ajax({
 });
 // alert(data);
 $('#datatable').dataTable({
-    bRetrieve: true, //solve the problem: Cannot reinitialize Data Table
-    data : data,
-    columns: [
+    bRetrieve: true,    //solve the problem: Cannot reinitialize Data Table
+    data : data,        //数据源是对象数组 object array
+    columns: [          //设置列匹配的键
         {"data" : '_id'},
         {"data" : 'author'},
         {"data": 'title'},
         {"data": 'content'},
-        // {"data": 'comments'},
+        {"data": 'comments'},
         // {"data": 'relayContent'},
-        // {"data": 'createTime'},
+        {"data": 'createTime'},
         {data : null}
     ],
+    columnDefs: [{    //设置定义列的初始属性
+        targets: -1,//编辑
+        data: null,
+        defaultContent:
+            '<button type="button" data-toggle="modal" data-target=".bs-example-modal-lg" class="btn btn-primary btn-xs"><i class="fa fa-folder"> 查看评论</i></button>'+
+            // '<button type="button" data-toggle="modal" data-target=".bs-example-modal-sm" class="btn btn-info btn-xs"><i class="fa fa-pencil"> 修改</i></button>'+
+            '<button type="button" data-toggle="modal" data-target=".bs-example-modal" class="btn btn-danger btn-xs"><i class="fa fa-trash-o"></i> 删除</button>'
+    }],
     oLanguage: { //国际化配置
-        "sProcessing" : "正在获取数据，请稍后...",
-        "sLengthMenu" : "显示 _MENU_ 条",
-        "sZeroRecords" : "没有您要搜索的内容",
-        "sInfo" : "从 _START_ 到  _END_ 条记录 总记录数为 _TOTAL_ 条",
-        "sInfoEmpty" : "记录数为0",
-        "sInfoFiltered" : "(全部记录数 _MAX_ 条)",
-        "sInfoPostFix" : "",
-        "sSearch" : "搜索",
-        "sUrl" : "",
-        "oPaginate": {
+        sProcessing : "正在获取数据，请稍后...",
+        sLengthMenu : "显示 _MENU_ 条",
+        sZeroRecords : "没有您要搜索的内容",
+        sInfo : "从 _START_ 到  _END_ 条记录 总记录数为 _TOTAL_ 条",
+        sInfoEmpty : "记录数为0",
+        sInfoFiltered : "(全部记录数 _MAX_ 条)",
+        sInfoPostFix : "",
+        sSearch : "搜索",
+        sUrl : "",
+        oPaginate: {
             "sFirst" : "第一页",
             "sPrevious" : "上一页",
             "sNext" : "下一页",
