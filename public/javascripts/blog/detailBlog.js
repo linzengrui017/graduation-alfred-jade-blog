@@ -278,18 +278,31 @@ $(function () {
                  * 返回数据
                  */
                 for(var k = comments.length - 1; k >= 0; k--){
+                    if(comments[k].author == customer){
+                        $('#comments_message').append(
+                            '<li><img src="images/img.jpg" alt="Avatar" class="avatar" />' +
+                            '<div class="message_wrapper">' +
+                            '<font style="color:#CD5C5C;">'+comments[k].author+'</font>:' +
+                            '<font style="color:#696969;">'+comments[k].content+'</font>' +
+                            '<br />' +
+                            '<small>'+moment(comments[k].createTime).format('YYYY-MM-DD HH:mm:ss')+'</small>' +
+                            '&nbsp;&nbsp;&nbsp;&nbsp;<a href="#" name="btn_delComment">删除</a>' +
+                            '<br />' +
+                            '</div></li>'
+                        );
+                    }else {
+                        $('#comments_message').append(
+                            '<li><img src="images/img.jpg" alt="Avatar" class="avatar" />' +
+                            '<div class="message_wrapper">' +
+                            '<font style="color:#CD5C5C;">'+comments[k].author+'</font>:' +
+                            '<font style="color:#696969;">'+comments[k].content+'</font>' +
+                            '<br />' +
+                            '<small>'+moment(comments[k].createTime).format('YYYY-MM-DD HH:mm:ss')+'</small>' +
+                            '<br />' +
+                            '</div></li>'
+                        );
+                    }
 
-                    $('#comments_message').append(
-                        '<li><img src="images/img.jpg" alt="Avatar" class="avatar" />' +
-                        '<div class="message_wrapper">' +
-                        '<font style="color:#CD5C5C;">'+comments[k].author+'</font>:' +
-                        '<font style="color:#696969;">'+comments[k].content+'</font>' +
-                        '<br />' +
-                        '<small>'+moment(comments[k].createTime).format('YYYY-MM-DD HH:mm:ss')+'</small>' +
-                        '&nbsp;&nbsp;&nbsp;&nbsp;<a href="#" name="btn_delComment">删除</a>' +
-                        '<br />' +
-                        '</div></li>'
-                    );
 
                 }
 

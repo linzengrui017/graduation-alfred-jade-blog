@@ -3,6 +3,7 @@ extends ../commons/layout
 block head
 
 block content
+    input#customer(type='hidden', value=customer)
     //modal
     - if(locals.message)
         //button.btn.btn-info.btn-xs(type='button', data-toggle='modal', data-target='.bs-example-modal-sm')

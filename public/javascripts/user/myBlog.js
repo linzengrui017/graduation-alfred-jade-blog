@@ -6,8 +6,8 @@
  * 异步查询数据库
  * 返回数据
  */
+var customer = $('#customer').val();
 var url = '/myBlogList';
-
 $.ajax({
     url: url,
     type: "post",
@@ -124,16 +124,28 @@ $.ajax({
              * 返回数据
              */
             for(var k = comments.length - 1; k >= 0; k--){
-                comments_list_html+=
-                    '<li><img src="images/img.jpg" alt="Avatar" class="avatar" />' +
-                        '<div class="message_wrapper">' +
-                            '<font style="color:#CD5C5C;">'+comments[k].author+'</font>:' +
-                            '<font style="color:#696969;">'+comments[k].content+'</font>' +
-                            '<br />' +
-                            '<small>'+moment(comments[k].createTime).format('YYYY-MM-DD HH:mm:ss')+'</small>' +
-                            '&nbsp;&nbsp;&nbsp;&nbsp;<a href="#" name="btn_delComment">删除</a>' +
-                        '<br />' +
-                    '</div></li>';
+                if(comments[k].author == customer) {
+                    comments_list_html +=
+                        '<li><img src="images/img.jpg" alt="Avatar" class="avatar" />' +
+                            '<div class="message_wrapper">' +
+                                '<font style="color:#CD5C5C;">' + comments[k].author + '</font>:' +
+                                '<font style="color:#696969;">' + comments[k].content + '</font>' +
+                                '<br />' +
+                                '<small>' + moment(comments[k].createTime).format('YYYY-MM-DD HH:mm:ss') + '</small>' +
+                                '&nbsp;&nbsp;&nbsp;&nbsp;<a href="#" name="btn_delComment">删除</a>' +
+                                '<br />' +
+                        '</div></li>';
+                }else {
+                    comments_list_html +=
+                        '<li><img src="images/img.jpg" alt="Avatar" class="avatar" />' +
+                            '<div class="message_wrapper">' +
+                                '<font style="color:#CD5C5C;">' + comments[k].author + '</font>:' +
+                                '<font style="color:#696969;">' + comments[k].content + '</font>' +
+                                '<br />' +
+                                '<small>' + moment(comments[k].createTime).format('YYYY-MM-DD HH:mm:ss') + '</small>' +
+                                '<br />' +
+                        '</div></li>';
+                }
             }
 
 
