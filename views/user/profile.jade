@@ -1,18 +1,30 @@
-
-
 extends ../commons/layout
 
 block head
 
 block content
+    //modal
+    - if(locals.message)
+        //button.btn.btn-info.btn-xs(type='button', data-toggle='modal', data-target='.bs-example-modal-sm')
+        //    | 打开模态框
+        .modal.fade.bs-example-modal-sm(id='alert_modal', tabindex='-1', role='dialog', aria-hidden='true')
+            .modal-dialog.modal-sm
+                .modal-content
+                    .modal-header
+                        button.close(type='button', data-dismiss='modal', aria-label='Close')
+                            span(aria-hidden='true') ×
+                        h4#myModalLabel2.modal-title 提示
+                    .modal-body
+                        h4= locals.message
+                    .modal-footer
+                        button.btn.btn-default(type='button', data-dismiss='modal') 关闭
 
     .row
         .col-md-12.col-sm-12.col-xs-12
             .x_panel
                 .x_title
                     h2
-                        | User Report
-                        small Activity report
+                        | 我的主页
                     .clearfix
                 .x_content
                     .col-md-3.col-sm-3.col-xs-12.profile_left
@@ -20,147 +32,137 @@ block content
                             #crop-avatar
                                 // Current avatar
                                 img.img-responsive.avatar-view(src='images/picture.jpg', alt='Avatar', title='Change the avatar')
-                        h3 Samuel Doe
+                        h3 博主
                         ul.list-unstyled.user_data
                             li
                                 i.fa.fa-map-marker.user-profile-icon
-                                |  San Francisco, California, USA
-                            li
-                                i.fa.fa-briefcase.user-profile-icon
-                                |  Software Engineer
-                            li.m-top-xs
-                                i.fa.fa-external-link.user-profile-icon
-                                a(href='http://www.kimlabs.com/profile/', target='_blank') www.kimlabs.com
-                        a.btn.btn-success
-                            i.fa.fa-edit.m-right-xs
-                            | Edit Profile
+                                |  广东省, 珠海市, 香洲区
                         br
-                        // start skills
-                        h4 Skills
-                        ul.list-unstyled.user_data
-                            li
-                                p Web Applications
-                                .progress.progress_sm
-                                    .progress-bar.bg-green(role='progressbar', data-transitiongoal='50')
-                            li
-                                p Website Design
-                                .progress.progress_sm
-                                    .progress-bar.bg-green(role='progressbar', data-transitiongoal='70')
-                            li
-                                p Automation & Testing
-                                .progress.progress_sm
-                                    .progress-bar.bg-green(role='progressbar', data-transitiongoal='30')
-                            li
-                                p UI / UX
-                                .progress.progress_sm
-                                    .progress-bar.bg-green(role='progressbar', data-transitiongoal='50')
-                        // end of skills
+
                     .col-md-9.col-sm-9.col-xs-12
-                        .profile_title
-                            .col-md-6
-                                h2 User Activity Report
-                            .col-md-6
-                                #reportrange.pull-right(style='margin-top: 5px; background: #fff; cursor: pointer; padding: 5px 10px; border: 1px solid #E6E9ED')
-                                    i.glyphicon.glyphicon-calendar.fa.fa-calendar
-                                    span January 26, 2017 - February 24, 2017
-                                    b.caret
-                        // start of user-activity-graph
-                        #graph_bar(style='width:100%; height:280px;')
-                        // end of user-activity-graph
                         div(role='tabpanel', data-example-id='togglable-tabs')
                             ul#myTab.nav.nav-tabs.bar_tabs(role='tablist')
                                 li.active(role='presentation')
-                                    a#home-tab(href='#tab_content1', role='tab', data-toggle='tab', aria-expanded='true') Recent Activity
+                                    a#home-tab(href='#tab_content1', role='tab', data-toggle='tab', aria-expanded='true') 全部微博
                                 li(role='presentation')
-                                    a#profile-tab(href='#tab_content2', role='tab', data-toggle='tab', aria-expanded='false') Projects Worked on
+                                    a#profile-tab(href='#tab_content2', role='tab', data-toggle='tab', aria-expanded='false') 修改密码
                                 li(role='presentation')
-                                    a#profile-tab2(href='#tab_content3', role='tab', data-toggle='tab', aria-expanded='false') Profile
+                                    a#profile-tab2(href='#tab_content3', role='tab', data-toggle='tab', aria-expanded='false') 相册
+                                li(role='presentation')
+                                    a#profile-tab3(href='#tab_content4', role='tab', data-toggle='tab', aria-expanded='false') 更多
                             #myTabContent.tab-content
                                 #tab_content1.tab-pane.fade.active.in(role='tabpanel', aria-labelledby='home-tab')
-                                    // start recent activity
+
                                     ul.messages
                                         li
                                             img.avatar(src='images/img.jpg', alt='Avatar')
-                                            .message_date
-                                                h3.date.text-info 24
-                                                p.month May
                                             .message_wrapper
                                                 h4.heading Desmond Davison
+                                                small 2017.03.01
+                                                br
+                                                br
                                                 blockquote.message
                                                     | Raw denim you probably haven't heard of them jean shorts Austin. Nesciunt tofu stumptown aliqua butcher retro keffiyeh dreamcatcher synth.
                                                 br
-                                                p.url
-                                                    span.fs1.text-info(aria-hidden='true', data-icon='')
-                                                    a(href='#')
-                                                        i.fa.fa-paperclip
-                                                        |  User Acceptance Test.doc
-                                        li
-                                            img.avatar(src='images/img.jpg', alt='Avatar')
-                                            .message_date
-                                                h3.date.text-error 21
-                                                p.month May
-                                            .message_wrapper
-                                                h4.heading Brian Michaels
-                                                blockquote.message
-                                                    | Raw denim you probably haven't heard of them jean shorts Austin. Nesciunt tofu stumptown aliqua butcher retro keffiyeh dreamcatcher synth.
-                                                br
-                                                p.url
-                                                    span.fs1(aria-hidden='true', data-icon='')
-                                                    a(href='#', data-original-title='') Download
+                                    .clearfix
+                                    .row
+                                        .col-md-2.col-sm-2.col-xs-2
+                                        .col-md-3.col-sm-3.col-xs-3
+                                            a.btn(data-toggle='modal', data-target='.bs-example-modal-lg')
+                                                i.fa.fa-external-link
+                                                | 123
+                                            .modal.fade.bs-example-modal-lg(tabindex='-1', role='dialog', aria-hidden='true', style='display: none;')
+                                                .modal-dialog.modal-lg
+                                                    .modal-content
+                                                        .modal-header
+                                                            button.close(type='button', data-dismiss='modal')
+                                                                span(aria-hidden='true') ×
+                                                            h4#myModalLabel.modal-title 转发微博
+                                                        .modal-body
+                                                            textarea#reason(name='reason', style='width:100%;height:100px;',placeholder='请输入转发理由')
+                                                        .modal-footer
+                                                            button.btn.btn-default(type='button', data-dismiss='modal') 取消
+                                                            button.btn.btn-primary(type='button') 转发
 
-                                    // end recent activity
+                                        .col-md-3.col-sm-3.col-xs-3
+                                            a#headingOne.btn.panel-heading.collapsed(role='tab', data-toggle='collapse', data-parent='#accordion', href='#collapseOne', aria-expanded='false', aria-controls='collapseOne')
+                                                i.fa.fa-comment-o
+                                                | 456
+                                        .col-md-3.col-sm-3.col-xs-3
+                                            a.btn(name='btn_thumbs')
+                                                i.fa.fa-thumbs-o-up(name='btn_thumbs_1')
+                                                i.fa.fa-thumbs-up(name='btn_thumbs_2', style='display:none;')
+                                                | 789
+                                        .col-md-1.col-sm-1.col-xs-1
+                                    .row
+                                        .panel
+                                            #collapseOne.panel-collapse.collapse(role='tabpanel', aria-labelledby='headingOne', aria-expanded='false', style='height: 0px;')
+                                                .panel-body
+                                                    ul.messages
+                                                        li
+                                                            img.avatar(src='images/img.jpg', alt='Avatar')
+                                                            .message_wrapper
+                                                                font(style='color:#CD5C5C;')
+                                                                    | Desmond Davison:
+                                                                font(style='color:#696969;')
+                                                                    | comment this is a comment
+                                                                br
+                                                                small 2017.03.01
+                                                                br
+
+                                                        li
+                                                            img.avatar(src='images/img.jpg', alt='Avatar')
+                                                            .message_wrapper
+                                                                font(style='color:#CD5C5C;')
+                                                                    | Desmond Davison:
+                                                                font(style='color:#696969;')
+                                                                    | comment this is a comment
+                                                                br
+                                                                small 2017.03.01
+                                                                br
+
                                 #tab_content2.tab-pane.fade(role='tabpanel', aria-labelledby='profile-tab')
-                                    // start user projects
-                                    table.data.table.table-striped.no-margin
-                                        thead
-                                            tr
-                                                th #
-                                                th Project Name
-                                                th Client Company
-                                                th.hidden-phone Hours Spent
-                                                th Contribution
-                                        tbody
-                                            tr
-                                                td 1
-                                                td New Company Takeover Review
-                                                td Deveint Inc
-                                                td.hidden-phone 18
-                                                td.vertical-align-mid
-                                                    .progress
-                                                        .progress-bar.progress-bar-success(data-transitiongoal='35')
-                                            tr
-                                                td 2
-                                                td New Partner Contracts Consultanci
-                                                td Deveint Inc
-                                                td.hidden-phone 13
-                                                td.vertical-align-mid
-                                                    .progress
-                                                        .progress-bar.progress-bar-danger(data-transitiongoal='15')
-                                            tr
-                                                td 3
-                                                td Partners and Inverstors report
-                                                td Deveint Inc
-                                                td.hidden-phone 30
-                                                td.vertical-align-mid
-                                                    .progress
-                                                        .progress-bar.progress-bar-success(data-transitiongoal='45')
-                                            tr
-                                                td 4
-                                                td New Company Takeover Review
-                                                td Deveint Inc
-                                                td.hidden-phone 28
-                                                td.vertical-align-mid
-                                                    .progress
-                                                        .progress-bar.progress-bar-success(data-transitiongoal='75')
-                                    // end user projects
+                                    .x_panel
+                                        .x_title
+                                            h2 个人中心--修改个人密码
+                                            .clearfix
+                                        .x_content
+                                            form.form-horizontal.form-label-left.input_mask(method='post', action='/user_update_password')
+                                                .form-group
+                                                    label.control-label.col-md-3.col-sm-3.col-xs-12
+                                                        | 用户名
+                                                    .col-md-4.col-sm-4.col-xs-12
+                                                        input.form-control(type='text', readonly='readonly', id='username', name='username', value=user.username)
+                                                .form-group
+                                                    label.control-label.col-md-3.col-sm-3.col-xs-12
+                                                        | 新的密码
+                                                        span.required *
+                                                    .col-md-4.col-sm-4.col-xs-12
+                                                        input.date-picker.form-control.col-md-7.col-xs-12(required='required', type='password',id='pwd', name='pwd')
+                                                .form-group
+                                                    label.control-label.col-md-3.col-sm-3.col-xs-12
+                                                        | 确认密码
+                                                        span.required *
+                                                    .col-md-4.col-sm-4.col-xs-12
+                                                        input.date-picker.form-control.col-md-7.col-xs-12(required='required', type='password', id='pwd2', name='pwd2')
+                                                .ln_solid
+                                                .form-group
+                                                    .col-md-4.col-sm-4.col-xs-12.col-md-offset-5
+                                                        button.btn.btn-info(type='reset') 重置
+                                                        button.btn.btn-success(type='submit', id='btn_admin_submit') 提交
+
+
+
+
                                 #tab_content3.tab-pane.fade(role='tabpanel', aria-labelledby='profile-tab')
-                                    p
-                                        | xxFood truck fixie locavore, accusamus mcsweeney's marfa nulla single-origin coffee squid. Exercitation +1 labore velit, blog sartorial PBR leggings next level wes anderson artisan four loko farm-to-table craft beer twee. Qui
-                                        | photo booth letterpress, commodo enim craft beer mlkshk
+                                #tab_content4.tab-pane.fade(role='tabpanel', aria-labelledby='profile-tab')
+
 
 
 
 
 
 block scripts
+    //update password validation
+    script(src='javascripts/user/user_update_password.js')
 

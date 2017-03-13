@@ -17,8 +17,64 @@ var sd = require('silly-datetime');
  * 跳转到用户的个人主页
  */
 exports.user = function (req, res) {
+    res.render('user/profile', { title: 'Profile' });
+};
+
+/**
+ * 修改密码
+ */
+exports.user_update_password = function (req, res) {
+    /**
+     * 服务器端校验
+     */
+    var username = req.body.username;
+    var pwd = req.body.pwd;
+    var pwd2 = req.body.pwd2;
+    if( null == username || '' == username){
+        console.log('用户名不能为空');
+        req.session.error = "用户名不能为空";
+        res.redirect('/profile');
+    } else if(pwd != pwd2){
+        console.log('两次输入的密码不一致');
+        req.session.error = "两次输入的密码不一致";
+        res.redirect('/profile');
+    } else {
+        /**
+         * 校验成功
+         * md5加密
+         */
+        var md5 = crypto.createHash("md5");
+        var password = md5.update(pwd).digest("base64");
+        /**
+         * 数据库操作
+         */
+        var query = {
+            username : username
+        };
+        var operator = {
+            $set : { password : password }
+        };
+        modelUser.update(query, operator, function (err, data) {
+            if(err){
+                console.log("修改用户密码失败："+ err);
+                req.session.error = "修改用户密码失败";
+                res.redirect("/profile");
+            }
+            console.log("修改用户密码成功");
+            req.session.success = '修改用户密码成功';
+            /**
+             * 返回视图
+             */
+            res.redirect('/profile');
+        });
+    }
+};
+
+/**
+ * 跳转到他人主页
+ */
+exports.others = function (req, res) {
     res.render('user/others', { title: 'others' });
-    // res.render('user/profile', { title: 'Profile' });
 };
 
 /**

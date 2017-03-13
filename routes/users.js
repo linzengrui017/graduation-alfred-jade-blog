@@ -16,6 +16,14 @@ var user = require('./controllers/user_controller');
  */
 router.get('/profile', user.user);
 /**
+ * 修改密码
+ */
+router.post('/user_update_password', user.user_update_password);
+/**
+ * 跳转到他人主页
+ */
+router.get('/others', user.others);
+/**
  * 跳转到注册页面
  * 暂时不用
  */
