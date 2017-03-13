@@ -52,7 +52,10 @@ router.post('/follow', user.follow);
  * 解除关注功能
  */
 router.post('/unfollow', user.unfollow);
-
+/**
+ * 查询个人全部微博功能
+ */
+router.post('/myBlogList', user.myBlogList);
 
 
 
