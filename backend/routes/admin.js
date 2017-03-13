@@ -18,7 +18,7 @@ router.get('/admin_profile', admin.admin_profile);
 router.post('/admin_updatePassword', admin.admin_updatePassword);
 
 //取消按钮
-router.get('/admin_updatePassword', admin.admin_updatePassword);
+router.get('/admin_cancel_updatePassword', admin.admin_cancel_updatePassword);
 
 /**
  * 跳转到登录页面

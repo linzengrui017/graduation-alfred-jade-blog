@@ -11,31 +11,47 @@ block content
                     h2 个人中心--修改个人密码
                     .clearfix
                 .x_content
+                    //modal
+                    - if(locals.message)
+                       //button.btn.btn-info.btn-xs(type='button', data-toggle='modal', data-target='.bs-example-modal-sm')
+                       //    | 打开模态框
+                       .modal.fade.bs-example-modal-sm(id='alert_modal', tabindex='-1', role='dialog', aria-hidden='true')
+                           .modal-dialog.modal-sm
+                               .modal-content
+                                   .modal-header
+                                       button.close(type='button', data-dismiss='modal', aria-label='Close')
+                                           span(aria-hidden='true') ×
+                                       h4#myModalLabel2.modal-title 警告
+                                   .modal-body
+                                       h4= locals.message
+                                   .modal-footer
+                                       button.btn.btn-default(type='button', data-dismiss='modal') 关闭
+
                     br
                     form.form-horizontal.form-label-left.input_mask(method='post', action='/admin_updatePassword')
                         .form-group
                             label.control-label.col-md-3.col-sm-3.col-xs-12
                                 | 用户名
                             .col-md-4.col-sm-4.col-xs-12
-                                input.form-control(type='text', readonly='readonly')
+                                input.form-control(type='text', readonly='readonly', id='username', name='username', value=adminer.username)
                         .form-group
                             label.control-label.col-md-3.col-sm-3.col-xs-12
                                 | 新的密码
                                 span.required *
                             .col-md-4.col-sm-4.col-xs-12
-                                input.date-picker.form-control.col-md-7.col-xs-12(required='required', type='text')
+                                input.date-picker.form-control.col-md-7.col-xs-12(required='required', type='password',id='pwd', name='pwd')
                         .form-group
                             label.control-label.col-md-3.col-sm-3.col-xs-12
                                 | 确认密码
                                 span.required *
                             .col-md-4.col-sm-4.col-xs-12
-                                input.date-picker.form-control.col-md-7.col-xs-12(required='required', type='text')
+                                input.date-picker.form-control.col-md-7.col-xs-12(required='required', type='password', id='pwd2', name='pwd2')
                         .ln_solid
                         .form-group
                             .col-md-4.col-sm-4.col-xs-12.col-md-offset-5
                                 button.btn.btn-primary(type='button', id='btn_admin_profile_cancel') 取消
                                 button.btn.btn-info(type='reset') 重置
-                                button.btn.btn-success(type='submit') 提交
+                                button.btn.btn-success(type='submit', id='btn_admin_submit') 提交
 
 block scripts
     //update password validation
