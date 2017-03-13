@@ -3,10 +3,9 @@ extends ../../commons/layout
 block head
     // Datatables
     link(href='stylesheets/dataTables/dataTables.bootstrap.min.css', rel='stylesheet')
-    //link(href='stylesheets/dataTables/buttons.bootstrap.min.css', rel='stylesheet')
-    //link(href='stylesheets/dataTables/fixedHeader.bootstrap.min.css', rel='stylesheet')
-    //link(href='stylesheets/dataTables/responsive.bootstrap.min.css', rel='stylesheet')
-    //link(href='stylesheets/dataTables/scroller.bootstrap.min.css', rel='stylesheet')
+
+    //customer style
+    link(href='stylesheets/backend/userManage_index.css', rel='stylesheet')
 
 
 block content
@@ -16,281 +15,69 @@ block content
             .x_panel
                 .x_title
                     h2
-                        | 用户列表
+                        | 微博列表
                     .clearfix
                 .x_content
                     #datatable_wrapper.dataTables_wrapper.form-inline.dt-bootstrap.no-footer
+                        //模态框
+                        .modal.fade.bs-example-modal-lg(tabindex='-1', role='dialog', aria-hidden='true', style='display: none;')
+                            .modal-dialog.modal-lg
+                                .modal-content
+                                    .modal-header
+                                        button.close(type='button', data-dismiss='modal')
+                                            span(aria-hidden='true') ×
+                                        h4#myModalLabel.modal-title 微博详情
+                                    .modal-body
+                                        h4 微博标题 内容 评论
+                                        p
+                                            | 1111
+                                    .modal-footer
+                                        button.btn.btn-default(type='button', data-dismiss='modal') Close
+                                        button.btn.btn-primary(type='button') Save changes
+
+                        .modal.fade.bs-example-modal-sm(tabindex='-1', role='dialog', aria-hidden='true')
+                            .modal-dialog.modal-sm
+                                .modal-content
+                                    .modal-header
+                                        button.close(type='button', data-dismiss='modal', aria-label='Close')
+                                            span(aria-hidden='true') ×
+                                        h4#myModalLabel2.modal-title Modal title
+                                    .modal-body
+                                        h4 Text in a modal
+                                        p
+                                            | 222222
+                                    .modal-footer
+                                        button.btn.btn-default(type='button', data-dismiss='modal') Close
+                                        button.btn.btn-primary(type='button') Save changes
+
+                        .modal.fade.bs-example-modal(tabindex='-1', role='dialog', aria-hidden='true', style='display: none;')
+                            .modal-dialog.modal-lg
+                                .modal-content
+                                    .modal-header
+                                        button.close(type='button', data-dismiss='modal')
+                                            span(aria-hidden='true') ×
+                                        h4#myModalLabel3.modal-title Modal title
+                                    .modal-body
+                                        h4 Text in a modal
+                                        p
+                                            | 第3个模态框
+                                    .modal-footer
+                                        button.btn.btn-default(type='button', data-dismiss='modal') Close
+                                        button.btn.btn-primary(type='button') Save changes
+
+
+
 
                         .row
                             .col-sm-12
-                                table#datatable.table.table-striped.table-bordered.dataTable.no-footer(role='grid', aria-describedby='datatable_info')
+                                div#data(style='display:none;')= data
+                                table#datatable.table.table-striped.table-bordered.dataTable
                                     thead
                                         tr(role='row')
-                                            th.sorting(tabindex='0', aria-controls='datatable', rowspan='1', colspan='1', aria-label='Name: activate to sort column ascending', style='') Name
-                                            th.sorting(tabindex='0', aria-controls='datatable', rowspan='1', colspan='1', aria-label='Position: activate to sort column ascending', style='') Position
-                                            th.sorting_desc(tabindex='0', aria-controls='datatable', rowspan='1', colspan='1', aria-label='Office: activate to sort column ascending', aria-sort='descending', style='') Office
-                                            th.sorting(tabindex='0', aria-controls='datatable', rowspan='1', colspan='1', aria-label='Age: activate to sort column ascending', style='') Age
-                                            th.sorting(tabindex='0', aria-controls='datatable', rowspan='1', colspan='1', aria-label='Start date: activate to sort column ascending', style='') Start date
-                                            th.sorting(tabindex='0', aria-controls='datatable', rowspan='1', colspan='1', aria-label='Salary: activate to sort column ascending', style='') Salary
-                                            th.sorting(tabindex='0', aria-controls='datatable', rowspan='1', colspan='1', aria-label='Operation') Operation
-                                    tbody
-                                        tr.odd(role='row')
-                                            td Sakura Yamamoto
-                                            td Support Engineer
-                                            td.sorting_1 Tokyo
-                                            td 37
-                                            td 2009/08/19
-                                            td $139,575
-                                            td
-                                                button.btn.btn-primary.btn-xs(type='button', data-toggle='modal', data-target='.bs-example-modal-lg')
-                                                    i.fa.fa-folder
-                                                        |  查看
-                                                .modal.fade.bs-example-modal-lg(tabindex='-1', role='dialog', aria-hidden='true', style='display: none;')
-                                                    .modal-dialog.modal-lg
-                                                        .modal-content
-                                                            .modal-header
-                                                                button.close(type='button', data-dismiss='modal')
-                                                                    span(aria-hidden='true') ×
-                                                                h4#myModalLabel.modal-title Modal title
-                                                            .modal-body
-                                                                h4 Text in a modal
-                                                                p
-                                                                    | 1111
-                                                            .modal-footer
-                                                                button.btn.btn-default(type='button', data-dismiss='modal') Close
-                                                                button.btn.btn-primary(type='button') Save changes
-                                                button.btn.btn-info.btn-xs(type='button', data-toggle='modal', data-target='.bs-example-modal-sm')
-                                                    i.fa.fa-pencil
-                                                        |  修改
-                                                .modal.fade.bs-example-modal-sm(tabindex='-1', role='dialog', aria-hidden='true')
-                                                    .modal-dialog.modal-sm
-                                                        .modal-content
-                                                            .modal-header
-                                                                button.close(type='button', data-dismiss='modal', aria-label='Close')
-                                                                    span(aria-hidden='true') ×
-                                                                h4#myModalLabel2.modal-title Modal title
-                                                            .modal-body
-                                                                h4 Text in a modal
-                                                                p
-                                                                    | 222222
-                                                            .modal-footer
-                                                                button.btn.btn-default(type='button', data-dismiss='modal') Close
-                                                                button.btn.btn-primary(type='button') Save changes
-                                                button.btn.btn-danger.btn-xs(type='button', data-toggle='modal', data-target='.bs-example-modal')
-                                                    i.fa.fa-trash-o
-                                                    |  删除
-                                                .modal.fade.bs-example-modal(tabindex='-1', role='dialog', aria-hidden='true', style='display: none;')
-                                                    .modal-dialog.modal-lg
-                                                        .modal-content
-                                                            .modal-header
-                                                                button.close(type='button', data-dismiss='modal')
-                                                                    span(aria-hidden='true') ×
-                                                                h4#myModalLabel3.modal-title Modal title
-                                                            .modal-body
-                                                                h4 Text in a modal
-                                                                p
-                                                                    | 第3个模态框
-                                                            .modal-footer
-                                                                button.btn.btn-default(type='button', data-dismiss='modal') Close
-                                                                button.btn.btn-primary(type='button') Save changes
-                                        tr.even(role='row')
-                                            td Shou Itou
-                                            td Regional Marketing
-                                            td.sorting_1 Tokyo
-                                            td 20
-                                            td 2011/08/14
-                                            td $163,000
-                                            td
-                                                a.btn.btn-primary.btn-xs(href='#')
-                                                    i.fa.fa-folder
-                                                    |  View
-                                                a.btn.btn-info.btn-xs(href='#')
-                                                    i.fa.fa-pencil
-                                                    |  Edit
-                                                a.btn.btn-danger.btn-xs(href='#')
-                                                    i.fa.fa-trash-o
-                                                    |  Delete
-
-                                        tr.odd(role='row')
-                                            td Rhona Davidson
-                                            td Integration Specialist
-                                            td.sorting_1 Tokyo
-                                            td 55
-                                            td 2010/10/14
-                                            td $327,900
-                                            td
-                                                a.btn.btn-primary.btn-xs(href='#')
-                                                    i.fa.fa-folder
-                                                    |  View
-                                                a.btn.btn-info.btn-xs(href='#')
-                                                    i.fa.fa-pencil
-                                                    |  Edit
-                                                a.btn.btn-danger.btn-xs(href='#')
-                                                    i.fa.fa-trash-o
-                                                    |  Delete
-
-                                        tr.even(role='row')
-                                            td Airi Satou
-                                            td Accountant
-                                            td.sorting_1 Tokyo
-                                            td 33
-                                            td 2008/11/28
-                                            td $162,700
-                                            td
-                                                a.btn.btn-primary.btn-xs(href='#')
-                                                    i.fa.fa-folder
-                                                    |  View
-                                                a.btn.btn-info.btn-xs(href='#')
-                                                    i.fa.fa-pencil
-                                                    |  Edit
-                                                a.btn.btn-danger.btn-xs(href='#')
-                                                    i.fa.fa-trash-o
-                                                    |  Delete
-
-                                        tr.odd(role='row')
-                                            td Garrett Winters
-                                            td Accountant
-                                            td.sorting_1 Tokyo
-                                            td 63
-                                            td 2011/07/25
-                                            td $170,750
-                                            td
-                                                a.btn.btn-primary.btn-xs(href='#')
-                                                    i.fa.fa-folder
-                                                    |  View
-                                                a.btn.btn-info.btn-xs(href='#')
-                                                    i.fa.fa-pencil
-                                                    |  Edit
-                                                a.btn.btn-danger.btn-xs(href='#')
-                                                    i.fa.fa-trash-o
-                                                    |  Delete
-
-                                        tr.even(role='row')
-                                            td Olivia Liang
-                                            td Support Engineer
-                                            td.sorting_1 Singapore
-                                            td 64
-                                            td 2011/02/03
-                                            td $234,500
-                                            td
-                                                a.btn.btn-primary.btn-xs(href='#')
-                                                    i.fa.fa-folder
-                                                    |  View
-                                                a.btn.btn-info.btn-xs(href='#')
-                                                    i.fa.fa-pencil
-                                                    |  Edit
-                                                a.btn.btn-danger.btn-xs(href='#')
-                                                    i.fa.fa-trash-o
-                                                    |  Delete
-
-
-                                        tr.odd(role='row')
-                                            td Sakura Yamamoto
-                                            td Support Engineer
-                                            td.sorting_1 Tokyo
-                                            td 37
-                                            td 2009/08/19
-                                            td $139,575
-                                            td
-                                                a.btn.btn-primary.btn-xs(href='#')
-                                                    i.fa.fa-folder
-                                                    |  View
-                                                a.btn.btn-info.btn-xs(href='#')
-                                                    i.fa.fa-pencil
-                                                    |  Edit
-                                                a.btn.btn-danger.btn-xs(href='#')
-                                                    i.fa.fa-trash-o
-                                                    |  Delete
-
-                                        tr.even(role='row')
-                                            td Shou Itou
-                                            td Regional Marketing
-                                            td.sorting_1 Tokyo
-                                            td 20
-                                            td 2011/08/14
-                                            td $163,000
-                                            td
-                                                a.btn.btn-primary.btn-xs(href='#')
-                                                    i.fa.fa-folder
-                                                    |  View
-                                                a.btn.btn-info.btn-xs(href='#')
-                                                    i.fa.fa-pencil
-                                                    |  Edit
-                                                a.btn.btn-danger.btn-xs(href='#')
-                                                    i.fa.fa-trash-o
-                                                    |  Delete
-
-                                        tr.odd(role='row')
-                                            td Rhona Davidson
-                                            td Integration Specialist
-                                            td.sorting_1 Tokyo
-                                            td 55
-                                            td 2010/10/14
-                                            td $327,900
-                                            td
-                                                a.btn.btn-primary.btn-xs(href='#')
-                                                    i.fa.fa-folder
-                                                    |  View
-                                                a.btn.btn-info.btn-xs(href='#')
-                                                    i.fa.fa-pencil
-                                                    |  Edit
-                                                a.btn.btn-danger.btn-xs(href='#')
-                                                    i.fa.fa-trash-o
-                                                    |  Delete
-
-                                        tr.even(role='row')
-                                            td Airi Satou
-                                            td Accountant
-                                            td.sorting_1 Tokyo
-                                            td 33
-                                            td 2008/11/28
-                                            td $162,700
-                                            td
-                                                a.btn.btn-primary.btn-xs(href='#')
-                                                    i.fa.fa-folder
-                                                    |  View
-                                                a.btn.btn-info.btn-xs(href='#')
-                                                    i.fa.fa-pencil
-                                                    |  Edit
-                                                a.btn.btn-danger.btn-xs(href='#')
-                                                    i.fa.fa-trash-o
-                                                    |  Delete
-
-                                        tr.odd(role='row')
-                                            td Garrett Winters
-                                            td Accountant
-                                            td.sorting_1 Tokyo
-                                            td 63
-                                            td 2011/07/25
-                                            td $170,750
-                                            td
-                                                a.btn.btn-primary.btn-xs(href='#')
-                                                    i.fa.fa-folder
-                                                    |  View
-                                                a.btn.btn-info.btn-xs(href='#')
-                                                    i.fa.fa-pencil
-                                                    |  Edit
-                                                a.btn.btn-danger.btn-xs(href='#')
-                                                    i.fa.fa-trash-o
-                                                    |  Delete
-
-                                        tr.even(role='row')
-                                            td Olivia Liang
-                                            td Support Engineer
-                                            td.sorting_1 Singapore
-                                            td 64
-                                            td 2011/02/03
-                                            td $234,500
-                                            td
-                                                a.btn.btn-primary.btn-xs(href='#')
-                                                    i.fa.fa-folder
-                                                    |  View
-                                                a.btn.btn-info.btn-xs(href='#')
-                                                    i.fa.fa-pencil
-                                                    |  Edit
-                                                a.btn.btn-danger.btn-xs(href='#')
-                                                    i.fa.fa-trash-o
-                                                    |  Delete
+                                            th 唯一标识
+                                            th 用户名
+                                            th 创建时间
+                                            th 操作
 
 
 
@@ -308,20 +95,7 @@ block scripts
     script(src='javascripts/dataTables/jquery.dataTables.min.js')
     script(src='javascripts/dataTables/dataTables.bootstrap.min.js')
 
-    //script(src='javascripts/dataTables/dataTables.buttons.min.js')
-    //script(src='javascripts/dataTables/buttons.bootstrap.min.js')
-    //script(src='javascripts/dataTables/buttons.flash.min.js')
-    //script(src='javascripts/dataTables/buttons.html5.min.js')
-    //script(src='javascripts/dataTables/buttons.print.min.js')
-    //script(src='javascripts/dataTables/dataTables.fixedHeader.min.js')
-    //script(src='javascripts/dataTables/dataTables.keyTable.min.js')
-    //script(src='javascripts/dataTables/dataTables.responsive.min.js')
-    //script(src='javascripts/dataTables/responsive.bootstrap.js')
-
-    //script(src='javascripts/dataTables/dataTables.scroller.min.js')
-
-    //script(src='javascripts/dataTables/jszip.min.js')
-    //script(src='javascripts/dataTables/pdfmake.min.js')
-    //script(src='javascripts/dataTables/vfs_fonts.js')
-
-
+    //trasfer Date
+    script(src='javascripts/commons/moment.min.js')
+    //load data
+    script(src='javascripts/backend/user/userManage.js')

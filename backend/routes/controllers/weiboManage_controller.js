@@ -23,7 +23,7 @@ exports.queryWeibo = function (req, res) {
     modelBlog.find({relayTag:false}, function (err, data) {
         if(err){
             console.log("查询微博失败:"+err);
-            res.redirect("/");
+            res.redirect("/backend_dashboard");
         }
 
         /**

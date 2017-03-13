@@ -11,6 +11,10 @@ var usersManage = require('./controllers/usersManage_controller');
  */
 router.get('/toUsersManagePage', usersManage.toUsersManagePage);
 
+/**
+ * 查询用户
+ */
+router.post('/queryUsers', usersManage.queryUsers);
 
 /**
  * 跳转到用户个人信息详情
