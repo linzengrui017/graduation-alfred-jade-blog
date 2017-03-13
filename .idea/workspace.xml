@@ -2,11 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f8ee0978-48cb-4707-befb-e4ce0a99b44e" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/models/admin.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backend/routes/controllers/weiboManage_controller.js" afterPath="$PROJECT_DIR$/backend/routes/controllers/weiboManage_controller.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backend/routes/weiboManage.js" afterPath="$PROJECT_DIR$/backend/routes/weiboManage.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/javascripts/backend/blog/blogManage.js" afterPath="$PROJECT_DIR$/public/javascripts/backend/blog/blogManage.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/backend/management/weibo_manage/weiboManage_index.jade" afterPath="$PROJECT_DIR$/views/backend/management/weibo_manage/weiboManage_index.jade" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app.js" afterPath="$PROJECT_DIR$/app.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backend/routes/controllers/admin_controller.js" afterPath="$PROJECT_DIR$/backend/routes/controllers/admin_controller.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/javascripts/backend/admin/admin_login.js" afterPath="$PROJECT_DIR$/public/javascripts/backend/admin/admin_login.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/backend/admin/login.jade" afterPath="$PROJECT_DIR$/views/backend/admin/login.jade" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/backend/commons/layout.jade" afterPath="$PROJECT_DIR$/views/backend/commons/layout.jade" />
     </list>
     <ignored path="graduation-alfred-jade-blog.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -30,71 +32,119 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="weiboManage_index.jade" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/views/backend/management/weibo_manage/weiboManage_index.jade">
+      <file leaf-file-name="admin.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/models/admin.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="453">
-              <caret line="91" column="0" lean-forward="true" selection-start-line="91" selection-start-column="0" selection-end-line="91" selection-end-column="0" />
-              <folding>
-                <element signature="n#div#0;n#div#0;n#div#0;n#div#0;n#block#1;n#!!top" expanded="false" />
-                <element signature="n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#block#1;n#!!top" expanded="false" />
-                <element signature="n#div#1;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#block#1;n#!!top" expanded="false" />
-                <element signature="n#div#2;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#block#1;n#!!top" expanded="false" />
-              </folding>
+            <state relative-caret-position="120">
+              <caret line="6" column="6" lean-forward="true" selection-start-line="6" selection-start-column="6" selection-end-line="6" selection-end-column="6" />
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="blogManage.js" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/public/javascripts/backend/blog/blogManage.js">
+      <file leaf-file-name="admin.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/backend/routes/admin.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="320">
-              <caret line="93" column="28" lean-forward="false" selection-start-line="93" selection-start-column="28" selection-end-line="93" selection-end-column="28" />
-              <folding>
-                <marker date="1489379269416" expanded="true" signature="3617:3635" ph="..." />
-                <marker date="1489379269416" expanded="true" signature="3704:3716" ph="..." />
-                <marker date="1489379269416" expanded="true" signature="3910:3928" ph="..." />
-                <marker date="1489379269416" expanded="true" signature="4220:4226" ph=" " />
-                <marker date="1489379269416" expanded="true" signature="4226:4232" ph=" " />
-                <marker date="1489379269416" expanded="true" signature="4232:4238" ph=" " />
-                <marker date="1489379269416" expanded="true" signature="4238:4244" ph=" " />
-                <marker date="1489379269416" expanded="true" signature="4418:4436" ph="..." />
-                <marker date="1489379269416" expanded="true" signature="4505:4517" ph="..." />
-                <marker date="1489379269416" expanded="true" signature="4711:4729" ph="..." />
-                <marker date="1489379269416" expanded="true" signature="4877:4895" ph="..." />
-              </folding>
+            <state relative-caret-position="160">
+              <caret line="8" column="0" lean-forward="true" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="weiboManage_controller.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/backend/routes/controllers/weiboManage_controller.js">
+      <file leaf-file-name="admin_controller.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/backend/routes/controllers/admin_controller.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="400">
-              <caret line="22" column="34" lean-forward="false" selection-start-line="22" selection-start-column="34" selection-end-line="22" selection-end-column="34" />
+            <state relative-caret-position="160">
+              <caret line="10" column="35" lean-forward="true" selection-start-line="10" selection-start-column="35" selection-end-line="10" selection-end-column="35" />
               <folding>
                 <element signature="e#0#39#0" expanded="false" />
+                <element signature="e#182#204#0" expanded="false" />
+                <element signature="e#249#321#0" expanded="false" />
+                <element signature="e#324#346#0" expanded="false" />
+                <element signature="e#398#533#0" expanded="false" />
+                <element signature="e#404#432#0" expanded="false" />
+                <element signature="e#440#462#0" expanded="false" />
+                <element signature="e#536#554#0" expanded="false" />
+                <element signature="e#605#673#0" expanded="false" />
+                <element signature="e#676#691#0" expanded="false" />
+                <element signature="e#3074#3089#0" expanded="false" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="user.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/models/user.js">
+      <file leaf-file-name="app.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="9" column="38" lean-forward="true" selection-start-line="9" selection-start-column="38" selection-end-line="9" selection-end-column="38" />
+            <state relative-caret-position="140">
+              <caret line="7" column="3" lean-forward="true" selection-start-line="7" selection-start-column="3" selection-end-line="7" selection-end-column="3" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="blog.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/models/blog.js">
+      <file leaf-file-name="user_controller.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/routes/controllers/user_controller.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="401">
-              <caret line="33" column="3" lean-forward="false" selection-start-line="33" selection-start-column="3" selection-end-line="33" selection-end-column="3" />
-              <folding />
+            <state relative-caret-position="145">
+              <caret line="126" column="26" lean-forward="false" selection-start-line="126" selection-start-column="21" selection-end-line="126" selection-end-column="26" />
+              <folding>
+                <element signature="e#0#39#0" expanded="false" />
+                <element signature="e#180#201#0" expanded="false" />
+                <element signature="e#237#349#0" expanded="false" />
+                <element signature="e#352#370#0" expanded="false" />
+                <element signature="e#407#461#0" expanded="false" />
+                <element signature="e#464#479#0" expanded="false" />
+                <element signature="e#520#2661#0" expanded="false" />
+                <element signature="e#526#566#0" expanded="false" />
+                <element signature="e#648#672#0" expanded="false" />
+                <element signature="e#722#841#0" expanded="false" />
+                <element signature="e#891#1008#0" expanded="false" />
+                <element signature="e#1013#2655#0" expanded="false" />
+                <element signature="e#1024#1059#0" expanded="false" />
+                <element signature="e#1086#1128#0" expanded="false" />
+                <element signature="e#1151#2645#0" expanded="false" />
+                <element signature="e#1172#1327#0" expanded="false" />
+                <element signature="e#1348#1499#0" expanded="false" />
+                <element signature="e#1504#2635#0" expanded="false" />
+                <element signature="e#1522#1569#0" expanded="false" />
+                <element signature="e#1778#1823#0" expanded="false" />
+                <element signature="e#1864#1995#0" expanded="false" />
+                <element signature="e#2043#2619#0" expanded="false" />
+                <element signature="e#2066#2123#0" expanded="false" />
+                <element signature="e#2151#2281#0" expanded="false" />
+                <element signature="e#2346#2439#0" expanded="false" />
+                <element signature="e#2506#2561#0" expanded="false" />
+                <element signature="e#2664#2682#0" expanded="false" />
+                <element signature="e#2783#2798#0" expanded="false" />
+                <element signature="e#2835#5060#0" expanded="false" />
+                <element signature="e#2841#2881#0" expanded="false" />
+                <element signature="e#2963#2987#0" expanded="false" />
+                <element signature="e#3037#3149#0" expanded="false" />
+                <element signature="e#3199#3309#0" expanded="false" />
+                <element signature="e#3314#5058#0" expanded="false" />
+                <element signature="e#3325#3360#0" expanded="false" />
+                <element signature="e#3387#3429#0" expanded="false" />
+                <element signature="e#3452#5048#0" expanded="false" />
+                <element signature="e#3473#3623#0" expanded="false" />
+                <element signature="e#3645#3785#0" expanded="false" />
+                <element signature="e#3790#5038#0" expanded="false" />
+                <element signature="e#3808#3864#0" expanded="false" />
+                <element signature="e#3998#4043#0" expanded="false" />
+                <element signature="e#4078#4171#0" expanded="false" />
+                <element signature="e#4194#5021#0" expanded="false" />
+                <element signature="e#4223#4407#0" expanded="false" />
+                <element signature="e#4437#4609#0" expanded="false" />
+                <element signature="e#4614#5001#0" expanded="false" />
+                <element signature="e#4685#4790#0" expanded="false" />
+                <element signature="e#4864#4927#0" expanded="false" />
+                <element signature="e#5063#5078#0" expanded="false" />
+                <element signature="e#5208#5224#0" expanded="false" />
+                <element signature="e#5262#5266#0" expanded="false" />
+                <element signature="e#5269#5286#0" expanded="false" />
+                <element signature="e#5326#5330#0" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -157,7 +207,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/views/backend/index/backend_index.html" />
         <option value="$PROJECT_DIR$/public/javascripts/dataTables/jquery.dataTables.min.js" />
         <option value="$PROJECT_DIR$/public/javascripts/dataTables/dataTables.bootstrap.min.js" />
         <option value="$PROJECT_DIR$/backend/routes/dashboard.js" />
@@ -167,10 +216,7 @@
         <option value="$PROJECT_DIR$/views/user/profile.jade" />
         <option value="$PROJECT_DIR$/public/javascripts/backend/admin/admin_update_password.js" />
         <option value="$PROJECT_DIR$/views/backend/admin/profile.jade" />
-        <option value="$PROJECT_DIR$/views/backend/admin/login.jade" />
         <option value="$PROJECT_DIR$/backend/routes/admin.js" />
-        <option value="$PROJECT_DIR$/backend/routes/controllers/admin_controller.js" />
-        <option value="$PROJECT_DIR$/public/javascripts/backend/admin/admin_login.js" />
         <option value="$PROJECT_DIR$/backend/routes/controllers/usersManage_controller.js" />
         <option value="$PROJECT_DIR$/backend/routes/usersManage.js" />
         <option value="$PROJECT_DIR$/public/stylesheets/commons/bootstrap.min.css" />
@@ -183,7 +229,6 @@
         <option value="$PROJECT_DIR$/database/db.js" />
         <option value="$PROJECT_DIR$/package.json" />
         <option value="$PROJECT_DIR$/views/commons/layout.jade" />
-        <option value="$PROJECT_DIR$/app.js" />
         <option value="$PROJECT_DIR$/routes/users.js" />
         <option value="$PROJECT_DIR$/views/user/login.jade" />
         <option value="$PROJECT_DIR$/public/javascripts/user/login.js" />
@@ -201,13 +246,18 @@
         <option value="$PROJECT_DIR$/routes/weibo.js" />
         <option value="$PROJECT_DIR$/views/backend/commons/bottom.jade" />
         <option value="$PROJECT_DIR$/public/javascripts/backend/blog/blogManage_DataTable.js" />
-        <option value="$PROJECT_DIR$/views/backend/commons/layout.jade" />
         <option value="$PROJECT_DIR$/public/stylesheets/backend/weiboManage_index.css" />
         <option value="$PROJECT_DIR$/backend/routes/weiboManage.js" />
         <option value="$PROJECT_DIR$/backend/routes/controllers/weiboManage_controller.js" />
         <option value="$PROJECT_DIR$/models/blog.js" />
         <option value="$PROJECT_DIR$/views/backend/management/weibo_manage/weiboManage_index.jade" />
         <option value="$PROJECT_DIR$/public/javascripts/backend/blog/blogManage.js" />
+        <option value="$PROJECT_DIR$/models/admin.js" />
+        <option value="$PROJECT_DIR$/views/backend/commons/layout.jade" />
+        <option value="$PROJECT_DIR$/app.js" />
+        <option value="$PROJECT_DIR$/backend/routes/controllers/admin_controller.js" />
+        <option value="$PROJECT_DIR$/views/backend/admin/login.jade" />
+        <option value="$PROJECT_DIR$/public/javascripts/backend/admin/admin_login.js" />
       </list>
     </option>
   </component>
@@ -643,9 +693,9 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="H:\ws\node_instance\graduation-alfred-jade-blog\models" />
       <recent name="H:\ws\node_instance\graduation-alfred-jade-blog\public\images" />
       <recent name="H:\ws\node_instance\graduation-alfred-jade-blog\public\javascripts\backend\blog" />
-      <recent name="H:\ws\node_instance\graduation-alfred-jade-blog\models" />
       <recent name="H:\ws\node_instance\graduation-alfred-jade-blog\public\javascripts\blog" />
       <recent name="H:\ws\node_instance\graduation-alfred-jade-blog\views\weibo" />
     </key>
@@ -774,14 +824,7 @@
       <workItem from="1489223940190" duration="7883000" />
       <workItem from="1489299625831" duration="14815000" />
       <workItem from="1489327323777" duration="3853000" />
-      <workItem from="1489364086009" duration="7478000" />
-    </task>
-    <task id="LOCAL-00004" summary="gentella-vendors-2">
-      <created>1487754777821</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1487754777821</updated>
+      <workItem from="1489364086009" duration="10398000" />
     </task>
     <task id="LOCAL-00005" summary="gentella-vendors-3">
       <created>1487755357719</created>
@@ -1119,11 +1162,18 @@
       <option name="project" value="LOCAL" />
       <updated>1489374190079</updated>
     </task>
-    <option name="localTasksCounter" value="53" />
+    <task id="LOCAL-00053" summary="微博管理">
+      <created>1489379435456</created>
+      <option name="number" value="00053" />
+      <option name="presentableId" value="LOCAL-00053" />
+      <option name="project" value="LOCAL" />
+      <updated>1489379435456</updated>
+    </task>
+    <option name="localTasksCounter" value="54" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="380852000" />
+    <option name="totallyTimeSpent" value="383772000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1138,7 +1188,7 @@
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.29727685" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.29727685" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295082" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3327869" sideWeight="0.5234493" order="10" side_tool="true" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295082" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -1213,7 +1263,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="font: reg, login, index" />
     <MESSAGE value="font: use modal to show the message about validation of reg and login" />
     <MESSAGE value="pubBlog: design form; use angularJs and parselyJS" />
     <MESSAGE value="others blogList" />
@@ -1238,34 +1287,19 @@
     <MESSAGE value="datatables操作栏按钮" />
     <MESSAGE value="datatables render" />
     <MESSAGE value="datatables 显示行的附加信息" />
-    <option name="LAST_COMMIT_MESSAGE" value="datatables 显示行的附加信息" />
+    <MESSAGE value="微博管理" />
+    <option name="LAST_COMMIT_MESSAGE" value="微博管理" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints-dialog>
         <breakpoints-dialog />
       </breakpoints-dialog>
-      <option name="time" value="88" />
+      <option name="time" value="94" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/database/db.js" />
-    <entry file="file://$PROJECT_DIR$/database/settings.js" />
-    <entry file="file://$PROJECT_DIR$/.idea/mongoSettings.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/node_modules/express-session/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="191">
-          <caret line="85" column="9" lean-forward="false" selection-start-line="85" selection-start-column="9" selection-end-line="85" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/bin/www">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
@@ -1329,45 +1363,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/routes/users.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="124">
-          <caret line="32" column="3" lean-forward="true" selection-start-line="32" selection-start-column="3" selection-end-line="32" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/javascripts/user/login.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="254">
-          <caret line="103" column="32" lean-forward="true" selection-start-line="103" selection-start-column="32" selection-end-line="103" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/user/login.jade">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="234">
-          <caret line="101" column="42" lean-forward="true" selection-start-line="101" selection-start-column="42" selection-end-line="101" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/views/commons/bottom.jade">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/routes/controllers/user_controller.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="232">
-          <caret line="199" column="27" lean-forward="true" selection-start-line="199" selection-start-column="27" selection-end-line="199" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="117">
-          <caret line="60" column="0" lean-forward="false" selection-start-line="60" selection-start-column="0" selection-end-line="60" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -1407,20 +1406,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/views/backend/admin/login.jade">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1300">
-          <caret line="65" column="56" lean-forward="false" selection-start-line="65" selection-start-column="56" selection-end-line="65" selection-end-column="56" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/routes/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="9" column="35" lean-forward="false" selection-start-line="9" selection-start-column="30" selection-end-line="9" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/views/backend/commons/top.jade">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="140">
@@ -1447,21 +1432,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="401">
           <caret line="53" column="4" lean-forward="false" selection-start-line="53" selection-start-column="4" selection-end-line="54" selection-end-column="51" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/commons/layout.jade">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="29" column="36" lean-forward="true" selection-start-line="29" selection-start-column="36" selection-end-line="29" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/backend/commons/layout.jade">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="193">
-          <caret line="24" column="37" lean-forward="false" selection-start-line="24" selection-start-column="37" selection-end-line="24" selection-end-column="37" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1517,16 +1487,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/backend/routes/controllers/admin_controller.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/routes/weibo.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="240">
@@ -1551,6 +1511,14 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/models/blog.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="400">
+          <caret line="20" column="3" lean-forward="true" selection-start-line="20" selection-start-column="3" selection-end-line="20" selection-end-column="3" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/models/user.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
@@ -1561,7 +1529,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/backend/routes/controllers/weiboManage_controller.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="400">
+        <state relative-caret-position="267">
           <caret line="22" column="34" lean-forward="false" selection-start-line="22" selection-start-column="34" selection-end-line="22" selection-end-column="34" />
           <folding>
             <element signature="e#0#39#0" expanded="false" />
@@ -1569,11 +1537,23 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/models/blog.js">
+    <entry file="file://$PROJECT_DIR$/public/javascripts/backend/blog/blogManage.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="401">
-          <caret line="33" column="3" lean-forward="false" selection-start-line="33" selection-start-column="3" selection-end-line="33" selection-end-column="3" />
-          <folding />
+        <state relative-caret-position="1820">
+          <caret line="93" column="34" lean-forward="true" selection-start-line="93" selection-start-column="34" selection-end-line="93" selection-end-column="34" />
+          <folding>
+            <marker date="1489379269416" expanded="true" signature="3617:3635" ph="..." />
+            <marker date="1489379269416" expanded="true" signature="3704:3716" ph="..." />
+            <marker date="1489379269416" expanded="true" signature="3910:3928" ph="..." />
+            <marker date="1489379269416" expanded="true" signature="4220:4226" ph=" " />
+            <marker date="1489379269416" expanded="true" signature="4226:4232" ph=" " />
+            <marker date="1489379269416" expanded="true" signature="4232:4238" ph=" " />
+            <marker date="1489379269416" expanded="true" signature="4238:4244" ph=" " />
+            <marker date="1489379269416" expanded="true" signature="4418:4436" ph="..." />
+            <marker date="1489379269416" expanded="true" signature="4505:4517" ph="..." />
+            <marker date="1489379269416" expanded="true" signature="4711:4729" ph="..." />
+            <marker date="1489379269416" expanded="true" signature="4877:4895" ph="..." />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1590,23 +1570,182 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/javascripts/backend/blog/blogManage.js">
+    <entry file="file://$PROJECT_DIR$/views/backend/commons/layout.jade">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="320">
-          <caret line="93" column="28" lean-forward="false" selection-start-line="93" selection-start-column="28" selection-end-line="93" selection-end-column="28" />
+        <state relative-caret-position="920">
+          <caret line="61" column="65" lean-forward="false" selection-start-line="61" selection-start-column="65" selection-end-line="61" selection-end-column="65" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/models/admin.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="6" column="6" lean-forward="true" selection-start-line="6" selection-start-column="6" selection-end-line="6" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/user/login.jade">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="243">
+          <caret line="102" column="38" lean-forward="false" selection-start-line="102" selection-start-column="33" selection-end-line="102" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/javascripts/user/login.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="99" column="0" lean-forward="true" selection-start-line="99" selection-start-column="0" selection-end-line="99" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/javascripts/backend/admin/admin_login.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="280">
+          <caret line="14" column="29" lean-forward="true" selection-start-line="14" selection-start-column="29" selection-end-line="14" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/backend/admin/login.jade">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="401">
+          <caret line="89" column="57" lean-forward="false" selection-start-line="89" selection-start-column="46" selection-end-line="89" selection-end-column="57" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/routes/users.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="125">
+          <caret line="29" column="31" lean-forward="true" selection-start-line="29" selection-start-column="31" selection-end-line="29" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/routes/controllers/user_controller.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="145">
+          <caret line="126" column="26" lean-forward="false" selection-start-line="126" selection-start-column="21" selection-end-line="126" selection-end-column="26" />
           <folding>
-            <marker date="1489379269416" expanded="true" signature="3617:3635" ph="..." />
-            <marker date="1489379269416" expanded="true" signature="3704:3716" ph="..." />
-            <marker date="1489379269416" expanded="true" signature="3910:3928" ph="..." />
-            <marker date="1489379269416" expanded="true" signature="4220:4226" ph=" " />
-            <marker date="1489379269416" expanded="true" signature="4226:4232" ph=" " />
-            <marker date="1489379269416" expanded="true" signature="4232:4238" ph=" " />
-            <marker date="1489379269416" expanded="true" signature="4238:4244" ph=" " />
-            <marker date="1489379269416" expanded="true" signature="4418:4436" ph="..." />
-            <marker date="1489379269416" expanded="true" signature="4505:4517" ph="..." />
-            <marker date="1489379269416" expanded="true" signature="4711:4729" ph="..." />
-            <marker date="1489379269416" expanded="true" signature="4877:4895" ph="..." />
+            <element signature="e#0#39#0" expanded="false" />
+            <element signature="e#180#201#0" expanded="false" />
+            <element signature="e#237#349#0" expanded="false" />
+            <element signature="e#352#370#0" expanded="false" />
+            <element signature="e#407#461#0" expanded="false" />
+            <element signature="e#464#479#0" expanded="false" />
+            <element signature="e#520#2661#0" expanded="false" />
+            <element signature="e#526#566#0" expanded="false" />
+            <element signature="e#648#672#0" expanded="false" />
+            <element signature="e#722#841#0" expanded="false" />
+            <element signature="e#891#1008#0" expanded="false" />
+            <element signature="e#1013#2655#0" expanded="false" />
+            <element signature="e#1024#1059#0" expanded="false" />
+            <element signature="e#1086#1128#0" expanded="false" />
+            <element signature="e#1151#2645#0" expanded="false" />
+            <element signature="e#1172#1327#0" expanded="false" />
+            <element signature="e#1348#1499#0" expanded="false" />
+            <element signature="e#1504#2635#0" expanded="false" />
+            <element signature="e#1522#1569#0" expanded="false" />
+            <element signature="e#1778#1823#0" expanded="false" />
+            <element signature="e#1864#1995#0" expanded="false" />
+            <element signature="e#2043#2619#0" expanded="false" />
+            <element signature="e#2066#2123#0" expanded="false" />
+            <element signature="e#2151#2281#0" expanded="false" />
+            <element signature="e#2346#2439#0" expanded="false" />
+            <element signature="e#2506#2561#0" expanded="false" />
+            <element signature="e#2664#2682#0" expanded="false" />
+            <element signature="e#2783#2798#0" expanded="false" />
+            <element signature="e#2835#5060#0" expanded="false" />
+            <element signature="e#2841#2881#0" expanded="false" />
+            <element signature="e#2963#2987#0" expanded="false" />
+            <element signature="e#3037#3149#0" expanded="false" />
+            <element signature="e#3199#3309#0" expanded="false" />
+            <element signature="e#3314#5058#0" expanded="false" />
+            <element signature="e#3325#3360#0" expanded="false" />
+            <element signature="e#3387#3429#0" expanded="false" />
+            <element signature="e#3452#5048#0" expanded="false" />
+            <element signature="e#3473#3623#0" expanded="false" />
+            <element signature="e#3645#3785#0" expanded="false" />
+            <element signature="e#3790#5038#0" expanded="false" />
+            <element signature="e#3808#3864#0" expanded="false" />
+            <element signature="e#3998#4043#0" expanded="false" />
+            <element signature="e#4078#4171#0" expanded="false" />
+            <element signature="e#4194#5021#0" expanded="false" />
+            <element signature="e#4223#4407#0" expanded="false" />
+            <element signature="e#4437#4609#0" expanded="false" />
+            <element signature="e#4614#5001#0" expanded="false" />
+            <element signature="e#4685#4790#0" expanded="false" />
+            <element signature="e#4864#4927#0" expanded="false" />
+            <element signature="e#5063#5078#0" expanded="false" />
+            <element signature="e#5208#5224#0" expanded="false" />
+            <element signature="e#5262#5266#0" expanded="false" />
+            <element signature="e#5269#5286#0" expanded="false" />
+            <element signature="e#5326#5330#0" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/routes/admin.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="160">
+          <caret line="8" column="0" lean-forward="true" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/routes/controllers/admin_controller.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="160">
+          <caret line="10" column="35" lean-forward="true" selection-start-line="10" selection-start-column="35" selection-end-line="10" selection-end-column="35" />
+          <folding>
+            <element signature="e#0#39#0" expanded="false" />
+            <element signature="e#182#204#0" expanded="false" />
+            <element signature="e#249#321#0" expanded="false" />
+            <element signature="e#324#346#0" expanded="false" />
+            <element signature="e#398#533#0" expanded="false" />
+            <element signature="e#404#432#0" expanded="false" />
+            <element signature="e#440#462#0" expanded="false" />
+            <element signature="e#536#554#0" expanded="false" />
+            <element signature="e#605#673#0" expanded="false" />
+            <element signature="e#676#691#0" expanded="false" />
+            <element signature="e#3074#3089#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/commons/layout.jade">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="33" column="65" lean-forward="false" selection-start-line="33" selection-start-column="65" selection-end-line="33" selection-end-column="65" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/index/welcome.jade">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="23" lean-forward="false" selection-start-line="0" selection-start-column="23" selection-end-line="0" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/routes/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="140">
+          <caret line="7" column="0" lean-forward="true" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="140">
+          <caret line="7" column="3" lean-forward="true" selection-start-line="7" selection-start-column="3" selection-end-line="7" selection-end-column="3" />
+          <folding />
         </state>
       </provider>
     </entry>

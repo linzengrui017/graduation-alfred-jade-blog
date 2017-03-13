@@ -9,3 +9,9 @@ $('#btn_admin_login').click(function () {
      * 进行逻辑操作 action之后的/admin_updatePassword
      */
 });
+
+
+/**
+ * 手动打开 id = alert_modal 的模态框
+ */
+$('#alert_modal').modal('show');

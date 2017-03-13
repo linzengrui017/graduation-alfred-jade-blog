@@ -33,6 +33,24 @@ html
                             | 管理员登录
                         .clearfix
                     .x_content(style='padding: 30px 0px;')
+
+                        //modal
+                        - if(locals.message)
+                            //button.btn.btn-info.btn-xs(type='button', data-toggle='modal', data-target='.bs-example-modal-sm')
+                            //    | 打开模态框
+                            .modal.fade.bs-example-modal-sm(id='alert_modal', tabindex='-1', role='dialog', aria-hidden='true')
+                                .modal-dialog.modal-sm
+                                    .modal-content
+                                        .modal-header
+                                            button.close(type='button', data-dismiss='modal', aria-label='Close')
+                                                span(aria-hidden='true') ×
+                                            h4#myModalLabel2.modal-title 警告
+                                        .modal-body
+                                            h4= locals.message
+                                        .modal-footer
+                                            button.btn.btn-default(type='button', data-dismiss='modal') 关闭
+
+
                         form#demo-form2.form-horizontal.form-label-left(data-parsley-validate='', novalidate='', method='post', action='/admin_login')
                             .form-group
                                 label.control-label.col-md-3.col-sm-3.col-xs-12(for='username')
