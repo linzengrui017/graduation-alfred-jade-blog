@@ -14,7 +14,7 @@ router.get('/toWeiboManagePage', weiboManage.toWeiboManagePage);
 /**
  * 查询微博
  */
-router.get('/queryWeibo', weiboManage.queryWeibo);
+router.post('/queryWeibo', weiboManage.queryWeibo);
 
 /**
  * 查询非法微博

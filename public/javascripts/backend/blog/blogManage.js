@@ -6,7 +6,7 @@
  * 同步查询数据库
  * 返回数据
  */
-var url = '/showBlogList';
+var url = '/queryWeibo';
 var data = [];
 $.ajax({
     url: url,
@@ -40,18 +40,18 @@ var table = $('#datatable').DataTable({
         // {"data": 'comments'},
         // {"data": 'relayContent'}, //无法加载
         {"data": 'createTime'},
-        {data : null}
+        // {data : null}
     ],
     order: [[1, 'asc']],
     columnDefs: [   //设置定义列的初始属性
-        {
-            targets: -1,//编辑
-            data: null,
-            defaultContent:
-                '<button type="button" data-toggle="modal" data-target=".bs-example-modal-lg" class="btn btn-primary btn-xs"><i class="fa fa-folder"> 查看详情</i></button>'+
-                // '<button type="button" data-toggle="modal" data-target=".bs-example-modal-sm" class="btn btn-info btn-xs"><i class="fa fa-pencil"> 修改</i></button>'+
-                '<button type="button" data-toggle="modal" data-target=".bs-example-modal" class="btn btn-danger btn-xs"><i class="fa fa-trash-o"></i> 删除</button>'
-        },
+        // {
+        //     targets: -1,//编辑
+        //     data: null,
+        //     defaultContent:
+        //         // '<button type="button" data-toggle="modal" data-target=".bs-example-modal-lg" class="btn btn-primary btn-xs"><i class="fa fa-folder"> 查看详情</i></button>'+
+        //         // '<button type="button" data-toggle="modal" data-target=".bs-example-modal-sm" class="btn btn-info btn-xs"><i class="fa fa-pencil"> 修改</i></button>'+
+        //         '<button type="button" data-toggle="modal" data-target=".bs-example-modal" class="btn btn-danger btn-xs"><i class="fa fa-trash-o"></i> 删除</button>'
+        // },
         {
             targets: [4],   //第五列
             data: 'createTime',
@@ -86,7 +86,7 @@ var table = $('#datatable').DataTable({
     // "sScrollX" : 820, //DataTables的宽
     // "aLengthMenu" : [20, 40, 60], //更改显示记录数选项
     // "iDisplayLength" : 40, //默认显示的记录数
-    // "bAutoWidth" : false, //是否自适应宽度
+    "bAutoWidth" : true, //是否自适应宽度
     // //"bScrollInfinite" : false, //是否启动初始化滚动条
     // "bScrollCollapse" : true, //是否开启DataTables的高度自适应，当数据条数不够分页数据条数的时候，插件高度是否随数据条数而改变
     // "bPaginate" : true, //是否显示（应用）分页器
