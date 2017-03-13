@@ -114,7 +114,7 @@ exports.admin_login = function (req, res) {
                         /**
                          * 返回视图
                          */
-                        res.render('backend/index/backend_index', { title: 'backend' });
+                        res.redirect('/admin_index');
                     }
 
 
@@ -127,7 +127,12 @@ exports.admin_login = function (req, res) {
     }
 
 };
-
+/**
+ * 跳转到后台首页页面
+ */
+exports.admin_index = function (req, res) {
+    res.render('backend/index/backend_index', { title: 'backend' });
+};
 /**
  * 注销功能
  */

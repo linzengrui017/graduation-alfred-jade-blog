@@ -31,7 +31,7 @@ html
                                 img.img-circle.profile_img(src='images/img.jpg', alt='...')
                             .profile_info
                                 span 欢迎你,
-                                h2 John Doe
+                                h2= adminer.username
                         // /menu profile quick info
                         br
                         // sidebar menu
@@ -99,7 +99,7 @@ html
                                 li
                                     a.user-profile.dropdown-toggle(href='javascript:;', data-toggle='dropdown', aria-expanded='false')
                                         img(src='images/img.jpg', alt='')
-                                        | John Doe
+                                        =adminer.username
                                         span.fa.fa-angle-down
                                     ul.dropdown-menu.dropdown-usermenu.pull-right
                                         li

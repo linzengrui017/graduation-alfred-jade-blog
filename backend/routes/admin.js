@@ -29,6 +29,10 @@ router.get('/admin_toLogin', admin.admin_toLogin);
  */
 router.post('/admin_login', admin.admin_login);
 /**
+ * 跳转到后台首页页面
+ */
+router.get('/admin_index', admin.admin_index);
+/**
  * 注销功能
  */
 router.get('/admin_logout', admin.admin_logout);
