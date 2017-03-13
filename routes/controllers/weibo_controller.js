@@ -360,17 +360,17 @@ exports.forwardBlog = function (req, res) {
      */
     var customer = req.session.user.username;
 
-    //父文档内容
-    var author = customer;
-    var title = '转发微博';
-    var content = req.query.blog_content;
-    var createTime = sd.format(new Date(), 'YYYY-MM-DD HH:mm:ss');
-    var relayTag = true;
-
     //子文档内容
     var relay_author = req.query.relay_author;
     var relay_title = req.query.relay_title;
     var relay_content = req.query.relay_content;
+
+    //父文档内容
+    var author = customer;
+    var content = req.query.blog_content;
+    var createTime = sd.format(new Date(), 'YYYY-MM-DD HH:mm:ss');
+    var relayTag = true;
+    var title = '转发微博:【'+relay_title+'】';
 
     /**
      * 服务器端校验
