@@ -2,8 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f8ee0978-48cb-4707-befb-e4ce0a99b44e" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/details_close.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/details_open.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/stylesheets/backend/weiboManage_index.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/javascripts/backend/blog/blogManage.js" afterPath="$PROJECT_DIR$/public/javascripts/backend/blog/blogManage.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/backend/commons/layout.jade" afterPath="$PROJECT_DIR$/views/backend/commons/layout.jade" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/backend/management/weibo_manage/weiboManage_index.jade" afterPath="$PROJECT_DIR$/views/backend/management/weibo_manage/weiboManage_index.jade" />
     </list>
     <ignored path="graduation-alfred-jade-blog.iws" />
@@ -28,11 +32,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="weiboManage_index.jade" pinned="false" current-in-tab="true">
+      <file leaf-file-name="weiboManage_index.jade" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/views/backend/management/weibo_manage/weiboManage_index.jade">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="332">
-              <caret line="81" column="51" lean-forward="true" selection-start-line="81" selection-start-column="51" selection-end-line="81" selection-end-column="51" />
+            <state relative-caret-position="391">
+              <caret line="80" column="61" lean-forward="false" selection-start-line="80" selection-start-column="61" selection-end-line="80" selection-end-column="61" />
               <folding>
                 <element signature="n#div#0;n#div#0;n#div#0;n#div#0;n#block#1;n#!!top" expanded="false" />
                 <element signature="n#div#1;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#block#1;n#!!top" expanded="false" />
@@ -42,12 +46,24 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="blogManage.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="blogManage.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/public/javascripts/backend/blog/blogManage.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="160">
-              <caret line="43" column="154" lean-forward="false" selection-start-line="43" selection-start-column="154" selection-end-line="43" selection-end-column="154" />
-              <folding />
+            <state relative-caret-position="300">
+              <caret line="110" column="27" lean-forward="true" selection-start-line="110" selection-start-column="27" selection-end-line="110" selection-end-column="27" />
+              <folding>
+                <marker date="1489374046707" expanded="true" signature="3593:3611" ph="..." />
+                <marker date="1489374046707" expanded="true" signature="3680:3692" ph="..." />
+                <marker date="1489374046707" expanded="true" signature="3886:3904" ph="..." />
+                <marker date="1489374046707" expanded="true" signature="4196:4202" ph=" " />
+                <marker date="1489374046707" expanded="true" signature="4202:4208" ph=" " />
+                <marker date="1489374046707" expanded="true" signature="4208:4214" ph=" " />
+                <marker date="1489374046707" expanded="true" signature="4214:4220" ph=" " />
+                <marker date="1489374046707" expanded="true" signature="4394:4412" ph="..." />
+                <marker date="1489374046707" expanded="true" signature="4481:4493" ph="..." />
+                <marker date="1489374046707" expanded="true" signature="4687:4705" ph="..." />
+                <marker date="1489374046707" expanded="true" signature="4853:4871" ph="..." />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -60,6 +76,7 @@
         <option value="Jade File" />
         <option value="HTML File" />
         <option value="JavaScript File" />
+        <option value="CSS File" />
       </list>
     </option>
   </component>
@@ -109,7 +126,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/views/backend/commons/top.jade" />
         <option value="$PROJECT_DIR$/views/backend/index/backend_index.html" />
         <option value="$PROJECT_DIR$/public/javascripts/dataTables/jquery.dataTables.min.js" />
         <option value="$PROJECT_DIR$/public/javascripts/dataTables/dataTables.bootstrap.min.js" />
@@ -117,7 +133,6 @@
         <option value="$PROJECT_DIR$/views/backend/management/users_manage/usersManage_index.jade" />
         <option value="$PROJECT_DIR$/public/javascripts/commons/parsley.min.js" />
         <option value="$PROJECT_DIR$/routes/index.js" />
-        <option value="$PROJECT_DIR$/views/backend/commons/layout.jade" />
         <option value="$PROJECT_DIR$/views/user/profile.jade" />
         <option value="$PROJECT_DIR$/public/javascripts/backend/admin/admin_update_password.js" />
         <option value="$PROJECT_DIR$/views/backend/admin/profile.jade" />
@@ -158,8 +173,10 @@
         <option value="$PROJECT_DIR$/views/backend/commons/bottom.jade" />
         <option value="$PROJECT_DIR$/public/javascripts/backend/blog/blogManage_DataTable.js" />
         <option value="$PROJECT_DIR$/backend/routes/controllers/weiboManage_controller.js" />
-        <option value="$PROJECT_DIR$/public/javascripts/backend/blog/blogManage.js" />
+        <option value="$PROJECT_DIR$/views/backend/commons/layout.jade" />
+        <option value="$PROJECT_DIR$/public/stylesheets/backend/weiboManage_index.css" />
         <option value="$PROJECT_DIR$/views/backend/management/weibo_manage/weiboManage_index.jade" />
+        <option value="$PROJECT_DIR$/public/javascripts/backend/blog/blogManage.js" />
       </list>
     </option>
   </component>
@@ -257,6 +274,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -298,54 +316,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="weibo" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="graduation-alfred-jade-blog" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="graduation-alfred-jade-blog" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="backend" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="management" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="graduation-alfred-jade-blog" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="graduation-alfred-jade-blog" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="backend" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="management" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="users_manage" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -453,6 +423,50 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="stylesheets" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="fonts" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="graduation-alfred-jade-blog" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="graduation-alfred-jade-blog" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="public" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="stylesheets" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="backend" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="graduation-alfred-jade-blog" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="graduation-alfred-jade-blog" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="public" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="javascripts" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -518,6 +532,10 @@
               <option name="myItemId" value="public" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="images" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -575,7 +593,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scratches" />
       <pane id="Scope" />
     </panes>
   </component>
@@ -591,21 +608,22 @@
     <property name="SearchEverywhereHistoryKey" value="cc&#9;FILE&#9;file://H:/ws/node_instance/graduation-alfred-jade-blog/node_modules/gentelella/build/css/custom.min.css&#10;parsley.min.js&#9;FILE&#9;file://H:/ws/node_instance/graduation-alfred-jade-blog/node_modules/gentelella/vendors/parsleyjs/dist/parsley.min.js" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="js.eslint.eslintPackage" value="" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="H:\ws\node_instance\graduation-alfred-jade-blog\public\images" />
+      <recent name="H:\ws\node_instance\graduation-alfred-jade-blog\public\javascripts\backend\blog" />
+      <recent name="H:\ws\node_instance\graduation-alfred-jade-blog\models" />
+      <recent name="H:\ws\node_instance\graduation-alfred-jade-blog\public\javascripts\blog" />
+      <recent name="H:\ws\node_instance\graduation-alfred-jade-blog\views\weibo" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="H:\ws\node_instance\graduation-alfred-jade-blog\database" />
       <recent name="H:\ws\node_instance\graduation-alfred-jade-blog\views\backend\management\weibo_manage" />
       <recent name="H:\ws\node_instance\graduation-alfred-jade-blog\views\weibo" />
       <recent name="H:\ws\node_instance\graduation-alfred-jade-blog\views\index" />
       <recent name="H:\ws\node_instance\graduation-alfred-jade-blog\views\commons" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="H:\ws\node_instance\graduation-alfred-jade-blog\public\javascripts\backend\blog" />
-      <recent name="H:\ws\node_instance\graduation-alfred-jade-blog\models" />
-      <recent name="H:\ws\node_instance\graduation-alfred-jade-blog\public\javascripts\blog" />
-      <recent name="H:\ws\node_instance\graduation-alfred-jade-blog\views\weibo" />
-      <recent name="H:\ws\node_instance\graduation-alfred-jade-blog" />
     </key>
   </component>
   <component name="RunManager" selected="Node.js.bin\www">
@@ -723,14 +741,9 @@
       <workItem from="1489149316521" duration="4519000" />
       <workItem from="1489210132259" duration="4117000" />
       <workItem from="1489223940190" duration="7883000" />
-      <workItem from="1489299625831" duration="13834000" />
-    </task>
-    <task id="LOCAL-00002" summary="gentella-doc,porduct">
-      <created>1487754033241</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1487754033241</updated>
+      <workItem from="1489299625831" duration="14815000" />
+      <workItem from="1489327323777" duration="3853000" />
+      <workItem from="1489364086009" duration="5115000" />
     </task>
     <task id="LOCAL-00003" summary="gentella-vendors-1">
       <created>1487754386172</created>
@@ -1068,11 +1081,18 @@
       <option name="project" value="LOCAL" />
       <updated>1489314276503</updated>
     </task>
-    <option name="localTasksCounter" value="51" />
+    <task id="LOCAL-00051" summary="datatables render">
+      <created>1489315678597</created>
+      <option name="number" value="00051" />
+      <option name="presentableId" value="LOCAL-00051" />
+      <option name="project" value="LOCAL" />
+      <updated>1489315678597</updated>
+    </task>
+    <option name="localTasksCounter" value="52" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="368540000" />
+    <option name="totallyTimeSpent" value="378489000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1087,7 +1107,7 @@
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.29727685" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.29727685" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295082" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3327869" sideWeight="0.5234493" order="10" side_tool="true" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295082" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -1162,7 +1182,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="node_modules\body-parser" />
     <MESSAGE value="node_modules:&#10;bson&#10;connect&#10;connect-mongo&#10;express-session&#10;mongodb&#10;mongoose" />
     <MESSAGE value="font: reg, login, index" />
     <MESSAGE value="font: use modal to show the message about validation of reg and login" />
@@ -1187,7 +1206,8 @@
     <MESSAGE value="ajax同步请求获取数据返回给datatables" />
     <MESSAGE value="datatables国际化配置" />
     <MESSAGE value="datatables操作栏按钮" />
-    <option name="LAST_COMMIT_MESSAGE" value="datatables操作栏按钮" />
+    <MESSAGE value="datatables render" />
+    <option name="LAST_COMMIT_MESSAGE" value="datatables render" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1199,29 +1219,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/node_modules/http/package.json" />
-    <entry file="file://$PROJECT_DIR$/node_modules/mongoose/README.md">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/node_modules/mongoose/node_modules/mongodb/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="3" column="0" lean-forward="true" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/node_modules/connect-mongodb/node_modules/mongodb/node_modules/bson/ext/index.js" />
-    <entry file="file://$PROJECT_DIR$/backend/routes/usersManage.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="100">
-          <caret line="11" column="56" lean-forward="false" selection-start-line="11" selection-start-column="56" selection-end-line="11" selection-end-column="56" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/node_modules/connect/index.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="193">
@@ -1344,13 +1341,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/views/commons/layout.jade">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="214">
-          <caret line="53" column="20" lean-forward="false" selection-start-line="53" selection-start-column="20" selection-end-line="53" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/views/commons/bottom.jade">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -1440,7 +1430,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="620">
           <caret line="31" column="40" lean-forward="true" selection-start-line="31" selection-start-column="40" selection-end-line="31" selection-end-column="40" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1448,15 +1437,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="257">
           <caret line="14" column="0" lean-forward="true" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/backend/commons/layout.jade">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="197">
-          <caret line="119" column="0" lean-forward="true" selection-start-line="119" selection-start-column="0" selection-end-line="119" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1464,7 +1444,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="125">
           <caret line="11" column="52" lean-forward="false" selection-start-line="11" selection-start-column="52" selection-end-line="11" selection-end-column="52" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1472,108 +1451,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-20">
           <caret line="8" column="95" lean-forward="false" selection-start-line="8" selection-start-column="95" selection-end-line="8" selection-end-column="95" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/javascripts/backend/blog/blogManage_DataTable.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="160">
-          <caret line="10" column="30" lean-forward="true" selection-start-line="10" selection-start-column="30" selection-end-line="10" selection-end-column="30" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/public/javascripts/backend/blog/blogManage_DataTable.js" />
     <entry file="file://$PROJECT_DIR$/routes/controllers/weibo_controller.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-60">
           <caret line="8" column="0" lean-forward="true" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#39#0" expanded="false" />
-            <element signature="e#136#155#0" expanded="false" />
-            <element signature="e#196#320#0" expanded="false" />
-            <element signature="e#323#337#0" expanded="false" />
-            <element signature="e#372#1703#0" expanded="false" />
-            <element signature="e#379#402#0" expanded="false" />
-            <element signature="e#527#554#0" expanded="false" />
-            <element signature="e#598#710#0" expanded="false" />
-            <element signature="e#766#878#0" expanded="false" />
-            <element signature="e#925#1037#0" expanded="false" />
-            <element signature="e#1042#1700#0" expanded="false" />
-            <element signature="e#1052#1083#0" expanded="false" />
-            <element signature="e#1184#1312#0" expanded="false" />
-            <element signature="e#1355#1692#0" expanded="false" />
-            <element signature="e#1369#1410#0" expanded="false" />
-            <element signature="e#1430#1534#0" expanded="false" />
-            <element signature="e#1547#1606#0" expanded="false" />
-            <element signature="e#1706#1726#0" expanded="false" />
-            <element signature="e#1772#1832#0" expanded="false" />
-            <element signature="e#1835#1852#0" expanded="false" />
-            <element signature="e#2207#2227#0" expanded="false" />
-            <element signature="e#2275#2503#0" expanded="false" />
-            <element signature="e#2506#2523#0" expanded="false" />
-            <element signature="e#2569#3025#0" expanded="false" />
-            <element signature="e#2576#2601#0" expanded="false" />
-            <element signature="e#2687#2741#0" expanded="false" />
-            <element signature="e#2749#2773#0" expanded="false" />
-            <element signature="e#2821#3021#0" expanded="false" />
-            <element signature="e#2838#2920#0" expanded="false" />
-            <element signature="e#2930#2961#0" expanded="false" />
-            <element signature="e#3028#3048#0" expanded="false" />
-            <element signature="e#3097#3155#0" expanded="false" />
-            <element signature="e#3158#3173#0" expanded="false" />
-            <element signature="e#3216#4637#0" expanded="false" />
-            <element signature="e#3222#3245#0" expanded="false" />
-            <element signature="e#3529#3554#0" expanded="false" />
-            <element signature="e#3694#3791#0" expanded="false" />
-            <element signature="e#3797#3856#0" expanded="false" />
-            <element signature="e#3873#3927#0" expanded="false" />
-            <element signature="e#3948#4063#0" expanded="false" />
-            <element signature="e#4085#4217#0" expanded="false" />
-            <element signature="e#4095#4129#0" expanded="false" />
-            <element signature="e#4224#4270#0" expanded="false" />
-            <element signature="e#4330#4480#0" expanded="false" />
-            <element signature="e#4347#4419#0" expanded="false" />
-            <element signature="e#4488#4511#0" expanded="false" />
-            <element signature="e#4640#4657#0" expanded="false" />
-            <element signature="e#4699#6020#0" expanded="false" />
-            <element signature="e#4705#4728#0" expanded="false" />
-            <element signature="e#5074#5099#0" expanded="false" />
-            <element signature="e#5223#5338#0" expanded="false" />
-            <element signature="e#5344#5403#0" expanded="false" />
-            <element signature="e#5420#5474#0" expanded="false" />
-            <element signature="e#5495#5610#0" expanded="false" />
-            <element signature="e#5632#5678#0" expanded="false" />
-            <element signature="e#5685#5731#0" expanded="false" />
-            <element signature="e#5791#5917#0" expanded="false" />
-            <element signature="e#5808#5880#0" expanded="false" />
-            <element signature="e#5925#5948#0" expanded="false" />
-            <element signature="e#6023#6040#0" expanded="false" />
-            <element signature="e#6079#6840#0" expanded="false" />
-            <element signature="e#6188#6307#0" expanded="false" />
-            <element signature="e#6344#6463#0" expanded="false" />
-            <element signature="e#6480#6532#0" expanded="false" />
-            <element signature="e#6583#6835#0" expanded="false" />
-            <element signature="e#6600#6682#0" expanded="false" />
-            <element signature="e#6692#6739#0" expanded="false" />
-            <element signature="e#6843#6863#0" expanded="false" />
-            <element signature="e#6912#6916#0" expanded="false" />
-            <element signature="e#6919#6934#0" expanded="false" />
-            <element signature="e#6977#8628#0" expanded="false" />
-            <element signature="e#6983#7067#0" expanded="false" />
-            <element signature="e#7073#7096#0" expanded="false" />
-            <element signature="e#7500#7525#0" expanded="false" />
-            <element signature="e#7796#7887#0" expanded="false" />
-            <element signature="e#7894#7918#0" expanded="false" />
-            <element signature="e#7939#8035#0" expanded="false" />
-            <element signature="e#8042#8068#0" expanded="false" />
-            <element signature="e#8098#8272#0" expanded="false" />
-            <element signature="e#8280#8303#0" expanded="false" />
-            <element signature="e#8339#8621#0" expanded="false" />
-            <element signature="e#8349#8382#0" expanded="false" />
-            <element signature="e#8398#8491#0" expanded="false" />
-            <element signature="e#8500#8547#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1581,7 +1466,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="441">
           <caret line="29" column="23" lean-forward="false" selection-start-line="29" selection-start-column="23" selection-end-line="29" selection-end-column="23" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1589,17 +1473,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="220">
           <caret line="25" column="12" lean-forward="true" selection-start-line="25" selection-start-column="12" selection-end-line="25" selection-end-column="86" />
-          <folding>
-            <marker date="1489060634957" expanded="true" signature="789:803" ph="..." />
-            <marker date="1489060634957" expanded="true" signature="1355:1379" ph="..." />
-            <marker date="1489060634957" expanded="true" signature="2293:2303" ph="..." />
-            <marker date="1489060634957" expanded="true" signature="4179:4192" ph="..." />
-            <marker date="1489060634957" expanded="true" signature="4538:4550" ph="..." />
-            <marker date="1489060634957" expanded="true" signature="4836:4850" ph="..." />
-            <marker date="1489060634957" expanded="true" signature="4909:4923" ph="..." />
-            <marker date="1489060634957" expanded="true" signature="5254:5268" ph="..." />
-            <marker date="1489060634957" expanded="true" signature="5327:5341" ph="..." />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1607,26 +1480,80 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="401">
           <caret line="53" column="4" lean-forward="false" selection-start-line="53" selection-start-column="4" selection-end-line="54" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/commons/layout.jade">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="29" column="36" lean-forward="true" selection-start-line="29" selection-start-column="36" selection-end-line="29" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/backend/commons/layout.jade">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="193">
+          <caret line="24" column="37" lean-forward="false" selection-start-line="24" selection-start-column="37" selection-end-line="24" selection-end-column="37" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/javascripts/backend/blog/blogManage.js">
+    <entry file="file://$PROJECT_DIR$/public/images/img.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/images/picture.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/images/details_open.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/images/details_close.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/stylesheets/backend/weiboManage_index.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="160">
-          <caret line="43" column="154" lean-forward="false" selection-start-line="43" selection-start-column="154" selection-end-line="43" selection-end-column="154" />
+        <state relative-caret-position="120">
+          <caret line="6" column="1" lean-forward="true" selection-start-line="6" selection-start-column="1" selection-end-line="6" selection-end-column="1" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/views/backend/management/weibo_manage/weiboManage_index.jade">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="332">
-          <caret line="81" column="51" lean-forward="true" selection-start-line="81" selection-start-column="51" selection-end-line="81" selection-end-column="51" />
+        <state relative-caret-position="391">
+          <caret line="80" column="61" lean-forward="false" selection-start-line="80" selection-start-column="61" selection-end-line="80" selection-end-column="61" />
           <folding>
             <element signature="n#div#0;n#div#0;n#div#0;n#div#0;n#block#1;n#!!top" expanded="false" />
             <element signature="n#div#1;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#block#1;n#!!top" expanded="false" />
             <element signature="n#div#2;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#block#1;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/javascripts/backend/blog/blogManage.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="110" column="27" lean-forward="true" selection-start-line="110" selection-start-column="27" selection-end-line="110" selection-end-column="27" />
+          <folding>
+            <marker date="1489374046707" expanded="true" signature="3593:3611" ph="..." />
+            <marker date="1489374046707" expanded="true" signature="3680:3692" ph="..." />
+            <marker date="1489374046707" expanded="true" signature="3886:3904" ph="..." />
+            <marker date="1489374046707" expanded="true" signature="4196:4202" ph=" " />
+            <marker date="1489374046707" expanded="true" signature="4202:4208" ph=" " />
+            <marker date="1489374046707" expanded="true" signature="4208:4214" ph=" " />
+            <marker date="1489374046707" expanded="true" signature="4214:4220" ph=" " />
+            <marker date="1489374046707" expanded="true" signature="4394:4412" ph="..." />
+            <marker date="1489374046707" expanded="true" signature="4481:4493" ph="..." />
+            <marker date="1489374046707" expanded="true" signature="4687:4705" ph="..." />
+            <marker date="1489374046707" expanded="true" signature="4853:4871" ph="..." />
           </folding>
         </state>
       </provider>

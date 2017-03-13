@@ -22,10 +22,16 @@ $.ajax({
     }
 });
 // alert(data);
-$('#datatable').dataTable({
+var table = $('#datatable').DataTable({
     bRetrieve: true,    //solve the problem: Cannot reinitialize Data Table
     data : data,        //数据源是对象数组 object array
     columns: [          //设置列匹配的键
+        {
+            "class":          'details-control',
+            "orderable":      false,
+            "data":           null,
+            "defaultContent": ''
+        },
         {"data" : '_id'},
         {"data" : 'author'},
         {"data": 'title'},
@@ -36,6 +42,7 @@ $('#datatable').dataTable({
         {"data": 'createTime'},
         {data : null}
     ],
+    order: [[1, 'asc']],
     columnDefs: [   //设置定义列的初始属性
         {
             targets: -1,//编辑
@@ -46,9 +53,9 @@ $('#datatable').dataTable({
                 '<button type="button" data-toggle="modal" data-target=".bs-example-modal" class="btn btn-danger btn-xs"><i class="fa fa-trash-o"></i> 删除</button>'
         },
         {
-            targets: [3],   //第四列
+            targets: [4],   //第五列
             data: 'createTime',
-            render: function (data, type, full) {
+            render: function (data, type, row) {
                 var createTime = moment(data).format('YYYY-MM-DD HH:mm:ss');
                 return '<span>'+ createTime +'</span>';
             }
@@ -89,3 +96,63 @@ $('#datatable').dataTable({
     // "aaSorting" : [[1, "asc"]], //默认的排序方式，第2列，升序排列
     // "bFilter" : true, //是否启动过滤、搜索功能
 });
+
+/**
+ * 获得行的附加信息
+ */
+function format ( d ) {
+    var comments_length = d.comments.length; //是否有评论
+    if(comments_length == 0){
+        return '<table cellpadding="5" cellspacing="0" border="0" style="padding-left:50px;">'+
+                    '<tr>'+
+                        '<td style="width: 40px;">标题:</td>'+
+                        '<td>'+d.title+'</td>'+
+                    '</tr>'+
+                    '<tr>'+
+                        '<td>内容:</td>'+
+                        '<td style="padding-top: 18px;">'+d.content+'</td>'+
+                    '</tr>'+
+                '</table>';
+    }else if(comments_length > 0){
+        var html = '';
+        for(var i = 0; i < comments_length; i++){
+            html +=
+                d.comments[i].author+ ':'+
+                d.comments[i].content + '&nbsp;&nbsp;&nbsp;&nbsp;' +
+                moment(d.comments[i].createTime).format('YYYY-MM-DD HH:mm:ss')+'<br>';
+        }
+        return '<table cellpadding="5" cellspacing="0" border="0" style="padding-left:50px;">'+
+                    '<tr>'+
+                        '<td style="width: 40px;">标题:</td>'+
+                        '<td>'+d.title+'</td>'+
+                    '</tr>'+
+                    '<tr>'+
+                        '<td>内容:</td>'+
+                        '<td style="padding-top: 18px;">'+d.content+'</td>'+
+                    '</tr>'+
+                    '<tr>'+
+                    '<td>评论:</td>'+
+                    '<td style="padding-top: 18px;">'+ html +'</td>'+
+                    '</tr>'+
+                '</table>';
+    }else {
+        return '';
+    }
+
+}
+
+$('#datatable tbody').on('click', 'td.details-control', function () {
+    var tr = $(this).closest('tr');
+    var row = table.row( tr );
+    if ( row.child.isShown() ) {
+        // This row is already open - close it
+        row.child.hide();
+        tr.removeClass('shown');
+    }
+    else {
+        // Open this row
+        row.child( format(row.data()) ).show();
+        tr.addClass('shown');
+    }
+} );
+
