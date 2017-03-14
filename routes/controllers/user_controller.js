@@ -212,7 +212,8 @@ exports.login = function (req, res) {
          * 查询用户是否存在
          */
         modelUser.findOne({
-            username: username
+            username: username,
+            delTag: false
         }, function (err, data) {
             if(err){
                 console.log("查询用户名失败："+ err);

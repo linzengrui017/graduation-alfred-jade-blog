@@ -18,7 +18,7 @@ exports.queryUsers = function (req, res) {
     /**
      * 查询数据库
      */
-    modelUser.find({delTag:false}, function (err, data) {
+    modelUser.find({}, function (err, data) {
         if(err){
             console.log("查询用户失败:"+err);
             res.redirect("/backend_dashboard");
@@ -53,7 +53,39 @@ exports.userDetail = function (req, res) {
  * 冻结用户
  */
 exports.inactivateUser = function (req, res) {
-
+    /**
+     * 获取数据
+     */
+    var id = req.query._id;
+    /**
+     * 校验
+     */
+    if( null == id || '' == id){
+        console.log('必传参数不能为空');
+        req.session.error = "必传参数不能为空";
+    }else {
+        /**
+         * 准备数据
+         */
+        var query = {
+            _id : id
+        };
+        var operator = {
+            $set : { delTag : true }
+        };
+        /**
+         * 修改数据库
+         */
+        modelUser.update(query, operator, function (err, data) {
+            if(err){
+                console.log('冻结用户操作失败：'+ err);
+                return;
+            }
+            console.log('成功冻结用户,id:'+id);
+            res.redirect('/toUsersManagePage');
+            // res.end();
+        });
+    }
 };
 
 
@@ -61,7 +93,40 @@ exports.inactivateUser = function (req, res) {
  * 解封用户
  */
 exports.unblockUser = function (req, res) {
+    /**
+     * 获取数据
+     */
+    var id = req.query._id;
+    /**
+     * 校验
+     */
+    if( null == id || '' == id){
+        console.log('必传参数不能为空');
+        req.session.error = "必传参数不能为空";
+    }else {
+        /**
+         * 准备数据
+         */
+        var query = {
+            _id : id
+        };
+        var operator = {
+            $set : { delTag : false }
+        };
+        /**
+         * 修改数据库
+         */
+        modelUser.update(query, operator, function (err, data) {
+            if(err){
+                console.log('解封用户操作失败：'+ err);
+                return;
+            }
 
+            console.log('成功解封用户,id:'+id);
+            res.end();
+
+        });
+    }
 };
 
 

@@ -31,13 +31,13 @@ router.get('/userDetail', usersManage.userDetail);
 /**
  * 冻结用户
  */
-router.get('/inactivateUser', usersManage.inactivateUser);
+router.post('/inactivateUser', usersManage.inactivateUser);
 
 
 /**
  * 解封用户
  */
-router.get('/unblockUser', usersManage.unblockUser);
+router.post('/unblockUser', usersManage.unblockUser);
 
 
 /**

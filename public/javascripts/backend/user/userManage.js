@@ -29,17 +29,20 @@ var table = $('#datatable').DataTable({
         {data : '_id'},
         {data : 'username'},
         {data: 'createTime'},
-        {data : null}
+        {data : 'delTag'}
     ],
     order: [[1, 'asc']],
     columnDefs: [   //设置定义列的初始属性
         {
-            targets: -1,//编辑
-            data: null,
-            defaultContent:
-                // '<button type="button" data-toggle="modal" data-target=".bs-example-modal-lg" class="btn btn-primary btn-xs"><i class="fa fa-folder"> 查看详情</i></button>'+
-                '<button type="button" data-toggle="modal" data-target=".bs-example-modal-sm" class="btn btn-info btn-xs"><i class="fa fa-pencil"> 修改</i></button>'
-                // '<button type="button" data-toggle="modal" data-target=".bs-example-modal" class="btn btn-danger btn-xs"><i class="fa fa-trash-o"></i> 删除</button>'
+            targets: -1,
+            data: 'delTag',
+            render: function (data, type, row) {
+                if(!data){
+                    return '<button type="button" class="btn btn-danger btn-xs" name="btn_remove"><i class="fa fa-remove"> 冻结</i></button>';
+                }else {
+                    return '<button type="button" class="btn btn-success btn-xs" name="btn_recover"><i class="fa fa-pencil"> 解封</i></button>';
+                }
+            }
         },
         {
             targets: [2],   //第三列
@@ -84,4 +87,37 @@ var table = $('#datatable').DataTable({
     // "bSort" : true, //是否启动各个字段的排序功能
     // "aaSorting" : [[1, "asc"]], //默认的排序方式，第2列，升序排列
     // "bFilter" : true, //是否启动过滤、搜索功能
+});
+
+$('button[name="btn_remove"]').click(function () {
+    var tr = $(this).closest('tr');
+    var id = tr.find('td').eq(0).text();
+    $.ajax({
+        url: '/inactivateUser?_id='+id,
+        type: "post",
+        success:function(result){
+            var html = '<button type="button" class="btn btn-success btn-xs" name="btn_recover"><i class="fa fa-pencil"> 解封</i></button>';
+            tr.find('td').eq(-1).html(html);
+            // alert("success");
+        },
+        error: function (XMLHttpRequest, textStatus, errorThrown) {
+            alert("ajax请求冻结用户操作失败 : XMLHttpRequest.readyState="+ XMLHttpRequest.readyState+ '\n' + textStatus.toString()+ '\n' + errorThrown.toString());
+        }
+    });
+});
+
+$('button[name="btn_recover"]').click(function () {
+    var tr = $(this).closest('tr');
+    var id = tr.find('td').eq(0).text();
+    $.ajax({
+        url: '/unblockUser?_id='+id,
+        type: "post",
+        success:function(result){
+            var html = '<button type="button" class="btn btn-danger btn-xs" name="btn_remove"><i class="fa fa-remove"> 冻结</i></button>';
+            tr.find('td').eq(-1).html(html);
+        },
+        error: function (XMLHttpRequest, textStatus, errorThrown) {
+            alert("ajax请求解封用户操作失败 : "+ errorThrown.toString());
+        }
+    });
 });
