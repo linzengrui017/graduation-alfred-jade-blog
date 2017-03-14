@@ -26,8 +26,20 @@ router.get('/queryIllegalWeibo', weiboManage.queryIllegalWeibo);
  */
 router.get('/delIllegalWeibo', weiboManage.delIllegalWeibo);
 
+/**
+ * 跳转到 转发微博 页面
+ */
+router.get('/toRelayBlogManagePage', weiboManage.toRelayBlogManagePage);
 
+/**
+ * 显示 转发微博
+ */
+router.post('/showRelayBlogList', weiboManage.showRelayBlogList);
 
+/**
+ * 按条件查询 同一条被转发的微博
+ */
+router.post('/queryRelayBlog', weiboManage.queryRelayBlog);
 
 
 

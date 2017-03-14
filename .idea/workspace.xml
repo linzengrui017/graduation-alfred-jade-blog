@@ -2,9 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f8ee0978-48cb-4707-befb-e4ce0a99b44e" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/javascripts/backend/blog/relayWeibo.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/views/backend/management/weibo_manage/relayWeibo.jade" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/javascripts/blog/pubBlog.js" afterPath="$PROJECT_DIR$/public/javascripts/blog/pubBlog.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/commons/layout.jade" afterPath="$PROJECT_DIR$/views/commons/layout.jade" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backend/routes/controllers/weiboManage_controller.js" afterPath="$PROJECT_DIR$/backend/routes/controllers/weiboManage_controller.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backend/routes/weiboManage.js" afterPath="$PROJECT_DIR$/backend/routes/weiboManage.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/backend/commons/layout.jade" afterPath="$PROJECT_DIR$/views/backend/commons/layout.jade" />
     </list>
     <ignored path="graduation-alfred-jade-blog.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -28,22 +31,91 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="layout.jade" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/views/commons/layout.jade">
+      <file leaf-file-name="layout.jade" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/views/backend/commons/layout.jade">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="147">
-              <caret line="33" column="38" lean-forward="false" selection-start-line="33" selection-start-column="38" selection-end-line="33" selection-end-column="38" />
+            <state relative-caret-position="257">
+              <caret line="70" column="78" lean-forward="false" selection-start-line="70" selection-start-column="78" selection-end-line="70" selection-end-column="78" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="layout.jade" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/views/backend/commons/layout.jade">
+      <file leaf-file-name="weiboManage.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/backend/routes/weiboManage.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="117">
-              <caret line="108" column="37" lean-forward="true" selection-start-line="108" selection-start-column="37" selection-end-line="108" selection-end-column="50" />
+            <state relative-caret-position="481">
+              <caret line="41" column="57" lean-forward="false" selection-start-line="41" selection-start-column="43" selection-end-line="41" selection-end-column="57" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="weiboManage_controller.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/backend/routes/controllers/weiboManage_controller.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="161">
+              <caret line="61" column="25" lean-forward="false" selection-start-line="61" selection-start-column="8" selection-end-line="61" selection-end-column="25" />
+              <folding>
+                <element signature="e#0#39#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="blog.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/models/blog.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="300">
+              <caret line="24" column="16" lean-forward="false" selection-start-line="24" selection-start-column="4" selection-end-line="24" selection-end-column="16" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="weiboManage_index.jade" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/views/backend/management/weibo_manage/weiboManage_index.jade">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="260">
+              <caret line="13" column="0" lean-forward="true" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
+              <folding>
+                <element signature="n#div#0;n#div#0;n#div#0;n#div#0;n#block#1;n#!!top" expanded="false" />
+                <element signature="n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#block#1;n#!!top" expanded="false" />
+                <element signature="n#div#1;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#block#1;n#!!top" expanded="false" />
+                <element signature="n#div#2;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#block#1;n#!!top" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="relayWeibo.jade" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/views/backend/management/weibo_manage/relayWeibo.jade">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="301">
+              <caret line="103" column="51" lean-forward="true" selection-start-line="103" selection-start-column="51" selection-end-line="103" selection-end-column="51" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="relayWeibo.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/public/javascripts/backend/blog/relayWeibo.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="307">
+              <caret line="61" column="9" lean-forward="true" selection-start-line="61" selection-start-column="9" selection-end-line="61" selection-end-column="9" />
+              <folding>
+                <marker date="1489505102321" expanded="true" signature="3624:3642" ph="..." />
+                <marker date="1489505102321" expanded="true" signature="3711:3723" ph="..." />
+                <marker date="1489505102321" expanded="true" signature="3917:3935" ph="..." />
+                <marker date="1489505102321" expanded="true" signature="4227:4233" ph=" " />
+                <marker date="1489505102321" expanded="true" signature="4233:4239" ph=" " />
+                <marker date="1489505102321" expanded="true" signature="4239:4245" ph=" " />
+                <marker date="1489505102321" expanded="true" signature="4245:4251" ph=" " />
+                <marker date="1489505102321" expanded="true" signature="4425:4443" ph="..." />
+                <marker date="1489505102321" expanded="true" signature="4512:4524" ph="..." />
+                <marker date="1489505102321" expanded="true" signature="4718:4736" ph="..." />
+                <marker date="1489505102321" expanded="true" signature="4884:4902" ph="..." />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -109,8 +181,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/routes/index.js" />
-        <option value="$PROJECT_DIR$/public/stylesheets/commons/bootstrap.min.css" />
         <option value="$PROJECT_DIR$/views/backend/index/backend_index.jade" />
         <option value="$PROJECT_DIR$/settings.js" />
         <option value="$PROJECT_DIR$/models/User.js" />
@@ -131,7 +201,6 @@
         <option value="$PROJECT_DIR$/views/backend/commons/bottom.jade" />
         <option value="$PROJECT_DIR$/public/javascripts/backend/blog/blogManage_DataTable.js" />
         <option value="$PROJECT_DIR$/public/stylesheets/backend/weiboManage_index.css" />
-        <option value="$PROJECT_DIR$/backend/routes/weiboManage.js" />
         <option value="$PROJECT_DIR$/models/blog.js" />
         <option value="$PROJECT_DIR$/views/backend/management/weibo_manage/weiboManage_index.jade" />
         <option value="$PROJECT_DIR$/public/javascripts/backend/blog/blogManage.js" />
@@ -139,7 +208,6 @@
         <option value="$PROJECT_DIR$/app.js" />
         <option value="$PROJECT_DIR$/views/backend/admin/login.jade" />
         <option value="$PROJECT_DIR$/public/javascripts/backend/admin/admin_login.js" />
-        <option value="$PROJECT_DIR$/backend/routes/controllers/weiboManage_controller.js" />
         <option value="$PROJECT_DIR$/backend/routes/admin.js" />
         <option value="$PROJECT_DIR$/public/javascripts/backend/admin/admin_update_password.js" />
         <option value="$PROJECT_DIR$/backend/routes/controllers/admin_controller.js" />
@@ -157,9 +225,13 @@
         <option value="$PROJECT_DIR$/public/javascripts/backend/user/userManage.js" />
         <option value="$PROJECT_DIR$/backend/routes/controllers/usersManage_controller.js" />
         <option value="$PROJECT_DIR$/views/backend/management/users_manage/usersManage_index.jade" />
-        <option value="$PROJECT_DIR$/views/backend/commons/layout.jade" />
         <option value="$PROJECT_DIR$/public/javascripts/blog/pubBlog.js" />
         <option value="$PROJECT_DIR$/views/commons/layout.jade" />
+        <option value="$PROJECT_DIR$/backend/routes/weiboManage.js" />
+        <option value="$PROJECT_DIR$/views/backend/commons/layout.jade" />
+        <option value="$PROJECT_DIR$/backend/routes/controllers/weiboManage_controller.js" />
+        <option value="$PROJECT_DIR$/views/backend/management/weibo_manage/relayWeibo.jade" />
+        <option value="$PROJECT_DIR$/public/javascripts/backend/blog/relayWeibo.js" />
       </list>
     </option>
   </component>
@@ -778,19 +850,19 @@
     <property name="list.type.of.created.stylesheet" value="CSS" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="H:\ws\node_instance\graduation-alfred-jade-blog\public\javascripts\user" />
-      <recent name="H:\ws\node_instance\graduation-alfred-jade-blog\public\javascripts\backend\user" />
-      <recent name="H:\ws\node_instance\graduation-alfred-jade-blog\public\stylesheets\backend" />
-      <recent name="H:\ws\node_instance\graduation-alfred-jade-blog\models" />
-      <recent name="H:\ws\node_instance\graduation-alfred-jade-blog\public\images" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="H:\ws\node_instance\graduation-alfred-jade-blog\database" />
       <recent name="H:\ws\node_instance\graduation-alfred-jade-blog\views\backend\management\weibo_manage" />
       <recent name="H:\ws\node_instance\graduation-alfred-jade-blog\views\weibo" />
       <recent name="H:\ws\node_instance\graduation-alfred-jade-blog\views\index" />
       <recent name="H:\ws\node_instance\graduation-alfred-jade-blog\views\commons" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="H:\ws\node_instance\graduation-alfred-jade-blog\public\javascripts\backend\blog" />
+      <recent name="H:\ws\node_instance\graduation-alfred-jade-blog\views\backend\management\weibo_manage" />
+      <recent name="H:\ws\node_instance\graduation-alfred-jade-blog\public\javascripts\user" />
+      <recent name="H:\ws\node_instance\graduation-alfred-jade-blog\public\javascripts\backend\user" />
+      <recent name="H:\ws\node_instance\graduation-alfred-jade-blog\public\stylesheets\backend" />
     </key>
   </component>
   <component name="RunManager" selected="Node.js.bin\www">
@@ -911,14 +983,7 @@
       <workItem from="1489299625831" duration="14815000" />
       <workItem from="1489327323777" duration="3853000" />
       <workItem from="1489364086009" duration="35970000" />
-      <workItem from="1489474064074" duration="16368000" />
-    </task>
-    <task id="LOCAL-00016" summary="use static files in &quot;public&quot; directory">
-      <created>1488272119256</created>
-      <option name="number" value="00016" />
-      <option name="presentableId" value="LOCAL-00016" />
-      <option name="project" value="LOCAL" />
-      <updated>1488272119256</updated>
+      <workItem from="1489474064074" duration="17704000" />
     </task>
     <task id="LOCAL-00017" summary="npm uninstall gentelella">
       <created>1488272229524</created>
@@ -1256,11 +1321,18 @@
       <option name="project" value="LOCAL" />
       <updated>1489484761939</updated>
     </task>
-    <option name="localTasksCounter" value="65" />
+    <task id="LOCAL-00065" summary="前台导航条调整">
+      <created>1489503935559</created>
+      <option name="number" value="00065" />
+      <option name="presentableId" value="LOCAL-00065" />
+      <option name="project" value="LOCAL" />
+      <updated>1489503935560</updated>
+    </task>
+    <option name="localTasksCounter" value="66" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="425712000" />
+    <option name="totallyTimeSpent" value="427048000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1278,7 +1350,7 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295082" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295082" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33442622" sideWeight="0.526475" order="10" side_tool="true" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.42459017" sideWeight="0.47655067" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.42459017" sideWeight="0.47655067" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32786885" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Mongo Explorer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32753405" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1350,7 +1422,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="评论微博" />
     <MESSAGE value="显示评论信息" />
     <MESSAGE value="添加评论后返回当前页面" />
     <MESSAGE value="删除评论" />
@@ -1375,7 +1446,8 @@
     <MESSAGE value="修改转发微博的逻辑&#10;现在规定：组合（作者+标题）不能重复，设置格式为：转发微博+原来微博标题" />
     <MESSAGE value="冻结、解封用户" />
     <MESSAGE value="后台菜单项调整" />
-    <option name="LAST_COMMIT_MESSAGE" value="后台菜单项调整" />
+    <MESSAGE value="前台导航条调整" />
+    <option name="LAST_COMMIT_MESSAGE" value="前台导航条调整" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1387,16 +1459,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/public/images/img.jpg">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/images/picture.jpg">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/images/details_open.png">
       <provider selected="true" editor-type-id="images">
         <state />
@@ -1479,16 +1541,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/backend/routes/controllers/weiboManage_controller.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-33">
-          <caret line="25" column="44" lean-forward="false" selection-start-line="25" selection-start-column="44" selection-end-line="25" selection-end-column="44" />
-          <folding>
-            <element signature="e#0#39#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/backend/routes/admin.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-39">
@@ -1513,26 +1565,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/backend/routes/weiboManage.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="61">
-          <caret line="16" column="45" lean-forward="false" selection-start-line="16" selection-start-column="45" selection-end-line="16" selection-end-column="45" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/models/admin.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="40">
           <caret line="2" column="17" lean-forward="false" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/models/blog.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-199">
-          <caret line="3" column="10" lean-forward="false" selection-start-line="3" selection-start-column="4" selection-end-line="3" selection-end-column="10" />
           <folding />
         </state>
       </provider>
@@ -1558,26 +1594,6 @@
         <state relative-caret-position="240">
           <caret line="12" column="0" lean-forward="false" selection-start-line="12" selection-start-column="0" selection-end-line="15" selection-end-column="32" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/javascripts/backend/blog/blogManage.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="227">
-          <caret line="147" column="46" lean-forward="true" selection-start-line="147" selection-start-column="46" selection-end-line="147" selection-end-column="46" />
-          <folding>
-            <marker date="1489379269416" expanded="true" signature="3617:3635" ph="..." />
-            <marker date="1489379269416" expanded="true" signature="3704:3716" ph="..." />
-            <marker date="1489379269416" expanded="true" signature="3910:3928" ph="..." />
-            <marker date="1489379269416" expanded="true" signature="4220:4226" ph=" " />
-            <marker date="1489379269416" expanded="true" signature="4226:4232" ph=" " />
-            <marker date="1489379269416" expanded="true" signature="4232:4238" ph=" " />
-            <marker date="1489379269416" expanded="true" signature="4238:4244" ph=" " />
-            <marker date="1489379269416" expanded="true" signature="4418:4436" ph="..." />
-            <marker date="1489379269416" expanded="true" signature="4505:4517" ph="..." />
-            <marker date="1489379269416" expanded="true" signature="4711:4729" ph="..." />
-            <marker date="1489379269416" expanded="true" signature="4877:4895" ph="..." />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1887,19 +1903,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/views/backend/management/weibo_manage/weiboManage_index.jade">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="387">
-          <caret line="108" column="18" lean-forward="true" selection-start-line="108" selection-start-column="18" selection-end-line="108" selection-end-column="18" />
-          <folding>
-            <element signature="n#div#0;n#div#0;n#div#0;n#div#0;n#block#1;n#!!top" expanded="false" />
-            <element signature="n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#block#1;n#!!top" expanded="false" />
-            <element signature="n#div#1;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#block#1;n#!!top" expanded="false" />
-            <element signature="n#div#2;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#block#1;n#!!top" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/views/commons/bottom.jade">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-719">
@@ -2045,19 +2048,106 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/views/backend/commons/layout.jade">
+    <entry file="file://$PROJECT_DIR$/views/commons/layout.jade">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="117">
-          <caret line="108" column="37" lean-forward="true" selection-start-line="108" selection-start-column="37" selection-end-line="108" selection-end-column="50" />
+        <state relative-caret-position="127">
+          <caret line="32" column="35" lean-forward="true" selection-start-line="32" selection-start-column="35" selection-end-line="32" selection-end-column="35" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/views/commons/layout.jade">
+    <entry file="file://$PROJECT_DIR$/backend/routes/weiboManage.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="147">
-          <caret line="33" column="38" lean-forward="false" selection-start-line="33" selection-start-column="38" selection-end-line="33" selection-end-column="38" />
+        <state relative-caret-position="481">
+          <caret line="41" column="57" lean-forward="false" selection-start-line="41" selection-start-column="43" selection-end-line="41" selection-end-column="57" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/backend/management/weibo_manage/weiboManage_index.jade">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="260">
+          <caret line="13" column="0" lean-forward="true" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
+          <folding>
+            <element signature="n#div#0;n#div#0;n#div#0;n#div#0;n#block#1;n#!!top" expanded="false" />
+            <element signature="n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#block#1;n#!!top" expanded="false" />
+            <element signature="n#div#1;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#block#1;n#!!top" expanded="false" />
+            <element signature="n#div#2;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#block#1;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/backend/commons/layout.jade">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="257">
+          <caret line="70" column="78" lean-forward="false" selection-start-line="70" selection-start-column="78" selection-end-line="70" selection-end-column="78" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/models/blog.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="24" column="16" lean-forward="false" selection-start-line="24" selection-start-column="4" selection-end-line="24" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/backend/management/weibo_manage/relayWeibo.jade">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="301">
+          <caret line="103" column="51" lean-forward="true" selection-start-line="103" selection-start-column="51" selection-end-line="103" selection-end-column="51" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/javascripts/backend/blog/blogManage.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="13" column="21" lean-forward="true" selection-start-line="13" selection-start-column="21" selection-end-line="13" selection-end-column="21" />
+          <folding>
+            <marker date="1489379269416" expanded="true" signature="3617:3635" ph="..." />
+            <marker date="1489379269416" expanded="true" signature="3704:3716" ph="..." />
+            <marker date="1489379269416" expanded="true" signature="3910:3928" ph="..." />
+            <marker date="1489379269416" expanded="true" signature="4220:4226" ph=" " />
+            <marker date="1489379269416" expanded="true" signature="4226:4232" ph=" " />
+            <marker date="1489379269416" expanded="true" signature="4232:4238" ph=" " />
+            <marker date="1489379269416" expanded="true" signature="4238:4244" ph=" " />
+            <marker date="1489379269416" expanded="true" signature="4418:4436" ph="..." />
+            <marker date="1489379269416" expanded="true" signature="4505:4517" ph="..." />
+            <marker date="1489379269416" expanded="true" signature="4711:4729" ph="..." />
+            <marker date="1489379269416" expanded="true" signature="4877:4895" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/routes/controllers/weiboManage_controller.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="161">
+          <caret line="61" column="25" lean-forward="false" selection-start-line="61" selection-start-column="8" selection-end-line="61" selection-end-column="25" />
+          <folding>
+            <element signature="e#0#39#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/javascripts/backend/blog/relayWeibo.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="307">
+          <caret line="61" column="9" lean-forward="true" selection-start-line="61" selection-start-column="9" selection-end-line="61" selection-end-column="9" />
+          <folding>
+            <marker date="1489505102321" expanded="true" signature="3624:3642" ph="..." />
+            <marker date="1489505102321" expanded="true" signature="3711:3723" ph="..." />
+            <marker date="1489505102321" expanded="true" signature="3917:3935" ph="..." />
+            <marker date="1489505102321" expanded="true" signature="4227:4233" ph=" " />
+            <marker date="1489505102321" expanded="true" signature="4233:4239" ph=" " />
+            <marker date="1489505102321" expanded="true" signature="4239:4245" ph=" " />
+            <marker date="1489505102321" expanded="true" signature="4245:4251" ph=" " />
+            <marker date="1489505102321" expanded="true" signature="4425:4443" ph="..." />
+            <marker date="1489505102321" expanded="true" signature="4512:4524" ph="..." />
+            <marker date="1489505102321" expanded="true" signature="4718:4736" ph="..." />
+            <marker date="1489505102321" expanded="true" signature="4884:4902" ph="..." />
+          </folding>
         </state>
       </provider>
     </entry>

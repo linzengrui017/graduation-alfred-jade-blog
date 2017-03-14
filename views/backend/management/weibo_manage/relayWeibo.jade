@@ -1,0 +1,112 @@
+extends ../../commons/layout
+
+block head
+    // Datatables
+    link(href='stylesheets/dataTables/dataTables.bootstrap.min.css', rel='stylesheet')
+    //link(href='stylesheets/dataTables/buttons.bootstrap.min.css', rel='stylesheet')
+    //link(href='stylesheets/dataTables/fixedHeader.bootstrap.min.css', rel='stylesheet')
+    //link(href='stylesheets/dataTables/responsive.bootstrap.min.css', rel='stylesheet')
+    //link(href='stylesheets/dataTables/scroller.bootstrap.min.css', rel='stylesheet')
+
+    //customer style
+    link(href='stylesheets/backend/weiboManage_index.css', rel='stylesheet')
+
+
+block content
+
+    .row
+        .col-md-12.col-sm-12.col-xs-12
+            .x_panel
+                .x_title
+                    h2
+                        | 微博列表
+                    .clearfix
+                .x_content
+                    #datatable_wrapper.dataTables_wrapper.form-inline.dt-bootstrap.no-footer
+                        //模态框
+                        .modal.fade.bs-example-modal-lg(tabindex='-1', role='dialog', aria-hidden='true', style='display: none;')
+                            .modal-dialog.modal-lg
+                                .modal-content
+                                    .modal-header
+                                        button.close(type='button', data-dismiss='modal')
+                                            span(aria-hidden='true') ×
+                                        h4#myModalLabel.modal-title 微博详情
+                                    .modal-body
+                                        h4 微博标题 内容 评论
+                                        p
+                                            | 1111
+                                    .modal-footer
+                                        button.btn.btn-default(type='button', data-dismiss='modal') Close
+                                        button.btn.btn-primary(type='button') Save changes
+
+                        .modal.fade.bs-example-modal-sm(tabindex='-1', role='dialog', aria-hidden='true')
+                            .modal-dialog.modal-sm
+                                .modal-content
+                                    .modal-header
+                                        button.close(type='button', data-dismiss='modal', aria-label='Close')
+                                            span(aria-hidden='true') ×
+                                        h4#myModalLabel2.modal-title Modal title
+                                    .modal-body
+                                        h4 Text in a modal
+                                        p
+                                            | 222222
+                                    .modal-footer
+                                        button.btn.btn-default(type='button', data-dismiss='modal') Close
+                                        button.btn.btn-primary(type='button') Save changes
+
+                        .modal.fade.bs-example-modal(tabindex='-1', role='dialog', aria-hidden='true', style='display: none;')
+                            .modal-dialog.modal-lg
+                                .modal-content
+                                    .modal-header
+                                        button.close(type='button', data-dismiss='modal')
+                                            span(aria-hidden='true') ×
+                                        h4#myModalLabel3.modal-title Modal title
+                                    .modal-body
+                                        h4 Text in a modal
+                                        p
+                                            | 第3个模态框
+                                    .modal-footer
+                                        button.btn.btn-default(type='button', data-dismiss='modal') Close
+                                        button.btn.btn-primary(type='button') Save changes
+
+
+
+
+                        .row
+                            .col-sm-12
+                                div#data(style='display:none;')= data
+                                table#datatable.table.table-striped.table-bordered.dataTable
+                                    thead
+                                        tr(role='row')
+                                            th(style='width:20px;')
+                                            th 唯一标识
+                                            th 作者
+                                            th 标题
+
+                                            //th 内容
+                                            //th 评论
+
+                                            //th 转发的原微博
+                                            th 创建时间
+                                            //th 操作
+
+
+
+
+
+
+block scripts
+    // FastClick
+    script(src='javascripts/commons/fastclick.js')
+    // NProgress
+    script(src='javascripts/commons/nprogress.js')
+    // iCheck
+    script(src='javascripts/commons/icheck.min.js')
+    // Datatables
+    script(src='javascripts/dataTables/jquery.dataTables.min.js')
+    script(src='javascripts/dataTables/dataTables.bootstrap.min.js')
+
+    //trasfer Date
+    script(src='javascripts/commons/moment.min.js')
+    //load data
+    script(src='javascripts/backend/blog/relayWeibo.js')
