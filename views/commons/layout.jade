@@ -15,41 +15,43 @@ html
 
         block head
 
-    body(style='background:#FFFFFF;padding-top:0px;padding-bottom:70px;margin: 0 150px;')
+    body(style='background:#6495ED;')
 
-        .index-top
-            .bs-example
-                nav.navbar(style='/*background:#34495E;*/')
-                    .container-fluid
-                        .navbar-header
-                            a.navbar-brand(href='/' )
+        nav.navbar.navbar-default
+            .container-fluid
+                #bs-example-navbar-collapse-1.collapse.navbar-collapse
+                    ul.nav.navbar-nav
+                        li.active
+                            a(href='/' )
                                 i.fa.fa-weibo
                                     |  微博
-                        #bs-example-navbar-collapse-9.collapse.navbar-collapse
-                            ul.nav.navbar-nav.navbar-right
-                                //li
-                                //    a(href='/') 首页
-
-                                //li
-                                //    a(href='/toCommentBlogPage') 评论
-
-                                -if(user)
-                                    li
-                                        a(href='/toAddPage') 列表
+                        -if(user)
+                            li
+                                a(href='/toAddPage') 列表
+                        -else
+                            li
+                                a(href='/toBlogListPage') 列表
+                    ul.nav.navbar-nav.navbar-right
+                        -if(user)
+                            li.dropdown
+                                a.user-profile.dropdown-toggle(href='#', data-toggle='dropdown', role='button', aria-haspopup='true', aria-expanded='false')
+                                    img(src='images/img.jpg', alt='')
+                                    | Dropdown
+                                    span.caret
+                                ul.dropdown-menu
                                     li
                                         a(href='/profile') 个人中心
+                                    li.divider(role='separator')
                                     li
                                         a(href='/logout') 退出
-                                -else
-                                    li
-                                        a(href='/toBlogListPage') 列表
-                                    li
-                                        a(href='/toLogin') 登录
-                                    li
-                                        a(href='/toLogin#signup') 注册
+                        -else
+                            li
+                                a(href='/toLogin') 登录
+                            li
+                                a(href='/toLogin#signup') 注册
 
-
-        block content
+        div(style='margin-top:20px;')
+            block content
 
         include bottom
 

@@ -48,16 +48,17 @@ $.ajax({
                         '</div>' +
                     '</div>'
                 );
+                /**
+                 * 映射到视图
+                 */
+                $('#blogList').append(
+                    '<div class="x_panel" id="main_panel">' +
+
+                    '</div>'
+                );
             }
 
-            /**
-             * 映射到视图
-             */
-            $('#blogList').append(
-                '<div class="x_panel" id="main_panel">' +
 
-                '</div>'
-            );
 
             /**
              * 判断是否显示 删除按钮
