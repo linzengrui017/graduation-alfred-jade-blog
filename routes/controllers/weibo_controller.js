@@ -4,6 +4,8 @@
 
 var modelBlog = require('../../models/blog');
 
+var modelUser = require('../../models/user');
+
 //获取当前系统时间
 var sd = require('silly-datetime');
 
@@ -43,34 +45,52 @@ exports.add = function (req, res) {
         res.redirect("/toAddPage");
     }else {
         /**
-         * 插入微博
+         * 根据 用户名 得到 头像地址
          */
-
-        var time = sd.format(new Date(), 'YYYY-MM-DD HH:mm:ss');
-
-        var blog = new modelBlog({
-            author: author,
-            title: title,
-            content: description,
-            createTime: time
-        });
-
-        blog.save(function (err, data) {
-            /**
-             * 新增操作异常
-             */
+        var imageUrl = '';
+        modelUser.findOne({ username : author}, function (err, data) {
             if(err){
-                console.log("发微博操作异常:"+err);
-                res.redirect("/toAddPage");
+                console.log("查询用户失败："+ err);
+                req.session.error = "查询用户失败";
+                res.redirect('/toAddPage');
             }
-            /**
-             * 新增成功
-             * 返回视图
-             */
-            console.log("成功发布微博");
+            imageUrl = data.imageUrl;
 
-            res.redirect('/toAddPage');
+            /**
+             * 插入微博
+             */
+
+            var time = sd.format(new Date(), 'YYYY-MM-DD HH:mm:ss');
+
+            var blog = new modelBlog({
+                author: author,
+                title: title,
+                content: description,
+                createTime: time,
+                imageUrl : imageUrl
+            });
+
+            blog.save(function (err, data) {
+                /**
+                 * 新增操作异常
+                 */
+                if(err){
+                    console.log("发微博操作异常:"+err);
+                    res.redirect("/toAddPage");
+                }
+                /**
+                 * 新增成功
+                 * 返回视图
+                 */
+                console.log("成功发布微博");
+
+                res.redirect('/toAddPage');
+            });
+
         });
+
+
+
     }
 
 };
@@ -188,49 +208,65 @@ exports.commentBlog = function (req, res) {
         req.session.error = "必传参数不能为空";
         return;
     }
-
     /**
-     * 准备数据
-     * @type {{author: (*), title}}
+     * 根据 用户名 得到 头像地址
      */
-    var query = {
-        author : author,
-        title : title
-    };
-
-    var comment = {
-        author : comment_author,
-        content : comment_content,
-        createTime : comment_createTime
-    };
-
-    var operator = {
-        // $unset : { comments : comment }
-        // $set : { comments : comment }
-        "$push" : { comments : comment }
-    };
-
-    /**
-     * 往该微博里添加评论数据
-     * 执行修改追加操作
-     */
-    modelBlog.update(query, operator, function (err, data) {
+    var comment_imageUrl = '';
+    modelUser.findOne({ username : customer}, function (err, data) {
         if(err){
-            console.log('添加评论失败：'+ err);
-            return;
+            console.log("查询用户失败："+ err);
+            req.session.error = "查询用户失败";
+            res.redirect('/toAddPage');
         }
+        comment_imageUrl = data.imageUrl;
 
-        console.log('添加评论成功');
+        /**
+         * 准备数据
+         * @type {{author: (*), title}}
+         */
+        var query = {
+            author : author,
+            title : title
+        };
+
+        var comment = {
+            author : comment_author,
+            content : comment_content,
+            createTime : comment_createTime,
+            imageUrl : comment_imageUrl
+        };
+
+        var operator = {
+            // $unset : { comments : comment }
+            // $set : { comments : comment }
+            "$push" : { comments : comment }
+        };
+
+        /**
+         * 往该微博里添加评论数据
+         * 执行修改追加操作
+         */
+        modelBlog.update(query, operator, function (err, data) {
+            if(err){
+                console.log('添加评论失败：'+ err);
+                return;
+            }
+
+            console.log('添加评论成功');
+            // res.end();
+
+        });
+
+        /**
+         * 返回视图
+         */
+        // res.redirect('/toAddPage');
+        res.redirect('/toDetailBlogPage?author='+author+'&title='+title);
         // res.end();
 
     });
 
-    /**
-     * 返回视图
-     */
-    // res.redirect('/toAddPage');
-    res.redirect('/toDetailBlogPage?author='+author+'&title='+title);
-    // res.end();
+
 
 };
 
@@ -383,47 +419,61 @@ exports.forwardBlog = function (req, res) {
         res.redirect("/toAddPage");
         return;
     }
-
-
     /**
-     * 得到子文档
+     * 根据 用户名 得到 头像地址
      */
-    var relayBlog = {
-        author: relay_author,
-        title: relay_title,
-        content: relay_content
-    };
-
-    /**
-     * 父文档其他参数
-     */
-    var blog = new modelBlog({
-        author: author,
-        title : title,
-        content: content,
-        relayContent: relayBlog,
-        relayTag : relayTag,
-        createTime : createTime
-    });
-
-    /**
-     * 新建文档
-     */
-    blog.save(function (err, data) {
-        /**
-         * 新增操作异常
-         */
+    var imageUrl = '';
+    modelUser.findOne({ username : customer}, function (err, data) {
         if(err){
-            console.log("转发微博操作异常:"+err);
-            res.redirect("/toAddPage");
+            console.log("查询用户失败："+ err);
+            req.session.error = "查询用户失败";
+            res.redirect('/toAddPage');
         }
-        /**
-         * 新增成功
-         * 返回视图
-         */
-        console.log("成功转发微博");
+        imageUrl = data.imageUrl;
 
-        res.redirect('/toAddPage');
+        /**
+         * 得到子文档
+         */
+        var relayBlog = {
+            imageUrl: imageUrl,
+            author: relay_author,
+            title: relay_title,
+            content: relay_content
+        };
+
+        /**
+         * 父文档其他参数
+         */
+        var blog = new modelBlog({
+            imageUrl: imageUrl,
+            author: author,
+            title : title,
+            content: content,
+            relayContent: relayBlog,
+            relayTag : relayTag,
+            createTime : createTime
+        });
+
+        /**
+         * 新建文档
+         */
+        blog.save(function (err, data) {
+            /**
+             * 新增操作异常
+             */
+            if(err){
+                console.log("转发微博操作异常:"+err);
+                res.redirect("/toAddPage");
+            }
+            /**
+             * 新增成功
+             * 返回视图
+             */
+            console.log("成功转发微博");
+
+            res.redirect('/toAddPage');
+        });
+
     });
 
 

@@ -1,6 +1,7 @@
 var mongoose = require('mongoose');
 
 var commentSchema = new mongoose.Schema({
+    imageUrl : String,          //头像图片地址
     author: String,         //评论人名称
     content: String,        //评论内容
     createTime: {           //创建时间
@@ -10,6 +11,7 @@ var commentSchema = new mongoose.Schema({
 });
 
 var relaySchema = new mongoose.Schema({
+    imageUrl : String,          //头像图片地址
     author: String,         //转发微博的作者
     title: String,          //转发微博的标题
     content: String,         //转发微博的内容
@@ -17,6 +19,7 @@ var relaySchema = new mongoose.Schema({
 });
 
 var blogSchema = new mongoose.Schema({
+    imageUrl : String,          //头像图片地址
     author: String,                 //作者
     title: String,                  //标题
     content: String,                //内容

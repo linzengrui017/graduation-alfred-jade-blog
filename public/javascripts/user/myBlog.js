@@ -24,6 +24,7 @@ $.ajax({
             var content = data[i].content;
             var createTime = moment(data[i].createTime).format('YYYY-MM-DD HH:mm:ss');
             var relayTag = data[i].relayTag;
+            var imageUrl = data[i].imageUrl;
             /**
              * 只添加一个模态框
              */
@@ -73,12 +74,13 @@ $.ajax({
                 var relay_author = relayContent.author;
                 var relay_title = relayContent.title;
                 var relay_content = relayContent.content;
+                var relay_imageUrl = relayContent.imageUrl;
                 /**
                  * 添加视图
                  */
                 relayHtml +=
                     '<ul class="messages">' +
-                        '<li><img src="images/img.jpg" alt="Avatar" class="avatar" />' +
+                        '<li><img src="'+ relay_imageUrl +'" alt="Avatar" class="avatar" />' +
                             '<div class="message_wrapper">' +
                                 '<h4 class="heading">'+ relay_author +'</h4>' +
                                 '<br />' +
@@ -125,7 +127,7 @@ $.ajax({
             for(var k = comments.length - 1; k >= 0; k--){
                 if(comments[k].author == customer) {
                     comments_list_html +=
-                        '<li><img src="images/img.jpg" alt="Avatar" class="avatar" />' +
+                        '<li><img src="'+ comments[k].imageUrl +'" alt="Avatar" class="avatar" />' +
                             '<div class="message_wrapper">' +
                                 '<font style="color:#CD5C5C;">' + comments[k].author + '</font>:' +
                                 '<font style="color:#696969;">' + comments[k].content + '</font>' +
@@ -136,7 +138,7 @@ $.ajax({
                         '</div></li>';
                 }else {
                     comments_list_html +=
-                        '<li><img src="images/img.jpg" alt="Avatar" class="avatar" />' +
+                        '<li><img src="'+ comments[k].imageUrl +'" alt="Avatar" class="avatar" />' +
                             '<div class="message_wrapper">' +
                                 '<font style="color:#CD5C5C;">' + comments[k].author + '</font>:' +
                                 '<font style="color:#696969;">' + comments[k].content + '</font>' +
@@ -163,7 +165,7 @@ $.ajax({
                  */
             '<div class="block">'+
                 '<ul class="messages">' +
-                    '<li><img src="images/img.jpg" alt="Avatar" class="avatar" />' +
+                    '<li><img src="'+ imageUrl +'" alt="Avatar" class="avatar" />' +
                         '<div class="message_wrapper">' +
                             '<h4 class="heading">'+ author +'</h4>' +
                             '<small>'+ createTime +'</small>' +
