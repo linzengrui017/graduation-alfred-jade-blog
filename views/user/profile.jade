@@ -32,7 +32,7 @@ block content
                         .profile_img
                             #crop-avatar
                                 // Current avatar
-                                img.img-responsive.avatar-view(src='images/picture.jpg', alt='Avatar', title='Change the avatar')
+                                img#img.img-responsive.avatar-view(src='images/picture.jpg', alt='Avatar', title='Change the avatar')
                         h3 博主
                         ul.list-unstyled.user_data
                             li
@@ -89,12 +89,10 @@ block content
 
 
                                 #tab_content3.tab-pane.fade(role='tabpanel', aria-labelledby='profile-tab')
-                                    .form-group
-                                        label File input
-                                        input#file(type='file', name='file')
-                                        p#result
-                                        img#img(src='')
+                                    input#file(type='file', name='file')
                                     button#upload.btn.btn-default 提交
+                                    p#result
+
                                 #tab_content4.tab-pane.fade(role='tabpanel', aria-labelledby='profile-tab')
 
 
