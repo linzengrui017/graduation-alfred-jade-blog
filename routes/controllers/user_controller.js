@@ -273,8 +273,8 @@ exports.login = function (req, res) {
  * 注销功能
  */
 exports.logout = function (req, res, next) {
-    res.locals.user = null;
-    res.render('index/welcome', { title: 'Blog' });
+    delete res.locals.user;
+    res.render('weibo/blogList', { title: 'blogList' });
 };
 
 /**

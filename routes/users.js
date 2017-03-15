@@ -64,20 +64,28 @@ router.post('/myBlogList', user.myBlogList);
  */
 router.get('/toUploadCustomerImagePage', user.toUploadCustomerImagePage);
 
+/**
+ * 上传用户头像
+ */
 var storage = multer.diskStorage({
+    //设置上传后文件路径，upload文件夹会自动创建
     destination: function (req, file, cb){
         cb(null, './public/images/upload')
     },
+    //给上传文件重命名，获取添加后缀名
     filename: function (req, file, cb){
         cb(null, file.originalname)
     }
 });
+//添加配置文件到muler对象
 var upload = multer({
     storage: storage
 });
-
 /**
- * 上传用户头像
+ * multer有single()中的名称必须是表单上传字段的name名称
+ * muilter.single('file'), //适用于单文件上传
+ * muilter.array('file,num), //适用于多文件上传，num为最多上传个数，上传文件的数量可以小于num,
+ * muilter.fields(fields), //适用于混合上传，比如A类文件1个，B类文件
  */
 router.post('/uploadUserImage', upload.single('file'), user.uploadUserImage);
 

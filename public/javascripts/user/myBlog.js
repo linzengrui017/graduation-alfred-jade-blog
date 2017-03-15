@@ -47,19 +47,18 @@ $.ajax({
                         '</div>' +
                     '</div>'
                 );
+
+                /**
+                 * 映射到视图
+                 */
+                $('#blogList').append(
+                    '<div class="x_panel" id="main_panel">' +
+
+                    '</div>'
+                );
             }
 
-            /**
-             * 映射到视图
-             * 包含删除按钮
-             */
-            $('#blogList').append(
-                '<div class="x_panel" id="main_panel">' +
-                    '<ul class="nav navbar-right panel_toolbox">'+
-                        '<li><button type="button" class="btn btn-danger" name="btn_delete"><i class="fa fa-trash"></i></button></li>'+
-                    '</ul>'+
-                '</div>'
-            );
+
 
             /**
              * 添加转发图层
@@ -153,6 +152,12 @@ $.ajax({
              * 显示微博内容
              */
             $('#main_panel').append(
+                /**
+                 * 删除按钮
+                 */
+                '<ul class="nav navbar-right panel_toolbox">'+
+                    '<li><button type="button" class="btn btn-danger" name="btn_delete"><i class="fa fa-trash"></i></button></li>'+
+                '</ul>'+
                 /**
                  * 微博标题、内容等
                  */
