@@ -87,7 +87,20 @@ exports.user_update_password = function (req, res) {
  * 跳转到他人主页
  */
 exports.others = function (req, res) {
-    res.render('user/others', { title: 'others' });
+    var author = req.query.author;
+    var query = {
+        username : author
+    };
+    modelUser.findOne(query, function (err, data) {
+        if(err){
+            console.log("查询用户失败："+ err);
+            req.session.error = "查询用户失败";
+            res.redirect('/toAddPage');
+        }
+        var imageUrl = data.imageUrl;
+        res.render('user/others', { title: 'others', author: author, imageUrl:imageUrl });
+    });
+
 };
 
 /**
@@ -390,4 +403,30 @@ exports.showCustomerImage = function (req, res) {
         return data;
     });
 
+};
+
+/**
+ * 查询他人全部微博功能
+ */
+exports.otherBlogList = function (req, res) {
+    var author = req.query.author;
+    var query = {
+        author : author
+    };
+    /**
+     * 查询数据库
+     */
+    modelBlog.find(query, function (err, data) {
+        if(err){
+            console.log("查询微博失败:"+err);
+            res.redirect("/");
+        }
+
+        /**
+         * 返回数据
+         */
+        res.json({data: data});
+        return data;
+
+    }).sort({createTime: -1});
 };

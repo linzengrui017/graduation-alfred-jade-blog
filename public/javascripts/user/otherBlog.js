@@ -6,9 +6,8 @@
  * 异步查询数据库
  * 返回数据
  */
-var customer = $('#customer').val();
-var url = '/showBlogList';
-
+var author = $('#author').val();
+var url = '/otherBlog?author='+author;
 $.ajax({
     url: url,
     type: "post",
@@ -49,6 +48,7 @@ $.ajax({
                         '</div>' +
                     '</div>'
                 );
+
                 /**
                  * 映射到视图
                  */
@@ -62,23 +62,9 @@ $.ajax({
 
 
             /**
-             * 判断是否显示 删除按钮
-             * @type {*}
-             */
-
-            if(author == customer){
-                $('#main_panel').append(
-                    '<ul class="nav navbar-right panel_toolbox">'+
-                        '<li><button type="button" class="btn btn-danger" name="btn_delete"><i class="fa fa-trash"></i></button></li>'+
-                    '</ul>'
-                );
-            }
-
-            var relayHtml = '';
-
-            /**
              * 添加转发图层
              */
+            var relayHtml = '';
             if(relayTag){
                 /**
                  * 获取数据
@@ -139,29 +125,28 @@ $.ajax({
              * 返回数据
              */
             for(var k = comments.length - 1; k >= 0; k--){
-                if(comments[k].author == customer){
-                    comments_list_html+=
+                if(comments[k].author == author) {
+                    comments_list_html +=
                         '<li><img src="'+ comments[k].imageUrl +'" alt="Avatar" class="avatar" />' +
                             '<div class="message_wrapper">' +
-                                '<font style="color:#CD5C5C;">'+comments[k].author+'</font>:' +
-                                '<font style="color:#696969;">'+comments[k].content+'</font>' +
+                                '<font style="color:#CD5C5C;">' + comments[k].author + '</font>:' +
+                                '<font style="color:#696969;">' + comments[k].content + '</font>' +
                                 '<br />' +
-                                '<small>'+moment(comments[k].createTime).format('YYYY-MM-DD HH:mm:ss')+'</small>' +
+                                '<small>' + moment(comments[k].createTime).format('YYYY-MM-DD HH:mm:ss') + '</small>' +
                                 '&nbsp;&nbsp;&nbsp;&nbsp;<a href="#" name="btn_delComment">删除</a>' +
                                 '<br />' +
                         '</div></li>';
                 }else {
-                    comments_list_html+=
+                    comments_list_html +=
                         '<li><img src="'+ comments[k].imageUrl +'" alt="Avatar" class="avatar" />' +
                             '<div class="message_wrapper">' +
-                                '<font style="color:#CD5C5C;">'+comments[k].author+'</font>:' +
-                                '<font style="color:#696969;">'+comments[k].content+'</font>' +
+                                '<font style="color:#CD5C5C;">' + comments[k].author + '</font>:' +
+                                '<font style="color:#696969;">' + comments[k].content + '</font>' +
                                 '<br />' +
-                                '<small>'+moment(comments[k].createTime).format('YYYY-MM-DD HH:mm:ss')+'</small>' +
-                            '<br />' +
+                                '<small>' + moment(comments[k].createTime).format('YYYY-MM-DD HH:mm:ss') + '</small>' +
+                                '<br />' +
                         '</div></li>';
                 }
-
             }
 
 
@@ -176,7 +161,7 @@ $.ajax({
                 '<ul class="messages">' +
                     '<li><img src="'+ imageUrl +'" alt="Avatar" class="avatar" />' +
                         '<div class="message_wrapper">' +
-                            '<h4 class="heading"><a href="#" name="others">'+ author +'</a></h4>' +
+                            '<h4 class="heading">'+ author +'</h4>' +
                             '<small>'+ createTime +'</small>' +
                             '<br />' +
                             '<br />' +
@@ -269,39 +254,6 @@ $.ajax({
             window.location.href = '/commentBlog?comment_content='
                 + content + '&author=' + author + '&title=' + title;
         });
-
-        /**
-         * 删除微博功能
-         */
-        $("button[name='btn_delete']").click(function () {
-            /**
-             * 获取数据
-             */
-            var dom_panel = $(this).parent().parent().parent();
-            var dom_ul_message = dom_panel.children().eq(1);
-            var title = dom_ul_message.find('li').eq(0).find('a').eq(0).text();
-            var author = dom_ul_message.find('li').eq(0).find('h4').eq(0).text();
-            /**
-             * 发起请求
-             */
-            var url = '/delBlog?author='+author+'&title='+title;
-            // alert(url);
-            $.ajax({
-                url: url,
-                type: "get",
-                success:function(result){
-                    alert("成功删除微博");
-                    window.location.href='/toAddPage';
-                },
-                error: function (XMLHttpRequest, textStatus, errorThrown) {
-                    var s1=XMLHttpRequest;
-                    var s2=textStatus;
-                    var s3=errorThrown;
-                    alert("error message : "+ errorThrown.toString());
-                }
-            });
-
-        });
         /**
          * 删除评论功能
          */
@@ -332,17 +284,7 @@ $.ajax({
 
 
         });
-        /**
-         * 跳转到他人主页
-         */
-        $('a[name="others"]').click(function () {
-            var author = $(this).text();
-            if( null == author || '' == author){
 
-            }else {
-                window.location.href = '/others?author='+author;
-            }
-        });
     },
     error: function (XMLHttpRequest, textStatus, errorThrown) {
         var s1=XMLHttpRequest;

@@ -96,7 +96,7 @@ $.ajax({
                     '<ul class="messages">' +
                         '<li><img src="'+ relay_imageUrl +'" alt="Avatar" class="avatar" />' +
                             '<div class="message_wrapper">' +
-                                '<h4 class="heading">'+ relay_author +'</h4>' +
+                                '<h4 class="heading"><a href="#" name="others">'+ relay_author +'</a></h4>' +
                                 '<br />' +
                                 '<br />' +
                                 '<a href="#" name="title"><h4>'+
@@ -176,7 +176,7 @@ $.ajax({
                 '<ul class="messages">' +
                     '<li><img src="'+ imageUrl +'" alt="Avatar" class="avatar" />' +
                         '<div class="message_wrapper">' +
-                            '<h4 class="heading">'+ author +'</h4>' +
+                            '<h4 class="heading"><a href="#" name="others">'+ author +'</a></h4>' +
                             '<small>'+ createTime +'</small>' +
                             '<br />' +
                             '<br />' +
@@ -331,6 +331,18 @@ $.ajax({
             }
 
 
+        });
+
+        /**
+         * 跳转到他人主页
+         */
+        $('a[name="others"]').click(function () {
+            var author = $(this).text();
+            if( null == author || '' == author){
+
+            }else {
+                window.location.href = '/others?author='+author;
+            }
         });
 
     },

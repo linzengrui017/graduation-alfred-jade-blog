@@ -94,4 +94,9 @@ router.post('/uploadUserImage', upload.single('file'), user.uploadUserImage);
  */
 router.post('/showCustomerImage', user.showCustomerImage);
 
+/**
+ * 查询他人全部微博功能
+ */
+router.post('/otherBlog', user.otherBlogList);
+
 module.exports = router;
