@@ -22,15 +22,12 @@ html
                 #bs-example-navbar-collapse-1.collapse.navbar-collapse
                     ul.nav.navbar-nav
                         li.active
-                            a(href='/' )
+                            a(href='/toBlogListPage' )
                                 i.fa.fa-weibo
                                     |  微博
                         -if(user)
                             li
                                 a(href='/toAddPage') 列表
-                        -else
-                            li
-                                a(href='/toBlogListPage') 列表
                     ul.nav.navbar-nav.navbar-right
                         -if(user)
                             li.dropdown
