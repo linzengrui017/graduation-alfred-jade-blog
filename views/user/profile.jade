@@ -1,6 +1,8 @@
 extends ../commons/layout
 
 block head
+    // Datatables
+    link(href='stylesheets/dataTables/dataTables.bootstrap.min.css', rel='stylesheet')
 
 block content
     input#customer(type='hidden', value=customer)
@@ -50,7 +52,9 @@ block content
                                 li(role='presentation')
                                     a#profile-tab2(href='#tab_content3', role='tab', data-toggle='tab', aria-expanded='false') 上传头像
                                 li(role='presentation')
-                                    a#profile-tab3(href='#tab_content4', role='tab', data-toggle='tab', aria-expanded='false') 更多
+                                    a#profile-tab3(href='#tab_content4', role='tab', data-toggle='tab', aria-expanded='false') 好友列表
+                                li(role='presentation')
+                                    a#profile-tab4(href='#tab_content5', role='tab', data-toggle='tab', aria-expanded='false') 好友微博
                             #myTabContent.tab-content
                                 #tab_content1.tab-pane.fade.active.in(role='tabpanel', aria-labelledby='home-tab')
                                     #blogList
@@ -89,11 +93,32 @@ block content
 
 
                                 #tab_content3.tab-pane.fade(role='tabpanel', aria-labelledby='profile-tab')
-                                    input#file(type='file', name='file')
-                                    button#upload.btn.btn-default 提交
-                                    p#result
+                                    .x_panel
+                                        .x_title
+                                            h2 上传头像
+                                            .clearfix
+                                        .x_content
+                                            input#file(type='file', name='file')
+                                            button#upload.btn.btn-default 提交
+                                            p#result
 
                                 #tab_content4.tab-pane.fade(role='tabpanel', aria-labelledby='profile-tab')
+                                    .x_panel
+                                        .x_title
+                                            h2 好友列表
+                                            .clearfix
+                                        .x_content
+                                        #friends(style='padding: 20px 50px;')
+                                            table#datatable.table.table-striped.table-bordered.dataTable
+                                                thead
+                                                    tr(role='row')
+                                                        //th
+                                                        //th 唯一标识
+                                                        th 好友名称
+                                                        th 创建时间
+
+                                #tab_content5.tab-pane.fade(role='tabpanel', aria-labelledby='profile-tab')
+                                    #friendsBlogList
 
 
 
@@ -109,4 +134,13 @@ block scripts
     script(src='javascripts/user/myBlog.js')
     //upload image
     script(src='javascripts/user/upload.js')
+
+    // Datatables
+    script(src='javascripts/dataTables/jquery.dataTables.min.js')
+    script(src='javascripts/dataTables/dataTables.bootstrap.min.js')
+
+    //show friends
+    script(src='javascripts/user/showFriends.js')
+    //show friend blog
+    script(src='javascripts/user/showFriendBlog.js')
 

@@ -104,4 +104,14 @@ router.post('/otherBlog', user.otherBlogList);
  */
 router.post('/checkFriends', user.checkFriends);
 
+/**
+ * 查询好友列表
+ */
+router.post('/queryFriends', user.queryFriends);
+
+/**
+ * 查询好友微博
+ */
+router.post('/queryFriendsBlogList', user.queryFriendsBlogList);
+
 module.exports = router;

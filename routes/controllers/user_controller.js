@@ -565,3 +565,75 @@ exports.checkFriends = function (req, res) {
 
     });
 };
+
+/**
+ * 查询好友列表
+ */
+exports.queryFriends = function (req, res) {
+    var customer = req.session.user.username;
+    var query = {
+        username : customer,
+        delTag: false
+    };
+    /**
+     * 查询数据库
+     */
+    modelUser.find(query, function (err, data) {
+        if(err){
+            console.log("查询好友列表失败:"+err);
+            res.redirect("/");
+        }
+
+        var friends = data[0].friends;
+
+        /**
+         * 返回数据
+         */
+        res.json({data: friends});
+
+    });
+};
+
+/**
+ * 查询好友微博
+ */
+exports.queryFriendsBlogList = function (req, res) {
+    var customer = req.session.user.username;
+    var query = {
+        username : customer,
+        delTag: false
+    };
+    /**
+     * 查询数据库
+     */
+    modelUser.find(query, function (err, data) {
+        if(err){
+            console.log("查询好友列表失败:"+err);
+            res.redirect("/");
+        }
+
+        var friends = data[0].friends;
+        var names = [];
+        for(var i = 0; i < friends.length; i++){
+            names[i] = friends[i].username;
+        }
+
+        /**
+         * 查询好友微博列表
+         */
+        var collection = {
+            $in : names
+        };
+        var qry = {
+            author : collection
+        };
+        modelBlog.find(qry, function (err, data) {
+            if(err){
+                console.log("查询好友列表失败:"+err);
+                res.redirect("/");
+            }
+            res.json({data: data});
+        }).sort({createTime: -1});
+
+    });
+};
