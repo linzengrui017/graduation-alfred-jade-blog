@@ -371,3 +371,23 @@ exports.uploadUserImage = function (req, res) {
     });
     // res.end();
 };
+
+/**
+ * 显示界面右上角的头像
+ */
+exports.showCustomerImage = function (req, res) {
+    var customer = req.session.user.username;
+    var query = {
+        username : customer
+    };
+    modelUser.findOne(query, function (err, data) {
+        if(err){
+            console.log("查询用户失败："+ err);
+            req.session.error = "查询用户失败";
+            res.redirect('/toAddPage');
+        }
+        res.json({data: data});
+        return data;
+    });
+
+};

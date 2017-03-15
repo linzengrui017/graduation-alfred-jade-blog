@@ -89,6 +89,9 @@ var upload = multer({
  */
 router.post('/uploadUserImage', upload.single('file'), user.uploadUserImage);
 
-
+/**
+ * 显示界面右上角的头像
+ */
+router.post('/showCustomerImage', user.showCustomerImage);
 
 module.exports = router;
