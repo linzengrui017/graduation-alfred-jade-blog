@@ -1,6 +1,8 @@
 var express = require('express');
 var router = express.Router();
 
+//express官方推荐的文件上传中间件
+var multer = require('multer');
 /**
  * 导入具体的路由控制
  */
@@ -57,6 +59,27 @@ router.post('/unfollow', user.unfollow);
  */
 router.post('/myBlogList', user.myBlogList);
 
+/**
+ * 跳转到 上传头像 页面
+ */
+router.get('/toUploadCustomerImagePage', user.toUploadCustomerImagePage);
+
+var storage = multer.diskStorage({
+    destination: function (req, file, cb){
+        cb(null, './public/images/upload')
+    },
+    filename: function (req, file, cb){
+        cb(null, file.originalname)
+    }
+});
+var upload = multer({
+    storage: storage
+});
+
+/**
+ * 上传用户头像
+ */
+router.post('/uploadUserImage', upload.single('file'), user.uploadUserImage);
 
 
 

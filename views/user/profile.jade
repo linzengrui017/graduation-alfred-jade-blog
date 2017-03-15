@@ -48,7 +48,7 @@ block content
                                 li(role='presentation')
                                     a#profile-tab(href='#tab_content2', role='tab', data-toggle='tab', aria-expanded='false') 修改密码
                                 li(role='presentation')
-                                    a#profile-tab2(href='#tab_content3', role='tab', data-toggle='tab', aria-expanded='false') 相册
+                                    a#profile-tab2(href='#tab_content3', role='tab', data-toggle='tab', aria-expanded='false') 上传头像
                                 li(role='presentation')
                                     a#profile-tab3(href='#tab_content4', role='tab', data-toggle='tab', aria-expanded='false') 更多
                             #myTabContent.tab-content
@@ -89,6 +89,12 @@ block content
 
 
                                 #tab_content3.tab-pane.fade(role='tabpanel', aria-labelledby='profile-tab')
+                                    .form-group
+                                        label File input
+                                        input#file(type='file', name='file')
+                                        p#result
+                                        img#img(src='')
+                                    button#upload.btn.btn-default 提交
                                 #tab_content4.tab-pane.fade(role='tabpanel', aria-labelledby='profile-tab')
 
 
@@ -103,4 +109,6 @@ block scripts
     script(src='javascripts/user/user_update_password.js')
     //show my blog list
     script(src='javascripts/user/myBlog.js')
+    //upload image
+    script(src='javascripts/user/upload.js')
 

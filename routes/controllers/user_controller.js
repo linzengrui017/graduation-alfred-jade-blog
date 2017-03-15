@@ -316,3 +316,22 @@ exports.myBlogList = function (req, res) {
 
     }).sort({createTime: -1});
 };
+
+/**
+ * 跳转到 上传头像 页面
+ */
+exports.toUploadCustomerImagePage = function (req, res) {
+
+};
+
+/**
+ * 上传用户头像
+ */
+exports.uploadUserImage = function (req, res) {
+    var url = 'http://' + req.headers.host + '/images/upload/' + req.file.originalname;
+    res.json({
+        code : 200,
+        data : url
+    });
+    // res.end();
+};
