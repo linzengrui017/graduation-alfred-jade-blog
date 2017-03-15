@@ -15,6 +15,7 @@ var userSchema = new mongoose.Schema({
         type: Boolean,
         default: false
     },
+    imageUrl : String,          //头像图片地址
     objectType: String          //用户类型：user, admin, 暂时不用
 });
 

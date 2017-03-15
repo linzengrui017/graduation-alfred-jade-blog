@@ -18,7 +18,19 @@ var sd = require('silly-datetime');
  */
 exports.user = function (req, res) {
     var customer = req.session.user.username;
-    res.render('user/profile', { title: 'Profile', customer: customer });
+    var query = {
+        username : customer
+    };
+    modelUser.findOne(query, function (err, data) {
+        if(err){
+            console.log("查询用户失败："+ err);
+            req.session.error = "查询用户失败";
+            res.redirect('/toAddPage');
+        }
+        var imageUrl = data.imageUrl;
+        res.render('user/profile', { title: 'Profile', customer: customer, imageUrl:imageUrl });
+    });
+
 };
 
 /**
@@ -328,6 +340,30 @@ exports.toUploadCustomerImagePage = function (req, res) {
  * 上传用户头像
  */
 exports.uploadUserImage = function (req, res) {
+    /**
+     * 将图片地址关联到数据库
+     */
+    var customer = req.session.user.username;
+    var image_url = '/images/upload/' + req.file.originalname;
+    var query = {
+        username : customer
+    };
+    var operator = {
+        $set : { imageUrl : image_url }
+    };
+    modelUser.update(query, operator, function (err, data) {
+        if(err){
+            console.log("修改图片地址失败："+ err);
+            req.session.error = "修改图片地址失败";
+            res.redirect("/profile");
+        }
+        console.log("修改图片地址成功");
+        req.session.success = '修改图片地址成功';
+    });
+    /**
+     * 返回数据
+     * @type {string}
+     */
     var url = 'http://' + req.headers.host + '/images/upload/' + req.file.originalname;
     res.json({
         code : 200,
