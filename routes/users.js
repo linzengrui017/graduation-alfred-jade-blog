@@ -99,4 +99,9 @@ router.post('/showCustomerImage', user.showCustomerImage);
  */
 router.post('/otherBlog', user.otherBlogList);
 
+/**
+ * 查询他人是否是好友
+ */
+router.post('/checkFriends', user.checkFriends);
+
 module.exports = router;

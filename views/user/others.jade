@@ -27,10 +27,10 @@ block content
                             li
                                 i.fa.fa-map-marker.user-profile-icon
                                 |  广东省, 珠海市, 香洲区
-                        a.btn.btn-success
+                        a.btn.btn-success(id='haveFriend')
                             i.fa.fa-plus.m-right-xs
                             | 加关注
-                        a.btn.btn-danger
+                        a.btn.btn-danger(id='loseFriend')
                             i.fa.fa-minus.m-right-xs
                             | 取消关注
                         br
@@ -58,4 +58,6 @@ block scripts
     script(src='javascripts/commons/moment.min.js')
     //show my blog list
     script(src='javascripts/user/otherBlog.js')
+    //friend
+    script(src='javascripts/user/friend.js')
 

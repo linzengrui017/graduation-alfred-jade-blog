@@ -306,6 +306,61 @@ exports.logout = function (req, res, next) {
  * 加关注功能
  */
 exports.follow = function (req, res) {
+    /**
+     * 获取名称
+     */
+    var customer = req.session.user.username;
+    var username = req.query.username;
+    /**
+     * 服务器端校验
+     */
+    if( null == username || '' == username){
+        console.log('必传参数不能为空');
+        req.session.error = "必传参数不能为空";
+        res.end();
+    }else if(customer == username){
+        console.log('逻辑错误：本人不应该在好友列表里');
+        req.session.error = "逻辑错误：本人不应该在好友列表里";
+        res.end();
+    }else {
+        /**
+         * 添加好友
+         */
+
+        /**
+         * 准备数据
+         * @type {{username}}
+         */
+        var query = {
+            username : customer
+        };
+        var friend = {
+            username: username
+        };
+        var operator = {
+            "$push" : { friends : friend }
+        };
+        /**
+         * 执行修改追加操作
+         */
+        modelUser.update(query, operator, function (err, data) {
+            if(err){
+                console.log('添加好友失败：'+ err);
+                return;
+            }
+            console.log('添加好友成功');
+            // res.end();
+        });
+        /**
+         * 返回
+         */
+        res.end();
+
+
+
+    }
+
+
 
 };
 
@@ -313,7 +368,59 @@ exports.follow = function (req, res) {
  * 解除关注功能
  */
 exports.unfollow = function (req, res) {
+    /**
+     * 获取名称
+     */
+    var customer = req.session.user.username;
+    var username = req.query.username;
+    /**
+     * 服务器端校验
+     */
+    if( null == username || '' == username){
+        console.log('必传参数不能为空');
+        req.session.error = "必传参数不能为空";
+        res.end();
+    }else if(customer == username){
+        console.log('逻辑错误：本人不应该在好友列表里');
+        req.session.error = "逻辑错误：本人不应该在好友列表里";
+        res.end();
+    }else {
+        /**
+         * 添加好友
+         */
 
+        /**
+         * 准备数据
+         * @type {{username}}
+         */
+        var query = {
+            username : customer
+        };
+        var friend = {
+            username: username
+        };
+        var operator = {
+            "$pull" : { friends : friend }
+        };
+        /**
+         * 执行修改追加操作
+         */
+        modelUser.update(query, operator, function (err, data) {
+            if(err){
+                console.log('删除好友失败：'+ err);
+                return;
+            }
+            console.log('删除好友成功');
+            // res.end();
+        });
+        /**
+         * 返回
+         */
+        res.end();
+
+
+
+    }
 };
 
 /**
@@ -429,4 +536,32 @@ exports.otherBlogList = function (req, res) {
         return data;
 
     }).sort({createTime: -1});
+};
+
+/**
+ * 查询他人是否是好友
+ */
+exports.checkFriends = function (req, res) {
+    var customer = req.session.user.username;
+    var username = req.query.username;
+    var query = {
+        username : customer,
+        "friends.username": username
+    };
+    /**
+     * 查询数据库
+     */
+    modelUser.find(query, function (err, data) {
+        if(err){
+            console.log("查询好友列表失败:"+err);
+            res.redirect("/");
+        }
+
+        /**
+         * 返回数据
+         */
+        res.json({data: data});
+        return data;
+
+    });
 };
