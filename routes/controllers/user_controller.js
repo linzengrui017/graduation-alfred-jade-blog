@@ -463,6 +463,10 @@ exports.uploadUserImage = function (req, res) {
     /**
      * 将图片地址关联到数据库
      */
+
+    /**
+     *  修改userSchema的imageUrl
+     */
     var customer = req.session.user.username;
     var image_url = '/images/upload/' + req.file.originalname;
     var query = {
@@ -473,13 +477,71 @@ exports.uploadUserImage = function (req, res) {
     };
     modelUser.update(query, operator, function (err, data) {
         if(err){
-            console.log("修改图片地址失败："+ err);
-            req.session.error = "修改图片地址失败";
+            console.log("修改userSchema的图片地址失败："+ err);
+            req.session.error = "修改userSchema的图片地址失败";
             res.redirect("/profile");
         }
-        console.log("修改图片地址成功");
-        req.session.success = '修改图片地址成功';
+        console.log("修改userSchema的图片地址成功");
+        req.session.success = '修改userSchema的图片地址成功';
     });
+
+    /**
+     *  修改blogSchema的imageUrl
+     */
+    var blogQuery = {
+        author : customer
+    };
+    var blogOperator = {
+        $set : { imageUrl : image_url }
+    };
+    modelBlog.update(blogQuery, blogOperator, function (err, data) {
+        if(err){
+            console.log("修改blogSchema的图片地址失败："+ err);
+            req.session.error = "修改blogSchema的图片地址失败";
+            res.redirect("/profile");
+        }
+        console.log("修改blogSchema的图片地址成功");
+        req.session.success = '修改blogSchema的图片地址成功';
+    });
+
+    /**
+     *  修改commentSchema的imageUrl
+     */
+    var commentQuery = {
+        "comments.author" : customer
+    };
+    var commentOperator = {
+        $set : { "comments.image_url" : image_url }
+    };
+    modelBlog.update(commentQuery, commentOperator, function (err, data) {
+        if(err){
+            console.log("修改commentSchema的图片地址失败："+ err);
+            req.session.error = "修改commentSchema的图片地址失败";
+            res.redirect("/profile");
+        }
+        console.log("修改commentSchema的图片地址成功");
+        req.session.success = '修改commentSchema的图片地址成功';
+    });
+
+    /**
+     *  修改relaySchema的imageUrl
+     */
+    var relayQuery = {
+        "relayContent.author" : customer
+    };
+    var releyOperator = {
+        $set : { "relayContent.image_url" : image_url }
+    };
+    modelBlog.update(relayQuery, releyOperator, function (err, data) {
+        if(err){
+            console.log("修改relaySchema的图片地址失败："+ err);
+            req.session.error = "修改relaySchema的图片地址失败";
+            res.redirect("/profile");
+        }
+        console.log("修改relaySchema的图片地址成功");
+        req.session.success = '修改relaySchema的图片地址成功';
+    });
+
     /**
      * 返回数据
      * @type {string}
@@ -496,19 +558,26 @@ exports.uploadUserImage = function (req, res) {
  * 显示界面右上角的头像
  */
 exports.showCustomerImage = function (req, res) {
-    var customer = req.session.user.username;
-    var query = {
-        username : customer
-    };
-    modelUser.findOne(query, function (err, data) {
-        if(err){
-            console.log("查询用户失败："+ err);
-            req.session.error = "查询用户失败";
-            res.redirect('/toAddPage');
-        }
-        res.json({data: data});
-        return data;
-    });
+    var user = req.session.user;
+    if( '' != user && null != user){
+        var customer = req.session.user.username;
+        var query = {
+            username : customer
+        };
+        modelUser.findOne(query, function (err, data) {
+            if(err){
+                console.log("查询用户失败："+ err);
+                req.session.error = "查询用户失败";
+                res.redirect('/toAddPage');
+            }
+            res.json({data: data});
+            // return data;
+        });
+    }else {
+        res.json({data: {'imageUrl': ''}});
+    }
+
+
 
 };
 
