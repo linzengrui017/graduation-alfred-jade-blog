@@ -423,6 +423,7 @@ exports.forwardBlog = function (req, res) {
      * 根据 用户名 得到 头像地址
      */
     var imageUrl = '';
+    var relay_imageUrl = '';
     modelUser.findOne({ username : customer}, function (err, data) {
         if(err){
             console.log("查询用户失败："+ err);
@@ -431,48 +432,59 @@ exports.forwardBlog = function (req, res) {
         }
         imageUrl = data.imageUrl;
 
-        /**
-         * 得到子文档
-         */
-        var relayBlog = {
-            imageUrl: imageUrl,
-            author: relay_author,
-            title: relay_title,
-            content: relay_content
-        };
-
-        /**
-         * 父文档其他参数
-         */
-        var blog = new modelBlog({
-            imageUrl: imageUrl,
-            author: author,
-            title : title,
-            content: content,
-            relayContent: relayBlog,
-            relayTag : relayTag,
-            createTime : createTime
-        });
-
-        /**
-         * 新建文档
-         */
-        blog.save(function (err, data) {
-            /**
-             * 新增操作异常
-             */
+        modelUser.findOne({ username : relay_author}, function (err, data) {
             if(err){
-                console.log("转发微博操作异常:"+err);
-                res.redirect("/toAddPage");
+                console.log("查询用户失败："+ err);
+                req.session.error = "查询用户失败";
+                res.redirect('/toAddPage');
             }
-            /**
-             * 新增成功
-             * 返回视图
-             */
-            console.log("成功转发微博");
+            relay_imageUrl = data.imageUrl;
 
-            res.redirect('/toAddPage');
+            /**
+             * 得到子文档
+             */
+            var relayBlog = {
+                imageUrl: relay_imageUrl,
+                author: relay_author,
+                title: relay_title,
+                content: relay_content
+            };
+
+            /**
+             * 父文档其他参数
+             */
+            var blog = new modelBlog({
+                imageUrl: imageUrl,
+                author: author,
+                title : title,
+                content: content,
+                relayContent: relayBlog,
+                relayTag : relayTag,
+                createTime : createTime
+            });
+
+            /**
+             * 新建文档
+             */
+            blog.save(function (err, data) {
+                /**
+                 * 新增操作异常
+                 */
+                if(err){
+                    console.log("转发微博操作异常:"+err);
+                    res.redirect("/toAddPage");
+                }
+                /**
+                 * 新增成功
+                 * 返回视图
+                 */
+                console.log("成功转发微博");
+
+                res.redirect('/toAddPage');
+            });
+
         });
+
 
     });
 

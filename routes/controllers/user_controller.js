@@ -465,6 +465,7 @@ exports.uploadUserImage = function (req, res) {
      */
 
     /**
+     *  修改个人头像
      *  修改userSchema的imageUrl
      */
     var customer = req.session.user.username;
@@ -486,7 +487,7 @@ exports.uploadUserImage = function (req, res) {
     });
 
     /**
-     *  修改blogSchema的imageUrl
+     *  批量 修改 blogSchema 的 imageUrl
      */
     var blogQuery = {
         author : customer
@@ -494,7 +495,7 @@ exports.uploadUserImage = function (req, res) {
     var blogOperator = {
         $set : { imageUrl : image_url }
     };
-    modelBlog.update(blogQuery, blogOperator, function (err, data) {
+    modelBlog.update(blogQuery, blogOperator, {multi: true}, function (err, data) {
         if(err){
             console.log("修改blogSchema的图片地址失败："+ err);
             req.session.error = "修改blogSchema的图片地址失败";
@@ -507,40 +508,40 @@ exports.uploadUserImage = function (req, res) {
     /**
      *  修改commentSchema的imageUrl
      */
-    var commentQuery = {
-        "comments.author" : customer
-    };
-    var commentOperator = {
-        $set : { "comments.image_url" : image_url }
-    };
-    modelBlog.update(commentQuery, commentOperator, function (err, data) {
-        if(err){
-            console.log("修改commentSchema的图片地址失败："+ err);
-            req.session.error = "修改commentSchema的图片地址失败";
-            res.redirect("/profile");
-        }
-        console.log("修改commentSchema的图片地址成功");
-        req.session.success = '修改commentSchema的图片地址成功';
-    });
+    // var commentQuery = {
+    //     "comments.author" : customer
+    // };
+    // var commentOperator = {
+    //     $set : { "comments.image_url" : image_url }
+    // };
+    // modelBlog.update(commentQuery, commentOperator, function (err, data) {
+    //     if(err){
+    //         console.log("修改commentSchema的图片地址失败："+ err);
+    //         req.session.error = "修改commentSchema的图片地址失败";
+    //         res.redirect("/profile");
+    //     }
+    //     console.log("修改commentSchema的图片地址成功");
+    //     req.session.success = '修改commentSchema的图片地址成功';
+    // });
 
     /**
      *  修改relaySchema的imageUrl
      */
-    var relayQuery = {
-        "relayContent.author" : customer
-    };
-    var releyOperator = {
-        $set : { "relayContent.image_url" : image_url }
-    };
-    modelBlog.update(relayQuery, releyOperator, function (err, data) {
-        if(err){
-            console.log("修改relaySchema的图片地址失败："+ err);
-            req.session.error = "修改relaySchema的图片地址失败";
-            res.redirect("/profile");
-        }
-        console.log("修改relaySchema的图片地址成功");
-        req.session.success = '修改relaySchema的图片地址成功';
-    });
+    // var relayQuery = {
+    //     "relayContent.author" : customer
+    // };
+    // var releyOperator = {
+    //     $set : { "relayContent.image_url" : image_url }
+    // };
+    // modelBlog.update(relayQuery, releyOperator, function (err, data) {
+    //     if(err){
+    //         console.log("修改relaySchema的图片地址失败："+ err);
+    //         req.session.error = "修改relaySchema的图片地址失败";
+    //         res.redirect("/profile");
+    //     }
+    //     console.log("修改relaySchema的图片地址成功");
+    //     req.session.success = '修改relaySchema的图片地址成功';
+    // });
 
     /**
      * 返回数据
