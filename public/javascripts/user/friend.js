@@ -29,10 +29,7 @@ $(function () {
             }
         },
         error: function (XMLHttpRequest, textStatus, errorThrown) {
-            var s1=XMLHttpRequest;
-            var s2=textStatus;
-            var s3=errorThrown;
-            alert("error message : "+ errorThrown.toString());
+            alert("检查是否是好友的操作失败 : XMLHttpRequest.readyState="+ XMLHttpRequest.readyState+ '\n' + textStatus.toString()+ '\n' + errorThrown.toString());
         }
     });
 
@@ -61,10 +58,7 @@ $('#haveFriend').click(function () {
                 console.log('成功添加好友');
             },
             error: function (XMLHttpRequest, textStatus, errorThrown) {
-                var s1=XMLHttpRequest;
-                var s2=textStatus;
-                var s3=errorThrown;
-                alert("error message : "+ errorThrown.toString());
+                alert("执行加关注操作失败 : XMLHttpRequest.readyState="+ XMLHttpRequest.readyState+ '\n' + textStatus.toString()+ '\n' + errorThrown.toString());
             }
         });
     }
@@ -91,10 +85,7 @@ $('#loseFriend').click(function () {
                 console.log('成功删除好友');
             },
             error: function (XMLHttpRequest, textStatus, errorThrown) {
-                var s1=XMLHttpRequest;
-                var s2=textStatus;
-                var s3=errorThrown;
-                alert("error message : "+ errorThrown.toString());
+                alert("执行解除关注操作失败 : XMLHttpRequest.readyState="+ XMLHttpRequest.readyState+ '\n' + textStatus.toString()+ '\n' + errorThrown.toString());
             }
         });
     }

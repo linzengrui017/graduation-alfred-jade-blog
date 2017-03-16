@@ -77,10 +77,7 @@ $(function () {
                                 window.location.href='/toAddPage';
                             },
                             error: function (XMLHttpRequest, textStatus, errorThrown) {
-                                var s1=XMLHttpRequest;
-                                var s2=textStatus;
-                                var s3=errorThrown;
-                                alert("error message : "+ errorThrown.toString());
+                                alert("在微博详情页面执行删除微博操作失败 : XMLHttpRequest.readyState="+ XMLHttpRequest.readyState+ '\n' + textStatus.toString()+ '\n' + errorThrown.toString());
                             }
                         });
 

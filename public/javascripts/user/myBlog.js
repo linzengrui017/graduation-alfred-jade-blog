@@ -285,10 +285,7 @@ $.ajax({
                     window.location.href='/toAddPage';
                 },
                 error: function (XMLHttpRequest, textStatus, errorThrown) {
-                    var s1=XMLHttpRequest;
-                    var s2=textStatus;
-                    var s3=errorThrown;
-                    alert("error message : "+ errorThrown.toString());
+                    alert("在个人主页的微博列表里执行删除微博的操作失败 : XMLHttpRequest.readyState="+ XMLHttpRequest.readyState+ '\n' + textStatus.toString()+ '\n' + errorThrown.toString());
                 }
             });
 
@@ -326,9 +323,6 @@ $.ajax({
 
     },
     error: function (XMLHttpRequest, textStatus, errorThrown) {
-        var s1=XMLHttpRequest;
-        var s2=textStatus;
-        var s3=errorThrown;
-        alert("error message : "+ errorThrown.toString());
+        alert("在个人主页的微博列表里执行显示个人的所有微博的操作失败 : XMLHttpRequest.readyState="+ XMLHttpRequest.readyState+ '\n' + textStatus.toString()+ '\n' + errorThrown.toString());
     }
 });
