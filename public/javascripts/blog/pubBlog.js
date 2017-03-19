@@ -67,11 +67,11 @@ $.ajax({
              */
 
             if(author == customer){
-                $('#main_panel').append(
-                    '<ul class="nav navbar-right panel_toolbox">'+
-                        '<li><button type="button" class="btn btn-danger" name="btn_delete"><i class="fa fa-trash"></i></button></li>'+
-                    '</ul>'
-                );
+                // $('#main_panel').append(
+                //     '<ul class="nav navbar-right panel_toolbox">'+
+                //         '<li><button type="button" class="btn btn-danger" name="btn_delete"><i class="fa fa-trash"></i></button></li>'+
+                //     '</ul>'
+                // );
             }
 
             var relayHtml = '';
@@ -114,17 +114,17 @@ $.ajax({
              * 显示写评论文本框
              */
             var comments_message_html = '';
-            comments_message_html +=
-                '<li>' +
-                    '<form class="form-horizontal form-label-left">' +
-                        '<div class="input-group">' +
-                            '<input type="text" class="form-control" placeholder="写点什么评论吧~" name="write_comment">' +
-                            '<span class="input-group-btn">' +
-                                '<button type="button" class="btn btn-primary" name="btn_comment">评论</button>' +
-                            '</span>' +
-                        '</div>' +
-                    '</form>' +
-                '</li>';
+            // comments_message_html +=
+            //     '<li>' +
+            //         '<form class="form-horizontal form-label-left">' +
+            //             '<div class="input-group">' +
+            //                 '<input type="text" class="form-control" placeholder="写点什么评论吧~" name="write_comment">' +
+            //                 '<span class="input-group-btn">' +
+            //                     '<button type="button" class="btn btn-primary" name="btn_comment">评论</button>' +
+            //                 '</span>' +
+            //             '</div>' +
+            //         '</form>' +
+            //     '</li>';
 
             /**
              * 获取comments
@@ -139,28 +139,37 @@ $.ajax({
              * 返回数据
              */
             for(var k = comments.length - 1; k >= 0; k--){
-                if(comments[k].author == customer){
-                    comments_list_html+=
-                        '<li><img src="'+ comments[k].imageUrl +'" alt="Avatar" class="avatar" />' +
-                            '<div class="message_wrapper">' +
-                                '<font style="color:#CD5C5C;">'+comments[k].author+'</font>:' +
-                                '<font style="color:#696969;">'+comments[k].content+'</font>' +
-                                '<br />' +
-                                '<small>'+moment(comments[k].createTime).format('YYYY-MM-DD HH:mm:ss')+'</small>' +
-                                '&nbsp;&nbsp;&nbsp;&nbsp;<a href="#" name="btn_delComment">删除</a>' +
-                                '<br />' +
-                        '</div></li>';
-                }else {
-                    comments_list_html+=
-                        '<li><img src="'+ comments[k].imageUrl +'" alt="Avatar" class="avatar" />' +
-                            '<div class="message_wrapper">' +
-                                '<font style="color:#CD5C5C;">'+comments[k].author+'</font>:' +
-                                '<font style="color:#696969;">'+comments[k].content+'</font>' +
-                                '<br />' +
-                                '<small>'+moment(comments[k].createTime).format('YYYY-MM-DD HH:mm:ss')+'</small>' +
-                            '<br />' +
-                        '</div></li>';
-                }
+                comments_list_html+=
+                    '<li><img src="'+ comments[k].imageUrl +'" alt="Avatar" class="avatar" />' +
+                    '<div class="message_wrapper">' +
+                    '<font style="color:#CD5C5C;">'+comments[k].author+'</font>:' +
+                    '<font style="color:#696969;">'+comments[k].content+'</font>' +
+                    '<br />' +
+                    '<small>'+moment(comments[k].createTime).format('YYYY-MM-DD HH:mm:ss')+'</small>' +
+                    '<br />' +
+                    '</div></li>';
+                // if(comments[k].author == customer){
+                //     comments_list_html+=
+                //         '<li><img src="'+ comments[k].imageUrl +'" alt="Avatar" class="avatar" />' +
+                //             '<div class="message_wrapper">' +
+                //                 '<font style="color:#CD5C5C;">'+comments[k].author+'</font>:' +
+                //                 '<font style="color:#696969;">'+comments[k].content+'</font>' +
+                //                 '<br />' +
+                //                 '<small>'+moment(comments[k].createTime).format('YYYY-MM-DD HH:mm:ss')+'</small>' +
+                //                 '&nbsp;&nbsp;&nbsp;&nbsp;<a href="#" name="btn_delComment">删除</a>' +
+                //                 '<br />' +
+                //         '</div></li>';
+                // }else {
+                //     comments_list_html+=
+                //         '<li><img src="'+ comments[k].imageUrl +'" alt="Avatar" class="avatar" />' +
+                //             '<div class="message_wrapper">' +
+                //                 '<font style="color:#CD5C5C;">'+comments[k].author+'</font>:' +
+                //                 '<font style="color:#696969;">'+comments[k].content+'</font>' +
+                //                 '<br />' +
+                //                 '<small>'+moment(comments[k].createTime).format('YYYY-MM-DD HH:mm:ss')+'</small>' +
+                //             '<br />' +
+                //         '</div></li>';
+                // }
 
             }
 

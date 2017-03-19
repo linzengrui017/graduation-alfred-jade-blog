@@ -114,17 +114,17 @@ $.ajax({
              * 显示写评论文本框
              */
             var comments_message_html = '';
-            comments_message_html +=
-                '<li>' +
-                    '<form class="form-horizontal form-label-left">' +
-                        '<div class="input-group">' +
-                            '<input type="text" class="form-control" placeholder="写点什么评论吧~" name="write_comment">' +
-                            '<span class="input-group-btn">' +
-                                '<button type="button" class="btn btn-primary" name="btn_comment">评论</button>' +
-                            '</span>' +
-                        '</div>' +
-                    '</form>' +
-                '</li>';
+            // comments_message_html +=
+            //     '<li>' +
+            //         '<form class="form-horizontal form-label-left">' +
+            //             '<div class="input-group">' +
+            //                 '<input type="text" class="form-control" placeholder="写点什么评论吧~" name="write_comment">' +
+            //                 '<span class="input-group-btn">' +
+            //                     '<button type="button" class="btn btn-primary" name="btn_comment">评论</button>' +
+            //                 '</span>' +
+            //             '</div>' +
+            //         '</form>' +
+            //     '</li>';
 
             /**
              * 获取comments

@@ -148,7 +148,7 @@ $(function () {
                     /**
                      * 评论图层里的评论信息
                      */
-                    '<div id="collapse'+i+'" role="tabpanel" aria-labelledby="headingOne" aria-expanded="false" style="height: 0px;" class="panel-collapse collapse">' +
+                    '<div id="collapse'+i+'" role="tabpanel" aria-labelledby="headingOne" aria-expanded="false" >' +
                         '<div class="panel-body">' +
                             '<ul class="messages" id="comments_message">' +
 
