@@ -29,25 +29,25 @@ $.ajax({
              * 只添加一个模态框
              */
             if(i == 0){
-                $('#blogList').append(
-                    '<div tabindex="-1" role="dialog" aria-hidden="true" style="display: none;" class="modal fade bs-example-modal-lg">' +
-                        '<div class="modal-dialog modal-lg">' +
-                            '<div class="modal-content">' +
-                                '<div class="modal-header">' +
-                                    '<button type="button" data-dismiss="modal" class="close"><span aria-hidden="true">×</span></button>' +
-                                    '<h4 id="myModalLabel" class="modal-title">转发微博</h4>' +
-                                '</div>' +
-                                '<div class="modal-body">' +
-                                    '<textarea id="reason" name="reason" style="width:100%;height:100px;" placeholder="请输入转发理由"></textarea>' +
-                                '</div>' +
-                                '<div class="modal-footer">' +
-                                    '<button type="button" data-dismiss="modal" class="btn btn-default">取消</button>' +
-                                    '<button type="button" class="btn btn-primary" id="btn_relay">转发</button>' +
-                                '</div>' +
-                            '</div>' +
-                        '</div>' +
-                    '</div>'
-                );
+                // $('#blogList').append(
+                //     '<div tabindex="-1" role="dialog" aria-hidden="true" style="display: none;" class="modal fade bs-example-modal-lg">' +
+                //         '<div class="modal-dialog modal-lg">' +
+                //             '<div class="modal-content">' +
+                //                 '<div class="modal-header">' +
+                //                     '<button type="button" data-dismiss="modal" class="close"><span aria-hidden="true">×</span></button>' +
+                //                     '<h4 id="myModalLabel" class="modal-title">转发微博</h4>' +
+                //                 '</div>' +
+                //                 '<div class="modal-body">' +
+                //                     '<textarea id="reason" name="reason" style="width:100%;height:100px;" placeholder="请输入转发理由"></textarea>' +
+                //                 '</div>' +
+                //                 '<div class="modal-footer">' +
+                //                     '<button type="button" data-dismiss="modal" class="btn btn-default">取消</button>' +
+                //                     '<button type="button" class="btn btn-primary" id="btn_relay">转发</button>' +
+                //                 '</div>' +
+                //             '</div>' +
+                //         '</div>' +
+                //     '</div>'
+                // );
 
                 /**
                  * 映射到视图
@@ -100,17 +100,17 @@ $.ajax({
              * 显示写评论文本框
              */
             var comments_message_html = '';
-            comments_message_html +=
-                '<li>' +
-                    '<form class="form-horizontal form-label-left">' +
-                        '<div class="input-group">' +
-                            '<input type="text" class="form-control" placeholder="写点什么评论吧~" name="write_comment">' +
-                            '<span class="input-group-btn">' +
-                                '<button type="button" class="btn btn-primary" name="btn_comment">评论</button>' +
-                            '</span>' +
-                        '</div>' +
-                    '</form>' +
-                '</li>';
+            // comments_message_html +=
+            //     '<li>' +
+            //         '<form class="form-horizontal form-label-left">' +
+            //             '<div class="input-group">' +
+            //                 '<input type="text" class="form-control" placeholder="写点什么评论吧~" name="write_comment">' +
+            //                 '<span class="input-group-btn">' +
+            //                     '<button type="button" class="btn btn-primary" name="btn_comment">评论</button>' +
+            //                 '</span>' +
+            //             '</div>' +
+            //         '</form>' +
+            //     '</li>';
 
             /**
              * 获取comments

@@ -30,25 +30,25 @@ $.ajax({
              * 只添加一个模态框
              */
             if(i == 0){
-                $('#blogList').append(
-                    '<div tabindex="-1" role="dialog" aria-hidden="true" style="display: none;" class="modal fade bs-example-modal-lg">' +
-                        '<div class="modal-dialog modal-lg">' +
-                            '<div class="modal-content">' +
-                                '<div class="modal-header">' +
-                                    '<button type="button" data-dismiss="modal" class="close"><span aria-hidden="true">×</span></button>' +
-                                    '<h4 id="myModalLabel" class="modal-title">转发微博</h4>' +
-                                '</div>' +
-                                '<div class="modal-body">' +
-                                    '<textarea id="reason" name="reason" style="width:100%;height:100px;" placeholder="请输入转发理由"></textarea>' +
-                                '</div>' +
-                                '<div class="modal-footer">' +
-                                    '<button type="button" data-dismiss="modal" class="btn btn-default">取消</button>' +
-                                    '<button type="button" class="btn btn-primary" id="btn_relay">转发</button>' +
-                                '</div>' +
-                            '</div>' +
-                        '</div>' +
-                    '</div>'
-                );
+                // $('#blogList').append(
+                //     '<div tabindex="-1" role="dialog" aria-hidden="true" style="display: none;" class="modal fade bs-example-modal-lg">' +
+                //         '<div class="modal-dialog modal-lg">' +
+                //             '<div class="modal-content">' +
+                //                 '<div class="modal-header">' +
+                //                     '<button type="button" data-dismiss="modal" class="close"><span aria-hidden="true">×</span></button>' +
+                //                     '<h4 id="myModalLabel" class="modal-title">转发微博</h4>' +
+                //                 '</div>' +
+                //                 '<div class="modal-body">' +
+                //                     '<textarea id="reason" name="reason" style="width:100%;height:100px;" placeholder="请输入转发理由"></textarea>' +
+                //                 '</div>' +
+                //                 '<div class="modal-footer">' +
+                //                     '<button type="button" data-dismiss="modal" class="btn btn-default">取消</button>' +
+                //                     '<button type="button" class="btn btn-primary" id="btn_relay">转发</button>' +
+                //                 '</div>' +
+                //             '</div>' +
+                //         '</div>' +
+                //     '</div>'
+                // );
                 /**
                  * 映射到视图
                  */
