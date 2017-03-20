@@ -232,12 +232,24 @@ $(function () {
                             '<div class="input-group">' +
                                 '<input type="text" class="form-control" placeholder="写点什么评论吧~" id="write_comment">' +
                                 '<span class="input-group-btn">' +
-                                    '<button type="button" class="btn btn-primary" id="btn_comment">评论</button>' +
+                                    '<input type="button" class="btn btn-primary" disabled="true" id="btn_comment" value="评论"></input>' +
                                 '</span>' +
                             '</div>' +
                         '</form>' +
                     '</li>'
                 );
+
+                /**
+                 * 文本框输入事件
+                 */
+                $('#write_comment').bind('input propertychange',function () {
+                    var len = $(this).val().length;
+                    if(len == 0){
+                        $('#btn_comment').attr('disabled',true);
+                    }else {
+                        $('#btn_comment').attr('disabled',false);
+                    }
+                });
 
                 $('#btn_comment').click(function () {
                     var content = $('#write_comment').val();

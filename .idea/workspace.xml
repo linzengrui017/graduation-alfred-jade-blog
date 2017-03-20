@@ -2,11 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f8ee0978-48cb-4707-befb-e4ce0a99b44e" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/javascripts/blog/writeValidation.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/upload/2f09646b8965c4618b047332245aefd32df43f01b8ec-5ac768_fw658.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/upload/32b46dcb0a46f21fce3fb920fe246b600c33ae3d.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/upload/3ddce42d424cdc5d5cc02fbc0e7dec22b5e3d7c88071-vLj4lM_fw658.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/upload/6758d9fc1e178a828b3284d3fe03738da977e832.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/upload/f39ccb57faa950ff6a6c1ec26ba2689404c610ee8606-4YNB0p_fw658.jpg" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/commons/layout.jade" afterPath="$PROJECT_DIR$/views/commons/layout.jade" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/user/login.jade" afterPath="$PROJECT_DIR$/views/user/login.jade" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/weibo/pubBlog.jade" afterPath="$PROJECT_DIR$/views/weibo/pubBlog.jade" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/javascripts/blog/detailBlog.js" afterPath="$PROJECT_DIR$/public/javascripts/blog/detailBlog.js" />
     </list>
     <ignored path="graduation-alfred-jade-blog.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -30,23 +32,33 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="writeValidation.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/javascripts/blog/writeValidation.js">
+      <file leaf-file-name="detailBlog.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/public/javascripts/blog/detailBlog.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="200">
-              <caret line="10" column="33" lean-forward="false" selection-start-line="10" selection-start-column="33" selection-end-line="10" selection-end-column="33" />
+            <state relative-caret-position="183">
+              <caret line="250" column="21" lean-forward="true" selection-start-line="250" selection-start-column="21" selection-end-line="250" selection-end-column="21" />
               <folding>
-                <element signature="n#!!doc" expanded="true" />
+                <marker date="1490011510561" expanded="true" signature="4663:4677" ph="..." />
+                <marker date="1490011510561" expanded="true" signature="5357:5381" ph="..." />
+                <marker date="1490011510561" expanded="true" signature="6513:6526" ph="..." />
+                <marker date="1490011510561" expanded="true" signature="12808:12822" ph="..." />
+                <marker date="1490011510561" expanded="true" signature="12900:12914" ph="..." />
+                <marker date="1490011510561" expanded="true" signature="13130:13136" ph=" " />
+                <marker date="1490011510561" expanded="true" signature="13136:13142" ph=" " />
+                <marker date="1490011510561" expanded="true" signature="13142:13148" ph=" " />
+                <marker date="1490011510561" expanded="true" signature="13148:13154" ph=" " />
+                <marker date="1490011510561" expanded="true" signature="13598:13612" ph="..." />
+                <marker date="1490011510561" expanded="true" signature="13690:13704" ph="..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="pubBlog.jade" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/views/weibo/pubBlog.jade">
+      <file leaf-file-name="detailBlog.jade" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/views/weibo/detailBlog.jade">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="367">
-              <caret line="54" column="27" lean-forward="false" selection-start-line="54" selection-start-column="27" selection-end-line="54" selection-end-column="27" />
+            <state relative-caret-position="4">
+              <caret line="3" column="25" lean-forward="true" selection-start-line="3" selection-start-column="25" selection-end-line="3" selection-end-column="25" />
               <folding />
             </state>
           </provider>
@@ -66,7 +78,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>others</find>
       <find>myBlogList</find>
       <find>customer</find>
       <find>profile</find>
@@ -96,6 +107,7 @@
       <find>btn_delComment</find>
       <find>btn_delete</find>
       <find>btn_comment</find>
+      <find>write_comment</find>
     </findStrings>
     <replaceStrings>
       <replace>node_modules/gentelella/vendo</replace>
@@ -166,9 +178,9 @@
         <option value="$PROJECT_DIR$/public/javascripts/blog/pubBlog.js" />
         <option value="$PROJECT_DIR$/views/commons/layout.jade" />
         <option value="$PROJECT_DIR$/views/user/login.jade" />
-        <option value="$PROJECT_DIR$/public/javascripts/blog/detailBlog.js" />
         <option value="$PROJECT_DIR$/public/javascripts/blog/writeValidation.js" />
         <option value="$PROJECT_DIR$/views/weibo/pubBlog.jade" />
+        <option value="$PROJECT_DIR$/public/javascripts/blog/detailBlog.js" />
       </list>
     </option>
   </component>
@@ -487,14 +499,7 @@
       <workItem from="1489899401007" duration="11548000" />
       <workItem from="1489939286708" duration="715000" />
       <workItem from="1489943317644" duration="1473000" />
-      <workItem from="1489975479856" duration="9311000" />
-    </task>
-    <task id="LOCAL-00034" summary="前台：发布微博；显示微博列表">
-      <created>1488964489416</created>
-      <option name="number" value="00034" />
-      <option name="presentableId" value="LOCAL-00034" />
-      <option name="project" value="LOCAL" />
-      <updated>1488964489416</updated>
+      <workItem from="1489975479856" duration="14073000" />
     </task>
     <task id="LOCAL-00035" summary="导入时间格式转换模块：npm install moment">
       <created>1488964562120</created>
@@ -832,11 +837,18 @@
       <option name="project" value="LOCAL" />
       <updated>1489913592847</updated>
     </task>
-    <option name="localTasksCounter" value="83" />
+    <task id="LOCAL-00083" summary="界面调整">
+      <created>1490004178249</created>
+      <option name="number" value="00083" />
+      <option name="presentableId" value="LOCAL-00083" />
+      <option name="project" value="LOCAL" />
+      <updated>1490004178250</updated>
+    </task>
+    <option name="localTasksCounter" value="84" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="515439000" />
+    <option name="totallyTimeSpent" value="520201000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -855,14 +867,14 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295082" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3229508" sideWeight="0.5295008" order="10" side_tool="true" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295082" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.447541" sideWeight="0.47655067" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.38032788" sideWeight="0.47655067" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980332" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32786885" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24962178" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Mongo Explorer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32753405" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295082" sideWeight="0.48260212" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980332" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39836067" sideWeight="0.47049925" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.39836067" sideWeight="0.47049925" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295082" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -926,7 +938,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="用户修改个人密码" />
     <MESSAGE value="微博列表：显示转发微博、显示评论、添加评论、删除评论、删除微博" />
     <MESSAGE value="个人中心：显示自己的微博、删除自己的微博" />
     <MESSAGE value="微博列表、微博详情、个人中心：控制【删除评论】按钮的显示" />
@@ -951,7 +962,8 @@
     <MESSAGE value="修改头像后，发布过的微博、评论、转发的父文档、转发的子文档，都要改" />
     <MESSAGE value="登录前、登录后、个人中心的微博列表，去掉转发按钮的显示模块框效果&#10;个人中心的微博列表： 去掉添加评论" />
     <MESSAGE value="登录前的微博列表，去掉评论文本框&#10;登录后的微博列表：去掉删除微博、添加评论、删除评论功能" />
-    <option name="LAST_COMMIT_MESSAGE" value="登录前的微博列表，去掉评论文本框&#10;登录后的微博列表：去掉删除微博、添加评论、删除评论功能" />
+    <MESSAGE value="界面调整" />
+    <option name="LAST_COMMIT_MESSAGE" value="界面调整" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1000,13 +1012,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/views/backend/commons/bottom.jade">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="280">
-          <caret line="14" column="0" lean-forward="true" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/views/backend/commons/top.jade">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1">
@@ -1140,13 +1145,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/views/commons/bottom.jade">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="461">
-          <caret line="62" column="0" lean-forward="false" selection-start-line="62" selection-start-column="0" selection-end-line="62" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/routes/users.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="44">
@@ -1180,26 +1178,6 @@
         <state relative-caret-position="182">
           <caret line="31" column="31" lean-forward="true" selection-start-line="31" selection-start-column="31" selection-end-line="31" selection-end-column="31" />
         </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/images/upload/6758d9fc1e178a828b3284d3fe03738da977e832.jpg">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/images/upload/f39ccb57faa950ff6a6c1ec26ba2689404c610ee8606-4YNB0p_fw658.jpg">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/images/upload/3ddce42d424cdc5d5cc02fbc0e7dec22b5e3d7c88071-vLj4lM_fw658.jpg">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/images/upload/2f09646b8965c4618b047332245aefd32df43f01b8ec-5ac768_fw658.jpg">
-      <provider selected="true" editor-type-id="images">
-        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/public/stylesheets/backend/weiboManage_index.css">
@@ -1407,32 +1385,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/views/weibo/detailBlog.jade">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="98">
-          <caret line="85" column="36" lean-forward="true" selection-start-line="85" selection-start-column="36" selection-end-line="85" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/views/user/login.jade">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="33">
           <caret line="44" column="38" lean-forward="true" selection-start-line="44" selection-start-column="38" selection-end-line="44" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/commons/layout.jade">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="12" column="0" lean-forward="false" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/javascripts/blog/detailBlog.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="20">
-          <caret line="294" column="36" lean-forward="false" selection-start-line="294" selection-start-column="36" selection-end-line="294" selection-end-column="36" />
         </state>
       </provider>
     </entry>
@@ -1585,6 +1541,16 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/public/javascripts/blog/writeValidation.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="10" column="33" lean-forward="false" selection-start-line="10" selection-start-column="33" selection-end-line="10" selection-end-column="33" />
+          <folding>
+            <element signature="n#!!doc" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/public/javascripts/blog/pubBlog.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="121">
@@ -1598,21 +1564,80 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/javascripts/blog/writeValidation.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
-          <caret line="10" column="33" lean-forward="false" selection-start-line="10" selection-start-column="33" selection-end-line="10" selection-end-column="33" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
+    <entry file="file://$PROJECT_DIR$/public/images/upload/2f09646b8965c4618b047332245aefd32df43f01b8ec-5ac768_fw658.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/images/upload/32b46dcb0a46f21fce3fb920fe246b600c33ae3d.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/images/upload/3ddce42d424cdc5d5cc02fbc0e7dec22b5e3d7c88071-vLj4lM_fw658.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/images/upload/6758d9fc1e178a828b3284d3fe03738da977e832.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/images/upload/f39ccb57faa950ff6a6c1ec26ba2689404c610ee8606-4YNB0p_fw658.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/views/weibo/pubBlog.jade">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="367">
-          <caret line="54" column="27" lean-forward="false" selection-start-line="54" selection-start-column="27" selection-end-line="54" selection-end-column="27" />
+        <state relative-caret-position="7">
+          <caret line="18" column="32" lean-forward="true" selection-start-line="18" selection-start-column="32" selection-end-line="18" selection-end-column="32" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/commons/bottom.jade">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="100">
+          <caret line="5" column="0" lean-forward="true" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/commons/layout.jade">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="178">
+          <caret line="52" column="20" lean-forward="true" selection-start-line="52" selection-start-column="20" selection-end-line="52" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/weibo/detailBlog.jade">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4">
+          <caret line="3" column="25" lean-forward="true" selection-start-line="3" selection-start-column="25" selection-end-line="3" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/javascripts/blog/detailBlog.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="183">
+          <caret line="250" column="21" lean-forward="true" selection-start-line="250" selection-start-column="21" selection-end-line="250" selection-end-column="21" />
+          <folding>
+            <marker date="1490011510561" expanded="true" signature="4663:4677" ph="..." />
+            <marker date="1490011510561" expanded="true" signature="5357:5381" ph="..." />
+            <marker date="1490011510561" expanded="true" signature="6513:6526" ph="..." />
+            <marker date="1490011510561" expanded="true" signature="12808:12822" ph="..." />
+            <marker date="1490011510561" expanded="true" signature="12900:12914" ph="..." />
+            <marker date="1490011510561" expanded="true" signature="13130:13136" ph=" " />
+            <marker date="1490011510561" expanded="true" signature="13136:13142" ph=" " />
+            <marker date="1490011510561" expanded="true" signature="13142:13148" ph=" " />
+            <marker date="1490011510561" expanded="true" signature="13148:13154" ph=" " />
+            <marker date="1490011510561" expanded="true" signature="13598:13612" ph="..." />
+            <marker date="1490011510561" expanded="true" signature="13690:13704" ph="..." />
+          </folding>
         </state>
       </provider>
     </entry>
