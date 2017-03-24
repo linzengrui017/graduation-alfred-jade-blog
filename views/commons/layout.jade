@@ -43,9 +43,14 @@ html
                                         a(href='/logout') 退出
                         -else
                             li
-                                a(href='/toLogin') 登录
+                                a(href='/toLogin')
+                                    span.label.label-primary
+                                        |登录
                             li
-                                a(href='/toLogin#signup') 注册
+                                a(href='/toLogin#signup')
+                                    span.label.label-success
+                                        | 注册
+
 
         div(style='margin-top:20px;')
             block content
