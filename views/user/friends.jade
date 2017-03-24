@@ -1,0 +1,72 @@
+extends ../commons/layout
+
+block head
+    // Datatables
+    link(href='stylesheets/dataTables/dataTables.bootstrap.min.css', rel='stylesheet')
+
+block content
+    input#customer(type='hidden', value=customer)
+    //modal
+    - if(locals.message)
+        //button.btn.btn-info.btn-xs(type='button', data-toggle='modal', data-target='.bs-example-modal-sm')
+        //    | 打开模态框
+        .modal.fade.bs-example-modal-sm(id='alert_modal', tabindex='-1', role='dialog', aria-hidden='true')
+            .modal-dialog.modal-sm
+                .modal-content
+                    .modal-header
+                        button.close(type='button', data-dismiss='modal', aria-label='Close')
+                            span(aria-hidden='true') ×
+                        h4#myModalLabel2.modal-title 提示
+                    .modal-body
+                        h4= locals.message
+                    .modal-footer
+                        button.btn.btn-default(type='button', data-dismiss='modal') 关闭
+
+    .row
+        .col-md-12.col-sm-12.col-xs-12
+            .x_panel
+                .x_title
+                    h2
+                        | 我的好友
+                    .clearfix
+                .x_content
+                    .x_panel
+                        .x_title
+                            h2 好友列表
+                            .clearfix
+                        .x_content
+                        #friends(style='padding: 20px 50px;')
+                            table#datatable.table.table-striped.table-bordered.dataTable
+                                thead
+                                    tr(role='row')
+                                        //th
+                                        //th 唯一标识
+                                        th 好友名称
+                                        th 创建时间
+
+                    #friendsBlogList
+
+
+
+
+
+
+block scripts
+    //trasfer Date
+    script(src='javascripts/commons/moment.min.js')
+    //update password validation
+    script(src='javascripts/user/user_update_password.js')
+    //show my blog list
+    script(src='javascripts/user/myBlog.js')
+    //upload image
+    script(src='javascripts/user/upload.js')
+    // Datatables
+    script(src='javascripts/dataTables/jquery.dataTables.min.js')
+    script(src='javascripts/dataTables/dataTables.bootstrap.min.js')
+
+    //show friends
+    script(src='javascripts/user/showFriends.js')
+    //show friend blog
+    script(src='javascripts/user/showFriendBlog.js')
+
+

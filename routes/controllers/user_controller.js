@@ -707,3 +707,10 @@ exports.queryFriendsBlogList = function (req, res) {
 
     });
 };
+
+/**
+ * 跳转到 我的好友 页面
+ */
+exports.toFriendPage = function (req, res) {
+    res.render('user/friends', { title: 'friends' });
+};

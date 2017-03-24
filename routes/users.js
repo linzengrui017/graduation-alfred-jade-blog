@@ -114,4 +114,9 @@ router.post('/queryFriends', user.queryFriends);
  */
 router.post('/queryFriendsBlogList', user.queryFriendsBlogList);
 
+/**
+ * 跳转到 我的好友 页面
+ */
+router.get('/toFriendPage', user.toFriendPage);
+
 module.exports = router;
