@@ -13,50 +13,61 @@ html
 
         include top
 
+        //customer style
+        //link(href='stylesheets/user/layout.css', rel='stylesheet')
+
         block head
 
-    body(style='background:#ffffff;')
+    body
 
-        nav.navbar.navbar-default
-            .container-fluid
-                #bs-example-navbar-collapse-1.collapse.navbar-collapse
-                    ul.nav.navbar-nav
-                        li.active
-                            a(href='/toBlogListPage' )
-                                i.fa.fa-weibo
-                                    |  微博
-                        -if(user)
-                            li
-                                a(href='/toAddPage') 列表
-                    ul.nav.navbar-nav.navbar-right
-                        -if(user)
-                            li.dropdown
-                                a.user-profile.dropdown-toggle(href='#', data-toggle='dropdown', role='button', aria-haspopup='true', aria-expanded='false')
-                                    img#layout_img(src='', alt='')
-                                    =user.username
-                                    span.caret
-                                ul.dropdown-menu
+        nav
+            .top_nav
+                .nav_menu
+                    .container-fluid
+                        #bs-example-navbar-collapse-1.collapse.navbar-collapse
+                            ul.nav.navbar-nav
+                                li.active
+                                    a(href='/toBlogListPage' )
+                                        i.fa.fa-weibo
+                                            |  微博
+                                -if(user)
                                     li
-                                        a(href='/profile') 个人中心
-                                    li.divider(role='separator')
+                                        a(href='/toAddPage') 列表
+                            ul.nav.navbar-nav.navbar-right
+                                -if(user)
+                                    li.dropdown
+                                        a.user-profile.dropdown-toggle(href='#', data-toggle='dropdown', role='button', aria-haspopup='true', aria-expanded='false')
+                                            img#layout_img(src='', alt='')
+                                            =user.username
+                                            span.caret
+                                        ul.dropdown-menu
+                                            li
+                                                a(href='/profile') 个人中心
+                                            li.divider(role='separator')
+                                            li
+                                                a(href='/toFriendPage') 我的好友
+                                            li.divider(role='separator')
+                                            li
+                                                a(href='/logout') 退出
+                                -else
                                     li
-                                        a(href='/toFriendPage') 我的好友
-                                    li.divider(role='separator')
+                                        a(href='/toRegister_form')
+                                            span.label.label-success
+                                                | 注册
                                     li
-                                        a(href='/logout') 退出
-                        -else
-                            li
-                                a(href='/toLogin')
-                                    span.label.label-primary
-                                        |登录
-                            li
-                                a(href='/toLogin#signup')
-                                    span.label.label-success
-                                        | 注册
+                                        a(href='/toLogin_form')
+                                            span.label.label-primary
+                                                |登录
 
 
-        div(style='margin-top:20px;')
-            block content
+
+        div(style='')
+            .col-md-2
+
+            .col-md-8(style='background:#ffffff;')
+                block content
+            .col-md-2
+
 
         include bottom
 

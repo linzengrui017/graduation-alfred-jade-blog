@@ -44,21 +44,17 @@ $.ajax({
                 /**
                  * 添加视图
                  */
+                /**
+                 * 添加视图
+                 */
                 relayHtml +=
                     '<ul class="messages">' +
                         '<li><img src="'+ relay_imageUrl +'" alt="Avatar" class="avatar" />' +
                             '<div class="message_wrapper">' +
-                                '<h4 class="heading">'+ relay_author +'</h4>' +
-                                '<br />' +
-                                '<br />' +
-                                '<a href="#" name="title"><h4>'+
-                                relay_title +
-                                '</h4></a>'+
-                                '<blockquote class="message">' +
-                                relay_content +
-                                '</blockquote>' +
-                                '<br />' +
-                        '</div></li>' +
+                                '<h4><a href="#" name="others">'+ relay_author +'</a></h4>' +
+                                '<h4>【'+ relay_title + '】'+ relay_content + '</h4>'+
+                            '</div>'+
+                        '</li>' +
                     '</ul>';
             }
 
@@ -76,19 +72,15 @@ $.ajax({
                                 '<div class="message_wrapper">' +
                                     '<h4 class="heading"><a href="#" name="others">'+ author +'</a></h4>' +
                                     '<small>'+ createTime +'</small>' +
-                                    '<br />' +
-                                    '<br />' +
-                                    '<a href="#"><h4>'+
-                                        title +
-                                    '</h4></a>'+
-                                    '<blockquote class="message">' +
-                                        content +
-                                    '</blockquote>' +
-                                    '<div>'+
-                                        relayHtml+
-                                    '</div>' +
-                                    '<br />' +
-                            '</div></li>' +
+                                    '<h4>'+
+                                    '<a href="/toDetailBlogPage?title='+title+'&author='+author+'">'+
+                                    title +
+                                    '</a>'+
+                                    content +
+                                    relayHtml +
+                                    '</h4>'+
+                                '</div>'+
+                            '</li>' +
                         '</ul>' +
                     '</div>'+
                 '</div>'

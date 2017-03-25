@@ -1,0 +1,58 @@
+//
+   Created by lzr on 2017/2/22.
+
+extends ../commons/layout
+
+block head
+
+block content
+
+    //modal
+    - if(locals.message)
+        //button.btn.btn-info.btn-xs(type='button', data-toggle='modal', data-target='.bs-example-modal-sm')
+        //    | 打开模态框
+        .modal.fade.bs-example-modal-sm(id='alert_modal', tabindex='-1', role='dialog', aria-hidden='true')
+            .modal-dialog.modal-sm
+                .modal-content
+                    .modal-header
+                        button.close(type='button', data-dismiss='modal', aria-label='Close')
+                            span(aria-hidden='true') ×
+                        h4#myModalLabel2.modal-title 警告
+                    .modal-body
+                        h4= locals.message
+                    .modal-footer
+                        button.btn.btn-default(type='button', data-dismiss='modal') 关闭
+
+
+    //login form
+    .row(style='padding:100px 0px;')
+        .x_panel
+            .col-md-2.col-sm-2.col-xs-12
+            .col-md-8.col-sm-8.col-xs-12
+                form.form-horizontal.form-label-left(data-parsley-validate='', novalidate="", id='login_form', method='post', action='/login')
+                    span.section 用户登录
+                    .item.form-group
+                        label.control-label.col-md-3.col-sm-3.col-xs-12(for="login_username")
+                            | 用户名
+                            span.required *
+                        .col-md-6.col-sm-6.col-xs-12
+                            input#login_username.form-control.col-md-7.col-xs-12(data-validate-length-range="6", data-validate-words="2", name="username", placeholder="账号", required="required", type="text")
+                    .item.form-group
+                        label.control-label.col-md-3(for="login_password")
+                            | 密码
+                            span.required *
+                        .col-md-6.col-sm-6.col-xs-12
+                            input#login_password.form-control.col-md-7.col-xs-12(type="password", name="password", data-validate-length="6,8", placeholder='密码', required="required")
+                    .form-group
+                        .col-md-6.col-md-offset-8
+                            button#btn_login.btn.btn-success(type="submit") 登录
+
+
+
+
+
+block scripts
+    // Parsley
+    script(src='javascripts/commons/parsley.min.js')
+    // Login And Register Validate Scripts
+    script(src='javascripts/user/login_form.js')

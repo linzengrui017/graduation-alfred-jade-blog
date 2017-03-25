@@ -105,6 +105,7 @@ exports.others = function (req, res) {
 
 /**
  * 跳转到注册页面
+ * 暂时不用
  */
 exports.toReg = function (req, res) {
     res.render('user/register', { title: 'Reg' });
@@ -127,11 +128,11 @@ exports.reg = function (req, res, next) {
     if(username == null || username == undefined){
         console.log('用户名不能为空');
         req.session.error = "用户名不能为空";
-        res.redirect("/toLogin#signup");
+        res.redirect("/toRegister_form");
     }else if(password == null || password == undefined){
         console.log('密码不能为空');
         req.session.error = "密码不能为空";
-        res.redirect("/toLogin#signup");
+        res.redirect("/toRegister_form");
     }else {
 
         /**
@@ -143,12 +144,12 @@ exports.reg = function (req, res, next) {
             if(err){
                 console.log("查询用户失败："+ err);
                 req.session.error = "查询用户失败";
-                res.redirect("/toLogin#signup");
+                res.redirect("/toRegister_form");
             }
             if(data){
                 console.log("该用户已被注册");
                 req.session.error = "该用户已被注册";
-                res.redirect("/toLogin#signup");
+                res.redirect("/toRegister_form");
             }else {
                 /**
                  * 密码加密
@@ -173,7 +174,7 @@ exports.reg = function (req, res, next) {
                      */
                     if(err){
                         console.log("注册异常:"+err);
-                        res.redirect("/toLogin#signup");
+                        res.redirect("/toRegister_form");
                     }
 
 
@@ -204,6 +205,7 @@ exports.reg = function (req, res, next) {
 
 /**
  * 跳转到登录页面
+ * 暂时不用
  */
 exports.toLogin = function (req, res, next) {
     res.render('user/login', { title: 'Login' });
@@ -226,11 +228,11 @@ exports.login = function (req, res) {
     if(username == null || username == undefined){
         console.log('用户名不能为空');
         req.session.error = "用户名不能为空";
-        res.redirect("/toLogin");
+        res.redirect("/toLogin_form");
     }else if(password == null || password == undefined){
         console.log('密码不能为空');
         req.session.error = "密码不能为空";
-        res.redirect("/toLogin");
+        res.redirect("/toLogin_form");
     }else {
 
         /**
@@ -243,12 +245,12 @@ exports.login = function (req, res) {
             if(err){
                 console.log("查询用户名失败："+ err);
                 req.session.error = "查询用户名失败";
-                res.redirect("/toLogin");
+                res.redirect("/toLogin_form");
             }
             if(!data){
                 console.log('用户不存在');
                 req.session.error = "用户不存在";
-                res.redirect("/toLogin");
+                res.redirect("/toLogin_form");
             }else {
                 /**
                  * 将登录的密码转成md5形式
@@ -265,12 +267,12 @@ exports.login = function (req, res) {
                     if(err){
                         console.log("查询用户密码失败："+ err);
                         req.session.error = "查询用户密码失败";
-                        res.redirect("/toLogin");
+                        res.redirect("/toLogin_form");
                     }
                     if(!data){
                         console.log("密码不正确");
                         req.session.error = "密码不正确";
-                        res.redirect("/toLogin");
+                        res.redirect("/toLogin_form");
                     }else {
                         console.log("登录成功");
                         /**
@@ -713,4 +715,18 @@ exports.queryFriendsBlogList = function (req, res) {
  */
 exports.toFriendPage = function (req, res) {
     res.render('user/friends', { title: 'friends' });
+};
+
+/**
+ * 跳转到注册页面
+ */
+exports.toRegister_form = function (req, res, next) {
+    res.render('user/register_form', { title: 'register' });
+};
+
+/**
+ * 跳转到登录页面
+ */
+exports.toLogin_form = function (req, res, next) {
+    res.render('user/login_form', { title: 'Login' });
 };

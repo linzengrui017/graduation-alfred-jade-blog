@@ -27,9 +27,11 @@ router.post('/user_update_password', user.user_update_password);
 router.get('/others', user.others);
 /**
  * 跳转到注册页面
- * 暂时不用
  */
-router.get('/toReg', user.toReg);
+// router.get('/toReg', user.toReg);
+
+router.get('/toRegister_form', user.toRegister_form);
+
 /**
  * 注册功能
  */
@@ -38,6 +40,8 @@ router.post('/reg', user.reg);
  * 跳转到登录页面
  */
 router.get('/toLogin', user.toLogin);
+
+router.get('/toLogin_form', user.toLogin_form);
 /**
  * 登录功能
  */
