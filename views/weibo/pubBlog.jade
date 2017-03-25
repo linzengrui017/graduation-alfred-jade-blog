@@ -8,9 +8,9 @@ block head
 block content
     input#customer(type='hidden', value=customer)
     //写微博
-    .row
-        .col-md-2.col-sm-2.col-xs-12
-        .col-md-8.col-sm-8.col-xs-12
+    .row(style='margin-top:20px;')
+        .col-md-1.col-sm-1.col-xs-12
+        .col-md-10.col-sm-10.col-xs-12
             .x_panel
                 .x_content
                     div(ng-app='')
@@ -39,14 +39,14 @@ block content
 
 
 
-        .col-md-2.col-sm-2.col-xs-12
+        .col-md-1.col-sm-1.col-xs-12
 
     //微博列表
     .row
-        .col-md-2.col-sm-2.col-xs-12
-        #blogList.col-md-8.col-sm-8.col-xs-12
+        .col-md-1.col-sm-1.col-xs-12
+        #blogList.col-md-10.col-sm-10.col-xs-12
 
-        .col-md-2.col-sm-2.col-xs-12
+        .col-md-1.col-sm-1.col-xs-12
 
 block scripts
     // Parsley

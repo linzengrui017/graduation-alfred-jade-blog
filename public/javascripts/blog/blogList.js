@@ -74,7 +74,7 @@ $.ajax({
                                     '<small>'+ createTime +'</small>' +
                                     '<h4>'+
                                     '<a href="/toDetailBlogPage?title='+title+'&author='+author+'">'+
-                                    title +
+                                    '【'+title + '】'+
                                     '</a>'+
                                     content +
                                     relayHtml +
