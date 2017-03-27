@@ -34,7 +34,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 /**
  * 使用mongoose连接数据库
  */
-mongoose.connect('mongodb://123.207.236.69/weibo');
+mongoose.connect('mongodb://localhost/weibo');
 
 /**
  * 使用session
@@ -46,7 +46,7 @@ app.use(session({
     store: new MongoStore({
         cookieSecret: 'lzr',
         db: 'weibo',
-        host: '123.207.236.69',
+        host: 'localhost',
         mongooseConnection: mongoose.connection
     })
 }));
