@@ -37,8 +37,12 @@ $(function () {
                  * 映射到视图
                  */
                 $('#blogDetail').append(
-                    '<div class="x_panel" id="main_panel">' +
+                    '<div class="panel">' +
+                        '<ul class="list-group">' +
+                            '<li class="list-group-item list-group-item-info" id="main_panel">'+
 
+                            '</li>'+
+                        '</ul>'+
                     '</div>'
                 );
 
@@ -112,7 +116,7 @@ $(function () {
                     '<div class="row">' +
                         '<div class="col-md-2 col-sm-2 col-xs-2"></div>' +
                         '<div class="col-md-3 col-sm-3 col-xs-3">' +
-                        '<a data-toggle="modal" data-target=".bs-example-modal-lg" class="btn"><i class="fa fa-external-link"></i>123</a>' +
+                        '<a data-toggle="modal" data-target=".bs-example-modal-lg" class="btn"><i class="fa fa-external-link"></i></a>' +
                         '</div>' +
                             //转发对应的模态框
                         '<div tabindex="-1" role="dialog" aria-hidden="true" style="display: none;" class="modal fade bs-example-modal-lg">' +
@@ -133,10 +137,10 @@ $(function () {
                             '</div>' +
                         '</div>' +
                         '<div class="col-md-3 col-sm-3 col-xs-3">' +
-                            '<a id="headingOne" role="tab" data-toggle="collapse" data-parent="#accordion" href="#collapse'+i+'" aria-expanded="false" aria-controls="collapseOne" class="btn panel-heading collapsed"><i class="fa fa-comment-o"></i>456</a>' +
+                            '<a id="headingOne" role="tab" data-toggle="collapse" data-parent="#accordion" href="#collapse'+i+'" aria-expanded="false" aria-controls="collapseOne" class="btn panel-heading collapsed"><i class="fa fa-comment-o"></i></a>' +
                         '</div>' +
                         '<div class="col-md-3 col-sm-3 col-xs-3">' +
-                            '<a name="btn_thumbs" class="btn"><i name="btn_thumbs_1" class="fa fa-thumbs-o-up"></i><i name="btn_thumbs_2" style="display:none;" class="fa fa-thumbs-up"></i>789</a>' +
+                            '<a name="btn_thumbs" class="btn"><i name="btn_thumbs_1" class="fa fa-thumbs-o-up"></i><i name="btn_thumbs_2" style="display:none;" class="fa fa-thumbs-up"></i></a>' +
                         '</div>' +
                         '<div class="col-md-1 col-sm-1 col-xs-1"></div>' +
                     '</div>' +
@@ -205,11 +209,11 @@ $(function () {
                             '<li><img src="'+ relay_imageUrl +'" alt="Avatar" class="avatar" />' +
                                 '<div class="message_wrapper">' +
                                     '<h4 class="heading"><a href="#" name="others">'+ relay_author +'</a></h4>' +
-                                    '<a href="#" name="title"><h4>'+
+                                    '<h4><a href="#" name="title">【'+
                                         relay_title +
-                                    '</h4></a>'+
+                                    '】</a>'+
                                         relay_content +
-                                    '<br />' +
+                                    '</h4><br />' +
                             '</div></li>' +
                         '</ul>'
                     );

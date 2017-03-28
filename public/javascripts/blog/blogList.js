@@ -62,27 +62,31 @@ $.ajax({
              * 显示微博内容
              */
             $('#blogList').append(
-                '<div class="x_panel">' +
-                    /**
-                     * 微博标题、内容等
-                     */
-                    '<div class="block">'+
-                        '<ul class="messages">' +
-                            '<li><img src="'+ imageUrl +'" alt="Avatar" class="avatar" />' +
-                                '<div class="message_wrapper">' +
-                                    '<h4 class="heading"><a href="#" name="others">'+ author +'</a></h4>' +
-                                    '<small>'+ createTime +'</small>' +
-                                    '<h4>'+
-                                    '<a href="/toDetailBlogPage?title='+title+'&author='+author+'">'+
-                                    '【'+title + '】'+
-                                    '</a>'+
-                                    content +
-                                    relayHtml +
-                                    '</h4>'+
-                                '</div>'+
-                            '</li>' +
-                        '</ul>' +
-                    '</div>'+
+                '<div class="panel">' +
+                    '<ul class="list-group">' +
+                        '<li class="list-group-item list-group-item-success">'+
+                            /**
+                             * 微博标题、内容等
+                             */
+                            '<div class="block">'+
+                                '<ul class="messages">' +
+                                    '<li><img src="'+ imageUrl +'" alt="Avatar" class="avatar" />' +
+                                        '<div class="message_wrapper">' +
+                                            '<h4 class="heading"><a href="#" name="others">'+ author +'</a></h4>' +
+                                            '<small>'+ createTime +'</small>' +
+                                            '<h4>'+
+                                            '<a href="#">'+
+                                            '【'+title + '】'+
+                                            '</a>'+
+                                            content +
+                                            relayHtml +
+                                            '</h4>'+
+                                        '</div>'+
+                                    '</li>' +
+                                '</ul>' +
+                            '</div>'+
+                        '</li>'+
+                    '</ul>'+
                 '</div>'
             );
         }

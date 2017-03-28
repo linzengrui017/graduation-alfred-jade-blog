@@ -30,20 +30,20 @@ block content
                         | 我的好友
                     .clearfix
                 .x_content
-                    .x_panel
-                        .x_title
-                            h2 好友列表
-                            .clearfix
-                        .x_content
-                        #friends(style='padding: 20px 50px;')
-                            table#datatable.table.table-striped.table-bordered.dataTable
-                                thead
-                                    tr(role='row')
-                                        //th
-                                        //th 唯一标识
-                                        th 好友名称
-                                        th 创建时间
-
+                    #friends
+                        table#datatable.table.table-striped.table-bordered.dataTable
+                            thead
+                                tr(role='row')
+                                    //th
+                                    //th 唯一标识
+                                    th 好友名称
+                                    th 创建时间
+            .x_panel
+                .x_title
+                    h2
+                        | 好友微博
+                    .clearfix
+                .x_content
                     #friendsBlogList
 
 
