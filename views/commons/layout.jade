@@ -20,39 +20,44 @@ html
 
     body
 
-        nav.navbar.navbar-default.navbar-fixed-top.navbar-inverse
+        nav#nav.navbar.navbar-default.navbar-fixed-top.navbar-inverse
             ul.nav.navbar-nav
                 li
                     a(href='/toBlogListPage' )
-                        i.fa.fa-weibo
+                        i.fa.fa-weibo(style='color:#ffffff;')
                             |  微博
                 -if(user)
                     li
-                        a(href='/toAddPage') 列表
+                        a(href='/toAddPage')
+                            span(style='color:#ffffff;')
+                                | 列表
             ul.nav.navbar-nav.navbar-right
                 -if(user)
                     li.dropdown
                         a.user-profile.dropdown-toggle(href='#', data-toggle='dropdown', role='button', aria-haspopup='true', aria-expanded='false')
                             img#layout_img(src='', alt='')
-                            =user.username
+                            span(style='color:#ffffff;')=user.username
                             span.caret
                         ul.dropdown-menu
                             li
-                                a(href='/profile') 个人中心
+                                a(href='/profile')
+                                        | 个人中心
                             li.divider(role='separator')
                             li
-                                a(href='/toFriendPage') 我的好友
+                                a(href='/toFriendPage')
+                                        | 我的好友
                             li.divider(role='separator')
                             li
-                                a(href='/logout') 退出
+                                a(href='/logout')
+                                        | 退出
                 -else
                     li
                         a(href='/toLogin_form')
-                            span.label.label-primary
+                            span(style='color:#ffffff;')
                                 | 登录
                     li
                         a(href='/toRegister_form')
-                            span.label.label-success
+                            span(style='color:#ffffff;')
                                 | 注册
 
 
@@ -67,5 +72,8 @@ html
 
 
         include bottom
+
+        // Login And Register Validate Scripts
+        //script(src='javascripts/layout/layout.js')
 
         block scripts
