@@ -300,7 +300,8 @@ exports.login = function (req, res) {
  * 注销功能
  */
 exports.logout = function (req, res, next) {
-    delete res.locals.user;
+    req.session.user = null;
+    res.locals.user = null;
     res.render('weibo/blogList', { title: 'blogList' });
 };
 
