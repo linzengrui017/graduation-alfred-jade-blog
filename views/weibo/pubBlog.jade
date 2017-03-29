@@ -20,7 +20,7 @@ block content
                                     | 标题
                                     span.required *
                                 .col-md-9.col-sm-9.col-xs-12
-                                    input#title.form-control.col-md-7.col-xs-12(type='text', name='title', required)
+                                    input#title.form-control.col-md-7.col-xs-12(type='text', name='title', maxlength=30, placeholder='最多可以输入30个字', required)
                                 .col-md-2.col-sm-2.col-xs-12
                             .form-group
                                 label.control-label.col-md-1.col-sm-1.col-xs-12(for='description')
@@ -30,7 +30,7 @@ block content
                                     textarea#description(name='description', ng-model='description', style='width:100%;height:100px;', required)
                                     .row
                                         .col-md-10.col-sm-10.col-xs-12
-                                            h4 已输入 {{description.length}} 个字
+                                            h4 还可以输入 {{240 - description.length}} 个字
                                         .col-md-2.col-sm-2.col-xs-12
                                             button.btn.btn-primary(type='submit', id='btn_pubBlog', style='margin-top:10px;')
                                                 | 发布
@@ -55,5 +55,7 @@ block scripts
     script(src='javascripts/commons/moment.min.js')
     // Asynchronously load data from blogs
     script(src='javascripts/blog/pubBlog.js')
+    //Word limit
+    script(src='javascripts/blog/writeBlog.js')
     // Write Validation
     //script(src='javascripts/blog/writeValidation.js')
