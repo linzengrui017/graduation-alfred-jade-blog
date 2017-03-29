@@ -74,7 +74,7 @@ router.get('/toUploadCustomerImagePage', user.toUploadCustomerImagePage);
 var storage = multer.diskStorage({
     //设置上传后文件路径，upload文件夹会自动创建
     destination: function (req, file, cb){
-        cb(null, './public/images/upload')
+        cb(null, '/home/graduation-alfred-jade-blog/public/images/upload')
     },
     //给上传文件重命名，获取添加后缀名
     filename: function (req, file, cb){
