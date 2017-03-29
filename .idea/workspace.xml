@@ -2,10 +2,161 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f8ee0978-48cb-4707-befb-e4ce0a99b44e" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/mongoSettings.xml" afterPath="$PROJECT_DIR$/.idea/mongoSettings.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app.js" afterPath="$PROJECT_DIR$/app.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/routes/users.js" afterPath="$PROJECT_DIR$/routes/users.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/upload/a044ad345982b2b781f71a2239adcbef77099bef.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/config/.npmignore" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/config/.travis.yml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/config/History.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/config/LICENSE" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/config/README.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/config/defer.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/config/lib/config.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/config/node_modules/.bin/json5" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/config/node_modules/.bin/json5.cmd" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/config/node_modules/json5/.editorconfig" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/config/node_modules/json5/.npmignore" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/config/node_modules/json5/.travis.yml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/config/node_modules/json5/CHANGELOG.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/config/node_modules/json5/README.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/config/node_modules/json5/lib/cli.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/config/node_modules/json5/lib/json5.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/config/node_modules/json5/lib/require.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/config/node_modules/json5/package.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/config/node_modules/json5/package.json5" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/config/node_modules/json5/test/parse-cases/arrays/empty-array.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/config/node_modules/json5/test/parse-cases/arrays/leading-comma-array.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/config/node_modules/json5/test/parse-cases/arrays/lone-trailing-comma-array.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/config/node_modules/json5/test/parse-cases/arrays/no-comma-array.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/config/node_modules/json5/test/parse-cases/arrays/regular-array.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/config/node_modules/json5/test/parse-cases/arrays/trailing-comma-array.json5" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/config/node_modules/json5/test/parse-cases/comments/block-comment-following-array-element.json5" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/config/node_modules/json5/test/parse-cases/comments/block-comment-following-top-level-value.json5" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/config/node_modules/json5/test/parse-cases/comments/block-comment-in-string.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/config/node_modules/json5/test/parse-cases/comments/block-comment-preceding-top-level-value.json5" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/config/node_modules/json5/test/parse-cases/comments/block-comment-with-asterisks.json5" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/config/node_modules/json5/test/parse-cases/comments/inline-comment-following-array-element.json5" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/config/node_modules/json5/test/parse-cases/comments/inline-comment-following-top-level-value.json5" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/config/node_modules/json5/test/parse-cases/comments/inline-comment-in-string.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/config/node_modules/json5/test/parse-cases/comments/inline-comment-preceding-top-level-value.json5" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/config/node_modules/json5/test/parse-cases/comments/top-level-block-comment.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/config/node_modules/json5/test/parse-cases/comments/top-level-inline-comment.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/config/node_modules/json5/test/parse-cases/comments/unterminated-block-comment.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/config/node_modules/json5/test/parse-cases/misc/empty.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/config/node_modules/json5/test/parse-cases/misc/npm-package.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/config/node_modules/json5/test/parse-cases/misc/npm-package.json5" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/config/node_modules/json5/test/parse-cases/misc/readme-example.json5" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/config/node_modules/json5/test/parse-cases/misc/valid-whitespace.json5" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/config/node_modules/json5/test/parse-cases/new-lines/.editorconfig" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/config/node_modules/json5/test/parse-cases/new-lines/.gitattributes" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/config/node_modules/json5/test/parse-cases/new-lines/comment-cr.json5" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/config/node_modules/json5/test/parse-cases/new-lines/comment-crlf.json5" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/config/node_modules/json5/test/parse-cases/new-lines/comment-lf.json5" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/config/node_modules/json5/test/parse-cases/new-lines/escaped-cr.json5" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/config/node_modules/json5/test/parse-cases/new-lines/escaped-crlf.json5" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/config/node_modules/json5/test/parse-cases/new-lines/escaped-lf.json5" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/config/node_modules/json5/test/parse-cases/numbers/binary-coffeescript.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/config/node_modules/json5/test/parse-cases/numbers/float-leading-decimal-point.json5" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/config/node_modules/json5/test/parse-cases/numbers/float-leading-zero.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/config/node_modules/json5/test/parse-cases/numbers/float-trailing-decimal-point-with-integer-exponent.json5" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/config/node_modules/json5/test/parse-cases/numbers/float-trailing-decimal-point.json5" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/config/node_modules/json5/test/parse-cases/numbers/float-with-integer-exponent.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/config/node_modules/json5/test/parse-cases/numbers/float.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/config/node_modules/json5/test/parse-cases/numbers/hexadecimal-empty.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/config/node_modules/json5/test/parse-cases/numbers/hexadecimal-lowercase-letter.json5" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/config/node_modules/json5/test/parse-cases/numbers/hexadecimal-uppercase-x.json5" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/config/node_modules/json5/test/parse-cases/numbers/hexadecimal-with-integer-exponent.json5" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/config/node_modules/json5/test/parse-cases/numbers/hexadecimal.json5" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/config/node_modules/json5/test/parse-cases/numbers/infinity.json5" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/config/node_modules/json5/test/parse-cases/numbers/integer-with-float-exponent.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/config/node_modules/json5/test/parse-cases/numbers/integer-with-hexadecimal-exponent.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/config/node_modules/json5/test/parse-cases/numbers/integer-with-integer-exponent.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/config/node_modules/json5/test/parse-cases/numbers/integer-with-negative-float-exponent.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/config/node_modules/json5/test/parse-cases/numbers/integer-with-negative-hexadecimal-exponent.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/config/node_modules/json5/test/parse-cases/numbers/integer-with-negative-integer-exponent.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/config/node_modules/json5/test/parse-cases/numbers/integer-with-negative-zero-integer-exponent.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/config/node_modules/json5/test/parse-cases/numbers/integer-with-positive-float-exponent.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/config/node_modules/json5/test/parse-cases/numbers/integer-with-positive-hexadecimal-exponent.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/config/node_modules/json5/test/parse-cases/numbers/integer-with-positive-integer-exponent.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/config/node_modules/json5/test/parse-cases/numbers/integer-with-positive-zero-integer-exponent.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/config/node_modules/json5/test/parse-cases/numbers/integer-with-zero-integer-exponent.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/config/node_modules/json5/test/parse-cases/numbers/integer.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/config/node_modules/json5/test/parse-cases/numbers/lone-decimal-point.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/config/node_modules/json5/test/parse-cases/numbers/nan.json5" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/config/node_modules/json5/test/parse-cases/numbers/negative-binary-coffeescript.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/config/node_modules/json5/test/parse-cases/numbers/negative-float-leading-decimal-point.json5" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/config/node_modules/json5/test/parse-cases/numbers/negative-float-leading-zero.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/config/node_modules/json5/test/parse-cases/numbers/negative-float-trailing-decimal-point.json5" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/config/node_modules/json5/test/parse-cases/numbers/negative-float.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/config/node_modules/json5/test/parse-cases/numbers/negative-hexadecimal.json5" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/config/node_modules/json5/test/parse-cases/numbers/negative-infinity.json5" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/config/node_modules/json5/test/parse-cases/numbers/negative-integer.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/config/node_modules/json5/test/parse-cases/numbers/negative-noctal.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/config/node_modules/json5/test/parse-cases/numbers/negative-octal-coffeescript.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/config/node_modules/json5/test/parse-cases/numbers/negative-octal.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/config/node_modules/json5/test/parse-cases/numbers/negative-zero-binary-coffeescript.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/config/node_modules/json5/test/parse-cases/numbers/negative-zero-float-leading-decimal-point.json5" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/config/node_modules/json5/test/parse-cases/numbers/negative-zero-float-trailing-decimal-point.json5" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/config/node_modules/json5/test/parse-cases/numbers/negative-zero-float.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/config/node_modules/json5/test/parse-cases/numbers/negative-zero-hexadecimal.json5" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/config/node_modules/json5/test/parse-cases/numbers/negative-zero-integer.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/config/node_modules/json5/test/parse-cases/numbers/negative-zero-octal-coffeescript.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/config/node_modules/json5/test/parse-cases/numbers/negative-zero-octal.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/config/node_modules/json5/test/parse-cases/numbers/noctal-with-leading-octal-digit.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/config/node_modules/json5/test/parse-cases/numbers/noctal.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/config/node_modules/json5/test/parse-cases/numbers/octal-coffeescript.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/config/node_modules/json5/test/parse-cases/numbers/octal.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/config/node_modules/json5/test/parse-cases/numbers/positive-binary-coffeescript.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/config/node_modules/json5/test/parse-cases/numbers/positive-float-leading-decimal-point.json5" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/config/node_modules/json5/test/parse-cases/numbers/positive-float-leading-zero.json5" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/config/node_modules/json5/test/parse-cases/numbers/positive-float-trailing-decimal-point.json5" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/config/node_modules/json5/test/parse-cases/numbers/positive-float.json5" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/config/node_modules/json5/test/parse-cases/numbers/positive-hexadecimal.json5" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/config/node_modules/json5/test/parse-cases/numbers/positive-infinity.json5" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/config/node_modules/json5/test/parse-cases/numbers/positive-integer.json5" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/config/node_modules/json5/test/parse-cases/numbers/positive-noctal.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/config/node_modules/json5/test/parse-cases/numbers/positive-octal-coffeescript.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/config/node_modules/json5/test/parse-cases/numbers/positive-octal.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/config/node_modules/json5/test/parse-cases/numbers/positive-zero-binary-coffeescript.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/config/node_modules/json5/test/parse-cases/numbers/positive-zero-float-leading-decimal-point.json5" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/config/node_modules/json5/test/parse-cases/numbers/positive-zero-float-trailing-decimal-point.json5" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/config/node_modules/json5/test/parse-cases/numbers/positive-zero-float.json5" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/config/node_modules/json5/test/parse-cases/numbers/positive-zero-hexadecimal.json5" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/config/node_modules/json5/test/parse-cases/numbers/positive-zero-integer.json5" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/config/node_modules/json5/test/parse-cases/numbers/positive-zero-octal-coffeescript.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/config/node_modules/json5/test/parse-cases/numbers/positive-zero-octal.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/config/node_modules/json5/test/parse-cases/numbers/zero-binary-coffeescript.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/config/node_modules/json5/test/parse-cases/numbers/zero-float-leading-decimal-point.json5" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/config/node_modules/json5/test/parse-cases/numbers/zero-float-trailing-decimal-point.json5" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/config/node_modules/json5/test/parse-cases/numbers/zero-float.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/config/node_modules/json5/test/parse-cases/numbers/zero-hexadecimal.json5" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/config/node_modules/json5/test/parse-cases/numbers/zero-integer-with-integer-exponent.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/config/node_modules/json5/test/parse-cases/numbers/zero-integer.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/config/node_modules/json5/test/parse-cases/numbers/zero-octal-coffeescript.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/config/node_modules/json5/test/parse-cases/numbers/zero-octal.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/config/node_modules/json5/test/parse-cases/objects/duplicate-keys.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/config/node_modules/json5/test/parse-cases/objects/empty-object.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/config/node_modules/json5/test/parse-cases/objects/illegal-unquoted-key-number.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/config/node_modules/json5/test/parse-cases/objects/illegal-unquoted-key-symbol.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/config/node_modules/json5/test/parse-cases/objects/leading-comma-object.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/config/node_modules/json5/test/parse-cases/objects/lone-trailing-comma-object.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/config/node_modules/json5/test/parse-cases/objects/no-comma-object.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/config/node_modules/json5/test/parse-cases/objects/reserved-unquoted-key.json5" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/config/node_modules/json5/test/parse-cases/objects/single-quoted-key.json5" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/config/node_modules/json5/test/parse-cases/objects/trailing-comma-object.json5" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/config/node_modules/json5/test/parse-cases/objects/unquoted-keys.json5" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/config/node_modules/json5/test/parse-cases/strings/escaped-single-quoted-string.json5" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/config/node_modules/json5/test/parse-cases/strings/multi-line-string.json5" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/config/node_modules/json5/test/parse-cases/strings/single-quoted-string.json5" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/config/node_modules/json5/test/parse-cases/strings/unescaped-multi-line-string.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/config/node_modules/json5/test/parse-cases/todo/unicode-escaped-unquoted-key.json5" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/config/node_modules/json5/test/parse-cases/todo/unicode-unquoted-key.json5" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/config/node_modules/json5/test/parse.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/config/node_modules/json5/test/readme.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/config/node_modules/json5/test/require.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/config/node_modules/json5/test/stringify.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/config/package.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/config/raw.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/config/tools/contributors.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/config/tools/gen-docs.sh" />
     </list>
     <ignored path="graduation-alfred-jade-blog.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -324,7 +475,7 @@
         <entry file="file://$PROJECT_DIR$/app.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="220">
-              <caret line="44" column="19" lean-forward="true" selection-start-line="44" selection-start-column="19" selection-end-line="44" selection-end-column="19" />
+              <caret line="44" column="13" lean-forward="true" selection-start-line="44" selection-start-column="13" selection-end-line="44" selection-end-column="13" />
               <folding />
             </state>
           </provider>
@@ -942,14 +1093,7 @@
       <workItem from="1490667109959" duration="14472000" />
       <workItem from="1490710107579" duration="3068000" />
       <workItem from="1490753097718" duration="2661000" />
-      <workItem from="1490762421529" duration="4484000" />
-    </task>
-    <task id="LOCAL-00044" summary="转发微博">
-      <created>1489119625952</created>
-      <option name="number" value="00044" />
-      <option name="presentableId" value="LOCAL-00044" />
-      <option name="project" value="LOCAL" />
-      <updated>1489119625952</updated>
+      <workItem from="1490762421529" duration="4542000" />
     </task>
     <task id="LOCAL-00045" summary="datatables副本">
       <created>1489214079367</created>
@@ -1287,11 +1431,18 @@
       <option name="project" value="LOCAL" />
       <updated>1490715183750</updated>
     </task>
-    <option name="localTasksCounter" value="93" />
+    <task id="LOCAL-00093" summary="修改服务器地址、文件上传地址">
+      <created>1490767010358</created>
+      <option name="number" value="00093" />
+      <option name="presentableId" value="LOCAL-00093" />
+      <option name="project" value="LOCAL" />
+      <updated>1490767010358</updated>
+    </task>
+    <option name="localTasksCounter" value="94" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="590904000" />
+    <option name="totallyTimeSpent" value="590962000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1381,7 +1532,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="上传头像" />
     <MESSAGE value="文件上传中间件multer" />
     <MESSAGE value="调整图片上传后显示位置" />
     <MESSAGE value="修复 个人中心-微博列表：删除按钮的显示问题&#10;给上传头像逻辑添加注释" />
@@ -1406,7 +1556,8 @@
     <MESSAGE value="使用本地地址" />
     <MESSAGE value="用bootstrap列表组显示微博条目" />
     <MESSAGE value="导航条、登录注册界面" />
-    <option name="LAST_COMMIT_MESSAGE" value="导航条、登录注册界面" />
+    <MESSAGE value="修改服务器地址、文件上传地址" />
+    <option name="LAST_COMMIT_MESSAGE" value="修改服务器地址、文件上传地址" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -2054,7 +2205,7 @@
     <entry file="file://$PROJECT_DIR$/app.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="220">
-          <caret line="44" column="19" lean-forward="true" selection-start-line="44" selection-start-column="19" selection-end-line="44" selection-end-column="19" />
+          <caret line="44" column="13" lean-forward="true" selection-start-line="44" selection-start-column="13" selection-end-line="44" selection-end-column="13" />
           <folding />
         </state>
       </provider>
