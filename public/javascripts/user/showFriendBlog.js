@@ -74,9 +74,9 @@ $.ajax({
                                     '<h4 class="heading"><a href="#" name="others">'+ author +'</a></h4>' +
                                     '<small>'+ createTime +'</small>' +
                                     '<h4>'+
-                                    '<a href="/toDetailBlogPage?title='+title+'&author='+author+'">'+
+                                    '<a href="/toDetailBlogPage?title='+title+'&author='+author+'">【'+
                                     title +
-                                    '</a>'+
+                                    '】</a>'+
                                     content +
                                     relayHtml +
                                     '</h4>'+

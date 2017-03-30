@@ -6,7 +6,10 @@
   <component name="ChangeListManager">
     <list default="true" id="f8ee0978-48cb-4707-befb-e4ce0a99b44e" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/config.js" afterPath="$PROJECT_DIR$/config/config.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/javascripts/user/friend.js" afterPath="$PROJECT_DIR$/public/javascripts/user/friend.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/javascripts/user/myBlog.js" afterPath="$PROJECT_DIR$/public/javascripts/user/myBlog.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/javascripts/user/showFriendBlog.js" afterPath="$PROJECT_DIR$/public/javascripts/user/showFriendBlog.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/routes/controllers/weibo_controller.js" afterPath="$PROJECT_DIR$/routes/controllers/weibo_controller.js" />
     </list>
     <ignored path="graduation-alfred-jade-blog.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -29,23 +32,15 @@
     <favorites_list name="graduation-alfred-jade-blog" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="blogList.jade" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/views/weibo/blogList.jade">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="myBlog.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/public/javascripts/user/myBlog.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="181">
-              <caret line="10" column="0" lean-forward="true" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="config.js" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/config/config.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="160">
-              <caret line="8" column="24" lean-forward="true" selection-start-line="8" selection-start-column="24" selection-end-line="8" selection-end-column="24" />
-              <folding />
+            <state relative-caret-position="280">
+              <caret line="65" column="38" lean-forward="false" selection-start-line="65" selection-start-column="38" selection-end-line="65" selection-end-column="38" />
+              <folding>
+                <element signature="n#!!doc" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -130,18 +125,14 @@
         <option value="$PROJECT_DIR$/models/blog.js" />
         <option value="$PROJECT_DIR$/models/user.js" />
         <option value="$PROJECT_DIR$/public/javascripts/user/showFriends.js" />
-        <option value="$PROJECT_DIR$/public/javascripts/user/friend.js" />
         <option value="$PROJECT_DIR$/public/javascripts/user/showCustomerImage.js" />
         <option value="$PROJECT_DIR$/views/commons/bottom.jade" />
         <option value="$PROJECT_DIR$/public/javascripts/user/upload.js" />
         <option value="$PROJECT_DIR$/public/javascripts/backend/user/userManage.js" />
         <option value="$PROJECT_DIR$/public/javascripts/backend/blog/blogManage.js" />
         <option value="$PROJECT_DIR$/public/javascripts/blog/writeValidation.js" />
-        <option value="$PROJECT_DIR$/routes/controllers/weibo_controller.js" />
         <option value="$PROJECT_DIR$/public/stylesheets/commons/custom.min.css" />
-        <option value="$PROJECT_DIR$/public/javascripts/user/myBlog.js" />
         <option value="$PROJECT_DIR$/views/user/profile.jade" />
-        <option value="$PROJECT_DIR$/public/javascripts/user/showFriendBlog.js" />
         <option value="$PROJECT_DIR$/views/user/login.jade" />
         <option value="$PROJECT_DIR$/public/javascripts/user/login_form.js" />
         <option value="$PROJECT_DIR$/public/javascripts/user/register_form.js" />
@@ -167,6 +158,10 @@
         <option value="$PROJECT_DIR$/views/backend/commons/layout.jade" />
         <option value="$PROJECT_DIR$/views/weibo/blogList.jade" />
         <option value="$PROJECT_DIR$/config/config.js" />
+        <option value="$PROJECT_DIR$/public/javascripts/user/showFriendBlog.js" />
+        <option value="$PROJECT_DIR$/public/javascripts/user/friend.js" />
+        <option value="$PROJECT_DIR$/routes/controllers/weibo_controller.js" />
+        <option value="$PROJECT_DIR$/public/javascripts/user/myBlog.js" />
       </list>
     </option>
   </component>
@@ -264,7 +259,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -487,7 +482,7 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -497,7 +492,7 @@
     <property name="HbShouldOpenHtmlAsHb" value="" />
     <property name="js-jscs-nodeInterpreter" value="H:\nodejs\node.exe" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../jsproject" />
-    <property name="settings.editor.selected.configurable" value="preferences.mongoOptions" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
     <property name="SearchEverywhereHistoryKey" value="cc&#9;FILE&#9;file://H:/ws/node_instance/graduation-alfred-jade-blog/node_modules/gentelella/build/css/custom.min.css&#10;parsley.min.js&#9;FILE&#9;file://H:/ws/node_instance/graduation-alfred-jade-blog/node_modules/gentelella/vendors/parsleyjs/dist/parsley.min.js" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="js.eslint.eslintPackage" value="" />
@@ -664,14 +659,8 @@
       <workItem from="1490762421529" duration="16538000" />
       <workItem from="1490802164962" duration="298000" />
       <workItem from="1490838302087" duration="760000" />
-      <workItem from="1490847127360" duration="711000" />
-    </task>
-    <task id="LOCAL-00052" summary="datatables 显示行的附加信息">
-      <created>1489374190078</created>
-      <option name="number" value="00052" />
-      <option name="presentableId" value="LOCAL-00052" />
-      <option name="project" value="LOCAL" />
-      <updated>1489374190079</updated>
+      <workItem from="1490847127360" duration="2135000" />
+      <workItem from="1490859436155" duration="3034000" />
     </task>
     <task id="LOCAL-00053" summary="微博管理">
       <created>1489379435456</created>
@@ -1009,11 +998,18 @@
       <option name="project" value="LOCAL" />
       <updated>1490847246658</updated>
     </task>
-    <option name="localTasksCounter" value="101" />
+    <task id="LOCAL-00101" summary="update uploadUrl">
+      <created>1490847858994</created>
+      <option name="number" value="00101" />
+      <option name="presentableId" value="LOCAL-00101" />
+      <option name="project" value="LOCAL" />
+      <updated>1490847858994</updated>
+    </task>
+    <option name="localTasksCounter" value="102" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="604727000" />
+    <option name="totallyTimeSpent" value="609185000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1031,6 +1027,7 @@
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.29727685" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295082" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3229508" sideWeight="0.5295008" order="10" side_tool="true" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295082" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.5409836" sideWeight="0.47655067" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980332" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32786885" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -1045,7 +1042,6 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295082" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
@@ -1103,7 +1099,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="登录前后的微博列表、微博详情：跳转到他人主页，显示他人的全部微博" />
     <MESSAGE value="加关注、解除关注" />
     <MESSAGE value="好友列表、好友微博" />
     <MESSAGE value="ajax操作执行错误时的提示" />
@@ -1128,7 +1123,8 @@
     <MESSAGE value="发微博时添加字数限制" />
     <MESSAGE value="添加favicon.ico" />
     <MESSAGE value="测试服务器git" />
-    <option name="LAST_COMMIT_MESSAGE" value="测试服务器git" />
+    <MESSAGE value="update uploadUrl" />
+    <option name="LAST_COMMIT_MESSAGE" value="update uploadUrl" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1177,20 +1173,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/public/javascripts/user/showCustomerImage.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="140">
-          <caret line="7" column="21" lean-forward="true" selection-start-line="7" selection-start-column="21" selection-end-line="7" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backend/routes/controllers/weiboManage_controller.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
-          <caret line="18" column="41" lean-forward="false" selection-start-line="18" selection-start-column="41" selection-end-line="18" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/stylesheets/commons/custom.min.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="184">
@@ -1297,13 +1279,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/javascripts/user/showFriendBlog.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="141">
-          <caret line="36" column="23" lean-forward="true" selection-start-line="36" selection-start-column="23" selection-end-line="36" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/views/commons/top.jade">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -1322,13 +1297,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="280">
           <caret line="14" column="34" lean-forward="true" selection-start-line="14" selection-start-column="34" selection-end-line="14" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/javascripts/blog/detailBlog.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="260">
-          <caret line="210" column="78" lean-forward="true" selection-start-line="210" selection-start-column="78" selection-end-line="210" selection-end-column="78" />
         </state>
       </provider>
     </entry>
@@ -1417,14 +1385,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/routes/controllers/weibo_controller.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="12">
-          <caret line="231" column="23" lean-forward="true" selection-start-line="231" selection-start-column="23" selection-end-line="231" selection-end-column="23" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/javascripts/blog/blogList.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="140">
@@ -1432,10 +1392,214 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/routes/controllers/user_controller.js">
+    <entry file="file://$PROJECT_DIR$/public/javascripts/blog/writeValidation.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="40">
+          <caret line="4" column="3" lean-forward="true" selection-start-line="4" selection-start-column="3" selection-end-line="4" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/javascripts/blog/writeBlog.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
-          <caret line="11" column="10" lean-forward="true" selection-start-line="11" selection-start-column="10" selection-end-line="11" selection-end-column="10" />
+          <caret line="9" column="0" lean-forward="true" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/weibo/pubBlog.jade">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="87">
+          <caret line="13" column="32" lean-forward="true" selection-start-line="13" selection-start-column="32" selection-end-line="13" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/favicon.ico">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="103">
+          <caret line="61" column="0" lean-forward="false" selection-start-line="61" selection-start-column="0" selection-end-line="61" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="160">
+          <caret line="14" column="6" lean-forward="true" selection-start-line="14" selection-start-column="6" selection-end-line="14" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/backend/commons/layout.jade">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="15" column="19" lean-forward="true" selection-start-line="15" selection-start-column="19" selection-end-line="15" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/commons/layout.jade">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="11" column="8" lean-forward="false" selection-start-line="11" selection-start-column="8" selection-end-line="12" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.idea/workspace.xml___jb_old___" />
+    <entry file="file://$PROJECT_DIR$/config/config.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="160">
+          <caret line="8" column="22" lean-forward="true" selection-start-line="8" selection-start-column="22" selection-end-line="8" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/weibo/blogList.jade">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="0" lean-forward="true" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/javascripts/user/showFriendBlog.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="341">
+          <caret line="76" column="59" lean-forward="false" selection-start-line="76" selection-start-column="59" selection-end-line="76" selection-end-column="59" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/javascripts/user/friend.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="260">
+          <caret line="91" column="11" lean-forward="true" selection-start-line="91" selection-start-column="11" selection-end-line="91" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/javascripts/blog/pubBlog.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="233">
+          <caret line="71" column="35" lean-forward="false" selection-start-line="71" selection-start-column="35" selection-end-line="71" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/javascripts/blog/detailBlog.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="440">
+          <caret line="213" column="44" lean-forward="true" selection-start-line="213" selection-start-column="44" selection-end-line="213" selection-end-column="44" />
+          <folding>
+            <marker date="1490694610545" expanded="true" signature="4681:4695" ph="..." />
+            <marker date="1490694610545" expanded="true" signature="5375:5399" ph="..." />
+            <marker date="1490694610545" expanded="true" signature="6528:6541" ph="..." />
+            <marker date="1490694610545" expanded="true" signature="11770:11784" ph="..." />
+            <marker date="1490694610545" expanded="true" signature="11862:11876" ph="..." />
+            <marker date="1490694610545" expanded="true" signature="12092:12098" ph=" " />
+            <marker date="1490694610545" expanded="true" signature="12098:12104" ph=" " />
+            <marker date="1490694610545" expanded="true" signature="12104:12110" ph=" " />
+            <marker date="1490694610545" expanded="true" signature="12110:12116" ph=" " />
+            <marker date="1490694610545" expanded="true" signature="12560:12574" ph="..." />
+            <marker date="1490694610545" expanded="true" signature="12652:12666" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/routes/controllers/weibo_controller.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="233">
+          <caret line="413" column="7" lean-forward="true" selection-start-line="413" selection-start-column="7" selection-end-line="413" selection-end-column="7" />
+          <folding>
+            <element signature="e#0#39#0" expanded="false" />
+            <element signature="e#183#202#0" expanded="false" />
+            <element signature="e#243#367#0" expanded="false" />
+            <element signature="e#370#384#0" expanded="false" />
+            <element signature="e#419#2260#0" expanded="false" />
+            <element signature="e#426#449#0" expanded="false" />
+            <element signature="e#574#601#0" expanded="false" />
+            <element signature="e#645#757#0" expanded="false" />
+            <element signature="e#813#925#0" expanded="false" />
+            <element signature="e#972#1084#0" expanded="false" />
+            <element signature="e#1089#2257#0" expanded="false" />
+            <element signature="e#1099#1140#0" expanded="false" />
+            <element signature="e#1237#2246#0" expanded="false" />
+            <element signature="e#1258#1408#0" expanded="false" />
+            <element signature="e#1460#1499#0" expanded="false" />
+            <element signature="e#1608#1793#0" expanded="false" />
+            <element signature="e#1840#2233#0" expanded="false" />
+            <element signature="e#1858#1907#0" expanded="false" />
+            <element signature="e#1931#2047#0" expanded="false" />
+            <element signature="e#2064#2135#0" expanded="false" />
+            <element signature="e#2263#2283#0" expanded="false" />
+            <element signature="e#2329#2389#0" expanded="false" />
+            <element signature="e#2392#2409#0" expanded="false" />
+            <element signature="e#2453#2761#0" expanded="false" />
+            <element signature="e#2460#2484#0" expanded="false" />
+            <element signature="e#2529#2729#0" expanded="false" />
+            <element signature="e#2546#2628#0" expanded="false" />
+            <element signature="e#2638#2669#0" expanded="false" />
+            <element signature="e#2764#2784#0" expanded="false" />
+            <element signature="e#3063#3080#0" expanded="false" />
+            <element signature="e#3126#3582#0" expanded="false" />
+            <element signature="e#3133#3158#0" expanded="false" />
+            <element signature="e#3244#3298#0" expanded="false" />
+            <element signature="e#3306#3330#0" expanded="false" />
+            <element signature="e#3378#3578#0" expanded="false" />
+            <element signature="e#3395#3477#0" expanded="false" />
+            <element signature="e#3487#3518#0" expanded="false" />
+            <element signature="e#3585#3605#0" expanded="false" />
+            <element signature="e#3654#3712#0" expanded="false" />
+            <element signature="e#3715#3730#0" expanded="false" />
+            <element signature="e#3773#5720#0" expanded="false" />
+            <element signature="e#3779#3802#0" expanded="false" />
+            <element signature="e#4086#4111#0" expanded="false" />
+            <element signature="e#4251#4348#0" expanded="false" />
+            <element signature="e#4353#4386#0" expanded="false" />
+            <element signature="e#4485#5713#0" expanded="false" />
+            <element signature="e#4502#4636#0" expanded="false" />
+            <element signature="e#4688#4759#0" expanded="false" />
+            <element signature="e#4780#4846#0" expanded="false" />
+            <element signature="e#4871#5043#0" expanded="false" />
+            <element signature="e#5069#5217#0" expanded="false" />
+            <element signature="e#5083#5117#0" expanded="false" />
+            <element signature="e#5228#5286#0" expanded="false" />
+            <element signature="e#5350#5528#0" expanded="false" />
+            <element signature="e#5371#5455#0" expanded="false" />
+            <element signature="e#5540#5571#0" expanded="false" />
+            <element signature="e#5723#5740#0" expanded="false" />
+            <element signature="e#5782#7103#0" expanded="false" />
+            <element signature="e#5788#5811#0" expanded="false" />
+            <element signature="e#6157#6182#0" expanded="false" />
+            <element signature="e#6306#6421#0" expanded="false" />
+            <element signature="e#6427#6486#0" expanded="false" />
+            <element signature="e#6503#6557#0" expanded="false" />
+            <element signature="e#6578#6693#0" expanded="false" />
+            <element signature="e#6715#6761#0" expanded="false" />
+            <element signature="e#6768#6814#0" expanded="false" />
+            <element signature="e#6874#7000#0" expanded="false" />
+            <element signature="e#6891#6963#0" expanded="false" />
+            <element signature="e#7008#7031#0" expanded="false" />
+            <element signature="e#7106#7123#0" expanded="false" />
+            <element signature="e#7162#7923#0" expanded="false" />
+            <element signature="e#7271#7390#0" expanded="false" />
+            <element signature="e#7427#7546#0" expanded="false" />
+            <element signature="e#7563#7615#0" expanded="false" />
+            <element signature="e#7666#7918#0" expanded="false" />
+            <element signature="e#7683#7765#0" expanded="false" />
+            <element signature="e#7775#7822#0" expanded="false" />
+            <element signature="e#7926#7946#0" expanded="false" />
+            <element signature="e#7995#7999#0" expanded="false" />
+            <element signature="e#8002#8017#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/routes/controllers/user_controller.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="581">
+          <caret line="716" column="20" lean-forward="true" selection-start-line="716" selection-start-column="20" selection-end-line="716" selection-end-column="20" />
           <folding>
             <element signature="e#0#39#0" expanded="false" />
             <element signature="e#225#246#0" expanded="false" />
@@ -1511,21 +1675,6 @@
             <element signature="e#7282#7297#0" expanded="false" />
             <element signature="e#7341#7458#0" expanded="false" />
             <element signature="e#7461#7477#0" expanded="false" />
-            <element signature="e#7515#8629#0" expanded="false" />
-            <element signature="e#7521#7544#0" expanded="false" />
-            <element signature="e#7634#7659#0" expanded="false" />
-            <element signature="e#7703#7802#0" expanded="false" />
-            <element signature="e#7831#7946#0" expanded="false" />
-            <element signature="e#7951#8624#0" expanded="false" />
-            <element signature="e#7961#7992#0" expanded="false" />
-            <element signature="e#8002#8063#0" expanded="false" />
-            <element signature="e#8084#8127#0" expanded="false" />
-            <element signature="e#8150#8192#0" expanded="false" />
-            <element signature="e#8217#8271#0" expanded="false" />
-            <element signature="e#8281#8316#0" expanded="false" />
-            <element signature="e#8380#8556#0" expanded="false" />
-            <element signature="e#8401#8485#0" expanded="false" />
-            <element signature="e#8567#8596#0" expanded="false" />
             <element signature="e#8632#8649#0" expanded="false" />
             <element signature="e#8689#9800#0" expanded="false" />
             <element signature="e#8695#8718#0" expanded="false" />
@@ -1617,7 +1766,6 @@
             <element signature="e#15886#16049#0" expanded="false" />
             <element signature="e#15907#16003#0" expanded="false" />
             <element signature="e#16088#16110#0" expanded="false" />
-            <element signature="e#16154#16211#0" expanded="false" />
             <element signature="e#16214#16232#0" expanded="false" />
             <element signature="e#16285#16349#0" expanded="false" />
             <element signature="e#16352#16370#0" expanded="false" />
@@ -1626,89 +1774,13 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/javascripts/blog/pubBlog.js">
+    <entry file="file://$PROJECT_DIR$/public/javascripts/user/myBlog.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="161">
-          <caret line="70" column="17" lean-forward="false" selection-start-line="70" selection-start-column="17" selection-end-line="70" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/javascripts/blog/writeValidation.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="40">
-          <caret line="4" column="3" lean-forward="true" selection-start-line="4" selection-start-column="3" selection-end-line="4" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/javascripts/blog/writeBlog.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="9" column="0" lean-forward="true" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/weibo/pubBlog.jade">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="87">
-          <caret line="13" column="32" lean-forward="true" selection-start-line="13" selection-start-column="32" selection-end-line="13" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/favicon.ico">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="103">
-          <caret line="61" column="0" lean-forward="false" selection-start-line="61" selection-start-column="0" selection-end-line="61" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="160">
-          <caret line="14" column="6" lean-forward="true" selection-start-line="14" selection-start-column="6" selection-end-line="14" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/backend/commons/layout.jade">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="15" column="19" lean-forward="true" selection-start-line="15" selection-start-column="19" selection-end-line="15" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/commons/layout.jade">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="11" column="8" lean-forward="false" selection-start-line="11" selection-start-column="8" selection-end-line="12" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.idea/workspace.xml___jb_old___">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/weibo/blogList.jade">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="181">
-          <caret line="10" column="0" lean-forward="true" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/config.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="160">
-          <caret line="8" column="24" lean-forward="true" selection-start-line="8" selection-start-column="24" selection-end-line="8" selection-end-column="24" />
-          <folding />
+        <state relative-caret-position="280">
+          <caret line="65" column="38" lean-forward="false" selection-start-line="65" selection-start-column="38" selection-end-line="65" selection-end-column="38" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

@@ -56,6 +56,7 @@ $('#haveFriend').click(function () {
             type: "post",
             success:function(result){
                 console.log('成功添加好友');
+                window.location.reload();
             },
             error: function (XMLHttpRequest, textStatus, errorThrown) {
                 alert("执行加关注操作失败 : XMLHttpRequest.readyState="+ XMLHttpRequest.readyState+ '\n' + textStatus.toString()+ '\n' + errorThrown.toString());
@@ -83,6 +84,7 @@ $('#loseFriend').click(function () {
             type: "post",
             success:function(result){
                 console.log('成功删除好友');
+                window.location.reload();
             },
             error: function (XMLHttpRequest, textStatus, errorThrown) {
                 alert("执行解除关注操作失败 : XMLHttpRequest.readyState="+ XMLHttpRequest.readyState+ '\n' + textStatus.toString()+ '\n' + errorThrown.toString());

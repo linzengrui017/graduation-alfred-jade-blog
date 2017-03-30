@@ -406,7 +406,7 @@ exports.forwardBlog = function (req, res) {
     var content = req.query.blog_content;
     var createTime = sd.format(new Date(), 'YYYY-MM-DD HH:mm:ss');
     var relayTag = true;
-    var title = '转发微博 ';
+    var title = '转发微博';
     // var title = '转发微博:【'+relay_title+'】';
 
     /**

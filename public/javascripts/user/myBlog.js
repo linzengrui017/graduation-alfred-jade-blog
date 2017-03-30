@@ -62,9 +62,9 @@ $.ajax({
                     /**
                      * 删除按钮
                      */
-                    '<ul class="nav navbar-right panel_toolbox">'+
-                        '<li><button type="button" class="btn btn-danger" name="btn_delete"><i class="fa fa-trash"></i></button></li>'+
-                    '</ul>'+
+                    // '<ul class="nav navbar-right panel_toolbox">'+
+                    //     '<li><button type="button" class="btn btn-danger" name="btn_delete"><i class="fa fa-trash"></i></button></li>'+
+                    // '</ul>'+
                     /**
                      * 微博标题、内容等
                      */
@@ -75,9 +75,9 @@ $.ajax({
                                     '<h4 class="heading"><a href="#" name="others">'+ author +'</a></h4>' +
                                     '<small>'+ createTime +'</small>' +
                                     '<h4>'+
-                                    '<a href="/toDetailBlogPage?title='+title+'&author='+author+'">'+
+                                    '<a href="/toDetailBlogPage?title='+title+'&author='+author+'">【'+
                                     title +
-                                    '</a>'+
+                                    '】</a>'+
                                     content +
                                     relayHtml +
                                     '</h4>'+
