@@ -22,6 +22,7 @@ $('#upload').click(function () {
                 $('#result').html("上传失败！");
             }
             console.log('imgUploader upload success');
+            window.location.reload();
         },
         error: function(){
             $("#result").html("与服务器通信发生错误");

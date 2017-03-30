@@ -55,6 +55,13 @@ $.ajax({
                     '</ul>';
             }
 
+            var btnDel_Html = '';
+            if(author == customer){
+                btnDel_Html +=
+                    '<ul class="nav navbar-right panel_toolbox">'+
+                        '<li><button type="button" class="btn btn-danger" name="btn_delete"><i class="fa fa-trash"></i></button></li>'+
+                    '</ul>';
+            }
 
             /**
              * 显示微博内容
@@ -63,6 +70,10 @@ $.ajax({
                 '<div class="panel">' +
                     '<ul class="list-group">' +
                         '<li class="list-group-item list-group-item-success">'+
+                            /**
+                             * 删除按钮
+                             */
+                            btnDel_Html +
                             /**
                              * 微博标题、内容等
                              */
@@ -100,6 +111,37 @@ $.ajax({
             }else {
                 window.location.href = '/others?author='+author;
             }
+        });
+
+        /**
+         * 删除微博功能
+         */
+        $("button[name='btn_delete']").click(function () {
+            /**
+             * 获取数据
+             */
+            var ul = $(this).closest('.list-group');
+            var message_wrapper = ul.find('.message_wrapper').eq(0);
+            var author = message_wrapper.find('h4').eq(0).text();
+            var title_text = message_wrapper.find('h4').eq(1).find('a').eq(0).text();
+            var title = title_text.substring(1, title_text.length - 1);
+            /**
+             * 发起请求
+             */
+            var url = '/delBlog?author='+author+'&title='+title;
+            // alert(url);
+            $.ajax({
+                url: url,
+                type: "get",
+                success:function(result){
+                    alert("成功删除微博");
+                    window.location.reload();
+                },
+                error: function (XMLHttpRequest, textStatus, errorThrown) {
+                    alert("在个人主页的微博列表里执行删除微博的操作失败 : XMLHttpRequest.readyState="+ XMLHttpRequest.readyState+ '\n' + textStatus.toString()+ '\n' + errorThrown.toString());
+                }
+            });
+
         });
 
     },

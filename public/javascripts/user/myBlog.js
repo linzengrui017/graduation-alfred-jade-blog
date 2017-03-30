@@ -62,9 +62,9 @@ $.ajax({
                     /**
                      * 删除按钮
                      */
-                    // '<ul class="nav navbar-right panel_toolbox">'+
-                    //     '<li><button type="button" class="btn btn-danger" name="btn_delete"><i class="fa fa-trash"></i></button></li>'+
-                    // '</ul>'+
+                    '<ul class="nav navbar-right panel_toolbox">'+
+                        '<li><button type="button" class="btn btn-danger" name="btn_delete"><i class="fa fa-trash"></i></button></li>'+
+                    '</ul>'+
                     /**
                      * 微博标题、内容等
                      */
@@ -98,10 +98,11 @@ $.ajax({
             /**
              * 获取数据
              */
-            var dom_panel = $(this).parent().parent().parent();
-            var dom_ul_message = dom_panel.children().eq(1);
-            var title = dom_ul_message.find('li').eq(0).find('a').eq(0).text();
-            var author = dom_ul_message.find('li').eq(0).find('h4').eq(0).text();
+            var panel = $(this).closest('.x_panel');
+            var message_wrapper = panel.find('.message_wrapper').eq(0);
+            var author = message_wrapper.find('h4').eq(0).text();
+            var title_text = message_wrapper.find('h4').eq(1).find('a').eq(0).text();
+            var title = title_text.substring(1, title_text.length - 1);
             /**
              * 发起请求
              */
@@ -112,7 +113,7 @@ $.ajax({
                 type: "get",
                 success:function(result){
                     alert("成功删除微博");
-                    window.location.href='/toAddPage';
+                    window.location.reload();
                 },
                 error: function (XMLHttpRequest, textStatus, errorThrown) {
                     alert("在个人主页的微博列表里执行删除微博的操作失败 : XMLHttpRequest.readyState="+ XMLHttpRequest.readyState+ '\n' + textStatus.toString()+ '\n' + errorThrown.toString());
