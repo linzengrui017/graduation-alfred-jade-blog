@@ -515,3 +515,101 @@ exports.forwardBlog = function (req, res) {
 
 
 };
+
+/**
+ * 点赞
+ */
+exports.like = function (req, res) {
+    var customer = req.session.user.username;
+    /**
+     * 获取微博作者 微博标题
+     */
+    var author = req.query.author;
+    var title = req.query.title;
+    /**
+     * 服务器端校验
+     */
+    if( null == author || '' == author
+        || null == title || '' == title){
+
+        console.log('必传参数不能为空');
+        req.session.error = "必传参数不能为空";
+        return;
+    }
+    /**
+     * 对该微博的 likes 字段进行修改操作
+     */
+    var query = {
+        author : author,
+        title : title
+    };
+
+    var operator = {
+        $inc : { likes : 1 }
+    };
+
+    modelBlog.update(query, operator, function (err, data) {
+        if(err){
+            console.log('添加评论失败：'+ err);
+            Logger.info("customer: %s, 向用户 %s 的微博 %s ,点赞失败：%s", customer, author, title, err);
+            return;
+        }
+        Logger.info("customer: %s, 向用户 %s 的微博 %s ,点赞", customer, author, title);
+    });
+
+    /**
+     * 返回视图
+     */
+    // res.redirect('/toDetailBlogPage?author='+author+'&title='+title);
+    res.end();
+
+};
+
+/**
+ * 取消赞
+ */
+exports.unlike = function (req, res) {
+    var customer = req.session.user.username;
+    /**
+     * 获取微博作者 微博标题
+     */
+    var author = req.query.author;
+    var title = req.query.title;
+    /**
+     * 服务器端校验
+     */
+    if( null == author || '' == author
+        || null == title || '' == title){
+
+        console.log('必传参数不能为空');
+        req.session.error = "必传参数不能为空";
+        return;
+    }
+    /**
+     * 对该微博的 likes 字段进行修改操作
+     */
+    var query = {
+        author : author,
+        title : title
+    };
+
+    var operator = {
+        $inc : { likes : -1 }
+    };
+
+    modelBlog.update(query, operator, function (err, data) {
+        if(err){
+            console.log('添加评论失败：'+ err);
+            Logger.info("customer: %s, 向用户 %s 的微博 %s ,取消赞失败：%s", customer, author, title, err);
+            return;
+        }
+        Logger.info("customer: %s, 向用户 %s 的微博 %s ,取消赞", customer, author, title);
+    });
+
+    /**
+     * 返回视图
+     */
+    // res.redirect('/toDetailBlogPage?author='+author+'&title='+title);
+    res.end();
+
+};

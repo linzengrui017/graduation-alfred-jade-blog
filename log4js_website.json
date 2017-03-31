@@ -1,0 +1,24 @@
+{
+  "appenders":
+  [
+    {
+      "category":"console",
+      "type":"console"
+    },
+    {
+      "category":"normal",
+      "type": "dateFile",
+      "filename": "/var/log/graduation-alfred-jade-log/weibo",
+      "alwaysIncludePattern": true,
+      "pattern": "-yyyy-MM-dd.log",
+      "maxLogSize": 1024,
+      "backups": 30
+    }
+  ],
+  "replaceConsole": true,
+  "levels":
+  {
+    "normal":"ALL",
+    "console":"ALL"
+  }
+}

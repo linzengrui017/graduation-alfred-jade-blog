@@ -71,5 +71,14 @@ router.get('/toForwardBlogPage', weibo.toForwardBlogPage);
  */
 router.get('/forwardBlog', weibo.forwardBlog);
 
+/**
+ * 点赞
+ */
+router.get('/like', weibo.like);
+
+/**
+ * 取消赞
+ */
+router.get('/unlike', weibo.unlike);
 
 module.exports = router;

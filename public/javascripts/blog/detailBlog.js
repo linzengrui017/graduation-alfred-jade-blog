@@ -140,7 +140,7 @@ $(function () {
                             '<a id="headingOne" role="tab" data-toggle="collapse" data-parent="#accordion" href="#collapse'+i+'" aria-expanded="false" aria-controls="collapseOne" class="btn panel-heading collapsed"><i class="fa fa-comment-o"></i></a>' +
                         '</div>' +
                         '<div class="col-md-3 col-sm-3 col-xs-3">' +
-                            '<a name="btn_thumbs" class="btn"><i name="btn_thumbs_1" class="fa fa-thumbs-o-up"></i><i name="btn_thumbs_2" style="display:none;" class="fa fa-thumbs-up"></i></a>' +
+                            '<a name="btn_thumbs" class="btn"><i class="fa fa-thumbs-o-up"></i><i style="display:none;" class="fa fa-thumbs-up"></i></a>' +
                         '</div>' +
                         '<div class="col-md-1 col-sm-1 col-xs-1"></div>' +
                     '</div>' +
@@ -156,6 +156,69 @@ $(function () {
                         '</div>' +
                     '</div>'
                 );
+
+                /**
+                 * 点赞按钮事件
+                 */
+                $('a[name="btn_thumbs"]').click(function () {
+                    /**
+                     * 切换样式
+                     *
+                     * 判断是加一还是减一
+                     */
+                    var thumbs = $(this).find('.fa-thumbs-o-up');
+                    var thumbs2 = $(this).find('.fa-thumbs-up');
+                    var flag = 1;
+
+                    if(thumbs.css('display') == 'none'){
+                        flag = -1;
+                        thumbs.show();
+                        thumbs2.hide();
+                    }else {
+                        flag = 1;
+                        thumbs.hide();
+                        thumbs2.show();
+                    }
+
+
+                    /**
+                     * 得到数据
+                     */
+                    var author = $('a[name="others"]').text();
+                    var title = $('a[name="title"]').text().substring(1, $('a[name="title"]').text().length - 1);
+
+                    /**
+                     * 异步ajax请求
+                     */
+                    if(flag == 1){
+                        var url = '/like?author='+author+'&title='+title;
+                        $.ajax({
+                            url: url,
+                            type: "get",
+                            success:function(result){
+                                console.log("点赞成功");
+                            },
+                            error: function (XMLHttpRequest, textStatus, errorThrown) {
+                                alert("在微博详情页面执行点赞操作失败 : XMLHttpRequest.readyState="+ XMLHttpRequest.readyState+ '\n' + textStatus.toString()+ '\n' + errorThrown.toString());
+                            }
+                        });
+                    }else {
+                        var url = '/unlike?author='+author+'&title='+title;
+                        $.ajax({
+                            url: url,
+                            type: "get",
+                            success:function(result){
+                                console.log("取消赞成功");
+                            },
+                            error: function (XMLHttpRequest, textStatus, errorThrown) {
+                                alert("在微博详情页面执行取消赞操作失败 : XMLHttpRequest.readyState="+ XMLHttpRequest.readyState+ '\n' + textStatus.toString()+ '\n' + errorThrown.toString());
+                            }
+                        });
+                    }
+
+
+
+                });
 
                 /**
                  * 转发按钮事件
