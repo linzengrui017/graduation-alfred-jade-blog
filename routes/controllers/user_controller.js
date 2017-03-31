@@ -6,6 +6,12 @@ var modelBlog = require('../../models/blog');
 
 var modelUser = require('../../models/user');
 
+/**
+ * 使用log4js
+ * @type {Logger}
+ */
+var Logger = require("../Logger.js").getLogger();
+
 //使用md5加密
 var crypto=require("crypto");
 
@@ -23,11 +29,12 @@ exports.user = function (req, res) {
     };
     modelUser.findOne(query, function (err, data) {
         if(err){
-            console.log("查询用户失败："+ err);
             req.session.error = "查询用户失败";
+            Logger.info("customer: %s, 查询用户失败：%s", customer, err);
             res.redirect('/toAddPage');
         }
         var imageUrl = data.imageUrl;
+        Logger.info("customer: %s, 跳转到用户的个人主页", customer);
         res.render('user/profile', { title: 'Profile', customer: customer, imageUrl:imageUrl });
     });
 
@@ -40,6 +47,7 @@ exports.user_update_password = function (req, res) {
     /**
      * 服务器端校验
      */
+    var customer = req.session.user.username;
     var username = req.body.username;
     var pwd = req.body.pwd;
     var pwd2 = req.body.pwd2;
@@ -71,10 +79,12 @@ exports.user_update_password = function (req, res) {
             if(err){
                 console.log("修改用户密码失败："+ err);
                 req.session.error = "修改用户密码失败";
+                Logger.info("customer: %s, 修改用户密码失败：%s", username, err);
                 res.redirect("/profile");
             }
             console.log("修改用户密码成功");
             req.session.success = '修改用户密码成功';
+            Logger.info("customer: %s, 修改用户密码成功", username);
             /**
              * 返回视图
              */
@@ -87,6 +97,7 @@ exports.user_update_password = function (req, res) {
  * 跳转到他人主页
  */
 exports.others = function (req, res) {
+    var customer = req.session.user.username;
     var author = req.query.author;
     var query = {
         username : author
@@ -95,9 +106,11 @@ exports.others = function (req, res) {
         if(err){
             console.log("查询用户失败："+ err);
             req.session.error = "查询用户失败";
+            Logger.info("customer: %s, 查看 %s 的主页, 查询用户失败：%s", customer, author, err);
             res.redirect('/toAddPage');
         }
         var imageUrl = data.imageUrl;
+        Logger.info("customer: %s, 查看 %s 的主页", customer, author);
         res.render('user/others', { title: 'others', author: author, imageUrl:imageUrl });
     });
 
@@ -144,11 +157,13 @@ exports.reg = function (req, res, next) {
             if(err){
                 console.log("查询用户失败："+ err);
                 req.session.error = "查询用户失败";
+                Logger.info("注册功能，查询用户失败：%s", err);
                 res.redirect("/toRegister_form");
             }
             if(data){
                 console.log("该用户已被注册");
                 req.session.error = "该用户已被注册";
+                Logger.info("该用户 %s 已被注册", username);
                 res.redirect("/toRegister_form");
             }else {
                 /**
@@ -177,7 +192,7 @@ exports.reg = function (req, res, next) {
                         res.redirect("/toRegister_form");
                     }
 
-
+                    Logger.info("用户 %s 注册成功", username);
                     console.log("注册成功");
 
                     /**
@@ -245,11 +260,13 @@ exports.login = function (req, res) {
             if(err){
                 console.log("查询用户名失败："+ err);
                 req.session.error = "查询用户名失败";
+                Logger.info("登录功能, 查询用户失败：%s", err);
                 res.redirect("/toLogin_form");
             }
             if(!data){
                 console.log('用户不存在');
                 req.session.error = "用户不存在";
+                Logger.info("登录功能, 用户 %s 不存在", username);
                 res.redirect("/toLogin_form");
             }else {
                 /**
@@ -267,14 +284,18 @@ exports.login = function (req, res) {
                     if(err){
                         console.log("查询用户密码失败："+ err);
                         req.session.error = "查询用户密码失败";
+                        Logger.info("登录功能, 查询用户 %s 的密码失败：%s", username, err);
                         res.redirect("/toLogin_form");
                     }
                     if(!data){
                         console.log("密码不正确");
                         req.session.error = "密码不正确";
+                        Logger.info("登录功能, 用户 %s 的密码不正确", username);
                         res.redirect("/toLogin_form");
                     }else {
                         console.log("登录成功");
+
+                        Logger.info("用户 %s 登录成功", username);
                         /**
                          * 登录成功
                          * @type {string}
@@ -300,6 +321,9 @@ exports.login = function (req, res) {
  * 注销功能
  */
 exports.logout = function (req, res, next) {
+    var customer = req.session.user.username;
+    Logger.info("customer: %s, 退出系统", customer);
+
     req.session.user = null;
     res.locals.user = null;
     res.render('weibo/blogList', { title: 'blogList' });
@@ -320,10 +344,12 @@ exports.follow = function (req, res) {
     if( null == username || '' == username){
         console.log('必传参数不能为空');
         req.session.error = "必传参数不能为空";
+        Logger.info("customer: %s, 加关注用户 %s , 必传参数不能为空", customer, username);
         res.end();
     }else if(customer == username){
         console.log('逻辑错误：本人不应该在好友列表里');
         req.session.error = "逻辑错误：本人不应该在好友列表里";
+        Logger.info("customer: %s, 加关注用户 %s , 逻辑错误：本人不应该在好友列表里", customer, username);
         res.end();
     }else {
         /**
@@ -349,8 +375,10 @@ exports.follow = function (req, res) {
         modelUser.update(query, operator, function (err, data) {
             if(err){
                 console.log('添加好友失败：'+ err);
+                Logger.info("customer: %s, 将用户 %s 添加为好友的操作失败：%s", customer, username, err);
                 return;
             }
+            Logger.info("customer: %s, 成功将用户 %s 添加为好友", customer, username);
             console.log('添加好友成功');
             // res.end();
         });
@@ -382,14 +410,16 @@ exports.unfollow = function (req, res) {
     if( null == username || '' == username){
         console.log('必传参数不能为空');
         req.session.error = "必传参数不能为空";
+        Logger.info("customer: %s, 加关注用户 %s , 必传参数不能为空", customer, username);
         res.end();
     }else if(customer == username){
         console.log('逻辑错误：本人不应该在好友列表里');
         req.session.error = "逻辑错误：本人不应该在好友列表里";
+        Logger.info("customer: %s, 加关注用户 %s , 逻辑错误：本人不应该在好友列表里", customer, username);
         res.end();
     }else {
         /**
-         * 添加好友
+         * 删除好友
          */
 
         /**
@@ -411,9 +441,11 @@ exports.unfollow = function (req, res) {
         modelUser.update(query, operator, function (err, data) {
             if(err){
                 console.log('删除好友失败：'+ err);
+                Logger.info("customer: %s, 删除好友 %s 的操作失败：%s", customer, username, err);
                 return;
             }
             console.log('删除好友成功');
+            Logger.info("customer: %s, 成功删除好友 %s ", customer, username);
             // res.end();
         });
         /**
@@ -440,9 +472,11 @@ exports.myBlogList = function (req, res) {
     modelBlog.find(query, function (err, data) {
         if(err){
             console.log("查询微博失败:"+err);
+            Logger.info("customer: %s, 查看个人微博失败：%s", customer, err);
             res.redirect("/");
         }
 
+        Logger.info("customer: %s, 查看个人微博", customer);
         /**
          * 返回数据
          */
@@ -473,6 +507,9 @@ exports.uploadUserImage = function (req, res) {
      */
     var customer = req.session.user.username;
     var image_url = '/images/upload/' + req.file.originalname;
+
+    Logger.info("customer: %s, 准备修改个人头像, 头像相对地址： %s ", customer, image_url);
+
     var query = {
         username : customer
     };
@@ -483,9 +520,11 @@ exports.uploadUserImage = function (req, res) {
         if(err){
             console.log("修改userSchema的图片地址失败："+ err);
             req.session.error = "修改userSchema的图片地址失败";
+            Logger.info("customer: %s, 修改userSchema的图片地址失败：%s", customer, err);
             res.redirect("/profile");
         }
         console.log("修改userSchema的图片地址成功");
+        Logger.info("customer: %s, 修改userSchema的图片地址成功", customer);
         req.session.success = '修改userSchema的图片地址成功';
     });
 
@@ -501,10 +540,12 @@ exports.uploadUserImage = function (req, res) {
     modelBlog.update(blogQuery, blogOperator, {multi: true}, function (err, data) {
         if(err){
             console.log("修改blogSchema的图片地址失败："+ err);
+            Logger.info("customer: %s, 修改blogSchema的图片地址失败：%s", customer, err);
             req.session.error = "修改blogSchema的图片地址失败";
             res.redirect("/profile");
         }
         console.log("修改blogSchema的图片地址成功");
+        Logger.info("customer: %s, 修改blogSchema的图片地址成功", customer);
         req.session.success = '修改blogSchema的图片地址成功';
     });
 
@@ -520,10 +561,12 @@ exports.uploadUserImage = function (req, res) {
     modelBlog.update(relayQuery, relayOperator, {multi: true}, function (err, data) {
         if(err){
             console.log("修改relaySchema的图片地址失败："+ err);
+            Logger.info("customer: %s, 修改relaySchema的图片地址失败：%s", customer, err);
             req.session.error = "修改relaySchema的图片地址失败";
             res.redirect("/profile");
         }
         console.log("修改relaySchema的图片地址成功");
+        Logger.info("customer: %s, 修改relaySchema的图片地址成功", customer);
         req.session.success = '修改relaySchema的图片地址成功';
     });
 
@@ -540,11 +583,15 @@ exports.uploadUserImage = function (req, res) {
         if(err){
             console.log("修改commentSchema的图片地址失败："+ err);
             req.session.error = "修改commentSchema的图片地址失败";
+            Logger.info("customer: %s, 修改commentSchema的图片地址失败：%s", customer, err);
             res.redirect("/profile");
         }
         console.log("修改commentSchema的图片地址成功");
+        Logger.info("customer: %s, 修改commentSchema的图片地址成功", customer, err);
         req.session.success = '修改commentSchema的图片地址成功';
     });
+
+    Logger.info("customer: %s, 成功上传头像", customer);
 
     /**
      * 返回数据
@@ -572,12 +619,15 @@ exports.showCustomerImage = function (req, res) {
             if(err){
                 console.log("查询用户失败："+ err);
                 req.session.error = "查询用户失败";
+                Logger.info("customer: %s, 显示界面右上角的头像时, 查询用户失败：%s", customer, err);
                 res.redirect('/toAddPage');
             }
+            Logger.info("customer: %s, 显示界面右上角的头像", customer);
             res.json({data: data});
             // return data;
         });
     }else {
+        Logger.info("customer: %s, 显示界面右上角的头像, 用户还未上传头像", user);
         res.json({data: {'imageUrl': ''}});
     }
 
@@ -589,6 +639,7 @@ exports.showCustomerImage = function (req, res) {
  * 查询他人全部微博功能
  */
 exports.otherBlogList = function (req, res) {
+    var customer = req.session.user.username;
     var author = req.query.author;
     var query = {
         author : author
@@ -599,8 +650,11 @@ exports.otherBlogList = function (req, res) {
     modelBlog.find(query, function (err, data) {
         if(err){
             console.log("查询微博失败:"+err);
+            Logger.info("customer: %s, 查看 %s 的全部微博时, 查询微博失败：%s", customer, author, err);
             res.redirect("/");
         }
+
+        Logger.info("customer: %s, 查看 %s 的全部微博", customer, author);
 
         /**
          * 返回数据
@@ -627,9 +681,10 @@ exports.checkFriends = function (req, res) {
     modelUser.find(query, function (err, data) {
         if(err){
             console.log("查询好友列表失败:"+err);
+            Logger.info("customer: %s, 在好友列表中查询 %s 时, 查询用户失败：%s", customer, username, err);
             res.redirect("/");
         }
-
+        Logger.info("customer: %s, 在好友列表中查询 %s ", customer, username);
         /**
          * 返回数据
          */
@@ -654,11 +709,12 @@ exports.queryFriends = function (req, res) {
     modelUser.find(query, function (err, data) {
         if(err){
             console.log("查询好友列表失败:"+err);
+            Logger.info("customer: %s, 查询好友列表失败：%s", customer, err);
             res.redirect("/");
         }
 
         var friends = data[0].friends;
-
+        Logger.info("customer: %s, 查询好友列表", customer);
         /**
          * 返回数据
          */
@@ -682,6 +738,7 @@ exports.queryFriendsBlogList = function (req, res) {
     modelUser.find(query, function (err, data) {
         if(err){
             console.log("查询好友列表失败:"+err);
+            Logger.info("customer: %s, 查询好友微博功能，查询好友列表失败：%s", customer, err);
             res.redirect("/");
         }
 
@@ -702,9 +759,11 @@ exports.queryFriendsBlogList = function (req, res) {
         };
         modelBlog.find(qry, function (err, data) {
             if(err){
-                console.log("查询好友列表失败:"+err);
+                console.log("查询好友微博失败:"+err);
+                Logger.info("customer: %s, 查询好友微博功能，查询好友微博失败：%s", customer, err);
                 res.redirect("/");
             }
+            Logger.info("customer: %s, 查询好友微博", customer);
             res.json({data: data});
         }).sort({createTime: -1});
 
@@ -715,6 +774,8 @@ exports.queryFriendsBlogList = function (req, res) {
  * 跳转到 我的好友 页面
  */
 exports.toFriendPage = function (req, res) {
+    var customer = req.session.user.username;
+    Logger.info("customer: %s, 查看 我的好友", customer);
     res.render('user/friends', { title: 'friends' });
 };
 

@@ -10,10 +10,17 @@ var modelUser = require('../../models/user');
 var sd = require('silly-datetime');
 
 /**
+ * 使用log4js
+ * @type {Logger}
+ */
+var Logger = require("../Logger.js").getLogger();
+
+/**
  * 跳转到写微博页面
  */
 exports.toAddPage = function (req, res) {
     var customer = req.session.user.username;
+    Logger.info("customer: %s, 进入写微博页面", customer);
     res.render('weibo/pubBlog', { title: 'pubBlog', customer: customer });
 };
 
@@ -52,6 +59,7 @@ exports.add = function (req, res) {
             if(err){
                 console.log("查询用户失败："+ err);
                 req.session.error = "查询用户失败";
+                Logger.info("customer: %s, 根据用户名得不到头像地址：%s", customer, err);
                 res.redirect('/toAddPage');
             }
             imageUrl = data.imageUrl;
@@ -76,6 +84,7 @@ exports.add = function (req, res) {
                  */
                 if(err){
                     console.log("发微博操作异常:"+err);
+                    Logger.info("customer: %s, 发微博操作异常：%s", customer, err);
                     res.redirect("/toAddPage");
                 }
                 /**
@@ -83,6 +92,7 @@ exports.add = function (req, res) {
                  * 返回视图
                  */
                 console.log("成功发布微博");
+                Logger.info("customer: %s, 发布微博, 标题：%s", customer, title);
 
                 res.redirect('/toAddPage');
             });
@@ -113,9 +123,10 @@ exports.showBlogList = function (req, res) {
     modelBlog.find({}, function (err, data) {
         if(err){
             console.log("查询微博失败:"+err);
+            Logger.info("显示登录前的微博列表失败：%s", err);
             res.redirect("/");
         }
-
+        Logger.info("显示登录前的微博列表");
         /**
          * 返回数据
          */
@@ -144,7 +155,7 @@ exports.toDetailBlogPage = function (req, res) {
  * 显示微博详情
  */
 exports.showDetailBlog = function (req, res) {
-
+    var customer = req.session.user.username;
     /**
      * 获取查询条件
      */
@@ -163,9 +174,10 @@ exports.showDetailBlog = function (req, res) {
     modelBlog.find(query, function (err, data) {
         if(err){
             console.log("查询微博失败:"+err);
+            Logger.info("customer: %s, 查看 %s 的微博, 标题：%s , 失败：%s", customer, author, title, err);
             res.redirect("/");
         }
-
+        Logger.info("customer: %s, 查看 %s 的微博, 标题：%s", customer, author, title);
         /**
          * 返回数据
          */
@@ -216,6 +228,7 @@ exports.commentBlog = function (req, res) {
         if(err){
             console.log("查询用户失败："+ err);
             req.session.error = "查询用户失败";
+            Logger.info("customer: %s, 评论微博功能, 根据用户名 %s 得到头像地址失败：%s", customer, customer, err);
             res.redirect('/toAddPage');
         }
         comment_imageUrl = data.imageUrl;
@@ -249,8 +262,11 @@ exports.commentBlog = function (req, res) {
         modelBlog.update(query, operator, function (err, data) {
             if(err){
                 console.log('添加评论失败：'+ err);
+                Logger.info("customer: %s, 往用户 %s 的微博 %s ,添加评论失败：%s", customer, author, title, err);
                 return;
             }
+
+            Logger.info("customer: %s, 往用户 %s 的微博 %s ,添加评论", customer, author, title);
 
             console.log('添加评论成功');
             // res.end();
@@ -322,9 +338,11 @@ exports.delComment = function (req, res) {
     modelBlog.update(query, operator, function (err, data) {
         if(err){
             console.log('删除评论失败：'+ err);
+            Logger.info("customer: %s, 在用户 %s 的微博 %s ,删除评论失败：%s", customer, author, title, err);
             return;
         }
         console.log('删除评论成功');
+        Logger.info("customer: %s, 在用户 %s 的微博 %s ,删除评论", customer, author, title);
     });
 
     /**
@@ -337,6 +355,7 @@ exports.delComment = function (req, res) {
  * 删除单条微博
  */
 exports.delBlog = function (req, res) {
+    var customer = req.session.user.username;
     var author = req.query.author;
     var title = req.query.title;
 
@@ -359,6 +378,7 @@ exports.delBlog = function (req, res) {
     modelBlog.remove(query, function (err, data) {
         if(err){
             console.log("删除微博失败:"+err);
+            Logger.info("customer: %s, 删除微博, 标题： %s , 失败：%s", customer, title, err);
             res.redirect("/");
         }
 
@@ -367,6 +387,7 @@ exports.delBlog = function (req, res) {
          * 返回视图
          */
         console.log("删除微博成功");
+        Logger.info("customer: %s, 删除微博, 标题： %s ", customer, title);
         // res.redirect("/toAddPage");
         res.end();
 
@@ -473,6 +494,7 @@ exports.forwardBlog = function (req, res) {
                  */
                 if(err){
                     console.log("转发微博操作异常:"+err);
+                    Logger.info("customer: %s, 转发微博操作异常：%s", customer, err);
                     res.redirect("/toAddPage");
                 }
                 /**
@@ -480,6 +502,7 @@ exports.forwardBlog = function (req, res) {
                  * 返回视图
                  */
                 console.log("成功转发微博");
+                Logger.info("customer: %s, 转发 %s 的微博, 标题：%s", customer, relay_author, relay_title);
 
                 res.redirect('/toAddPage');
             });
