@@ -81,4 +81,19 @@ router.get('/like', weibo.like);
  */
 router.get('/unlike', weibo.unlike);
 
+/**
+ * 查询点赞列表
+ */
+router.get('/queryPraiseList', weibo.queryPraiseList);
+
+/**
+ * 将当前用户添加到点赞列表
+ */
+router.get('/addToPraiseList', weibo.addToPraiseList);
+
+/**
+ * 将当前用户从点赞列表中移除
+ */
+router.get('/rmFromPraiseList', weibo.rmFromPraiseList);
+
 module.exports = router;

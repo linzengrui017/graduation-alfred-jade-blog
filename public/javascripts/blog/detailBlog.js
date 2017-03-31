@@ -191,9 +191,29 @@ $(function () {
                      * 异步ajax请求
                      */
                     if(flag == 1){
-                        var url = '/like?author='+author+'&title='+title;
+                        /**
+                         * 将当前用户添加到点赞列表
+                         * @type {string}
+                         */
+                        var addToPraiseList = '/addToPraiseList?author='+author+'&title='+title;
                         $.ajax({
-                            url: url,
+                            url: addToPraiseList,
+                            type: "get",
+                            success:function(result){
+                                console.log("将当前用户添加到点赞列表成功");
+                            },
+                            error: function (XMLHttpRequest, textStatus, errorThrown) {
+                                alert("在微博详情页面执行将当前用户添加到点赞列表的操作失败 : XMLHttpRequest.readyState="+ XMLHttpRequest.readyState+ '\n' + textStatus.toString()+ '\n' + errorThrown.toString());
+                            }
+                        });
+
+                        /**
+                         * 点赞次数加一
+                         * @type {string}
+                         */
+                        var like = '/like?author='+author+'&title='+title;
+                        $.ajax({
+                            url: like,
                             type: "get",
                             success:function(result){
                                 console.log("点赞成功");
@@ -203,6 +223,26 @@ $(function () {
                             }
                         });
                     }else {
+                        /**
+                         * 将当前用户从点赞列表中移除
+                         * @type {string}
+                         */
+                        var rmFromPraiseList = '/rmFromPraiseList?author='+author+'&title='+title;
+                        $.ajax({
+                            url: rmFromPraiseList,
+                            type: "get",
+                            success:function(result){
+                                console.log("向点赞列表移除当前用户成功");
+                            },
+                            error: function (XMLHttpRequest, textStatus, errorThrown) {
+                                alert("在微博详情页面执行向点赞列表移除当前用户的操作失败 : XMLHttpRequest.readyState="+ XMLHttpRequest.readyState+ '\n' + textStatus.toString()+ '\n' + errorThrown.toString());
+                            }
+                        });
+
+                        /**
+                         * 点赞次数减一
+                         * @type {string}
+                         */
                         var url = '/unlike?author='+author+'&title='+title;
                         $.ajax({
                             url: url,

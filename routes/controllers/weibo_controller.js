@@ -613,3 +613,171 @@ exports.unlike = function (req, res) {
     res.end();
 
 };
+
+/**
+ * 查询点赞列表
+ */
+exports.queryPraiseList = function (req, res) {
+    /**
+     * 获取数据
+     */
+    var customer = req.session.user.username;
+    var author = req.query.author;
+    var title = req.query.title;
+
+    /**
+     * 服务器端校验
+     */
+    if( null == author || '' == author
+        || null == title || '' == title){
+        console.log('必传参数不能为空');
+        req.session.error = "必传参数不能为空";
+        return;
+    }
+
+    /**
+     * 准备数据
+     * @type {{author: (*), title}}
+     */
+    var query = {
+        author : author,
+        title : title,
+        praiseList : customer
+    };
+
+    /**
+     * 往该微博里查询点赞列表数据 是否有当前用户
+     */
+    modelBlog.findOne(query, function (err, data) {
+        if(err){
+            console.log('查询点赞列表：'+ err);
+            Logger.info("customer: %s, 往用户 %s 的微博 %s ,查询点赞列表失败：%s", customer, author, title, err);
+            return;
+        }
+
+        Logger.info("customer: %s, 往用户 %s 的微博 %s ,查询点赞列表", customer, author, title);
+
+        console.log('查询点赞列表成功');
+        /**
+         * 返回数据
+         */
+        res.json({data: data});
+        return data;
+    });
+};
+
+/**
+ * 将当前用户添加到点赞列表
+ */
+exports.addToPraiseList = function (req, res) {
+    /**
+     * 获取数据
+     */
+    var customer = req.session.user.username;
+    var author = req.query.author;
+    var title = req.query.title;
+
+    /**
+     * 服务器端校验
+     */
+    if( null == author || '' == author
+        || null == title || '' == title){
+        console.log('必传参数不能为空');
+        req.session.error = "必传参数不能为空";
+        return;
+    }
+
+    /**
+     * 准备数据
+     * @type {{author: (*), title}}
+     */
+    var query = {
+        author : author,
+        title : title
+    };
+
+    var operator = {
+        "$push" : { praiseList : customer }
+    };
+
+    /**
+     * 往该微博里添加点赞列表数据
+     * 执行修改追加操作
+     */
+    modelBlog.update(query, operator, function (err, data) {
+        if(err){
+            console.log('向点赞列表添加当前用户失败：'+ err);
+            Logger.info("customer: %s, 往用户 %s 的微博 %s ,向点赞列表添加当前用户失败：%s", customer, author, title, err);
+            return;
+        }
+
+        Logger.info("customer: %s, 往用户 %s 的微博 %s ,向点赞列表添加当前用户", customer, author, title);
+
+        console.log('向点赞列表添加当前用户成功');
+        // res.end();
+
+    });
+
+    /**
+     * 返回视图
+     */
+    res.end();
+};
+
+/**
+ * 将当前用户从点赞列表中移除
+ */
+exports.rmFromPraiseList = function (req, res) {
+    /**
+     * 获取数据
+     */
+    var customer = req.session.user.username;
+    var author = req.query.author;
+    var title = req.query.title;
+
+    /**
+     * 服务器端校验
+     */
+    if( null == author || '' == author
+        || null == title || '' == title){
+        console.log('必传参数不能为空');
+        req.session.error = "必传参数不能为空";
+        return;
+    }
+
+    /**
+     * 准备数据
+     * @type {{author: (*), title}}
+     */
+    var query = {
+        author : author,
+        title : title
+    };
+
+    var operator = {
+        "$pull" : { praiseList : customer }
+    };
+
+    /**
+     * 往该微博里移除点赞列表中的某个数据
+     * 执行修改操作
+     */
+    modelBlog.update(query, operator, function (err, data) {
+        if(err){
+            console.log('向点赞列表移除当前用户失败：'+ err);
+            Logger.info("customer: %s, 往用户 %s 的微博 %s ,向点赞列表移除当前用户失败：%s", customer, author, title, err);
+            return;
+        }
+
+        Logger.info("customer: %s, 往用户 %s 的微博 %s ,向点赞列表移除当前用户", customer, author, title);
+
+        console.log('向点赞列表移除当前用户成功');
+        // res.end();
+
+    });
+
+    /**
+     * 返回视图
+     */
+    res.end();
+};
