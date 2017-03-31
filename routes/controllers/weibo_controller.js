@@ -28,7 +28,7 @@ exports.toAddPage = function (req, res) {
  * 写微博
  */
 exports.add = function (req, res) {
-
+    var customer = req.session.user.username;
     /**
      * 获取数据
      */

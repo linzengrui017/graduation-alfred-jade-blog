@@ -5,249 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f8ee0978-48cb-4707-befb-e4ce0a99b44e" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/log4js/coverage/lcov-report/sort-arrow-sprite.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/log4js.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/log4js_local.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/log4js/.bob.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/log4js/.jshintrc" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/log4js/.npmignore" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/log4js/.nyc_output/02ca1e00ec81fc17e1351df0472d87b7.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/log4js/.nyc_output/0988c4c397adb1997f90bf142165dce7.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/log4js/.nyc_output/3015553fcfdf0e9916bf3b037b1df73c.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/log4js/.nyc_output/38ce0be7f4779eb5664908ef21b17ca1.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/log4js/.nyc_output/3a093ac247f1d0be45cbdd9876b6e944.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/log4js/.nyc_output/3aab46a07ffafe66099d01e8635ade94.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/log4js/.nyc_output/3c49dddbac81af881cb6eb205d8fcc9d.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/log4js/.nyc_output/40d3ebd99aa6c65a69969834ecfa7a79.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/log4js/.nyc_output/45223ee8e60afe371609e371646b7357.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/log4js/.nyc_output/4e458f2483da43c8f95a56aae9dcc673.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/log4js/.nyc_output/5fb9afbcdc27f7c3c6988bb80ceea0c9.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/log4js/.nyc_output/78e9865c5443a3f710c9c62e304739e1.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/log4js/.nyc_output/9403b016e12a3b293747ff33f7930b9b.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/log4js/.nyc_output/9aa39670c2cb9fae8644314e7fbd3b30.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/log4js/.nyc_output/a973bb3d7ef05123c649d42bfb29a26d.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/log4js/.nyc_output/c1e4884bd268431ff16841e915acf84e.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/log4js/.nyc_output/c75d0c0f70f301257186becdb212faa5.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/log4js/.nyc_output/e15080a8269a078d5f2e39644e615fb3.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/log4js/.nyc_output/e76e9fdb36afb1bd42e0a5ce3ac69787.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/log4js/.nyc_output/f01e1c5c2470f9b9742598279127bb3f.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/log4js/.nyc_output/fbd06bed1e00a6a71d30ccbc518ca25b.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/log4js/.nyc_output/fedad7eb0a87bc8817b02fd4d7a7b248.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/log4js/.travis.yml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/log4js/LICENSE" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/log4js/README.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/log4js/coverage/lcov-report/base.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/log4js/coverage/lcov-report/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/log4js/coverage/lcov-report/lib/appenders/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/log4js/coverage/lcov-report/lib/appenders/multiprocess.js.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/log4js/coverage/lcov-report/lib/appenders/stdout.js.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/log4js/coverage/lcov-report/lib/connect-logger.js.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/log4js/coverage/lcov-report/lib/date_format.js.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/log4js/coverage/lcov-report/lib/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/log4js/coverage/lcov-report/lib/layouts.js.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/log4js/coverage/lcov-report/lib/levels.js.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/log4js/coverage/lcov-report/lib/log4js.js.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/log4js/coverage/lcov-report/lib/logger.js.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/log4js/coverage/lcov-report/prettify.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/log4js/coverage/lcov-report/prettify.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/log4js/coverage/lcov-report/sorter.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/log4js/coverage/lcov.info" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/log4js/examples/example-connect-logger.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/log4js/examples/example-socket.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/log4js/examples/example.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/log4js/examples/flush-on-exit.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/log4js/examples/fromreadme.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/log4js/examples/hipchat-appender.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/log4js/examples/log-rolling.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/log4js/examples/log-to-files.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/log4js/examples/logFaces-appender.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/log4js/examples/loggly-appender.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/log4js/examples/logstashUDP.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/log4js/examples/memory-test.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/log4js/examples/patternLayout-tokens.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/log4js/examples/reload.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/log4js/examples/slack-appender.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/log4js/examples/smtp-appender.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/log4js/lib/appenders/categoryFilter.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/log4js/lib/appenders/clustered.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/log4js/lib/appenders/console.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/log4js/lib/appenders/dateFile.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/log4js/lib/appenders/file.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/log4js/lib/appenders/fileSync.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/log4js/lib/appenders/gelf.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/log4js/lib/appenders/hipchat.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/log4js/lib/appenders/logFacesAppender.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/log4js/lib/appenders/logLevelFilter.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/log4js/lib/appenders/loggly.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/log4js/lib/appenders/logstashUDP.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/log4js/lib/appenders/mailgun.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/log4js/lib/appenders/multiprocess.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/log4js/lib/appenders/slack.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/log4js/lib/appenders/smtp.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/log4js/lib/appenders/stderr.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/log4js/lib/appenders/stdout.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/log4js/lib/connect-logger.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/log4js/lib/date_format.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/log4js/lib/layouts.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/log4js/lib/levels.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/log4js/lib/log4js.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/log4js/lib/logger.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/log4js/node_modules/.bin/semver" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/log4js/node_modules/.bin/semver.cmd" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/log4js/node_modules/semver/LICENSE" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/log4js/node_modules/semver/README.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/log4js/node_modules/semver/bin/semver" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/log4js/node_modules/semver/package.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/log4js/node_modules/semver/range.bnf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/log4js/node_modules/semver/semver.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/log4js/node_modules/streamroller/.jshintrc" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/log4js/node_modules/streamroller/.npmignore" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/log4js/node_modules/streamroller/.travis.yml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/log4js/node_modules/streamroller/LICENSE" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/log4js/node_modules/streamroller/README.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/log4js/node_modules/streamroller/lib/BaseRollingFileStream.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/log4js/node_modules/streamroller/lib/DateRollingFileStream.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/log4js/node_modules/streamroller/lib/RollingFileStream.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/log4js/node_modules/streamroller/lib/index.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/log4js/node_modules/streamroller/node_modules/.bin/mkdirp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/log4js/node_modules/streamroller/node_modules/.bin/mkdirp.cmd" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/log4js/node_modules/streamroller/node_modules/date-format/.npmignore" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/log4js/node_modules/streamroller/node_modules/date-format/LICENSE" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/log4js/node_modules/streamroller/node_modules/date-format/README.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/log4js/node_modules/streamroller/node_modules/date-format/lib/index.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/log4js/node_modules/streamroller/node_modules/date-format/package.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/log4js/node_modules/streamroller/node_modules/date-format/test/date_format-test.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/log4js/node_modules/streamroller/node_modules/debug/Readme.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/log4js/node_modules/streamroller/node_modules/debug/debug.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/log4js/node_modules/streamroller/node_modules/debug/index.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/log4js/node_modules/streamroller/node_modules/debug/lib/debug.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/log4js/node_modules/streamroller/node_modules/debug/package.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/log4js/node_modules/streamroller/node_modules/mkdirp/.travis.yml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/log4js/node_modules/streamroller/node_modules/mkdirp/LICENSE" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/log4js/node_modules/streamroller/node_modules/mkdirp/bin/cmd.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/log4js/node_modules/streamroller/node_modules/mkdirp/bin/usage.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/log4js/node_modules/streamroller/node_modules/mkdirp/examples/pow.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/log4js/node_modules/streamroller/node_modules/mkdirp/index.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/log4js/node_modules/streamroller/node_modules/mkdirp/node_modules/minimist/.travis.yml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/log4js/node_modules/streamroller/node_modules/mkdirp/node_modules/minimist/LICENSE" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/log4js/node_modules/streamroller/node_modules/mkdirp/node_modules/minimist/example/parse.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/log4js/node_modules/streamroller/node_modules/mkdirp/node_modules/minimist/index.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/log4js/node_modules/streamroller/node_modules/mkdirp/node_modules/minimist/package.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/log4js/node_modules/streamroller/node_modules/mkdirp/node_modules/minimist/readme.markdown" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/log4js/node_modules/streamroller/node_modules/mkdirp/node_modules/minimist/test/dash.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/log4js/node_modules/streamroller/node_modules/mkdirp/node_modules/minimist/test/default_bool.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/log4js/node_modules/streamroller/node_modules/mkdirp/node_modules/minimist/test/dotted.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/log4js/node_modules/streamroller/node_modules/mkdirp/node_modules/minimist/test/long.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/log4js/node_modules/streamroller/node_modules/mkdirp/node_modules/minimist/test/parse.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/log4js/node_modules/streamroller/node_modules/mkdirp/node_modules/minimist/test/parse_modified.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/log4js/node_modules/streamroller/node_modules/mkdirp/node_modules/minimist/test/short.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/log4js/node_modules/streamroller/node_modules/mkdirp/node_modules/minimist/test/whitespace.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/log4js/node_modules/streamroller/node_modules/mkdirp/package.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/log4js/node_modules/streamroller/node_modules/mkdirp/readme.markdown" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/log4js/node_modules/streamroller/node_modules/mkdirp/test/chmod.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/log4js/node_modules/streamroller/node_modules/mkdirp/test/clobber.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/log4js/node_modules/streamroller/node_modules/mkdirp/test/mkdirp.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/log4js/node_modules/streamroller/node_modules/mkdirp/test/opts_fs.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/log4js/node_modules/streamroller/node_modules/mkdirp/test/opts_fs_sync.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/log4js/node_modules/streamroller/node_modules/mkdirp/test/perm.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/log4js/node_modules/streamroller/node_modules/mkdirp/test/perm_sync.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/log4js/node_modules/streamroller/node_modules/mkdirp/test/race.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/log4js/node_modules/streamroller/node_modules/mkdirp/test/rel.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/log4js/node_modules/streamroller/node_modules/mkdirp/test/return.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/log4js/node_modules/streamroller/node_modules/mkdirp/test/return_sync.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/log4js/node_modules/streamroller/node_modules/mkdirp/test/root.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/log4js/node_modules/streamroller/node_modules/mkdirp/test/sync.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/log4js/node_modules/streamroller/node_modules/mkdirp/test/umask.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/log4js/node_modules/streamroller/node_modules/mkdirp/test/umask_sync.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/log4js/node_modules/streamroller/node_modules/readable-stream/.npmignore" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/log4js/node_modules/streamroller/node_modules/readable-stream/LICENSE" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/log4js/node_modules/streamroller/node_modules/readable-stream/README.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/log4js/node_modules/streamroller/node_modules/readable-stream/duplex.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/log4js/node_modules/streamroller/node_modules/readable-stream/float.patch" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/log4js/node_modules/streamroller/node_modules/readable-stream/lib/_stream_duplex.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/log4js/node_modules/streamroller/node_modules/readable-stream/lib/_stream_passthrough.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/log4js/node_modules/streamroller/node_modules/readable-stream/lib/_stream_readable.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/log4js/node_modules/streamroller/node_modules/readable-stream/lib/_stream_transform.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/log4js/node_modules/streamroller/node_modules/readable-stream/lib/_stream_writable.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/log4js/node_modules/streamroller/node_modules/readable-stream/node_modules/core-util-is/LICENSE" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/log4js/node_modules/streamroller/node_modules/readable-stream/node_modules/core-util-is/README.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/log4js/node_modules/streamroller/node_modules/readable-stream/node_modules/core-util-is/float.patch" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/log4js/node_modules/streamroller/node_modules/readable-stream/node_modules/core-util-is/lib/util.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/log4js/node_modules/streamroller/node_modules/readable-stream/node_modules/core-util-is/package.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/log4js/node_modules/streamroller/node_modules/readable-stream/node_modules/core-util-is/test.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/log4js/node_modules/streamroller/node_modules/readable-stream/node_modules/inherits/LICENSE" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/log4js/node_modules/streamroller/node_modules/readable-stream/node_modules/inherits/README.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/log4js/node_modules/streamroller/node_modules/readable-stream/node_modules/inherits/inherits.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/log4js/node_modules/streamroller/node_modules/readable-stream/node_modules/inherits/inherits_browser.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/log4js/node_modules/streamroller/node_modules/readable-stream/node_modules/inherits/package.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/log4js/node_modules/streamroller/node_modules/readable-stream/node_modules/isarray/README.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/log4js/node_modules/streamroller/node_modules/readable-stream/node_modules/isarray/build/build.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/log4js/node_modules/streamroller/node_modules/readable-stream/node_modules/isarray/component.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/log4js/node_modules/streamroller/node_modules/readable-stream/node_modules/isarray/index.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/log4js/node_modules/streamroller/node_modules/readable-stream/node_modules/isarray/package.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/log4js/node_modules/streamroller/node_modules/readable-stream/node_modules/string_decoder/.npmignore" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/log4js/node_modules/streamroller/node_modules/readable-stream/node_modules/string_decoder/LICENSE" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/log4js/node_modules/streamroller/node_modules/readable-stream/node_modules/string_decoder/README.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/log4js/node_modules/streamroller/node_modules/readable-stream/node_modules/string_decoder/index.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/log4js/node_modules/streamroller/node_modules/readable-stream/node_modules/string_decoder/package.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/log4js/node_modules/streamroller/node_modules/readable-stream/package.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/log4js/node_modules/streamroller/node_modules/readable-stream/passthrough.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/log4js/node_modules/streamroller/node_modules/readable-stream/readable.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/log4js/node_modules/streamroller/node_modules/readable-stream/transform.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/log4js/node_modules/streamroller/node_modules/readable-stream/writable.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/log4js/node_modules/streamroller/package.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/log4js/node_modules/streamroller/test/BaseRollingFileStream-test.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/log4js/node_modules/streamroller/test/DateRollingFileStream-test.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/log4js/node_modules/streamroller/test/RollingFileStream-test.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/log4js/node_modules/streamroller/test/read-only-file-test.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/log4js/package.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/log4js/test/tape/default-settings-test.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/log4js/test/tape/file-sighup-test.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/log4js/test/tape/multiprocess-shutdown-test.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/log4js/test/tape/reload-shutdown-test.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/log4js/test/tape/stderrAppender-test.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/log4js/test/tape/stdoutAppender-test.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/log4js/test/tape/test-config.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/log4js/test/vows/categoryFilter-test.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/log4js/test/vows/clusteredAppender-test.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/log4js/test/vows/configuration-test.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/log4js/test/vows/configureNoLevels-test.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/log4js/test/vows/connect-logger-test.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/log4js/test/vows/consoleAppender-test.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/log4js/test/vows/dateFileAppender-test.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/log4js/test/vows/date_format-test.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/log4js/test/vows/fileAppender-test.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/log4js/test/vows/fileSyncAppender-test.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/log4js/test/vows/gelfAppender-test.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/log4js/test/vows/global-log-level-test.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/log4js/test/vows/hipchatAppender-test.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/log4js/test/vows/layouts-test.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/log4js/test/vows/levels-test.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/log4js/test/vows/log-abspath-test.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/log4js/test/vows/log4js.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/log4js/test/vows/logFacesAppender-test.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/log4js/test/vows/logLevelFilter-test.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/log4js/test/vows/logger-test.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/log4js/test/vows/logging-test.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/log4js/test/vows/logglyAppender-test.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/log4js/test/vows/logstashUDP-test.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/log4js/test/vows/mailgunAppender-test.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/log4js/test/vows/multiprocess-test.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/log4js/test/vows/newLevel-test.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/log4js/test/vows/nolog-test.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/log4js/test/vows/reloadConfiguration-test.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/log4js/test/vows/setLevel-asymmetry-test.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/log4js/test/vows/slackAppender-test.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/log4js/test/vows/smtpAppender-test.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/log4js/test/vows/subcategories-test.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/log4js/test/vows/with-categoryFilter.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/log4js/test/vows/with-dateFile.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/log4js/test/vows/with-log-rolling.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/log4js/test/vows/with-logLevelFilter.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/routes/Logger.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/package.json" afterPath="$PROJECT_DIR$/package.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/routes/controllers/user_controller.js" afterPath="$PROJECT_DIR$/routes/controllers/user_controller.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/routes/controllers/weibo_controller.js" afterPath="$PROJECT_DIR$/routes/controllers/weibo_controller.js" />
     </list>
     <ignored path="graduation-alfred-jade-blog.iws" />
@@ -451,101 +209,94 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="log4js.json" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/log4js.json">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="192">
-              <caret line="11" column="35" lean-forward="true" selection-start-line="11" selection-start-column="35" selection-end-line="11" selection-end-column="35" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="log4js_local.json" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/log4js_local.json">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="200">
-              <caret line="10" column="33" lean-forward="false" selection-start-line="10" selection-start-column="33" selection-end-line="10" selection-end-column="33" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="weibo_controller.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/routes/controllers/weibo_controller.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="141">
-              <caret line="499" column="19" lean-forward="true" selection-start-line="499" selection-start-column="19" selection-end-line="499" selection-end-column="19" />
+            <state relative-caret-position="243">
+              <caret line="33" column="7" lean-forward="true" selection-start-line="33" selection-start-column="7" selection-end-line="33" selection-end-column="7" />
               <folding>
-                <element signature="e#332#508#0" expanded="false" />
-                <element signature="e#560#2629#0" expanded="false" />
-                <element signature="e#567#590#0" expanded="false" />
-                <element signature="e#715#742#0" expanded="false" />
-                <element signature="e#786#898#0" expanded="false" />
-                <element signature="e#954#1066#0" expanded="false" />
-                <element signature="e#1113#1225#0" expanded="false" />
-                <element signature="e#1230#2626#0" expanded="false" />
-                <element signature="e#1240#1281#0" expanded="false" />
-                <element signature="e#1378#2615#0" expanded="false" />
-                <element signature="e#1399#1626#0" expanded="false" />
-                <element signature="e#1678#1717#0" expanded="false" />
-                <element signature="e#1826#2011#0" expanded="false" />
-                <element signature="e#2058#2602#0" expanded="false" />
-                <element signature="e#2076#2125#0" expanded="false" />
-                <element signature="e#2149#2341#0" expanded="false" />
-                <element signature="e#2358#2429#0" expanded="false" />
-                <element signature="e#2698#2758#0" expanded="false" />
-                <element signature="e#2822#3213#0" expanded="false" />
-                <element signature="e#2829#2853#0" expanded="false" />
-                <element signature="e#2898#3181#0" expanded="false" />
-                <element signature="e#2915#3046#0" expanded="false" />
-                <element signature="e#3090#3121#0" expanded="false" />
-                <element signature="e#3284#3512#0" expanded="false" />
-                <element signature="e#3515#3532#0" expanded="false" />
-                <element signature="e#3578#4255#0" expanded="false" />
-                <element signature="e#3630#3655#0" expanded="false" />
-                <element signature="e#3741#3795#0" expanded="false" />
-                <element signature="e#3803#3827#0" expanded="false" />
-                <element signature="e#3875#4251#0" expanded="false" />
-                <element signature="e#3892#4071#0" expanded="false" />
-                <element signature="e#4160#4191#0" expanded="false" />
-                <element signature="e#4327#4385#0" expanded="false" />
-                <element signature="e#4446#6678#0" expanded="false" />
-                <element signature="e#4452#4475#0" expanded="false" />
-                <element signature="e#4759#4784#0" expanded="false" />
-                <element signature="e#4924#5021#0" expanded="false" />
-                <element signature="e#5026#5059#0" expanded="false" />
-                <element signature="e#5158#6671#0" expanded="false" />
-                <element signature="e#5175#5405#0" expanded="false" />
-                <element signature="e#5457#5528#0" expanded="false" />
-                <element signature="e#5549#5615#0" expanded="false" />
-                <element signature="e#5640#5812#0" expanded="false" />
-                <element signature="e#5838#5986#0" expanded="false" />
-                <element signature="e#5852#5886#0" expanded="false" />
-                <element signature="e#5997#6055#0" expanded="false" />
-                <element signature="e#6119#6486#0" expanded="false" />
-                <element signature="e#6140#6325#0" expanded="false" />
-                <element signature="e#6498#6529#0" expanded="false" />
-                <element signature="e#6740#8241#0" expanded="false" />
-                <element signature="e#6746#6769#0" expanded="false" />
-                <element signature="e#7115#7140#0" expanded="false" />
-                <element signature="e#7264#7379#0" expanded="false" />
-                <element signature="e#7385#7444#0" expanded="false" />
-                <element signature="e#7461#7515#0" expanded="false" />
-                <element signature="e#7536#7651#0" expanded="false" />
-                <element signature="e#7673#7719#0" expanded="false" />
-                <element signature="e#7726#7772#0" expanded="false" />
-                <element signature="e#7832#8138#0" expanded="false" />
-                <element signature="e#7849#8018#0" expanded="false" />
-                <element signature="e#8146#8169#0" expanded="false" />
-                <element signature="e#8300#9261#0" expanded="false" />
-                <element signature="e#8455#8574#0" expanded="false" />
-                <element signature="e#8611#8730#0" expanded="false" />
-                <element signature="e#8747#8799#0" expanded="false" />
-                <element signature="e#8850#9256#0" expanded="false" />
-                <element signature="e#8867#9034#0" expanded="false" />
-                <element signature="e#9044#9091#0" expanded="false" />
-                <element signature="e#9333#9337#0" expanded="false" />
+                <element signature="e#0#39#0" expanded="false" />
+                <element signature="e#183#220#0" expanded="false" />
+                <element signature="e#272#291#0" expanded="false" />
+                <element signature="e#511#525#0" expanded="false" />
+                <element signature="e#2677#2697#0" expanded="false" />
+                <element signature="e#2743#2803#0" expanded="false" />
+                <element signature="e#2806#2823#0" expanded="false" />
+                <element signature="e#2867#3258#0" expanded="false" />
+                <element signature="e#2874#2898#0" expanded="false" />
+                <element signature="e#2943#3226#0" expanded="false" />
+                <element signature="e#2960#3091#0" expanded="false" />
+                <element signature="e#3135#3166#0" expanded="false" />
+                <element signature="e#3261#3281#0" expanded="false" />
+                <element signature="e#3329#3557#0" expanded="false" />
+                <element signature="e#3560#3577#0" expanded="false" />
+                <element signature="e#3623#4300#0" expanded="false" />
+                <element signature="e#3675#3700#0" expanded="false" />
+                <element signature="e#3786#3840#0" expanded="false" />
+                <element signature="e#3848#3872#0" expanded="false" />
+                <element signature="e#3920#4296#0" expanded="false" />
+                <element signature="e#3937#4116#0" expanded="false" />
+                <element signature="e#4205#4236#0" expanded="false" />
+                <element signature="e#4303#4323#0" expanded="false" />
+                <element signature="e#4372#4430#0" expanded="false" />
+                <element signature="e#4433#4448#0" expanded="false" />
+                <element signature="e#4491#6723#0" expanded="false" />
+                <element signature="e#4497#4520#0" expanded="false" />
+                <element signature="e#4804#4829#0" expanded="false" />
+                <element signature="e#4969#5066#0" expanded="false" />
+                <element signature="e#5071#5104#0" expanded="false" />
+                <element signature="e#5203#6716#0" expanded="false" />
+                <element signature="e#5220#5450#0" expanded="false" />
+                <element signature="e#5502#5573#0" expanded="false" />
+                <element signature="e#5594#5660#0" expanded="false" />
+                <element signature="e#5685#5857#0" expanded="false" />
+                <element signature="e#5883#6031#0" expanded="false" />
+                <element signature="e#5897#5931#0" expanded="false" />
+                <element signature="e#6042#6100#0" expanded="false" />
+                <element signature="e#6164#6531#0" expanded="false" />
+                <element signature="e#6185#6370#0" expanded="false" />
+                <element signature="e#6543#6574#0" expanded="false" />
+                <element signature="e#6726#6743#0" expanded="false" />
+                <element signature="e#6785#8286#0" expanded="false" />
+                <element signature="e#6791#6814#0" expanded="false" />
+                <element signature="e#7160#7185#0" expanded="false" />
+                <element signature="e#7309#7424#0" expanded="false" />
+                <element signature="e#7430#7489#0" expanded="false" />
+                <element signature="e#7506#7560#0" expanded="false" />
+                <element signature="e#7581#7696#0" expanded="false" />
+                <element signature="e#7718#7764#0" expanded="false" />
+                <element signature="e#7771#7817#0" expanded="false" />
+                <element signature="e#7877#8183#0" expanded="false" />
+                <element signature="e#7894#8063#0" expanded="false" />
+                <element signature="e#8191#8214#0" expanded="false" />
+                <element signature="e#8289#8306#0" expanded="false" />
+                <element signature="e#8345#9306#0" expanded="false" />
+                <element signature="e#8500#8619#0" expanded="false" />
+                <element signature="e#8656#8775#0" expanded="false" />
+                <element signature="e#8792#8844#0" expanded="false" />
+                <element signature="e#8895#9301#0" expanded="false" />
+                <element signature="e#8912#9079#0" expanded="false" />
+                <element signature="e#9089#9136#0" expanded="false" />
+                <element signature="e#9309#9329#0" expanded="false" />
+                <element signature="e#9378#9382#0" expanded="false" />
+                <element signature="e#9385#9400#0" expanded="false" />
+                <element signature="e#9449#9533#0" expanded="false" />
+                <element signature="e#9539#9562#0" expanded="false" />
+                <element signature="e#10011#10036#0" expanded="false" />
+                <element signature="e#10403#10436#0" expanded="false" />
+                <element signature="e#10556#12340#0" expanded="false" />
+                <element signature="e#10573#10707#0" expanded="false" />
+                <element signature="e#10818#12330#0" expanded="false" />
+                <element signature="e#10839#10989#0" expanded="false" />
+                <element signature="e#11047#11087#0" expanded="false" />
+                <element signature="e#11116#11286#0" expanded="false" />
+                <element signature="e#11301#11343#0" expanded="false" />
+                <element signature="e#11381#11647#0" expanded="false" />
+                <element signature="e#11663#11702#0" expanded="false" />
+                <element signature="e#11746#12317#0" expanded="false" />
+                <element signature="e#11764#11813#0" expanded="false" />
+                <element signature="e#11837#12031#0" expanded="false" />
+                <element signature="e#12048#12119#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -665,9 +416,9 @@
         <option value="$PROJECT_DIR$/routes/Logger.js" />
         <option value="$PROJECT_DIR$/logs/weibo-2017-03-31.log" />
         <option value="$PROJECT_DIR$/routes/controllers/user_controller.js" />
-        <option value="$PROJECT_DIR$/routes/controllers/weibo_controller.js" />
         <option value="$PROJECT_DIR$/log4js_local.json" />
         <option value="$PROJECT_DIR$/log4js.json" />
+        <option value="$PROJECT_DIR$/routes/controllers/weibo_controller.js" />
       </list>
     </option>
   </component>
@@ -936,6 +687,116 @@
       <recent name="H:\ws\node_instance\graduation-alfred-jade-blog\database" />
     </key>
   </component>
+  <component name="RestoreUpdateTree" date="Moments ago" ActionInfo="_Update">
+    <UpdatedFiles>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Updated from server" />
+        <option name="myStatusName" value="Changed on server" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="CHANGED_ON_SERVER" />
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Updated" />
+          <option name="myStatusName" value="Changed" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" value="UPDATED" />
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Created" />
+          <option name="myStatusName" value="Created" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" value="CREATED" />
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/public/images/upload/u=904232823,3080169910&amp;fm=23&amp;gp=0.jpg</PATH>
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Deleted" />
+          <option name="myStatusName" value="Deleted" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="true" />
+          <option name="myId" value="REMOVED_FROM_REPOSITORY" />
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Restored" />
+          <option name="myStatusName" value="Will be restored" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" value="RESTORED" />
+        </FILE-GROUP>
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Modified" />
+        <option name="myStatusName" value="Modified" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="MODIFIED" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Skipped" />
+        <option name="myStatusName" value="Skipped" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="SKIPPED" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Merged with conflicts" />
+        <option name="myStatusName" value="Will be merged with conflicts" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="MERGED_WITH_CONFLICTS" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Merged with tree conflicts" />
+        <option name="myStatusName" value="Merged with tree conflicts" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="MERGED_WITH_TREE_CONFLICT" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Merged with property conflicts" />
+        <option name="myStatusName" value="Will be merged with property conflicts" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="MERGED_WITH_PROPERTY_CONFLICT" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Merged" />
+        <option name="myStatusName" value="Will be merged" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="MERGED" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Not in repository" />
+        <option name="myStatusName" value="Not in repository" />
+        <option name="mySupportsDeletion" value="true" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="UNKNOWN" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Locally added" />
+        <option name="myStatusName" value="Locally added" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="LOCALLY_ADDED" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Locally removed" />
+        <option name="myStatusName" value="Locally removed" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="LOCALLY_REMOVED" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Switched" />
+        <option name="myStatusName" value="Switched" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="SWITCHED" />
+      </FILE-GROUP>
+    </UpdatedFiles>
+  </component>
   <component name="RunManager" selected="Node.js.bin\www">
     <configuration default="true" type="DartCommandLineRunConfigurationType" factoryName="Dart Command Line Application">
       <method />
@@ -1086,14 +947,7 @@
       <workItem from="1490863727426" duration="47000" />
       <workItem from="1490864995215" duration="7926000" />
       <workItem from="1490875952924" duration="10562000" />
-      <workItem from="1490923560088" duration="238000" />
-    </task>
-    <task id="LOCAL-00057" summary="管理员修改个人密码">
-      <created>1489391322511</created>
-      <option name="number" value="00057" />
-      <option name="presentableId" value="LOCAL-00057" />
-      <option name="project" value="LOCAL" />
-      <updated>1489391322512</updated>
+      <workItem from="1490923560088" duration="1044000" />
     </task>
     <task id="LOCAL-00058" summary="用户修改个人密码">
       <created>1489394448470</created>
@@ -1431,11 +1285,18 @@
       <option name="project" value="LOCAL" />
       <updated>1490874089104</updated>
     </task>
-    <option name="localTasksCounter" value="106" />
+    <task id="LOCAL-00106" summary="log4js">
+      <created>1490923850529</created>
+      <option name="number" value="00106" />
+      <option name="presentableId" value="LOCAL-00106" />
+      <option name="project" value="LOCAL" />
+      <updated>1490923850529</updated>
+    </task>
+    <option name="localTasksCounter" value="107" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="628587000" />
+    <option name="totallyTimeSpent" value="629393000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1448,12 +1309,13 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.29727685" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295082" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3229508" sideWeight="0.5295008" order="10" side_tool="true" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.41311476" sideWeight="0.47655067" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295082" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.41311476" sideWeight="0.47655067" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980332" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24962178" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Mongo Explorer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32753405" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1466,7 +1328,6 @@
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32786885" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295082" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4409836" sideWeight="0.47049925" order="3" side_tool="false" content_ui="tabs" />
     </layout>
@@ -1536,7 +1397,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="修改头像后，发布过的微博、评论、转发的父文档、转发的子文档，都要改" />
     <MESSAGE value="登录前、登录后、个人中心的微博列表，去掉转发按钮的显示模块框效果&#10;个人中心的微博列表： 去掉添加评论" />
     <MESSAGE value="登录前的微博列表，去掉评论文本框&#10;登录后的微博列表：去掉删除微博、添加评论、删除评论功能" />
     <MESSAGE value="界面调整" />
@@ -1561,7 +1421,8 @@
     <MESSAGE value="个人微博、登录后的微博列表：删除微博&#10;成功上传头像后，页面刷新" />
     <MESSAGE value="上传头像去掉刷新页面的逻辑" />
     <MESSAGE value="上传头像逻辑回滚" />
-    <option name="LAST_COMMIT_MESSAGE" value="上传头像逻辑回滚" />
+    <MESSAGE value="log4js" />
+    <option name="LAST_COMMIT_MESSAGE" value="log4js" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1610,13 +1471,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/views/backend/admin/profile.jade">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="100">
-          <caret line="5" column="0" lean-forward="true" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/views/commons/top.jade">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -2098,80 +1952,98 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/public/images/upload/u=904232823,3080169910&amp;fm=23&amp;gp=0.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/routes/controllers/weibo_controller.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="141">
-          <caret line="499" column="19" lean-forward="true" selection-start-line="499" selection-start-column="19" selection-end-line="499" selection-end-column="19" />
+        <state relative-caret-position="243">
+          <caret line="33" column="7" lean-forward="true" selection-start-line="33" selection-start-column="7" selection-end-line="33" selection-end-column="7" />
           <folding>
-            <element signature="e#332#508#0" expanded="false" />
-            <element signature="e#560#2629#0" expanded="false" />
-            <element signature="e#567#590#0" expanded="false" />
-            <element signature="e#715#742#0" expanded="false" />
-            <element signature="e#786#898#0" expanded="false" />
-            <element signature="e#954#1066#0" expanded="false" />
-            <element signature="e#1113#1225#0" expanded="false" />
-            <element signature="e#1230#2626#0" expanded="false" />
-            <element signature="e#1240#1281#0" expanded="false" />
-            <element signature="e#1378#2615#0" expanded="false" />
-            <element signature="e#1399#1626#0" expanded="false" />
-            <element signature="e#1678#1717#0" expanded="false" />
-            <element signature="e#1826#2011#0" expanded="false" />
-            <element signature="e#2058#2602#0" expanded="false" />
-            <element signature="e#2076#2125#0" expanded="false" />
-            <element signature="e#2149#2341#0" expanded="false" />
-            <element signature="e#2358#2429#0" expanded="false" />
-            <element signature="e#2698#2758#0" expanded="false" />
-            <element signature="e#2822#3213#0" expanded="false" />
-            <element signature="e#2829#2853#0" expanded="false" />
-            <element signature="e#2898#3181#0" expanded="false" />
-            <element signature="e#2915#3046#0" expanded="false" />
-            <element signature="e#3090#3121#0" expanded="false" />
-            <element signature="e#3284#3512#0" expanded="false" />
-            <element signature="e#3515#3532#0" expanded="false" />
-            <element signature="e#3578#4255#0" expanded="false" />
-            <element signature="e#3630#3655#0" expanded="false" />
-            <element signature="e#3741#3795#0" expanded="false" />
-            <element signature="e#3803#3827#0" expanded="false" />
-            <element signature="e#3875#4251#0" expanded="false" />
-            <element signature="e#3892#4071#0" expanded="false" />
-            <element signature="e#4160#4191#0" expanded="false" />
-            <element signature="e#4327#4385#0" expanded="false" />
-            <element signature="e#4446#6678#0" expanded="false" />
-            <element signature="e#4452#4475#0" expanded="false" />
-            <element signature="e#4759#4784#0" expanded="false" />
-            <element signature="e#4924#5021#0" expanded="false" />
-            <element signature="e#5026#5059#0" expanded="false" />
-            <element signature="e#5158#6671#0" expanded="false" />
-            <element signature="e#5175#5405#0" expanded="false" />
-            <element signature="e#5457#5528#0" expanded="false" />
-            <element signature="e#5549#5615#0" expanded="false" />
-            <element signature="e#5640#5812#0" expanded="false" />
-            <element signature="e#5838#5986#0" expanded="false" />
-            <element signature="e#5852#5886#0" expanded="false" />
-            <element signature="e#5997#6055#0" expanded="false" />
-            <element signature="e#6119#6486#0" expanded="false" />
-            <element signature="e#6140#6325#0" expanded="false" />
-            <element signature="e#6498#6529#0" expanded="false" />
-            <element signature="e#6740#8241#0" expanded="false" />
-            <element signature="e#6746#6769#0" expanded="false" />
-            <element signature="e#7115#7140#0" expanded="false" />
-            <element signature="e#7264#7379#0" expanded="false" />
-            <element signature="e#7385#7444#0" expanded="false" />
-            <element signature="e#7461#7515#0" expanded="false" />
-            <element signature="e#7536#7651#0" expanded="false" />
-            <element signature="e#7673#7719#0" expanded="false" />
-            <element signature="e#7726#7772#0" expanded="false" />
-            <element signature="e#7832#8138#0" expanded="false" />
-            <element signature="e#7849#8018#0" expanded="false" />
-            <element signature="e#8146#8169#0" expanded="false" />
-            <element signature="e#8300#9261#0" expanded="false" />
-            <element signature="e#8455#8574#0" expanded="false" />
-            <element signature="e#8611#8730#0" expanded="false" />
-            <element signature="e#8747#8799#0" expanded="false" />
-            <element signature="e#8850#9256#0" expanded="false" />
-            <element signature="e#8867#9034#0" expanded="false" />
-            <element signature="e#9044#9091#0" expanded="false" />
-            <element signature="e#9333#9337#0" expanded="false" />
+            <element signature="e#0#39#0" expanded="false" />
+            <element signature="e#183#220#0" expanded="false" />
+            <element signature="e#272#291#0" expanded="false" />
+            <element signature="e#511#525#0" expanded="false" />
+            <element signature="e#2677#2697#0" expanded="false" />
+            <element signature="e#2743#2803#0" expanded="false" />
+            <element signature="e#2806#2823#0" expanded="false" />
+            <element signature="e#2867#3258#0" expanded="false" />
+            <element signature="e#2874#2898#0" expanded="false" />
+            <element signature="e#2943#3226#0" expanded="false" />
+            <element signature="e#2960#3091#0" expanded="false" />
+            <element signature="e#3135#3166#0" expanded="false" />
+            <element signature="e#3261#3281#0" expanded="false" />
+            <element signature="e#3329#3557#0" expanded="false" />
+            <element signature="e#3560#3577#0" expanded="false" />
+            <element signature="e#3623#4300#0" expanded="false" />
+            <element signature="e#3675#3700#0" expanded="false" />
+            <element signature="e#3786#3840#0" expanded="false" />
+            <element signature="e#3848#3872#0" expanded="false" />
+            <element signature="e#3920#4296#0" expanded="false" />
+            <element signature="e#3937#4116#0" expanded="false" />
+            <element signature="e#4205#4236#0" expanded="false" />
+            <element signature="e#4303#4323#0" expanded="false" />
+            <element signature="e#4372#4430#0" expanded="false" />
+            <element signature="e#4433#4448#0" expanded="false" />
+            <element signature="e#4491#6723#0" expanded="false" />
+            <element signature="e#4497#4520#0" expanded="false" />
+            <element signature="e#4804#4829#0" expanded="false" />
+            <element signature="e#4969#5066#0" expanded="false" />
+            <element signature="e#5071#5104#0" expanded="false" />
+            <element signature="e#5203#6716#0" expanded="false" />
+            <element signature="e#5220#5450#0" expanded="false" />
+            <element signature="e#5502#5573#0" expanded="false" />
+            <element signature="e#5594#5660#0" expanded="false" />
+            <element signature="e#5685#5857#0" expanded="false" />
+            <element signature="e#5883#6031#0" expanded="false" />
+            <element signature="e#5897#5931#0" expanded="false" />
+            <element signature="e#6042#6100#0" expanded="false" />
+            <element signature="e#6164#6531#0" expanded="false" />
+            <element signature="e#6185#6370#0" expanded="false" />
+            <element signature="e#6543#6574#0" expanded="false" />
+            <element signature="e#6726#6743#0" expanded="false" />
+            <element signature="e#6785#8286#0" expanded="false" />
+            <element signature="e#6791#6814#0" expanded="false" />
+            <element signature="e#7160#7185#0" expanded="false" />
+            <element signature="e#7309#7424#0" expanded="false" />
+            <element signature="e#7430#7489#0" expanded="false" />
+            <element signature="e#7506#7560#0" expanded="false" />
+            <element signature="e#7581#7696#0" expanded="false" />
+            <element signature="e#7718#7764#0" expanded="false" />
+            <element signature="e#7771#7817#0" expanded="false" />
+            <element signature="e#7877#8183#0" expanded="false" />
+            <element signature="e#7894#8063#0" expanded="false" />
+            <element signature="e#8191#8214#0" expanded="false" />
+            <element signature="e#8289#8306#0" expanded="false" />
+            <element signature="e#8345#9306#0" expanded="false" />
+            <element signature="e#8500#8619#0" expanded="false" />
+            <element signature="e#8656#8775#0" expanded="false" />
+            <element signature="e#8792#8844#0" expanded="false" />
+            <element signature="e#8895#9301#0" expanded="false" />
+            <element signature="e#8912#9079#0" expanded="false" />
+            <element signature="e#9089#9136#0" expanded="false" />
+            <element signature="e#9309#9329#0" expanded="false" />
+            <element signature="e#9378#9382#0" expanded="false" />
+            <element signature="e#9385#9400#0" expanded="false" />
+            <element signature="e#9449#9533#0" expanded="false" />
+            <element signature="e#9539#9562#0" expanded="false" />
+            <element signature="e#10011#10036#0" expanded="false" />
+            <element signature="e#10403#10436#0" expanded="false" />
+            <element signature="e#10556#12340#0" expanded="false" />
+            <element signature="e#10573#10707#0" expanded="false" />
+            <element signature="e#10818#12330#0" expanded="false" />
+            <element signature="e#10839#10989#0" expanded="false" />
+            <element signature="e#11047#11087#0" expanded="false" />
+            <element signature="e#11116#11286#0" expanded="false" />
+            <element signature="e#11301#11343#0" expanded="false" />
+            <element signature="e#11381#11647#0" expanded="false" />
+            <element signature="e#11663#11702#0" expanded="false" />
+            <element signature="e#11746#12317#0" expanded="false" />
+            <element signature="e#11764#11813#0" expanded="false" />
+            <element signature="e#11837#12031#0" expanded="false" />
+            <element signature="e#12048#12119#0" expanded="false" />
           </folding>
         </state>
       </provider>
