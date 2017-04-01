@@ -52,6 +52,18 @@ exports.add = function (req, res) {
         res.redirect("/toAddPage");
     }else {
         /**
+         * 防止html注入
+         */
+        description=description.replace(/&/g,"&amp;");
+        description=description.replace(/</g,"&lt;");
+        description=description.replace(/ /g,"&nbsp;");
+        description=description.replace(/>/g,"&gt;");
+        description=description.replace(/\\/g,"&quot;");
+        description=description.replace(/'/g,"&qpos;");
+
+        // console.log(description);
+
+        /**
          * 根据 用户名 得到 头像地址
          */
         var imageUrl = '';

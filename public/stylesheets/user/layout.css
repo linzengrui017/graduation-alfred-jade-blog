@@ -23,3 +23,8 @@ body{
 .font-color{
     color: #FFFFFF;
 }
+
+.message_wrapper{
+    word-wrap: break-word;  //自动换行
+    word-break:break-all;   //强制英文单词断行
+}
