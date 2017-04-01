@@ -96,4 +96,9 @@ router.get('/addToPraiseList', weibo.addToPraiseList);
  */
 router.get('/rmFromPraiseList', weibo.rmFromPraiseList);
 
+/**
+ * 查询当前微博的点赞次数
+ */
+router.get('/queryPraiseNums', weibo.queryPraiseNums);
+
 module.exports = router;

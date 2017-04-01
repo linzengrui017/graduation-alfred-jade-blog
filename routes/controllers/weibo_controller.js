@@ -793,3 +793,57 @@ exports.rmFromPraiseList = function (req, res) {
      */
     res.end();
 };
+
+/**
+ * 查询当前微博的点赞次数
+ */
+exports.queryPraiseNums = function (req, res){
+    /**
+     * 获取数据
+     */
+    var customer = req.session.user.username;
+    var author = req.query.author;
+    var title = req.query.title;
+
+    /**
+     * 服务器端校验
+     */
+    if( null == author || '' == author
+        || null == title || '' == title){
+        console.log('必传参数不能为空');
+        req.session.error = "必传参数不能为空";
+        return;
+    }
+
+    /**
+     * 准备数据
+     * @type {{author: (*), title}}
+     */
+    var query = {
+        author : author,
+        title : title
+    };
+
+    /**
+     * 查询这条微博的点赞次数
+     */
+    modelBlog.findOne(query, function (err, data) {
+        if(err){
+            console.log('查询这条微博的点赞次数失败：'+ err);
+            Logger.info("customer: %s, 往用户 %s 的微博 %s ,查询这条微博的点赞次数失败：%s", customer, author, title, err);
+            return;
+        }
+        Logger.info("customer: %s, 往用户 %s 的微博 %s ,查询这条微博的点赞次数", customer, author, title);
+        // console.log('查询这条微博的点赞次数成功');
+        /**
+         * 获取点赞次数
+         */
+        var number = data.likes;
+        /**
+         * 发送数据
+         */
+        res.json({data: number});
+
+    });
+
+};

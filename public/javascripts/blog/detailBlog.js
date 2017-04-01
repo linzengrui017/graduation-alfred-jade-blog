@@ -140,7 +140,10 @@ $(function () {
                             '<a id="headingOne" role="tab" data-toggle="collapse" data-parent="#accordion" href="#collapse'+i+'" aria-expanded="false" aria-controls="collapseOne" class="btn panel-heading collapsed"><i class="fa fa-comment-o"></i></a>' +
                         '</div>' +
                         '<div class="col-md-3 col-sm-3 col-xs-3">' +
-                            '<a name="btn_thumbs" class="btn"><i class="fa fa-thumbs-o-up"></i><i style="display:none;" class="fa fa-thumbs-up"></i></a>' +
+                            '<a name="btn_thumbs" class="btn">' +
+                                    '<i class="fa fa-thumbs-o-up"></i><i style="display:none;" class="fa fa-thumbs-up"></i>' +
+                                    '&nbsp;&nbsp;<strong id="likeNums"></strong>' +
+                            '</a>' +
                         '</div>' +
                         '<div class="col-md-1 col-sm-1 col-xs-1"></div>' +
                     '</div>' +
