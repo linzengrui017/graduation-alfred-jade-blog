@@ -220,6 +220,7 @@ $(function () {
                             type: "get",
                             success:function(result){
                                 console.log("点赞成功");
+                                window.location.reload();
                             },
                             error: function (XMLHttpRequest, textStatus, errorThrown) {
                                 alert("在微博详情页面执行点赞操作失败 : XMLHttpRequest.readyState="+ XMLHttpRequest.readyState+ '\n' + textStatus.toString()+ '\n' + errorThrown.toString());
@@ -252,6 +253,7 @@ $(function () {
                             type: "get",
                             success:function(result){
                                 console.log("取消赞成功");
+                                window.location.reload();
                             },
                             error: function (XMLHttpRequest, textStatus, errorThrown) {
                                 alert("在微博详情页面执行取消赞操作失败 : XMLHttpRequest.readyState="+ XMLHttpRequest.readyState+ '\n' + textStatus.toString()+ '\n' + errorThrown.toString());
