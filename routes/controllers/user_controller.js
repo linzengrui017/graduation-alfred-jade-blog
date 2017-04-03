@@ -18,6 +18,10 @@ var crypto=require("crypto");
 //获取当前系统时间
 var sd = require('silly-datetime');
 
+/**
+ * 验证码
+ */
+var ccap = require('ccap');
 
 /**
  * 跳转到用户的个人主页
@@ -790,5 +794,31 @@ exports.toRegister_form = function (req, res, next) {
  * 跳转到登录页面
  */
 exports.toLogin_form = function (req, res, next) {
-    res.render('user/login_form', { title: 'Login' });
+    /**
+     * 生成验证码
+     */
+    var captcha = ccap();
+    var ary = captcha.get();//ary[0] is captcha's text,ary[1] is captcha picture buffer.
+    var txt = ary[0];
+    var buffer = ary[1];
+    /**
+     * 返回视图
+     */
+    res.render('user/login_form', { title: 'Login', txt : txt, buffer : buffer  });
+};
+
+/**
+ * 获取验证码
+ */
+exports.toGetCode = function (req, res, next) {
+    /**
+     * 生成验证码
+     */
+    var captcha = ccap();
+    var ary = captcha.get();//ary[0] is captcha's text,ary[1] is captcha picture buffer.
+    var txt = ary[0];
+    var buffer = ary[1];
+
+    res.json({data: txt});
+
 };

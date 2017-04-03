@@ -129,4 +129,10 @@ router.post('/queryFriendsBlogList', user.queryFriendsBlogList);
  */
 router.get('/toFriendPage', user.toFriendPage);
 
+/**
+ * 获取验证码
+ */
+router.post('/toGetCode', user.toGetCode);
+
+
 module.exports = router;

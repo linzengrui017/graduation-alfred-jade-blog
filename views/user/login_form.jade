@@ -46,6 +46,15 @@ block content
                                 span.required *
                             .col-md-6.col-sm-6.col-xs-12
                                 input#login_password.form-control.col-md-7.col-xs-12(type="password", name="password", data-validate-length="6,8", placeholder='密码', required="required")
+                        .item.form-group
+                            label.control-label.col-md-3(for="validate_code")
+                                | 验证码
+                                span.required *
+                            .col-md-6.col-sm-6.col-xs-12
+                                input#validate_code.form-control.col-md-7.col-xs-12(type="text", name="validate_code", required="required")
+                            .col-md-2.col-sm-2.col-xs-12
+                                div.form-control(style='color:#000000;')#ccap=txt
+                            //div#ccap2=buffer
                         .form-group
                             .col-md-6.col-md-offset-8
                                 button#btn_login.btn.btn-success(type="submit") 登录
@@ -59,3 +68,5 @@ block scripts
     script(src='javascripts/commons/parsley.min.js')
     // Login And Register Validate Scripts
     script(src='javascripts/user/login_form.js')
+    // refresh
+    script(src='javascripts/user/refreshCode.js')
