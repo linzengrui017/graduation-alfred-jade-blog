@@ -19,5 +19,5 @@ function checkSubmit() {
         return false;
     }
     flag = true;
-    $('#form').submit();
+    return true;
 }
