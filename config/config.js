@@ -3,7 +3,8 @@
  */
 var config = {
     host: '123.207.236.69',
-    uploadUrl : '/opt/graduation-alfred-jade-blog/public/images/upload'
+    port: '3000',
+    uploadUrl : '/home/graduation-alfred-jade-blog/public/images/upload'
 };
 
 module.exports = config;

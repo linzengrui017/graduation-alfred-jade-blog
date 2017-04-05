@@ -134,5 +134,17 @@ router.get('/toFriendPage', user.toFriendPage);
  */
 router.post('/toGetCode', user.toGetCode);
 
+/**
+ * 邮箱注册
+ * 激活按钮 发送邮件
+ */
+router.get('/sendEmail', user.sendEmail);
+
+/**
+ * 邮箱注册
+ * 激活URL 验证激活
+ */
+router.get('/url', user.url);
+
 
 module.exports = router;

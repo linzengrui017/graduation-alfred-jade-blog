@@ -3,6 +3,7 @@
  */
 var config_local = {
     host: 'localhost',
+    port: '3000',
     uploadUrl : './public/images/upload'
 };
 

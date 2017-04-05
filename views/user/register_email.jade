@@ -1,0 +1,35 @@
+//
+   Created by lzr on 2017/2/22.
+
+extends ../commons/layout_email
+
+block head
+
+block content
+
+    .row(style='padding:60px 0px;')
+        .panel.panel-info
+            .panel-heading
+                h3.panel-title
+                    span 邮箱验证
+            .panel-body(style='padding-top: 50px;')
+                .col-md-2.col-sm-2.col-xs-12
+                .col-md-8.col-sm-8.col-xs-12
+                    form.form-horizontal.form-label-left(data-parsley-validate='', novalidate="", id='', method='get', action='/sendEmail')
+                        input#username(type='hidden', name='username', value=username)
+                        input#ActiCode(type='hidden', name='ActiCode', value=ActiCode)
+                        .item.form-group
+                            label.control-label.col-md-3.col-sm-3.col-xs-12(for="email")
+                                | 邮箱
+                                span.required *
+                            .col-md-6.col-sm-6.col-xs-12
+                                input#email.form-control.col-md-7.col-xs-12(name="email", placeholder="邮箱", required="required", type="text")
+                        .form-group
+                            .col-md-6.col-md-offset-8
+                                button#send.btn.btn-success(type="submit") 发送邮件
+
+block scripts
+    // Parsley
+    script(src='javascripts/commons/parsley.min.js')
+    // button send email
+    script(src='javascripts/user/register_email.js')

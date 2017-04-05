@@ -1,0 +1,45 @@
+//
+   Created by lzr on 2017/2/22.
+doctype html
+html
+    head
+        meta(http-equiv='Content-Type', content='text/html; charset=UTF-8')
+        // Meta, title, CSS, favicons, etc.
+        meta(charset='utf-8')
+        meta(http-equiv='X-UA-Compatible', content='IE=edge')
+        meta(name='viewport', content='width=device-width, initial-scale=1')
+
+        link(rel="shortcut icon", href="/favicon.ico")
+
+        title= title
+
+        include top
+
+        //customer style
+        link(href='stylesheets/user/layout.css', rel='stylesheet')
+
+        block head
+
+    body
+
+        nav#nav.navbar.navbar-default.navbar-fixed-top.navbar-inverse
+            ul.nav.navbar-nav
+                li
+                    a(href='/toBlogListPage' )
+                        i.fa.fa-weibo(style='color:#ffffff;')
+                            |  微博
+
+        div
+            .col-md-2
+
+            .col-md-8
+                block content
+            .col-md-2
+
+
+        include bottom
+
+        // Login And Register Validate Scripts
+        //script(src='javascripts/layout/layout.js')
+
+        block scripts

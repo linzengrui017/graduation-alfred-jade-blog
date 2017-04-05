@@ -18,6 +18,18 @@ var crypto=require("crypto");
 //获取当前系统时间
 var sd = require('silly-datetime');
 
+//使用uuid
+var UUID = require('uuid');
+
+//发送邮件
+var nodemailer = require('nodemailer');
+
+//服务器地址
+var config = require('../../config/config');
+
+//邮件机器人
+var blogSystem = require('../../config/email');
+
 /**
  * 验证码
  */
@@ -178,13 +190,24 @@ exports.reg = function (req, res, next) {
 
                 var time = sd.format(new Date(), 'YYYY-MM-DD HH:mm:ss');
 
+                var state = false;  //激活状态：默认是未激活
+
+                /**
+                 * 生成激活码
+                 * UUID.v1 基于时间戳生成(time based)
+                 * UUID.v4 随机生成(random), 有一定几率重复
+                 */
+                var ActiCode = UUID.v1();
+
                 /**
                  * 注册
                  */
                 var user= new modelUser({
                     username: username,
                     password: pwd,
-                    createTime: time
+                    createTime: time,
+                    state : state,
+                    ActiCode : ActiCode
                 });
                 user.save(function(err, data){
 
@@ -196,9 +219,6 @@ exports.reg = function (req, res, next) {
                         res.redirect("/toRegister_form");
                     }
 
-                    Logger.info("用户 %s 注册成功", username);
-                    console.log("注册成功");
-
                     /**
                      * 新增成功
                      * @type {string}
@@ -206,9 +226,11 @@ exports.reg = function (req, res, next) {
                     req.session.user = data;
 
                     /**
-                     * 返回视图
+                     * 跳页面
+                     * 提示点击邮箱注册
                      */
-                    res.redirect('/');
+                    res.render('user/register_email', { title: 'register_email', username: username, ActiCode: ActiCode });
+
 
                 });
             }
@@ -820,5 +842,115 @@ exports.toGetCode = function (req, res, next) {
     var buffer = ary[1];
 
     res.json({data: txt});
+
+};
+
+/**
+ * 邮箱注册
+ * 激活按钮 发送邮件
+ */
+exports.sendEmail = function (req, res, next) {
+    /**
+     * 获取数据
+     */
+    var username = req.query.username;
+    var ActiCode = req.query.ActiCode;
+    var email = req.query.email;
+
+    /**
+     * 设置邮件内容
+     * @type {string}
+     */
+    var subject = '微博系统注册验证';                                        // 标题
+    var text = 'http://'+ config.host + ':' + config.port +'/url' + '?username=' + username + '&ActiCode=' + ActiCode;             // 验证URL
+    var html = '<h4>请点击链接完成注册:<a href='+ text + '> '+ text + '</a></h4>';     // 邮件内容
+
+    /**
+     * 创建服务
+     */
+    var transporter = nodemailer.createTransport({
+        service: 'qq',
+        port: 465, // SMTP 端口
+        secureConnection: true, // 使用 SSL
+        auth: {
+            user: blogSystem.user,  //发件人
+            pass: blogSystem.pass   //smtp密码
+        }
+    });
+
+    /**
+     * 设置参数
+     * @type {{from: string, to: string, subject: string, text: string, html: string}}
+     */
+    var mailOptions = {
+        from: blogSystem.user, // 发件地址
+        to: email, // 收件列表
+        subject: subject, // 标题
+        //text和html两者只支持一种
+        text: text, // 标题
+        html: html // html 内容
+    };
+
+    /**
+     * 发送邮件
+     */
+    transporter.sendMail(mailOptions, function(error, info){
+        if(error){
+            return console.log(error);
+        }
+        console.log('Message sent: ' + info.response);
+
+    });
+
+    res.render('user/register_wait', { title : 'register_wait'});
+
+    // res.end();
+};
+
+/**
+ * 邮箱注册
+ * 激活URL 验证激活
+ */
+exports.url = function (req, res, next) {
+    /**
+     * 获取数据
+     */
+    var username = req.query.username;
+    var ActiCode = req.query.ActiCode;
+
+    /**
+     * 激活成功页的URL逻辑
+     * 以用户id和激活码查询数据库
+     * 存在，修改字段state为true
+     * 不存在，提示激活失败
+     */
+    var query = {
+        username : username,
+        ActiCode : ActiCode
+    };
+    var operator = {
+        $set : { state : true }
+    };
+    modelUser.update(query, operator, function (err, data) {
+        if(err){
+            console.log("激活用户失败："+ err);
+            req.session.error = "激活用户失败";
+            Logger.info("customer: %s, 激活用户失败：%s", username, err);
+            res.redirect('/');
+        }
+
+        /**
+         * 注册成功
+         */
+        Logger.info("用户 %s 注册成功", username);
+        console.log("注册成功");
+
+        /**
+         * 返回视图
+         */
+        res.redirect('/');
+
+    });
+
 
 };
