@@ -858,12 +858,23 @@ exports.sendEmail = function (req, res, next) {
     var email = req.query.email;
 
     /**
+     * 校验
+     */
+    if(username == '' || username == null ||
+        ActiCode == '' || ActiCode == null){
+        res.end();
+        return;
+    }
+
+    /**
      * 设置邮件内容
      * @type {string}
      */
     var subject = '微博系统注册验证';                                        // 标题
     var text = 'http://'+ config.host + ':' + config.port +'/url' + '?username=' + username + '&ActiCode=' + ActiCode;             // 验证URL
     var html = '<h4>请点击链接完成注册:<a href='+ text + '> '+ text + '</a></h4>';     // 邮件内容
+
+    Logger.info("激活URL：%s", text);
 
     /**
      * 创建服务
