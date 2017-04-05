@@ -15,7 +15,7 @@ block content
             .panel-body(style='padding-top: 50px;')
                 .col-md-2.col-sm-2.col-xs-12
                 .col-md-8.col-sm-8.col-xs-12
-                    form.form-horizontal.form-label-left(data-parsley-validate='', novalidate="", id='', method='get', action='/sendEmail')
+                    form#form.form-horizontal.form-label-left(data-parsley-validate='', novalidate="", method='get', onsubmit='return checkSubmit();', action='/sendEmail')
                         input#username(type='hidden', name='username', value=username)
                         input#ActiCode(type='hidden', name='ActiCode', value=ActiCode)
                         .item.form-group

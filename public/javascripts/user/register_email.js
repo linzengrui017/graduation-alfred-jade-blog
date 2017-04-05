@@ -9,3 +9,15 @@ $('#send').click(function () {
 
 });
 
+/**
+ * 阻止浏览器重复提交
+ * @type {boolean}
+ */
+var flag = false;
+function checkSubmit() {
+    if (flag == true) {
+        return false;
+    }
+    flag = true;
+    $('#form').submit();
+}
