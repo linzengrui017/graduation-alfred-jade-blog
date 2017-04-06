@@ -103,6 +103,8 @@ var usersManage = require('./backend/routes/usersManage');
 var weiboManage = require('./backend/routes/weiboManage');
 
 var qrCode = require('./routes/tools/qrCode');
+var userStatistics = require('./backend/routes/userStatistics');
+
 /**
  *
  */
@@ -122,6 +124,7 @@ app.use('/', dashboard);
 app.use('/', usersManage);
 app.use('/', weiboManage);
 app.use('/', qrCode);
+app.use('/', userStatistics);
 
 /**
  * express 4.x已经移除了config方法

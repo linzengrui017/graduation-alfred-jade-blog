@@ -6,6 +6,9 @@ var modelBlog = require('../../models/blog');
 
 var modelUser = require('../../models/user');
 
+var redis = require("redis"),
+    client = redis.createClient();
+
 //获取当前系统时间
 var sd = require('silly-datetime');
 
@@ -19,6 +22,9 @@ var Logger = require("../Logger.js").getLogger();
  * 跳转到写微博页面
  */
 exports.toAddPage = function (req, res) {
+    var time = sd.format(new Date(), 'YYYY-MM-DD');
+    var key = 'traffic-' + time;
+    client.incr(key);
     var customer = req.session.user.username;
     Logger.info("customer: %s, 进入写微博页面", customer);
     res.render('weibo/pubBlog', { title: 'pubBlog', customer: customer });
