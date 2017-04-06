@@ -52,7 +52,6 @@ $('#container').highcharts({
     },
     tooltip: {
         formatter: function () {
-            console.log("=====" + this.x + ", " + this.y);
             return '<b>' + this.series.name + '</b><br/>' +
                 Highcharts.dateFormat('%Y-%m-%d %H:%M:%S', this.x) + '<br/>' + this.y;
         }
