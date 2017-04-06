@@ -21,7 +21,11 @@ $('#container').highcharts({
                         dataType: "json",
                         success:function(result){
                             var x = (new Date()).getTime(), // current time
-                            y = parseInt(result.data);
+                                data = result.data;
+                            if(data == null || data == undefined){
+                                data = 0;
+                            }
+                            var y = parseInt(data);
                             series.addPoint([x, y], true, true);
                         },
                         error: function (XMLHttpRequest, textStatus, errorThrown) {
