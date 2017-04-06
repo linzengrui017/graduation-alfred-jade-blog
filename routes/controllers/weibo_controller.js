@@ -19,6 +19,16 @@ var sd = require('silly-datetime');
 var Logger = require("../Logger.js").getLogger();
 
 /**
+ * 访问网站主页
+ */
+exports.toLoadTraffic = function (req, res) {
+    var time = sd.format(new Date(), 'YYYY-MM-DD');
+    var key = 'traffic-' + time;
+    client.incr(key);
+    res.end();
+};
+
+/**
  * 跳转到写微博页面
  */
 exports.toAddPage = function (req, res) {

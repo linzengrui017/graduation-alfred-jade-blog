@@ -14,6 +14,11 @@ var weibo = require('./controllers/weibo_controller');
 /**
  * 跳转到写微博页面
  */
+router.post('/toLoadTraffic', weibo.toLoadTraffic);
+
+/**
+ * 跳转到写微博页面
+ */
 router.get('/toAddPage', weibo.toAddPage);
 
 /**
