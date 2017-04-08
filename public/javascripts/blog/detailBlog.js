@@ -102,7 +102,7 @@ $(function () {
                                 '<h4 class="heading"><a href="#" name="others">'+ author +'</a></h4>' +
                                 '<small>'+ createTime +'</small>' +
                                 '<h4>'+
-                                    '<a href="#" name="title">'+ '【'+title + '】'+ '</a>'+
+                                    '<a href="#" name="title">'+ title + '</a><br>'+
                                         content +
                                 '</h4>'+
                                 '<div id="div_relay"></div>' +
@@ -317,9 +317,9 @@ $(function () {
                             '<li><img src="'+ relay_imageUrl +'" alt="Avatar" class="avatar" />' +
                                 '<div class="message_wrapper">' +
                                     '<h4 class="heading"><a href="#" name="others">'+ relay_author +'</a></h4>' +
-                                    '<h4><a href="#" name="title">【'+
+                                    '<h4><a href="#" name="title">'+
                                         relay_title +
-                                    '】</a>'+
+                                    '</a><br>'+
                                         relay_content +
                                     '</h4><br />' +
                             '</div></li>' +

@@ -76,8 +76,8 @@ $.ajax({
                                             '<small>'+ createTime +'</small>' +
                                             '<h4>'+
                                             '<a href="#">'+
-                                            '【'+title + '】'+
-                                            '</a>'+
+                                                +title +
+                                            '</a><br>'+
                                             content +
                                             relayHtml +
                                             '</h4>'+

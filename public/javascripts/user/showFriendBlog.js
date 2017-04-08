@@ -53,7 +53,7 @@ $.ajax({
                         '<li><img src="'+ relay_imageUrl +'" alt="Avatar" class="avatar" />' +
                             '<div class="message_wrapper">' +
                                 '<h4><a href="#" name="others">'+ relay_author +'</a></h4>' +
-                                '<h4>【'+ relay_title + '】'+ relay_content + '</h4>'+
+                                '<h4>'+ relay_title + '<br>'+ relay_content + '</h4>'+
                             '</div>'+
                         '</li>' +
                     '</ul>';
@@ -74,9 +74,9 @@ $.ajax({
                                     '<h4 class="heading"><a href="#" name="others">'+ author +'</a></h4>' +
                                     '<small>'+ createTime +'</small>' +
                                     '<h4>'+
-                                    '<a href="/toDetailBlogPage?title='+title+'&author='+author+'">【'+
-                                    title +
-                                    '】</a>'+
+                                    '<a href="/toDetailBlogPage?title='+title+'&author='+author+'">'+
+                                    +title +
+                                    '</a><br>'+
                                     content +
                                     relayHtml +
                                     '</h4>'+
