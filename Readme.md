@@ -35,30 +35,39 @@
 
 ## 实现细节
 - 界面UI
+
 使用gentelella这个开源项目进行界面设计。
 
 - mongodb数据库时间格式转化
+
 使用moment.js和silly-datetime模块解决。
 
 - 后台表格
+
 使用datatable插件，在JS里配置相关参数进行调用。
 
 - 上传头像
+
 使用文件上传中间件multer
 
 - 设置服务器地址、文件上传地址
+
 导入config模块，在项目全局编写一个配置文件，配置相关参数
 
 - 日志打印
+
 使用log4js实现，同时在配置文件里要确定日志文件输出目录
 
 - 登录验证码
+
 使用ccap和qr-image模块产生和显示验证码
 
 - 注册邮箱验证
+
 使用uuid和nodemailer模块编写发送邮件逻辑
 
 - 统计当天网站访问量
+
 本地配置redis服务，使用redis模块，与node工程进行整合调用
 
 
