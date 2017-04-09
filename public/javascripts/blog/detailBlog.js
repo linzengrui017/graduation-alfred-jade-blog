@@ -188,7 +188,7 @@ $(function () {
                      * 得到数据
                      */
                     var author = $('a[name="others"]').text();
-                    var title = $('a[name="title"]').text().substring(1, $('a[name="title"]').text().length - 1);
+                    var title = $('a[name="title"]').text().substring(0, $('a[name="title"]').text().length);
 
                     /**
                      * 异步ajax请求
