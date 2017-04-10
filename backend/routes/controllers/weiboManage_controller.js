@@ -46,7 +46,39 @@ exports.queryIllegalWeibo = function (req, res) {
  * 删除非法微博
  */
 exports.delIllegalWeibo = function (req, res) {
-
+    /**
+     * 获取数据
+     */
+    var id = req.query._id;
+    /**
+     * 校验
+     */
+    if( null == id || '' == id){
+        console.log('必传参数不能为空');
+        req.session.error = "必传参数不能为空";
+    }else {
+        /**
+         * 准备数据
+         */
+        var query = {
+            _id : id
+        };
+        /**
+         * 删除操作
+         */
+        modelBlog.remove(query, function (err, data) {
+            if(err){
+                console.log("删除微博失败:"+err);
+                res.redirect("/");
+            }
+            /**
+             * 删除成功
+             * 返回视图
+             */
+            console.log("删除微博成功,id:" + id);
+            res.end();
+        });
+    }
 };
 
 /**

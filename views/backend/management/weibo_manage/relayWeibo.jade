@@ -3,11 +3,6 @@ extends ../../commons/layout
 block head
     // Datatables
     link(href='stylesheets/dataTables/dataTables.bootstrap.min.css', rel='stylesheet')
-    //link(href='stylesheets/dataTables/buttons.bootstrap.min.css', rel='stylesheet')
-    //link(href='stylesheets/dataTables/fixedHeader.bootstrap.min.css', rel='stylesheet')
-    //link(href='stylesheets/dataTables/responsive.bootstrap.min.css', rel='stylesheet')
-    //link(href='stylesheets/dataTables/scroller.bootstrap.min.css', rel='stylesheet')
-
     //customer style
     link(href='stylesheets/backend/weiboManage_index.css', rel='stylesheet')
 
@@ -69,9 +64,6 @@ block content
                                         button.btn.btn-default(type='button', data-dismiss='modal') Close
                                         button.btn.btn-primary(type='button') Save changes
 
-
-
-
                         .row
                             .col-sm-12
                                 div#data(style='display:none;')= data
@@ -82,13 +74,8 @@ block content
                                             th 唯一标识
                                             th 作者
                                             th 标题
-
-                                            //th 内容
-                                            //th 评论
-
-                                            //th 转发的原微博
                                             th 创建时间
-                                            //th 操作
+                                            th 操作
 
 
 
