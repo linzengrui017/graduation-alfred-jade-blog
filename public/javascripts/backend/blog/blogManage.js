@@ -36,6 +36,7 @@ var table = $('#datatable').DataTable({
         {"data" : 'author'},
         {"data": 'title'},
         {"data": 'createTime'},
+        {"data": 'relayNum'},
         {"data" : null}
     ],
     order: [[1, 'asc']],

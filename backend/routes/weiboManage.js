@@ -41,7 +41,10 @@ router.post('/showRelayBlogList', weiboManage.showRelayBlogList);
  */
 router.post('/queryRelayBlog', weiboManage.queryRelayBlog);
 
-
+/**
+ * 查询 原微博 被转发数
+ */
+router.post('/showBlogRelayNumList', weiboManage.showBlogRelayNumList);
 
 
 

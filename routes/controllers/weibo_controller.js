@@ -98,12 +98,15 @@ exports.add = function (req, res) {
 
             var time = sd.format(new Date(), 'YYYY-MM-DD HH:mm:ss');
 
+            var relayNum = 0;
+
             var blog = new modelBlog({
                 author: author,
                 title: title,
                 content: description,
                 createTime: time,
-                imageUrl : imageUrl
+                imageUrl : imageUrl,
+                relayNum : relayNum
             });
 
             blog.save(function (err, data) {
@@ -470,6 +473,31 @@ exports.forwardBlog = function (req, res) {
         return;
     }
     /**
+     * 原来微博转发数加一
+     */
+    var query = {
+        author : relay_author,
+        title : relay_title
+    };
+
+    var operator = {
+        $inc : { relayNum : 1 }
+    };
+
+    modelBlog.update(query, operator, function (err, data) {
+        if(err){
+            console.log('添加转发次数失败：'+ err);
+            Logger.info("customer: %s, 向用户 %s 的微博 %s ,添加转发次数失败：%s", customer, relay_author, relay_title, err);
+            return;
+        }
+        Logger.info("customer: %s, 向用户 %s 的微博 %s ,添加转发次数", customer, relay_author, relay_title);
+    });
+
+    /**
+     * 转发微博
+     * 新建一条微博记录
+     */
+    /**
      * 根据 用户名 得到 头像地址
      */
     var imageUrl = '';
@@ -578,7 +606,7 @@ exports.like = function (req, res) {
 
     modelBlog.update(query, operator, function (err, data) {
         if(err){
-            console.log('添加评论失败：'+ err);
+            console.log('添加点赞次数失败：'+ err);
             Logger.info("customer: %s, 向用户 %s 的微博 %s ,点赞失败：%s", customer, author, title, err);
             return;
         }
@@ -627,7 +655,7 @@ exports.unlike = function (req, res) {
 
     modelBlog.update(query, operator, function (err, data) {
         if(err){
-            console.log('添加评论失败：'+ err);
+            console.log('减少点赞次数失败：'+ err);
             Logger.info("customer: %s, 向用户 %s 的微博 %s ,取消赞失败：%s", customer, author, title, err);
             return;
         }

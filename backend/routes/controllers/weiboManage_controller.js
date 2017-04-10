@@ -137,3 +137,40 @@ exports.queryRelayBlog = function (req, res) {
 
     }).sort({createTime: -1});
 };
+
+/**
+ * 查询 原微博 被转发数
+ */
+exports.showBlogRelayNumList = function (req, res) {
+    /**
+     * 获取数据
+     * 校验
+     */
+    var id = req.query._id;
+    if( null == id || '' == id){
+        console.log('必传参数不能为空');
+        req.session.error = "必传参数不能为空";
+    }else {
+        /**
+         * 查询数据库
+         */
+        var query = {
+            _id : id,
+            relayTag: false
+        };
+        modelBlog.find(query, function (err, data) {
+            if(err){
+                console.log("查询微博失败:"+err);
+                res.redirect("/backend_dashboard");
+            }
+
+            var relayNum = data.relayNum;
+
+            /**
+             * 返回数据
+             */
+            res.json({data: relayNum});
+
+        }).sort({createTime: -1});
+    }
+};

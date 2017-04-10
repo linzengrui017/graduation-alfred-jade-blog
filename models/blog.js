@@ -27,6 +27,7 @@ var blogSchema = new mongoose.Schema({
     likes: Number,                  //点赞数
     praiseList: [String],           //对该微博点了赞的用户名 集合
     comments: [commentSchema],      //评论内容
+    relayNum: Number,               //转发数
     relayContent: relaySchema,      //转发的微博
     relayTag :{                     //转发标记
         type : Boolean,
