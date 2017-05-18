@@ -7,7 +7,8 @@
  * 返回数据
  */
 var customer = $('#customer').val();
-var url = '/showBlogList';
+var page = $('#page').val();
+var url = '/showBlogList?page='+page;
 
 $.ajax({
     url: url,
@@ -84,10 +85,10 @@ $.ajax({
                                             '<h4 class="heading"><a href="#" name="others">'+ author +'</a></h4>' +
                                             '<small>'+ createTime +'</small>' +
                                             '<h4>'+
-                                                '<a href="/toDetailBlogPage?title='+title+'&author='+author+'">'+
+                                                '<a href="/toDetailBlogPage?title='+title+'&author='+author+'&content='+content+'">'+
                                                      title +
                                                 '</a><br>'+
-                                                content +
+                                                '<span>'+ content + '</span>'+
                                                 relayHtml +
                                             '</h4>'+
                                 '</div></li>' +
@@ -100,6 +101,47 @@ $.ajax({
 
         }
 
+        /**
+         * 分页按钮组
+         */
+        var pageTotal = result.pageTotal;
+
+        var pageHtml = '';
+        for(var i = 1; i <= pageTotal; i++){
+            if(i == page){
+                pageHtml += '<li class="active"><a href="/toAddPage?page='+ i+'">'+ i +'</a></li>';
+            }else {
+                pageHtml += '<li><a href="/toAddPage?page=' + i + '">'+ i +'</a></li>';
+            }
+        }
+
+        var pageLeft = page - 1;
+        if(pageLeft <= 0){
+            pageLeft = 1;
+        }
+
+        var pageRight = page + 1;
+        if(pageRight >= pageTotal){
+            pageRight = pageTotal;
+        }
+
+        $('#blogList').append(
+            '<nav aria-label="Page navigation">'+
+                '<ul class="pagination">'+
+                    '<li>'+
+                        '<a href="/toAddPage?page=' + pageLeft + '" aria-label="Previous">'+
+                            '<span aria-hidden="true">&laquo;</span>'+
+                        '</a>'+
+                    '</li>'+
+                    pageHtml+
+                    '<li>'+
+                        '<a href="/toAddPage?page=' + pageRight + '" aria-label="Next">'+
+                            '<span aria-hidden="true">&raquo;</span>'+
+                        '</a>'+
+                    '</li>'+
+                '</ul>'+
+            '</nav>'
+        );
 
         /**
          * 跳转到他人主页
@@ -124,11 +166,12 @@ $.ajax({
             var message_wrapper = ul.find('.message_wrapper').eq(0);
             var author = message_wrapper.find('h4').eq(0).text();
             var title_text = message_wrapper.find('h4').eq(1).find('a').eq(0).text();
-            var title = title_text.substring(1, title_text.length - 1);
+            var title = title_text.substring(0, title_text.length);
+            var content = message_wrapper.find('h4').eq(1).find('span').eq(0).text();
             /**
              * 发起请求
              */
-            var url = '/delBlog?author='+author+'&title='+title;
+            var url = '/delBlog?author='+author+'&title='+title+'&content='+content;
             // alert(url);
             $.ajax({
                 url: url,

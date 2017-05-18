@@ -7,7 +7,8 @@
  * 返回数据
  */
 var customer = $('#customer').val();
-var url = '/showBlogList';
+var page = $('#page').val();
+var url = '/showBlogList?page='+page;
 
 $.ajax({
     url: url,
@@ -90,6 +91,46 @@ $.ajax({
                 '</div>'
             );
         }
+
+        var pageTotal = result.pageTotal;
+
+        var pageHtml = '';
+        for(var i = 1; i <= pageTotal; i++){
+            if(i == page){
+                pageHtml += '<li class="active"><a href="/index?page='+ i+'">'+ i +'</a></li>';
+            }else {
+                pageHtml += '<li><a href="/index?page=' + i + '">'+ i +'</a></li>';
+            }
+        }
+
+        var pageLeft = page - 1;
+        if(pageLeft <= 0){
+            pageLeft = 1;
+        }
+
+        var pageRight = page + 1;
+        if(pageRight >= pageTotal){
+            pageRight = pageTotal;
+        }
+
+        $('#blogList').append(
+            '<nav aria-label="Page navigation">'+
+                '<ul class="pagination">'+
+                    '<li>'+
+                        '<a href="/index?page=' + pageLeft + '" aria-label="Previous">'+
+                            '<span aria-hidden="true">&laquo;</span>'+
+                        '</a>'+
+                    '</li>'+
+                    pageHtml+
+                    '<li>'+
+                        '<a href="/index?page=' + pageRight + '" aria-label="Next">'+
+                            '<span aria-hidden="true">&raquo;</span>'+
+                        '</a>'+
+                    '</li>'+
+                '</ul>'+
+            '</nav>'
+        );
+
     },
     error: function (XMLHttpRequest, textStatus, errorThrown) {
         alert("在未登录前的微博列表中执行显示所有微博的操作失败 : XMLHttpRequest.readyState="+ XMLHttpRequest.readyState+ '\n' + textStatus.toString()+ '\n' + errorThrown.toString());

@@ -47,7 +47,7 @@ exports.user = function (req, res) {
         if(err){
             req.session.error = "查询用户失败";
             Logger.info("customer: %s, 查询用户失败：%s", customer, err);
-            res.redirect('/toAddPage');
+            res.redirect('/toAddPage?page=1');
         }
         var imageUrl = data.imageUrl;
         Logger.info("customer: %s, 跳转到用户的个人主页", customer);
@@ -123,7 +123,7 @@ exports.others = function (req, res) {
             console.log("查询用户失败："+ err);
             req.session.error = "查询用户失败";
             Logger.info("customer: %s, 查看 %s 的主页, 查询用户失败：%s", customer, author, err);
-            res.redirect('/toAddPage');
+            res.redirect('/toAddPage?page=1');
         }
         var imageUrl = data.imageUrl;
         Logger.info("customer: %s, 查看 %s 的主页", customer, author);
@@ -330,7 +330,7 @@ exports.login = function (req, res) {
                         /**
                          * 返回视图
                          */
-                        res.redirect('/toAddPage');
+                        res.redirect('/toAddPage?page=1');
                     }
 
 
@@ -352,7 +352,8 @@ exports.logout = function (req, res, next) {
 
     req.session.user = null;
     res.locals.user = null;
-    res.render('weibo/blogList', { title: 'blogList' });
+    // res.render('weibo/blogList', { title: 'blogList' });
+    res.redirect("/index?page=1");
 };
 
 /**
@@ -646,7 +647,7 @@ exports.showCustomerImage = function (req, res) {
                 console.log("查询用户失败："+ err);
                 req.session.error = "查询用户失败";
                 Logger.info("customer: %s, 显示界面右上角的头像时, 查询用户失败：%s", customer, err);
-                res.redirect('/toAddPage');
+                res.redirect('/toAddPage?page=1');
             }
             Logger.info("customer: %s, 显示界面右上角的头像", customer);
             res.json({data: data});
@@ -959,7 +960,7 @@ exports.url = function (req, res, next) {
         /**
          * 返回视图
          */
-        res.redirect('/');
+        res.redirect('/toAddpage?page=1');
 
     });
 

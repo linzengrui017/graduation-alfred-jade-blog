@@ -37,7 +37,8 @@ exports.toAddPage = function (req, res) {
     client.incr(key);
     var customer = req.session.user.username;
     Logger.info("customer: %s, 进入写微博页面", customer);
-    res.render('weibo/pubBlog', { title: 'pubBlog', customer: customer });
+    var page = req.query.page;
+    res.render('weibo/pubBlog', { title: 'pubBlog', customer: customer, pageNum : page });
 };
 
 /**
@@ -57,15 +58,15 @@ exports.add = function (req, res) {
     if(title == null || title == undefined){
         console.log('标题不能为空');
         req.session.error = "标题不能为空";
-        res.redirect("/toAddPage");
+        res.redirect("/toAddPage?page=1");
     }else if(description == null || description == undefined){
         console.log('内容不能为空');
         req.session.error = "内容不能为空";
-        res.redirect("/toAddPage");
+        res.redirect("/toAddPage?page=1");
     }else if (author == null || author == undefined){
         console.log('作者不能为空');
         req.session.error = "作者不能为空";
-        res.redirect("/toAddPage");
+        res.redirect("/toAddPage?page=1");
     }else {
         /**
          * 防止html注入
@@ -88,7 +89,7 @@ exports.add = function (req, res) {
                 console.log("查询用户失败："+ err);
                 req.session.error = "查询用户失败";
                 Logger.info("customer: %s, 根据用户名得不到头像地址：%s", customer, err);
-                res.redirect('/toAddPage');
+                res.redirect('/toAddPage?page=1');
             }
             imageUrl = data.imageUrl;
 
@@ -116,7 +117,7 @@ exports.add = function (req, res) {
                 if(err){
                     console.log("发微博操作异常:"+err);
                     Logger.info("customer: %s, 发微博操作异常：%s", customer, err);
-                    res.redirect("/toAddPage");
+                    res.redirect("/toAddPage?page=1");
                 }
                 /**
                  * 新增成功
@@ -125,7 +126,7 @@ exports.add = function (req, res) {
                 console.log("成功发布微博");
                 Logger.info("customer: %s, 发布微博, 标题：%s", customer, title);
 
-                res.redirect('/toAddPage');
+                res.redirect('/toAddPage?page=1');
             });
 
         });
@@ -140,7 +141,7 @@ exports.add = function (req, res) {
  * 跳转到微博列表页面
  */
 exports.toBlogListPage = function (req, res) {
-    res.render('weibo/blogList', { title: 'blogList' });
+    res.render('weibo/blogList', { title: 'blogList', pageNum: req.query.page });
 };
 
 /**
@@ -148,10 +149,14 @@ exports.toBlogListPage = function (req, res) {
  */
 exports.showBlogList = function (req, res) {
 
-    /**
-     * 查询数据库
-     */
-    modelBlog.find({}, function (err, data) {
+    var page = req.query.page; //第几页
+    var rows = 5; //一页有几行记录
+
+    var query = modelBlog.find({}).sort({createTime: -1});
+    query.skip((page - 1) * rows); //跳过几行记录，获得其余数据
+    query.limit(rows);              //取前几行数据
+
+    query.exec(function (err, data) {
         if(err){
             console.log("查询微博失败:"+err);
             Logger.info("显示登录前的微博列表失败：%s", err);
@@ -159,15 +164,23 @@ exports.showBlogList = function (req, res) {
         }
         Logger.info("显示登录前的微博列表");
         /**
-         * 返回数据
+         * data保存了该页的数据
+         * result.length保存了记录的总行数
+         * pageTotal保存了最大页码
          */
-        res.json({data: data});
-        return data;
+        modelBlog.find({}, function (err, result) {
+            var pageTotal = parseInt((result.length)/rows);
+            if( result.length % rows != 0){
+                pageTotal += 1;
+            }
 
-    }).sort({createTime: -1});
+            var jsonOjbect = {data: data, total: result.length, pageTotal: pageTotal};
+            Logger.info("微博列表数据：{}", jsonOjbect);
+            res.json(jsonOjbect);
 
+        });
 
-
+    });
 
 
 };
@@ -178,8 +191,9 @@ exports.showBlogList = function (req, res) {
 exports.toDetailBlogPage = function (req, res) {
     var author = req.query.author;
     var title = req.query.title;
+    var content = req.query.content;
     var customer = req.session.user.username;
-    res.render('weibo/detailBlog', { title: 'detailBlog', author: author, title: title, customer: customer });
+    res.render('weibo/detailBlog', { author: author, title: title, customer: customer, content: content });
 };
 
 /**
@@ -192,10 +206,12 @@ exports.showDetailBlog = function (req, res) {
      */
     var author = req.query.author;
     var title = req.query.title;
+    var content = req.query.content;
 
     var query = {
         author : author,
-        title : title
+        title : title,
+        content : content
     };
 
 
@@ -235,6 +251,7 @@ exports.commentBlog = function (req, res) {
     var customer = req.session.user.username;
     var author = req.query.author;
     var title = req.query.title;
+    var content = req.query.content;
 
     var comment_author = customer;
     var comment_content = req.query.comment_content;
@@ -260,7 +277,7 @@ exports.commentBlog = function (req, res) {
             console.log("查询用户失败："+ err);
             req.session.error = "查询用户失败";
             Logger.info("customer: %s, 评论微博功能, 根据用户名 %s 得到头像地址失败：%s", customer, customer, err);
-            res.redirect('/toAddPage');
+            res.redirect('/toAddPage?page=1');
         }
         comment_imageUrl = data.imageUrl;
 
@@ -307,8 +324,8 @@ exports.commentBlog = function (req, res) {
         /**
          * 返回视图
          */
-        // res.redirect('/toAddPage');
-        res.redirect('/toDetailBlogPage?author='+author+'&title='+title);
+        // res.redirect('/toAddPage?page=1');
+        res.redirect('/toDetailBlogPage?author='+author+'&title='+title+'&content='+content);
         // res.end();
 
     });
@@ -327,6 +344,7 @@ exports.delComment = function (req, res) {
     var customer = req.session.user.username;
     var author = req.query.author;
     var title = req.query.title;
+    var content = req.query.content;
     var comment_author = customer;
     var comment_content = req.query.comment_content;
     var comment_createTime = req.query.comment_createTime;
@@ -379,7 +397,7 @@ exports.delComment = function (req, res) {
     /**
      * 返回视图
      */
-    res.redirect('/toDetailBlogPage?author='+author+'&title='+title);
+    res.redirect('/toDetailBlogPage?author='+author+'&title='+title+'&content='+content);
 };
 
 /**
@@ -389,6 +407,7 @@ exports.delBlog = function (req, res) {
     var customer = req.session.user.username;
     var author = req.query.author;
     var title = req.query.title;
+    var content = req.query.content;
 
     if(author == null || author == ''){
         console.log('作者不能为空');
@@ -404,7 +423,8 @@ exports.delBlog = function (req, res) {
     }
     var query = {
         author: author,
-        title: title
+        title: title,
+        content: content
     };
     modelBlog.remove(query, function (err, data) {
         if(err){
@@ -419,7 +439,7 @@ exports.delBlog = function (req, res) {
          */
         console.log("删除微博成功");
         Logger.info("customer: %s, 删除微博, 标题： %s ", customer, title);
-        // res.redirect("/toAddPage");
+        // res.redirect("/toAddPage?page=1");
         res.end();
 
     });
@@ -469,7 +489,7 @@ exports.forwardBlog = function (req, res) {
         null == relay_title || '' == relay_title || null == relay_content || '' == relay_content){
 
         console.log("必传参数为空");
-        res.redirect("/toAddPage");
+        res.redirect("/toAddPage?page=1");
         return;
     }
     /**
@@ -506,7 +526,7 @@ exports.forwardBlog = function (req, res) {
         if(err){
             console.log("查询用户失败："+ err);
             req.session.error = "查询用户失败";
-            res.redirect('/toAddPage');
+            res.redirect('/toAddPage?page=1');
         }
         imageUrl = data.imageUrl;
 
@@ -514,7 +534,7 @@ exports.forwardBlog = function (req, res) {
             if(err){
                 console.log("查询用户失败："+ err);
                 req.session.error = "查询用户失败";
-                res.redirect('/toAddPage');
+                res.redirect('/toAddPage?page=1');
             }
             relay_imageUrl = data.imageUrl;
 
@@ -551,7 +571,7 @@ exports.forwardBlog = function (req, res) {
                 if(err){
                     console.log("转发微博操作异常:"+err);
                     Logger.info("customer: %s, 转发微博操作异常：%s", customer, err);
-                    res.redirect("/toAddPage");
+                    res.redirect("/toAddPage?page=1");
                 }
                 /**
                  * 新增成功
@@ -560,7 +580,7 @@ exports.forwardBlog = function (req, res) {
                 console.log("成功转发微博");
                 Logger.info("customer: %s, 转发 %s 的微博, 标题：%s", customer, relay_author, relay_title);
 
-                res.redirect('/toAddPage');
+                res.redirect('/toAddPage?page=1');
             });
 
         });
@@ -582,11 +602,13 @@ exports.like = function (req, res) {
      */
     var author = req.query.author;
     var title = req.query.title;
+    var content = req.query.content;
     /**
      * 服务器端校验
      */
     if( null == author || '' == author
-        || null == title || '' == title){
+        || null == title || '' == title
+        || null == content || '' == content){
 
         console.log('必传参数不能为空');
         req.session.error = "必传参数不能为空";
@@ -597,7 +619,8 @@ exports.like = function (req, res) {
      */
     var query = {
         author : author,
-        title : title
+        title : title,
+        content : content
     };
 
     var operator = {
@@ -631,11 +654,13 @@ exports.unlike = function (req, res) {
      */
     var author = req.query.author;
     var title = req.query.title;
+    var content = req.query.content;
     /**
      * 服务器端校验
      */
     if( null == author || '' == author
-        || null == title || '' == title){
+        || null == title || '' == title
+        || null == content || '' == content){
 
         console.log('必传参数不能为空');
         req.session.error = "必传参数不能为空";
@@ -646,7 +671,8 @@ exports.unlike = function (req, res) {
      */
     var query = {
         author : author,
-        title : title
+        title : title,
+        content : content
     };
 
     var operator = {
@@ -680,12 +706,14 @@ exports.queryPraiseList = function (req, res) {
     var customer = req.session.user.username;
     var author = req.query.author;
     var title = req.query.title;
+    var content = req.query.content;
 
     /**
      * 服务器端校验
      */
     if( null == author || '' == author
-        || null == title || '' == title){
+        || null == title || '' == title
+        || null == content || '' == content){
         console.log('必传参数不能为空');
         req.session.error = "必传参数不能为空";
         return;
@@ -698,7 +726,8 @@ exports.queryPraiseList = function (req, res) {
     var query = {
         author : author,
         title : title,
-        praiseList : customer
+        praiseList : customer,
+        content : content
     };
 
     /**
@@ -732,12 +761,14 @@ exports.addToPraiseList = function (req, res) {
     var customer = req.session.user.username;
     var author = req.query.author;
     var title = req.query.title;
+    var content = req.query.content;
 
     /**
      * 服务器端校验
      */
     if( null == author || '' == author
-        || null == title || '' == title){
+        || null == title || '' == title
+        || null == content || '' == content){
         console.log('必传参数不能为空');
         req.session.error = "必传参数不能为空";
         return;
@@ -749,7 +780,8 @@ exports.addToPraiseList = function (req, res) {
      */
     var query = {
         author : author,
-        title : title
+        title : title,
+        content : content
     };
 
     var operator = {
@@ -790,12 +822,14 @@ exports.rmFromPraiseList = function (req, res) {
     var customer = req.session.user.username;
     var author = req.query.author;
     var title = req.query.title;
+    var content = req.query.content;
 
     /**
      * 服务器端校验
      */
     if( null == author || '' == author
-        || null == title || '' == title){
+        || null == title || '' == title
+        || null == content || '' == content){
         console.log('必传参数不能为空');
         req.session.error = "必传参数不能为空";
         return;
@@ -807,7 +841,8 @@ exports.rmFromPraiseList = function (req, res) {
      */
     var query = {
         author : author,
-        title : title
+        title : title,
+        content : content
     };
 
     var operator = {
@@ -848,12 +883,14 @@ exports.queryPraiseNums = function (req, res){
     var customer = req.session.user.username;
     var author = req.query.author;
     var title = req.query.title;
+    var content = req.query.content;
 
     /**
      * 服务器端校验
      */
     if( null == author || '' == author
-        || null == title || '' == title){
+        || null == title || '' == title
+        || null == content || '' == content){
         console.log('必传参数不能为空');
         req.session.error = "必传参数不能为空";
         return;
@@ -865,7 +902,8 @@ exports.queryPraiseNums = function (req, res){
      */
     var query = {
         author : author,
-        title : title
+        title : title,
+        content : content
     };
 
     /**

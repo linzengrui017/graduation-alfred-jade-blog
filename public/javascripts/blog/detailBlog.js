@@ -12,8 +12,9 @@ $(function () {
     var author = $('#author').val();
     var title = $('#title').val();
     var customer = $('#customer').val();
-    if(author != '' || author != null || title != '' || title != null){
-        var url = '/showDetailBlog?author='+author+'&title='+title;
+    var content = $('#content').val();
+    if(author != '' || author != null || title != '' || title != null || content != '' || content != null){
+        var url = '/showDetailBlog?author='+author+'&title='+title+'&content='+content;
         $.ajax({
             url: url,
             type: "get",
@@ -72,13 +73,13 @@ $(function () {
                         /**
                          * 发起请求
                          */
-                        var url = '/delBlog?author='+author+'&title='+title;
+                        var url = '/delBlog?author='+author+'&title='+title+'&content='+content;
                         $.ajax({
                             url: url,
                             type: "get",
                             success:function(result){
                                 alert("成功删除微博");
-                                window.location.href='/toAddPage';
+                                window.location.href='/toAddPage?page=1';
                             },
                             error: function (XMLHttpRequest, textStatus, errorThrown) {
                                 alert("在微博详情页面执行删除微博操作失败 : XMLHttpRequest.readyState="+ XMLHttpRequest.readyState+ '\n' + textStatus.toString()+ '\n' + errorThrown.toString());
@@ -103,7 +104,7 @@ $(function () {
                                 '<small>'+ createTime +'</small>' +
                                 '<h4>'+
                                     '<a href="#" name="title">'+ title + '</a><br>'+
-                                        content +
+                                     content +
                                 '</h4>'+
                                 '<div id="div_relay"></div>' +
                                 '<br />' +
@@ -187,8 +188,8 @@ $(function () {
                     /**
                      * 得到数据
                      */
-                    var author = $('a[name="others"]').text();
-                    var title = $('a[name="title"]').text().substring(0, $('a[name="title"]').text().length);
+                    var author = $('a[name="others"]').eq(0).text();
+                    var title = $('a[name="title"]').eq(0).text();
 
                     /**
                      * 异步ajax请求
@@ -198,7 +199,7 @@ $(function () {
                          * 将当前用户添加到点赞列表
                          * @type {string}
                          */
-                        var addToPraiseList = '/addToPraiseList?author='+author+'&title='+title;
+                        var addToPraiseList = '/addToPraiseList?author='+author+'&title='+title+'&content='+content;
                         $.ajax({
                             url: addToPraiseList,
                             type: "get",
@@ -214,7 +215,7 @@ $(function () {
                          * 点赞次数加一
                          * @type {string}
                          */
-                        var like = '/like?author='+author+'&title='+title;
+                        var like = '/like?author='+author+'&title='+title+'&content='+content;
                         $.ajax({
                             url: like,
                             type: "get",
@@ -231,7 +232,7 @@ $(function () {
                          * 将当前用户从点赞列表中移除
                          * @type {string}
                          */
-                        var rmFromPraiseList = '/rmFromPraiseList?author='+author+'&title='+title;
+                        var rmFromPraiseList = '/rmFromPraiseList?author='+author+'&title='+title+'&content='+content;
                         $.ajax({
                             url: rmFromPraiseList,
                             type: "get",
@@ -247,7 +248,7 @@ $(function () {
                          * 点赞次数减一
                          * @type {string}
                          */
-                        var url = '/unlike?author='+author+'&title='+title;
+                        var url = '/unlike?author='+author+'&title='+title+'&content='+content;
                         $.ajax({
                             url: url,
                             type: "get",
@@ -356,9 +357,9 @@ $(function () {
                 });
 
                 $('#btn_comment').click(function () {
-                    var content = $('#write_comment').val();
+                    var write_comment = $('#write_comment').val();
                     window.location.href = '/commentBlog?comment_content='
-                        + content + '&author=' + author + '&title=' + title;
+                        + write_comment + '&author=' + author + '&title=' + title + '&content=' + content;
                 });
 
                 /**
@@ -416,7 +417,7 @@ $(function () {
 
                     }else {
                         window.location.href = '/delComment?author=' + author
-                            + '&title=' + title + '&comment_author=' + comment_author
+                            + '&title=' + title + '&content=' + content + '&comment_author=' + comment_author
                             + '&comment_content=' + comment_content + '&comment_createTime=' + comment_createTime;
                     }
 

@@ -12,8 +12,9 @@ $(function () {
     var author = $('#author').val();
     var title = $('#title').val();
     var customer = $('#customer').val();
-    if(author != '' || author != null || title != '' || title != null){
-        var url = '/queryPraiseNums?author='+author+'&title='+title;
+    var content = $('#content').val();
+    if(author != '' || author != null || title != '' || title != null || content != '' || content != null){
+        var url = '/queryPraiseNums?author='+author+'&title='+title+'&content='+content;
         $.ajax({
             url: url,
             type: "get",

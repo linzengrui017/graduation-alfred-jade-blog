@@ -25,12 +25,12 @@ html
         nav#nav.navbar.navbar-default.navbar-fixed-top.navbar-inverse
             ul.nav.navbar-nav
                 li
-                    a(href='/toBlogListPage' )
+                    a(href='/toBlogListPage?page=1' )
                         i.fa.fa-weibo(style='color:#ffffff;')
                             |  微博
                 -if(user)
                     li
-                        a(href='/toAddPage')
+                        a(href='/toAddPage?page=1')
                             span(style='color:#ffffff;')
                                 | 写微博
             ul.nav.navbar-nav.navbar-right

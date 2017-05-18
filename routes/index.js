@@ -2,8 +2,8 @@ var express = require('express');
 var router = express.Router();
 
 /* GET home page. */
-router.get('/', function(req, res, next) {
-    res.render('weibo/blogList', { title: 'blogList' });
+router.get('/index', function(req, res, next) {
+    res.render('weibo/blogList', { title: 'blogList', pageNum: req.query.page});
 });
 
 router.get('/backend', function(req, res, next) {
